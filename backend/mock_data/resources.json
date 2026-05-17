@@ -1,0 +1,1806 @@
+{
+  "totalRecords": 120,
+  "count": 120,
+  "data": [
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/finance-rg/providers/microsoft.network/publicipaddresses/pip-sales-pro-000",
+      "name": "pip-sales-pro-000",
+      "type": "microsoft.network/publicipaddresses",
+      "location": "southcentralus",
+      "resourceGroup": "finance-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "production",
+        "owner": "sales-team",
+        "costCenter": "CC9935"
+      },
+      "secureScore": 65,
+      "issuesCount": 4
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-web-rg/providers/microsoft.compute/virtualmachines/vm-engineering-tes-001",
+      "name": "vm-engineering-tes-001",
+      "type": "microsoft.compute/virtualmachines",
+      "location": "westus",
+      "resourceGroup": "prod-web-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "test",
+        "owner": "engineering-team",
+        "costCenter": "CC1434"
+      },
+      "secureScore": 64,
+      "issuesCount": 6
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.network/networksecuritygroups/nsg-marketing-tes-002",
+      "name": "nsg-marketing-tes-002",
+      "type": "microsoft.network/networksecuritygroups",
+      "location": "eastasia",
+      "resourceGroup": "analytics-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "test",
+        "owner": "marketing-team",
+        "costCenter": "CC3615"
+      },
+      "secureScore": 53,
+      "issuesCount": 8
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/staging-rg/providers/microsoft.network/virtualnetworks/vnet-sales-dev-003",
+      "name": "vnet-sales-dev-003",
+      "type": "microsoft.network/virtualnetworks",
+      "location": "northcentralus",
+      "resourceGroup": "staging-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "development",
+        "owner": "sales-team",
+        "costCenter": "CC2519"
+      },
+      "secureScore": 75,
+      "issuesCount": 3
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/hr-rg/providers/microsoft.keyvault/vaults/kv-platform-dev-004",
+      "name": "kv-platform-dev-004",
+      "type": "microsoft.keyvault/vaults",
+      "location": "southindia",
+      "resourceGroup": "hr-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "development",
+        "owner": "platform-team",
+        "costCenter": "CC3045"
+      },
+      "secureScore": 79,
+      "issuesCount": 4
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/engineering-rg/providers/microsoft.recoveryservices/vaults/rsv-finance-tes-005",
+      "name": "rsv-finance-tes-005",
+      "type": "microsoft.recoveryservices/vaults",
+      "location": "uaenorth",
+      "resourceGroup": "engineering-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "test",
+        "owner": "finance-team",
+        "costCenter": "CC6925"
+      },
+      "secureScore": 34,
+      "issuesCount": 0
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/finance-rg/providers/microsoft.network/networksecuritygroups/nsg-engineering-pro-006",
+      "name": "nsg-engineering-pro-006",
+      "type": "microsoft.network/networksecuritygroups",
+      "location": "centralindia",
+      "resourceGroup": "finance-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "production",
+        "owner": "engineering-team",
+        "costCenter": "CC4814"
+      },
+      "secureScore": 58,
+      "issuesCount": 4
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.insights/components/ai-sales-tes-007",
+      "name": "ai-sales-tes-007",
+      "type": "microsoft.insights/components",
+      "location": "australiasoutheast",
+      "resourceGroup": "analytics-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "test",
+        "owner": "sales-team",
+        "costCenter": "CC6820"
+      },
+      "secureScore": 65,
+      "issuesCount": 2
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-identity-rg/providers/microsoft.storage/storageaccounts/stor-exec-dev-008",
+      "name": "stor-exec-dev-008",
+      "type": "microsoft.storage/storageaccounts",
+      "location": "australiaeast",
+      "resourceGroup": "prod-identity-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "development",
+        "owner": "exec-team",
+        "costCenter": "CC5010"
+      },
+      "secureScore": 45,
+      "issuesCount": 1
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/finance-rg/providers/microsoft.storage/storageaccounts/stor-sales-tes-009",
+      "name": "stor-sales-tes-009",
+      "type": "microsoft.storage/storageaccounts",
+      "location": "canadacentral",
+      "resourceGroup": "finance-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "test",
+        "owner": "sales-team",
+        "costCenter": "CC1916"
+      },
+      "secureScore": 46,
+      "issuesCount": 7
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-prod-rg/providers/microsoft.storage/storageaccounts/stor-platform-pro-010",
+      "name": "stor-platform-pro-010",
+      "type": "microsoft.storage/storageaccounts",
+      "location": "westeurope",
+      "resourceGroup": "k8s-prod-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "production",
+        "owner": "platform-team",
+        "costCenter": "CC6155"
+      },
+      "secureScore": 96,
+      "issuesCount": 6
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.storage/storageaccounts/stor-data-tes-011",
+      "name": "stor-data-tes-011",
+      "type": "microsoft.storage/storageaccounts",
+      "location": "westus3",
+      "resourceGroup": "analytics-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "test",
+        "owner": "data-team",
+        "costCenter": "CC9830"
+      },
+      "secureScore": 58,
+      "issuesCount": 5
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-prod-rg/providers/microsoft.sql/servers/sql-legal-tes-012",
+      "name": "sql-legal-tes-012",
+      "type": "microsoft.sql/servers",
+      "location": "ukwest",
+      "resourceGroup": "k8s-prod-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "test",
+        "owner": "legal-team",
+        "costCenter": "CC9348"
+      },
+      "secureScore": 71,
+      "issuesCount": 12
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/staging-rg/providers/microsoft.web/sites/app-finance-pro-013",
+      "name": "app-finance-pro-013",
+      "type": "microsoft.web/sites",
+      "location": "australiasoutheast",
+      "resourceGroup": "staging-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "production",
+        "owner": "finance-team",
+        "costCenter": "CC2040"
+      },
+      "secureScore": 74,
+      "issuesCount": 7
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/hr-rg/providers/microsoft.keyvault/vaults/kv-it-tes-014",
+      "name": "kv-it-tes-014",
+      "type": "microsoft.keyvault/vaults",
+      "location": "southeastasia",
+      "resourceGroup": "hr-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "test",
+        "owner": "it-team",
+        "costCenter": "CC2876"
+      },
+      "secureScore": 61,
+      "issuesCount": 3
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/marketing-rg/providers/microsoft.network/virtualnetworks/vnet-exec-dev-015",
+      "name": "vnet-exec-dev-015",
+      "type": "microsoft.network/virtualnetworks",
+      "location": "westus2",
+      "resourceGroup": "marketing-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "development",
+        "owner": "exec-team",
+        "costCenter": "CC1053"
+      },
+      "secureScore": 57,
+      "issuesCount": 5
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/dev-rg/providers/microsoft.recoveryservices/vaults/rsv-it-dev-016",
+      "name": "rsv-it-dev-016",
+      "type": "microsoft.recoveryservices/vaults",
+      "location": "japanwest",
+      "resourceGroup": "dev-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "development",
+        "owner": "it-team",
+        "costCenter": "CC5889"
+      },
+      "secureScore": 91,
+      "issuesCount": 1
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/platform-rg/providers/microsoft.logic/workflows/logic-hr-sta-017",
+      "name": "logic-hr-sta-017",
+      "type": "microsoft.logic/workflows",
+      "location": "centralindia",
+      "resourceGroup": "platform-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "staging",
+        "owner": "hr-team",
+        "costCenter": "CC9689"
+      },
+      "secureScore": 83,
+      "issuesCount": 9
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-web-rg/providers/microsoft.insights/components/ai-security-dev-018",
+      "name": "ai-security-dev-018",
+      "type": "microsoft.insights/components",
+      "location": "westus2",
+      "resourceGroup": "prod-web-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "development",
+        "owner": "security-team",
+        "costCenter": "CC6038"
+      },
+      "secureScore": 93,
+      "issuesCount": 1
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-identity-rg/providers/microsoft.storage/storageaccounts/stor-legal-sta-019",
+      "name": "stor-legal-sta-019",
+      "type": "microsoft.storage/storageaccounts",
+      "location": "westus",
+      "resourceGroup": "prod-identity-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "staging",
+        "owner": "legal-team",
+        "costCenter": "CC9727"
+      },
+      "secureScore": 56,
+      "issuesCount": 0
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/ml-rg/providers/microsoft.cosmosdb/databaseaccounts/cosmos-exec-sta-020",
+      "name": "cosmos-exec-sta-020",
+      "type": "microsoft.cosmosdb/databaseaccounts",
+      "location": "southeastasia",
+      "resourceGroup": "ml-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "staging",
+        "owner": "exec-team",
+        "costCenter": "CC7932"
+      },
+      "secureScore": 71,
+      "issuesCount": 6
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-prod-rg/providers/microsoft.recoveryservices/vaults/rsv-sales-sta-021",
+      "name": "rsv-sales-sta-021",
+      "type": "microsoft.recoveryservices/vaults",
+      "location": "canadacentral",
+      "resourceGroup": "k8s-prod-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "staging",
+        "owner": "sales-team",
+        "costCenter": "CC9479"
+      },
+      "secureScore": 48,
+      "issuesCount": 1
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-identity-rg/providers/microsoft.web/sites/app-marketing-sta-022",
+      "name": "app-marketing-sta-022",
+      "type": "microsoft.web/sites",
+      "location": "uksouth",
+      "resourceGroup": "prod-identity-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "staging",
+        "owner": "marketing-team",
+        "costCenter": "CC4608"
+      },
+      "secureScore": 82,
+      "issuesCount": 4
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-identity-rg/providers/microsoft.compute/virtualmachines/vm-marketing-pro-023",
+      "name": "vm-marketing-pro-023",
+      "type": "microsoft.compute/virtualmachines",
+      "location": "eastus2",
+      "resourceGroup": "prod-identity-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "production",
+        "owner": "marketing-team",
+        "costCenter": "CC4899"
+      },
+      "secureScore": 64,
+      "issuesCount": 3
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/staging-rg/providers/microsoft.sql/servers/sql-marketing-tes-024",
+      "name": "sql-marketing-tes-024",
+      "type": "microsoft.sql/servers",
+      "location": "brazilsouth",
+      "resourceGroup": "staging-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "test",
+        "owner": "marketing-team",
+        "costCenter": "CC8744"
+      },
+      "secureScore": 81,
+      "issuesCount": 2
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/shared-services-rg/providers/microsoft.storage/storageaccounts/stor-data-tes-025",
+      "name": "stor-data-tes-025",
+      "type": "microsoft.storage/storageaccounts",
+      "location": "westus2",
+      "resourceGroup": "shared-services-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "test",
+        "owner": "data-team",
+        "costCenter": "CC7939"
+      },
+      "secureScore": 75,
+      "issuesCount": 5
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-network-rg/providers/microsoft.keyvault/vaults/kv-exec-pro-026",
+      "name": "kv-exec-pro-026",
+      "type": "microsoft.keyvault/vaults",
+      "location": "eastus2",
+      "resourceGroup": "prod-network-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "production",
+        "owner": "exec-team",
+        "costCenter": "CC2790"
+      },
+      "secureScore": 46,
+      "issuesCount": 5
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.storage/storageaccounts/stor-it-sta-027",
+      "name": "stor-it-sta-027",
+      "type": "microsoft.storage/storageaccounts",
+      "location": "westus3",
+      "resourceGroup": "analytics-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "staging",
+        "owner": "it-team",
+        "costCenter": "CC5092"
+      },
+      "secureScore": 47,
+      "issuesCount": 4
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-network-rg/providers/microsoft.insights/components/ai-security-pro-028",
+      "name": "ai-security-pro-028",
+      "type": "microsoft.insights/components",
+      "location": "eastus2",
+      "resourceGroup": "prod-network-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "production",
+        "owner": "security-team",
+        "costCenter": "CC1241"
+      },
+      "secureScore": 47,
+      "issuesCount": 1
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-staging-rg/providers/microsoft.recoveryservices/vaults/rsv-hr-sta-029",
+      "name": "rsv-hr-sta-029",
+      "type": "microsoft.recoveryservices/vaults",
+      "location": "japaneast",
+      "resourceGroup": "k8s-staging-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "staging",
+        "owner": "hr-team",
+        "costCenter": "CC1960"
+      },
+      "secureScore": 24,
+      "issuesCount": 4
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/hr-rg/providers/microsoft.storage/storageaccounts/stor-data-pro-030",
+      "name": "stor-data-pro-030",
+      "type": "microsoft.storage/storageaccounts",
+      "location": "southindia",
+      "resourceGroup": "hr-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "production",
+        "owner": "data-team",
+        "costCenter": "CC8973"
+      },
+      "secureScore": 63,
+      "issuesCount": 2
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-data-rg/providers/microsoft.storage/storageaccounts/stor-marketing-dev-031",
+      "name": "stor-marketing-dev-031",
+      "type": "microsoft.storage/storageaccounts",
+      "location": "eastasia",
+      "resourceGroup": "prod-data-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "development",
+        "owner": "marketing-team",
+        "costCenter": "CC6138"
+      },
+      "secureScore": 59,
+      "issuesCount": 3
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/iot-rg/providers/microsoft.compute/virtualmachines/vm-it-tes-032",
+      "name": "vm-it-tes-032",
+      "type": "microsoft.compute/virtualmachines",
+      "location": "centralus",
+      "resourceGroup": "iot-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "test",
+        "owner": "it-team",
+        "costCenter": "CC4044"
+      },
+      "secureScore": 80,
+      "issuesCount": 5
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/finance-rg/providers/microsoft.compute/virtualmachines/vm-exec-pro-033",
+      "name": "vm-exec-pro-033",
+      "type": "microsoft.compute/virtualmachines",
+      "location": "francecentral",
+      "resourceGroup": "finance-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "production",
+        "owner": "exec-team",
+        "costCenter": "CC5033"
+      },
+      "secureScore": 87,
+      "issuesCount": 7
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-identity-rg/providers/microsoft.network/networksecuritygroups/nsg-legal-pro-034",
+      "name": "nsg-legal-pro-034",
+      "type": "microsoft.network/networksecuritygroups",
+      "location": "germanywestcentral",
+      "resourceGroup": "prod-identity-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "production",
+        "owner": "legal-team",
+        "costCenter": "CC6183"
+      },
+      "secureScore": 47,
+      "issuesCount": 1
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/marketing-rg/providers/microsoft.operationalinsights/workspaces/law-exec-sta-035",
+      "name": "law-exec-sta-035",
+      "type": "microsoft.operationalinsights/workspaces",
+      "location": "southcentralus",
+      "resourceGroup": "marketing-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "staging",
+        "owner": "exec-team",
+        "costCenter": "CC5915"
+      },
+      "secureScore": 59,
+      "issuesCount": 5
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.web/sites/app-engineering-pro-036",
+      "name": "app-engineering-pro-036",
+      "type": "microsoft.web/sites",
+      "location": "australiaeast",
+      "resourceGroup": "analytics-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "production",
+        "owner": "engineering-team",
+        "costCenter": "CC2200"
+      },
+      "secureScore": 98,
+      "issuesCount": 3
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/platform-rg/providers/microsoft.network/networksecuritygroups/nsg-hr-dev-037",
+      "name": "nsg-hr-dev-037",
+      "type": "microsoft.network/networksecuritygroups",
+      "location": "westus",
+      "resourceGroup": "platform-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "development",
+        "owner": "hr-team",
+        "costCenter": "CC3584"
+      },
+      "secureScore": 72,
+      "issuesCount": 2
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/iot-rg/providers/microsoft.web/sites/app-legal-dev-038",
+      "name": "app-legal-dev-038",
+      "type": "microsoft.web/sites",
+      "location": "eastus",
+      "resourceGroup": "iot-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "development",
+        "owner": "legal-team",
+        "costCenter": "CC2697"
+      },
+      "secureScore": 48,
+      "issuesCount": 1
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-network-rg/providers/microsoft.operationalinsights/workspaces/law-sales-sta-039",
+      "name": "law-sales-sta-039",
+      "type": "microsoft.operationalinsights/workspaces",
+      "location": "westus2",
+      "resourceGroup": "prod-network-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "staging",
+        "owner": "sales-team",
+        "costCenter": "CC5616"
+      },
+      "secureScore": 59,
+      "issuesCount": 2
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/hr-rg/providers/microsoft.network/publicipaddresses/pip-marketing-dev-040",
+      "name": "pip-marketing-dev-040",
+      "type": "microsoft.network/publicipaddresses",
+      "location": "japanwest",
+      "resourceGroup": "hr-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "development",
+        "owner": "marketing-team",
+        "costCenter": "CC1832"
+      },
+      "secureScore": 21,
+      "issuesCount": 4
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-data-rg/providers/microsoft.compute/virtualmachines/vm-sales-tes-041",
+      "name": "vm-sales-tes-041",
+      "type": "microsoft.compute/virtualmachines",
+      "location": "eastus",
+      "resourceGroup": "prod-data-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "test",
+        "owner": "sales-team",
+        "costCenter": "CC5291"
+      },
+      "secureScore": 55,
+      "issuesCount": 5
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-staging-rg/providers/microsoft.storage/storageaccounts/stor-it-tes-042",
+      "name": "stor-it-tes-042",
+      "type": "microsoft.storage/storageaccounts",
+      "location": "southeastasia",
+      "resourceGroup": "k8s-staging-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "test",
+        "owner": "it-team",
+        "costCenter": "CC3442"
+      },
+      "secureScore": 67,
+      "issuesCount": 4
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/staging-rg/providers/microsoft.network/networksecuritygroups/nsg-legal-dev-043",
+      "name": "nsg-legal-dev-043",
+      "type": "microsoft.network/networksecuritygroups",
+      "location": "germanywestcentral",
+      "resourceGroup": "staging-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "development",
+        "owner": "legal-team",
+        "costCenter": "CC1653"
+      },
+      "secureScore": 70,
+      "issuesCount": 5
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/finance-rg/providers/microsoft.insights/components/ai-exec-sta-044",
+      "name": "ai-exec-sta-044",
+      "type": "microsoft.insights/components",
+      "location": "canadacentral",
+      "resourceGroup": "finance-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "staging",
+        "owner": "exec-team",
+        "costCenter": "CC7658"
+      },
+      "secureScore": 85,
+      "issuesCount": 6
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/dev-rg/providers/microsoft.recoveryservices/vaults/rsv-marketing-sta-045",
+      "name": "rsv-marketing-sta-045",
+      "type": "microsoft.recoveryservices/vaults",
+      "location": "southindia",
+      "resourceGroup": "dev-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "staging",
+        "owner": "marketing-team",
+        "costCenter": "CC1406"
+      },
+      "secureScore": 73,
+      "issuesCount": 0
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/finance-rg/providers/microsoft.storage/storageaccounts/stor-data-dev-046",
+      "name": "stor-data-dev-046",
+      "type": "microsoft.storage/storageaccounts",
+      "location": "westeurope",
+      "resourceGroup": "finance-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "development",
+        "owner": "data-team",
+        "costCenter": "CC7267"
+      },
+      "secureScore": 75,
+      "issuesCount": 7
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/shared-services-rg/providers/microsoft.insights/components/ai-marketing-tes-047",
+      "name": "ai-marketing-tes-047",
+      "type": "microsoft.insights/components",
+      "location": "uaenorth",
+      "resourceGroup": "shared-services-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "test",
+        "owner": "marketing-team",
+        "costCenter": "CC4728"
+      },
+      "secureScore": 74,
+      "issuesCount": 2
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/marketing-rg/providers/microsoft.storage/storageaccounts/stor-data-sta-048",
+      "name": "stor-data-sta-048",
+      "type": "microsoft.storage/storageaccounts",
+      "location": "westeurope",
+      "resourceGroup": "marketing-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "staging",
+        "owner": "data-team",
+        "costCenter": "CC5573"
+      },
+      "secureScore": 90,
+      "issuesCount": 0
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/marketing-rg/providers/microsoft.sql/servers/databases/db-exec-tes-049",
+      "name": "db-exec-tes-049",
+      "type": "microsoft.sql/servers/databases",
+      "location": "eastus",
+      "resourceGroup": "marketing-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "test",
+        "owner": "exec-team",
+        "costCenter": "CC3925"
+      },
+      "secureScore": 95,
+      "issuesCount": 8
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-network-rg/providers/microsoft.network/networksecuritygroups/nsg-engineering-dev-050",
+      "name": "nsg-engineering-dev-050",
+      "type": "microsoft.network/networksecuritygroups",
+      "location": "australiaeast",
+      "resourceGroup": "prod-network-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "development",
+        "owner": "engineering-team",
+        "costCenter": "CC6139"
+      },
+      "secureScore": 33,
+      "issuesCount": 5
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/shared-services-rg/providers/microsoft.web/sites/app-data-pro-051",
+      "name": "app-data-pro-051",
+      "type": "microsoft.web/sites",
+      "location": "westeurope",
+      "resourceGroup": "shared-services-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "production",
+        "owner": "data-team",
+        "costCenter": "CC9518"
+      },
+      "secureScore": 78,
+      "issuesCount": 4
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-staging-rg/providers/microsoft.operationalinsights/workspaces/law-platform-sta-052",
+      "name": "law-platform-sta-052",
+      "type": "microsoft.operationalinsights/workspaces",
+      "location": "westus",
+      "resourceGroup": "k8s-staging-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "staging",
+        "owner": "platform-team",
+        "costCenter": "CC6143"
+      },
+      "secureScore": 98,
+      "issuesCount": 2
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/iot-rg/providers/microsoft.network/publicipaddresses/pip-sales-pro-053",
+      "name": "pip-sales-pro-053",
+      "type": "microsoft.network/publicipaddresses",
+      "location": "northeurope",
+      "resourceGroup": "iot-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "production",
+        "owner": "sales-team",
+        "costCenter": "CC5844"
+      },
+      "secureScore": 52,
+      "issuesCount": 2
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-prod-rg/providers/microsoft.network/networksecuritygroups/nsg-data-sta-054",
+      "name": "nsg-data-sta-054",
+      "type": "microsoft.network/networksecuritygroups",
+      "location": "canadacentral",
+      "resourceGroup": "k8s-prod-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "staging",
+        "owner": "data-team",
+        "costCenter": "CC5930"
+      },
+      "secureScore": 59,
+      "issuesCount": 2
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/engineering-rg/providers/microsoft.keyvault/vaults/kv-sales-pro-055",
+      "name": "kv-sales-pro-055",
+      "type": "microsoft.keyvault/vaults",
+      "location": "northcentralus",
+      "resourceGroup": "engineering-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "production",
+        "owner": "sales-team",
+        "costCenter": "CC6279"
+      },
+      "secureScore": 38,
+      "issuesCount": 5
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/shared-services-rg/providers/microsoft.web/sites/app-exec-tes-056",
+      "name": "app-exec-tes-056",
+      "type": "microsoft.web/sites",
+      "location": "japanwest",
+      "resourceGroup": "shared-services-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "test",
+        "owner": "exec-team",
+        "costCenter": "CC3780"
+      },
+      "secureScore": 21,
+      "issuesCount": 4
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/marketing-rg/providers/microsoft.network/publicipaddresses/pip-it-dev-057",
+      "name": "pip-it-dev-057",
+      "type": "microsoft.network/publicipaddresses",
+      "location": "westus",
+      "resourceGroup": "marketing-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "development",
+        "owner": "it-team",
+        "costCenter": "CC6085"
+      },
+      "secureScore": 72,
+      "issuesCount": 0
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-web-rg/providers/microsoft.storage/storageaccounts/stor-hr-sta-058",
+      "name": "stor-hr-sta-058",
+      "type": "microsoft.storage/storageaccounts",
+      "location": "eastus2",
+      "resourceGroup": "prod-web-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "staging",
+        "owner": "hr-team",
+        "costCenter": "CC2193"
+      },
+      "secureScore": 60,
+      "issuesCount": 6
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/ml-rg/providers/microsoft.web/sites/app-data-sta-059",
+      "name": "app-data-sta-059",
+      "type": "microsoft.web/sites",
+      "location": "francecentral",
+      "resourceGroup": "ml-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "staging",
+        "owner": "data-team",
+        "costCenter": "CC1090"
+      },
+      "secureScore": 60,
+      "issuesCount": 7
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/finance-rg/providers/microsoft.insights/components/ai-data-pro-060",
+      "name": "ai-data-pro-060",
+      "type": "microsoft.insights/components",
+      "location": "centralus",
+      "resourceGroup": "finance-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "production",
+        "owner": "data-team",
+        "costCenter": "CC8611"
+      },
+      "secureScore": 69,
+      "issuesCount": 0
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.compute/virtualmachines/vm-finance-sta-061",
+      "name": "vm-finance-sta-061",
+      "type": "microsoft.compute/virtualmachines",
+      "location": "westus3",
+      "resourceGroup": "analytics-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "staging",
+        "owner": "finance-team",
+        "costCenter": "CC6198"
+      },
+      "secureScore": 68,
+      "issuesCount": 0
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/iot-rg/providers/microsoft.recoveryservices/vaults/rsv-legal-tes-062",
+      "name": "rsv-legal-tes-062",
+      "type": "microsoft.recoveryservices/vaults",
+      "location": "germanywestcentral",
+      "resourceGroup": "iot-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "test",
+        "owner": "legal-team",
+        "costCenter": "CC3607"
+      },
+      "secureScore": 70,
+      "issuesCount": 1
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/hr-rg/providers/microsoft.containerregistry/registries/acr-security-tes-063",
+      "name": "acr-security-tes-063",
+      "type": "microsoft.containerregistry/registries",
+      "location": "centralindia",
+      "resourceGroup": "hr-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "test",
+        "owner": "security-team",
+        "costCenter": "CC9540"
+      },
+      "secureScore": 60,
+      "issuesCount": 7
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.web/sites/app-sales-sta-064",
+      "name": "app-sales-sta-064",
+      "type": "microsoft.web/sites",
+      "location": "westus",
+      "resourceGroup": "analytics-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "staging",
+        "owner": "sales-team",
+        "costCenter": "CC6502"
+      },
+      "secureScore": 57,
+      "issuesCount": 2
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/staging-rg/providers/microsoft.sql/servers/databases/db-hr-pro-065",
+      "name": "db-hr-pro-065",
+      "type": "microsoft.sql/servers/databases",
+      "location": "southcentralus",
+      "resourceGroup": "staging-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "production",
+        "owner": "hr-team",
+        "costCenter": "CC4505"
+      },
+      "secureScore": 52,
+      "issuesCount": 4
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.compute/virtualmachines/vm-platform-tes-066",
+      "name": "vm-platform-tes-066",
+      "type": "microsoft.compute/virtualmachines",
+      "location": "germanywestcentral",
+      "resourceGroup": "analytics-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "test",
+        "owner": "platform-team",
+        "costCenter": "CC7381"
+      },
+      "secureScore": 91,
+      "issuesCount": 5
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-prod-rg/providers/microsoft.insights/components/ai-legal-pro-067",
+      "name": "ai-legal-pro-067",
+      "type": "microsoft.insights/components",
+      "location": "japaneast",
+      "resourceGroup": "k8s-prod-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "production",
+        "owner": "legal-team",
+        "costCenter": "CC7389"
+      },
+      "secureScore": 76,
+      "issuesCount": 4
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/finance-rg/providers/microsoft.logic/workflows/logic-it-tes-068",
+      "name": "logic-it-tes-068",
+      "type": "microsoft.logic/workflows",
+      "location": "japaneast",
+      "resourceGroup": "finance-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "test",
+        "owner": "it-team",
+        "costCenter": "CC1475"
+      },
+      "secureScore": 63,
+      "issuesCount": 6
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.keyvault/vaults/kv-hr-tes-069",
+      "name": "kv-hr-tes-069",
+      "type": "microsoft.keyvault/vaults",
+      "location": "westus3",
+      "resourceGroup": "analytics-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "test",
+        "owner": "hr-team",
+        "costCenter": "CC7455"
+      },
+      "secureScore": 82,
+      "issuesCount": 3
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-staging-rg/providers/microsoft.network/networksecuritygroups/nsg-finance-pro-070",
+      "name": "nsg-finance-pro-070",
+      "type": "microsoft.network/networksecuritygroups",
+      "location": "westus3",
+      "resourceGroup": "k8s-staging-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "production",
+        "owner": "finance-team",
+        "costCenter": "CC5262"
+      },
+      "secureScore": 67,
+      "issuesCount": 2
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/marketing-rg/providers/microsoft.keyvault/vaults/kv-security-sta-071",
+      "name": "kv-security-sta-071",
+      "type": "microsoft.keyvault/vaults",
+      "location": "uksouth",
+      "resourceGroup": "marketing-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "staging",
+        "owner": "security-team",
+        "costCenter": "CC7906"
+      },
+      "secureScore": 61,
+      "issuesCount": 1
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-web-rg/providers/microsoft.storage/storageaccounts/stor-security-pro-072",
+      "name": "stor-security-pro-072",
+      "type": "microsoft.storage/storageaccounts",
+      "location": "brazilsouth",
+      "resourceGroup": "prod-web-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "production",
+        "owner": "security-team",
+        "costCenter": "CC6733"
+      },
+      "secureScore": 10,
+      "issuesCount": 1
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-data-rg/providers/microsoft.storage/storageaccounts/stor-exec-pro-073",
+      "name": "stor-exec-pro-073",
+      "type": "microsoft.storage/storageaccounts",
+      "location": "centralindia",
+      "resourceGroup": "prod-data-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "production",
+        "owner": "exec-team",
+        "costCenter": "CC1333"
+      },
+      "secureScore": 73,
+      "issuesCount": 4
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/ml-rg/providers/microsoft.network/publicipaddresses/pip-hr-sta-074",
+      "name": "pip-hr-sta-074",
+      "type": "microsoft.network/publicipaddresses",
+      "location": "canadacentral",
+      "resourceGroup": "ml-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "staging",
+        "owner": "hr-team",
+        "costCenter": "CC8619"
+      },
+      "secureScore": 92,
+      "issuesCount": 7
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-network-rg/providers/microsoft.network/virtualnetworks/vnet-hr-dev-075",
+      "name": "vnet-hr-dev-075",
+      "type": "microsoft.network/virtualnetworks",
+      "location": "centralindia",
+      "resourceGroup": "prod-network-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "development",
+        "owner": "hr-team",
+        "costCenter": "CC2771"
+      },
+      "secureScore": 79,
+      "issuesCount": 0
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-prod-rg/providers/microsoft.network/networksecuritygroups/nsg-legal-dev-076",
+      "name": "nsg-legal-dev-076",
+      "type": "microsoft.network/networksecuritygroups",
+      "location": "francecentral",
+      "resourceGroup": "k8s-prod-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "development",
+        "owner": "legal-team",
+        "costCenter": "CC4978"
+      },
+      "secureScore": 71,
+      "issuesCount": 3
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-network-rg/providers/microsoft.compute/virtualmachines/vm-exec-dev-077",
+      "name": "vm-exec-dev-077",
+      "type": "microsoft.compute/virtualmachines",
+      "location": "southindia",
+      "resourceGroup": "prod-network-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "development",
+        "owner": "exec-team",
+        "costCenter": "CC6688"
+      },
+      "secureScore": 91,
+      "issuesCount": 3
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/iot-rg/providers/microsoft.network/networksecuritygroups/nsg-finance-dev-078",
+      "name": "nsg-finance-dev-078",
+      "type": "microsoft.network/networksecuritygroups",
+      "location": "australiasoutheast",
+      "resourceGroup": "iot-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "development",
+        "owner": "finance-team",
+        "costCenter": "CC9031"
+      },
+      "secureScore": 40,
+      "issuesCount": 8
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.compute/virtualmachines/vm-exec-dev-079",
+      "name": "vm-exec-dev-079",
+      "type": "microsoft.compute/virtualmachines",
+      "location": "canadaeast",
+      "resourceGroup": "analytics-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "development",
+        "owner": "exec-team",
+        "costCenter": "CC9548"
+      },
+      "secureScore": 66,
+      "issuesCount": 5
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/ml-rg/providers/microsoft.recoveryservices/vaults/rsv-legal-dev-080",
+      "name": "rsv-legal-dev-080",
+      "type": "microsoft.recoveryservices/vaults",
+      "location": "switzerlandnorth",
+      "resourceGroup": "ml-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "development",
+        "owner": "legal-team",
+        "costCenter": "CC5397"
+      },
+      "secureScore": 33,
+      "issuesCount": 5
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/hr-rg/providers/microsoft.sql/servers/databases/db-finance-sta-081",
+      "name": "db-finance-sta-081",
+      "type": "microsoft.sql/servers/databases",
+      "location": "switzerlandnorth",
+      "resourceGroup": "hr-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "staging",
+        "owner": "finance-team",
+        "costCenter": "CC7209"
+      },
+      "secureScore": 60,
+      "issuesCount": 6
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/dev-rg/providers/microsoft.sql/servers/databases/db-platform-tes-082",
+      "name": "db-platform-tes-082",
+      "type": "microsoft.sql/servers/databases",
+      "location": "japaneast",
+      "resourceGroup": "dev-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "test",
+        "owner": "platform-team",
+        "costCenter": "CC6576"
+      },
+      "secureScore": 67,
+      "issuesCount": 8
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-web-rg/providers/microsoft.sql/servers/sql-it-dev-083",
+      "name": "sql-it-dev-083",
+      "type": "microsoft.sql/servers",
+      "location": "japanwest",
+      "resourceGroup": "prod-web-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "development",
+        "owner": "it-team",
+        "costCenter": "CC7658"
+      },
+      "secureScore": 67,
+      "issuesCount": 3
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/ml-rg/providers/microsoft.web/sites/app-security-sta-084",
+      "name": "app-security-sta-084",
+      "type": "microsoft.web/sites",
+      "location": "switzerlandnorth",
+      "resourceGroup": "ml-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "staging",
+        "owner": "security-team",
+        "costCenter": "CC4630"
+      },
+      "secureScore": 62,
+      "issuesCount": 2
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/platform-rg/providers/microsoft.keyvault/vaults/kv-sales-sta-085",
+      "name": "kv-sales-sta-085",
+      "type": "microsoft.keyvault/vaults",
+      "location": "japaneast",
+      "resourceGroup": "platform-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "staging",
+        "owner": "sales-team",
+        "costCenter": "CC6419"
+      },
+      "secureScore": 44,
+      "issuesCount": 3
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/engineering-rg/providers/microsoft.sql/servers/databases/db-sales-tes-086",
+      "name": "db-sales-tes-086",
+      "type": "microsoft.sql/servers/databases",
+      "location": "westeurope",
+      "resourceGroup": "engineering-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "test",
+        "owner": "sales-team",
+        "costCenter": "CC6169"
+      },
+      "secureScore": 63,
+      "issuesCount": 7
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/shared-services-rg/providers/microsoft.storage/storageaccounts/stor-marketing-sta-087",
+      "name": "stor-marketing-sta-087",
+      "type": "microsoft.storage/storageaccounts",
+      "location": "brazilsouth",
+      "resourceGroup": "shared-services-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "staging",
+        "owner": "marketing-team",
+        "costCenter": "CC9595"
+      },
+      "secureScore": 31,
+      "issuesCount": 4
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/engineering-rg/providers/microsoft.network/networksecuritygroups/nsg-marketing-pro-088",
+      "name": "nsg-marketing-pro-088",
+      "type": "microsoft.network/networksecuritygroups",
+      "location": "southcentralus",
+      "resourceGroup": "engineering-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "production",
+        "owner": "marketing-team",
+        "costCenter": "CC9751"
+      },
+      "secureScore": 50,
+      "issuesCount": 5
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/engineering-rg/providers/microsoft.storage/storageaccounts/stor-engineering-pro-089",
+      "name": "stor-engineering-pro-089",
+      "type": "microsoft.storage/storageaccounts",
+      "location": "canadaeast",
+      "resourceGroup": "engineering-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "production",
+        "owner": "engineering-team",
+        "costCenter": "CC9042"
+      },
+      "secureScore": 84,
+      "issuesCount": 2
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/engineering-rg/providers/microsoft.compute/virtualmachines/vm-legal-pro-090",
+      "name": "vm-legal-pro-090",
+      "type": "microsoft.compute/virtualmachines",
+      "location": "japaneast",
+      "resourceGroup": "engineering-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "production",
+        "owner": "legal-team",
+        "costCenter": "CC1841"
+      },
+      "secureScore": 43,
+      "issuesCount": 4
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-identity-rg/providers/microsoft.storage/storageaccounts/stor-finance-tes-091",
+      "name": "stor-finance-tes-091",
+      "type": "microsoft.storage/storageaccounts",
+      "location": "francecentral",
+      "resourceGroup": "prod-identity-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "test",
+        "owner": "finance-team",
+        "costCenter": "CC1878"
+      },
+      "secureScore": 36,
+      "issuesCount": 4
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/finance-rg/providers/microsoft.storage/storageaccounts/stor-finance-dev-092",
+      "name": "stor-finance-dev-092",
+      "type": "microsoft.storage/storageaccounts",
+      "location": "westus2",
+      "resourceGroup": "finance-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "development",
+        "owner": "finance-team",
+        "costCenter": "CC4697"
+      },
+      "secureScore": 42,
+      "issuesCount": 3
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.documentdb/databaseaccounts/docdb-security-tes-093",
+      "name": "docdb-security-tes-093",
+      "type": "microsoft.documentdb/databaseaccounts",
+      "location": "northeurope",
+      "resourceGroup": "analytics-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "test",
+        "owner": "security-team",
+        "costCenter": "CC6003"
+      },
+      "secureScore": 94,
+      "issuesCount": 0
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-network-rg/providers/microsoft.network/networksecuritygroups/nsg-legal-pro-094",
+      "name": "nsg-legal-pro-094",
+      "type": "microsoft.network/networksecuritygroups",
+      "location": "centralindia",
+      "resourceGroup": "prod-network-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "production",
+        "owner": "legal-team",
+        "costCenter": "CC2330"
+      },
+      "secureScore": 63,
+      "issuesCount": 5
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-identity-rg/providers/microsoft.storage/storageaccounts/stor-it-sta-095",
+      "name": "stor-it-sta-095",
+      "type": "microsoft.storage/storageaccounts",
+      "location": "centralus",
+      "resourceGroup": "prod-identity-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "staging",
+        "owner": "it-team",
+        "costCenter": "CC8699"
+      },
+      "secureScore": 79,
+      "issuesCount": 4
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/engineering-rg/providers/microsoft.sql/servers/sql-sales-sta-096",
+      "name": "sql-sales-sta-096",
+      "type": "microsoft.sql/servers",
+      "location": "canadaeast",
+      "resourceGroup": "engineering-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "staging",
+        "owner": "sales-team",
+        "costCenter": "CC4824"
+      },
+      "secureScore": 64,
+      "issuesCount": 3
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-network-rg/providers/microsoft.operationalinsights/workspaces/law-data-sta-097",
+      "name": "law-data-sta-097",
+      "type": "microsoft.operationalinsights/workspaces",
+      "location": "southeastasia",
+      "resourceGroup": "prod-network-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "staging",
+        "owner": "data-team",
+        "costCenter": "CC5352"
+      },
+      "secureScore": 61,
+      "issuesCount": 5
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/dev-rg/providers/microsoft.eventhub/namespaces/eh-engineering-pro-098",
+      "name": "eh-engineering-pro-098",
+      "type": "microsoft.eventhub/namespaces",
+      "location": "southindia",
+      "resourceGroup": "dev-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "production",
+        "owner": "engineering-team",
+        "costCenter": "CC5728"
+      },
+      "secureScore": 49,
+      "issuesCount": 7
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-prod-rg/providers/microsoft.web/sites/app-sales-tes-099",
+      "name": "app-sales-tes-099",
+      "type": "microsoft.web/sites",
+      "location": "westeurope",
+      "resourceGroup": "k8s-prod-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "test",
+        "owner": "sales-team",
+        "costCenter": "CC2317"
+      },
+      "secureScore": 38,
+      "issuesCount": 3
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/hr-rg/providers/microsoft.network/publicipaddresses/pip-platform-tes-100",
+      "name": "pip-platform-tes-100",
+      "type": "microsoft.network/publicipaddresses",
+      "location": "eastus",
+      "resourceGroup": "hr-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "test",
+        "owner": "platform-team",
+        "costCenter": "CC1339"
+      },
+      "secureScore": 98,
+      "issuesCount": 7
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-data-rg/providers/microsoft.automation/automationaccounts/auto-legal-dev-101",
+      "name": "auto-legal-dev-101",
+      "type": "microsoft.automation/automationaccounts",
+      "location": "centralindia",
+      "resourceGroup": "prod-data-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "development",
+        "owner": "legal-team",
+        "costCenter": "CC8245"
+      },
+      "secureScore": 60,
+      "issuesCount": 1
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-staging-rg/providers/microsoft.insights/components/ai-legal-sta-102",
+      "name": "ai-legal-sta-102",
+      "type": "microsoft.insights/components",
+      "location": "australiasoutheast",
+      "resourceGroup": "k8s-staging-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "staging",
+        "owner": "legal-team",
+        "costCenter": "CC8700"
+      },
+      "secureScore": 78,
+      "issuesCount": 0
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-network-rg/providers/microsoft.sql/servers/databases/db-platform-dev-103",
+      "name": "db-platform-dev-103",
+      "type": "microsoft.sql/servers/databases",
+      "location": "centralus",
+      "resourceGroup": "prod-network-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "development",
+        "owner": "platform-team",
+        "costCenter": "CC5722"
+      },
+      "secureScore": 46,
+      "issuesCount": 7
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-data-rg/providers/microsoft.network/publicipaddresses/pip-it-tes-104",
+      "name": "pip-it-tes-104",
+      "type": "microsoft.network/publicipaddresses",
+      "location": "switzerlandnorth",
+      "resourceGroup": "prod-data-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "test",
+        "owner": "it-team",
+        "costCenter": "CC2899"
+      },
+      "secureScore": 71,
+      "issuesCount": 5
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-web-rg/providers/microsoft.recoveryservices/vaults/rsv-it-tes-105",
+      "name": "rsv-it-tes-105",
+      "type": "microsoft.recoveryservices/vaults",
+      "location": "canadacentral",
+      "resourceGroup": "prod-web-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "test",
+        "owner": "it-team",
+        "costCenter": "CC1888"
+      },
+      "secureScore": 73,
+      "issuesCount": 1
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/ml-rg/providers/microsoft.storage/storageaccounts/stor-legal-dev-106",
+      "name": "stor-legal-dev-106",
+      "type": "microsoft.storage/storageaccounts",
+      "location": "australiasoutheast",
+      "resourceGroup": "ml-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "development",
+        "owner": "legal-team",
+        "costCenter": "CC5375"
+      },
+      "secureScore": 54,
+      "issuesCount": 4
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/ml-rg/providers/microsoft.network/networksecuritygroups/nsg-security-dev-107",
+      "name": "nsg-security-dev-107",
+      "type": "microsoft.network/networksecuritygroups",
+      "location": "westus2",
+      "resourceGroup": "ml-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "development",
+        "owner": "security-team",
+        "costCenter": "CC4920"
+      },
+      "secureScore": 84,
+      "issuesCount": 4
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-web-rg/providers/microsoft.containerservice/managedclusters/aks-it-dev-108",
+      "name": "aks-it-dev-108",
+      "type": "microsoft.containerservice/managedclusters",
+      "location": "southeastasia",
+      "resourceGroup": "prod-web-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "development",
+        "owner": "it-team",
+        "costCenter": "CC2858"
+      },
+      "secureScore": 49,
+      "issuesCount": 4
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/staging-rg/providers/microsoft.web/sites/app-exec-pro-109",
+      "name": "app-exec-pro-109",
+      "type": "microsoft.web/sites",
+      "location": "japaneast",
+      "resourceGroup": "staging-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "production",
+        "owner": "exec-team",
+        "costCenter": "CC5479"
+      },
+      "secureScore": 73,
+      "issuesCount": 3
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/finance-rg/providers/microsoft.keyvault/vaults/kv-security-tes-110",
+      "name": "kv-security-tes-110",
+      "type": "microsoft.keyvault/vaults",
+      "location": "switzerlandnorth",
+      "resourceGroup": "finance-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "test",
+        "owner": "security-team",
+        "costCenter": "CC9327"
+      },
+      "secureScore": 43,
+      "issuesCount": 3
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/hr-rg/providers/microsoft.containerregistry/registries/acr-finance-sta-111",
+      "name": "acr-finance-sta-111",
+      "type": "microsoft.containerregistry/registries",
+      "location": "centralindia",
+      "resourceGroup": "hr-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "staging",
+        "owner": "finance-team",
+        "costCenter": "CC9318"
+      },
+      "secureScore": 64,
+      "issuesCount": 1
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/engineering-rg/providers/microsoft.sql/servers/sql-sales-pro-112",
+      "name": "sql-sales-pro-112",
+      "type": "microsoft.sql/servers",
+      "location": "uaenorth",
+      "resourceGroup": "engineering-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "production",
+        "owner": "sales-team",
+        "costCenter": "CC9022"
+      },
+      "secureScore": 10,
+      "issuesCount": 0
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/ml-rg/providers/microsoft.insights/components/ai-it-tes-113",
+      "name": "ai-it-tes-113",
+      "type": "microsoft.insights/components",
+      "location": "ukwest",
+      "resourceGroup": "ml-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "test",
+        "owner": "it-team",
+        "costCenter": "CC7180"
+      },
+      "secureScore": 44,
+      "issuesCount": 7
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/finance-rg/providers/microsoft.web/sites/app-marketing-dev-114",
+      "name": "app-marketing-dev-114",
+      "type": "microsoft.web/sites",
+      "location": "eastasia",
+      "resourceGroup": "finance-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "development",
+        "owner": "marketing-team",
+        "costCenter": "CC7730"
+      },
+      "secureScore": 33,
+      "issuesCount": 7
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-prod-rg/providers/microsoft.compute/virtualmachines/vm-data-tes-115",
+      "name": "vm-data-tes-115",
+      "type": "microsoft.compute/virtualmachines",
+      "location": "canadacentral",
+      "resourceGroup": "k8s-prod-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "test",
+        "owner": "data-team",
+        "costCenter": "CC3492"
+      },
+      "secureScore": 66,
+      "issuesCount": 0
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/iot-rg/providers/microsoft.web/sites/app-hr-pro-116",
+      "name": "app-hr-pro-116",
+      "type": "microsoft.web/sites",
+      "location": "eastasia",
+      "resourceGroup": "iot-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "production",
+        "owner": "hr-team",
+        "costCenter": "CC8213"
+      },
+      "secureScore": 55,
+      "issuesCount": 5
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/staging-rg/providers/microsoft.compute/virtualmachines/vm-engineering-tes-117",
+      "name": "vm-engineering-tes-117",
+      "type": "microsoft.compute/virtualmachines",
+      "location": "germanywestcentral",
+      "resourceGroup": "staging-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "test",
+        "owner": "engineering-team",
+        "costCenter": "CC2225"
+      },
+      "secureScore": 92,
+      "issuesCount": 0
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-prod-rg/providers/microsoft.web/sites/app-platform-dev-118",
+      "name": "app-platform-dev-118",
+      "type": "microsoft.web/sites",
+      "location": "australiasoutheast",
+      "resourceGroup": "k8s-prod-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "development",
+        "owner": "platform-team",
+        "costCenter": "CC9742"
+      },
+      "secureScore": 74,
+      "issuesCount": 5
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/ml-rg/providers/microsoft.keyvault/vaults/kv-exec-dev-119",
+      "name": "kv-exec-dev-119",
+      "type": "microsoft.keyvault/vaults",
+      "location": "southeastasia",
+      "resourceGroup": "ml-rg",
+      "subscriptionId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+      "tags": {
+        "env": "development",
+        "owner": "exec-team",
+        "costCenter": "CC5708"
+      },
+      "secureScore": 66,
+      "issuesCount": 4
+    }
+  ]
+}

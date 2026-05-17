@@ -1,0 +1,3884 @@
+{
+  "value": [
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-identity-rg/providers/microsoft.network/networksecuritygroups/nsg-legal-pro-034/providers/Microsoft.Security/assessments/578737987515",
+      "name": "005be02352a8-0029",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Web ports should be limited on virtual machines",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-identity-rg/providers/microsoft.network/networksecuritygroups/nsg-legal-pro-034",
+          "ResourceName": "nsg-legal-pro-034",
+          "ResourceType": "microsoft.network/networksecuritygroups"
+        },
+        "metadata": {
+          "severity": "Medium",
+          "categories": [
+            "Networking"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "Low",
+          "threats": [
+            "DataExfiltration",
+            "AccountBreach"
+          ],
+          "description": "Assessment of web ports should be limited on virtual machines",
+          "remediationDescription": "Take action to remediate: Web ports should be limited on virtual machines"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.storage/storageaccounts/stor-data-tes-011/providers/Microsoft.Security/assessments/597707816158",
+      "name": "00a8bf6e0a55-0025",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Storage accounts should restrict network access",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.storage/storageaccounts/stor-data-tes-011",
+          "ResourceName": "stor-data-tes-011",
+          "ResourceType": "microsoft.storage/storageaccounts"
+        },
+        "metadata": {
+          "severity": "Medium",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "High",
+          "implementationEffort": "High",
+          "threats": [
+            "DataExfiltration"
+          ],
+          "description": "Assessment of storage accounts should restrict network access",
+          "remediationDescription": "Take action to remediate: Storage accounts should restrict network access"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/staging-rg/providers/microsoft.network/virtualnetworks/vnet-sales-dev-003/providers/Microsoft.Security/assessments/460137100173",
+      "name": "00717ec46487-0015",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Diagnostic logs in Key Vault should be enabled",
+        "status": {
+          "code": "Unhealthy",
+          "cause": "DiagnosticLogsDisabled",
+          "description": "Recommendation flagged unhealthy"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/staging-rg/providers/microsoft.network/virtualnetworks/vnet-sales-dev-003",
+          "ResourceName": "vnet-sales-dev-003",
+          "ResourceType": "microsoft.network/virtualnetworks"
+        },
+        "metadata": {
+          "severity": "Low",
+          "categories": [
+            "IdentityAndAccess"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "Moderate",
+          "threats": [
+            "MissingCoverage"
+          ],
+          "description": "Assessment of diagnostic logs in key vault should be enabled",
+          "remediationDescription": "Take action to remediate: Diagnostic logs in Key Vault should be enabled"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-prod-rg/providers/microsoft.network/networksecuritygroups/nsg-legal-dev-076/providers/Microsoft.Security/assessments/110977038883",
+      "name": "002c795ffaf2-0029",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Web ports should be limited on virtual machines",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-prod-rg/providers/microsoft.network/networksecuritygroups/nsg-legal-dev-076",
+          "ResourceName": "nsg-legal-dev-076",
+          "ResourceType": "microsoft.network/networksecuritygroups"
+        },
+        "metadata": {
+          "severity": "Medium",
+          "categories": [
+            "Networking"
+          ],
+          "userImpact": "Low",
+          "implementationEffort": "High",
+          "threats": [
+            "DataExfiltration",
+            "AccountBreach"
+          ],
+          "description": "Assessment of web ports should be limited on virtual machines",
+          "remediationDescription": "Take action to remediate: Web ports should be limited on virtual machines"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/marketing-rg/providers/microsoft.keyvault/vaults/kv-security-sta-071/providers/Microsoft.Security/assessments/622657187359",
+      "name": "0089c61d5f85-0005",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Key Vaults should have soft delete enabled",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/marketing-rg/providers/microsoft.keyvault/vaults/kv-security-sta-071",
+          "ResourceName": "kv-security-sta-071",
+          "ResourceType": "microsoft.keyvault/vaults"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "IdentityAndAccess"
+          ],
+          "userImpact": "Low",
+          "implementationEffort": "Low",
+          "threats": [
+            "DataSpillage"
+          ],
+          "description": "Assessment of key vaults should have soft delete enabled",
+          "remediationDescription": "Take action to remediate: Key Vaults should have soft delete enabled"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/shared-services-rg/providers/microsoft.web/sites/app-data-pro-051/providers/Microsoft.Security/assessments/436052436803",
+      "name": "0090a6ef07d7-0028",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Function apps should only be accessible over HTTPS",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/shared-services-rg/providers/microsoft.web/sites/app-data-pro-051",
+          "ResourceName": "app-data-pro-051",
+          "ResourceType": "microsoft.web/sites"
+        },
+        "metadata": {
+          "severity": "Medium",
+          "categories": [
+            "Networking"
+          ],
+          "userImpact": "High",
+          "implementationEffort": "High",
+          "threats": [
+            "DataExfiltration"
+          ],
+          "description": "Assessment of function apps should only be accessible over https",
+          "remediationDescription": "Take action to remediate: Function apps should only be accessible over HTTPS"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-staging-rg/providers/microsoft.network/networksecuritygroups/nsg-finance-pro-070/providers/Microsoft.Security/assessments/870310160681",
+      "name": "005796f5c027-0029",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Web ports should be limited on virtual machines",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-staging-rg/providers/microsoft.network/networksecuritygroups/nsg-finance-pro-070",
+          "ResourceName": "nsg-finance-pro-070",
+          "ResourceType": "microsoft.network/networksecuritygroups"
+        },
+        "metadata": {
+          "severity": "Medium",
+          "categories": [
+            "Networking"
+          ],
+          "userImpact": "Low",
+          "implementationEffort": "Low",
+          "threats": [
+            "DataExfiltration",
+            "AccountBreach"
+          ],
+          "description": "Assessment of web ports should be limited on virtual machines",
+          "remediationDescription": "Take action to remediate: Web ports should be limited on virtual machines"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/hr-rg/providers/microsoft.network/publicipaddresses/pip-marketing-dev-040/providers/Microsoft.Security/assessments/691601169418",
+      "name": "0046f9257708-0003",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Transparent Data Encryption on SQL databases should be enabled",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/hr-rg/providers/microsoft.network/publicipaddresses/pip-marketing-dev-040",
+          "ResourceName": "pip-marketing-dev-040",
+          "ResourceType": "microsoft.network/publicipaddresses"
+        },
+        "metadata": {
+          "severity": "Medium",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "Low",
+          "implementationEffort": "Low",
+          "threats": [
+            "DataExfiltration"
+          ],
+          "description": "Assessment of transparent data encryption on sql databases should be enabled",
+          "remediationDescription": "Take action to remediate: Transparent Data Encryption on SQL databases should be enabled"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/marketing-rg/providers/microsoft.operationalinsights/workspaces/law-exec-sta-035/providers/Microsoft.Security/assessments/678790685708",
+      "name": "00314379a6bb-0023",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Adaptive application controls for defining safe applications should be enabled on your machines",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/marketing-rg/providers/microsoft.operationalinsights/workspaces/law-exec-sta-035",
+          "ResourceName": "law-exec-sta-035",
+          "ResourceType": "microsoft.operationalinsights/workspaces"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Compute"
+          ],
+          "userImpact": "Low",
+          "implementationEffort": "Moderate",
+          "threats": [
+            "MaliciousInsider"
+          ],
+          "description": "Assessment of adaptive application controls for defining safe applications should be enabled on your machines",
+          "remediationDescription": "Take action to remediate: Adaptive application controls for defining safe applications should be enabled on your machines"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-identity-rg/providers/microsoft.web/sites/app-marketing-sta-022/providers/Microsoft.Security/assessments/877449847333",
+      "name": "00228eb02c7b-0014",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Diagnostic logs in App Services should be enabled",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-identity-rg/providers/microsoft.web/sites/app-marketing-sta-022",
+          "ResourceName": "app-marketing-sta-022",
+          "ResourceType": "microsoft.web/sites"
+        },
+        "metadata": {
+          "severity": "Low",
+          "categories": [
+            "Networking"
+          ],
+          "userImpact": "Low",
+          "implementationEffort": "High",
+          "threats": [
+            "MissingCoverage"
+          ],
+          "description": "Assessment of diagnostic logs in app services should be enabled",
+          "remediationDescription": "Take action to remediate: Diagnostic logs in App Services should be enabled"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/dev-rg/providers/microsoft.recoveryservices/vaults/rsv-it-dev-016/providers/Microsoft.Security/assessments/928363733258",
+      "name": "001b27e17793-0020",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "System updates should be installed on your machines",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/dev-rg/providers/microsoft.recoveryservices/vaults/rsv-it-dev-016",
+          "ResourceName": "rsv-it-dev-016",
+          "ResourceType": "microsoft.recoveryservices/vaults"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Compute"
+          ],
+          "userImpact": "High",
+          "implementationEffort": "Moderate",
+          "threats": [
+            "MaliciousInsider",
+            "AccountBreach"
+          ],
+          "description": "Assessment of system updates should be installed on your machines",
+          "remediationDescription": "Take action to remediate: System updates should be installed on your machines"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/shared-services-rg/providers/microsoft.web/sites/app-exec-tes-056/providers/Microsoft.Security/assessments/375098568281",
+      "name": "0034c2c35dd4-0014",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Diagnostic logs in App Services should be enabled",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/shared-services-rg/providers/microsoft.web/sites/app-exec-tes-056",
+          "ResourceName": "app-exec-tes-056",
+          "ResourceType": "microsoft.web/sites"
+        },
+        "metadata": {
+          "severity": "Low",
+          "categories": [
+            "Networking"
+          ],
+          "userImpact": "Low",
+          "implementationEffort": "Moderate",
+          "threats": [
+            "MissingCoverage"
+          ],
+          "description": "Assessment of diagnostic logs in app services should be enabled",
+          "remediationDescription": "Take action to remediate: Diagnostic logs in App Services should be enabled"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-data-rg/providers/microsoft.storage/storageaccounts/stor-exec-pro-073/providers/Microsoft.Security/assessments/263860419795",
+      "name": "00653b70cdfa-0001",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Storage account public access should be disallowed",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-data-rg/providers/microsoft.storage/storageaccounts/stor-exec-pro-073",
+          "ResourceName": "stor-exec-pro-073",
+          "ResourceType": "microsoft.storage/storageaccounts"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "Low",
+          "implementationEffort": "Low",
+          "threats": [
+            "DataExfiltration",
+            "DataSpillage"
+          ],
+          "description": "Assessment of storage account public access should be disallowed",
+          "remediationDescription": "Take action to remediate: Storage account public access should be disallowed"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/iot-rg/providers/microsoft.network/publicipaddresses/pip-sales-pro-053/providers/Microsoft.Security/assessments/970143739098",
+      "name": "009d0f0ac211-0019",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Advanced threat protection should be enabled on Storage accounts",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/iot-rg/providers/microsoft.network/publicipaddresses/pip-sales-pro-053",
+          "ResourceName": "pip-sales-pro-053",
+          "ResourceType": "microsoft.network/publicipaddresses"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "Moderate",
+          "threats": [
+            "DataExfiltration"
+          ],
+          "description": "Assessment of advanced threat protection should be enabled on storage accounts",
+          "remediationDescription": "Take action to remediate: Advanced threat protection should be enabled on Storage accounts"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/iot-rg/providers/microsoft.web/sites/app-legal-dev-038/providers/Microsoft.Security/assessments/572403587152",
+      "name": "0026e7728d8b-0028",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Function apps should only be accessible over HTTPS",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/iot-rg/providers/microsoft.web/sites/app-legal-dev-038",
+          "ResourceName": "app-legal-dev-038",
+          "ResourceType": "microsoft.web/sites"
+        },
+        "metadata": {
+          "severity": "Medium",
+          "categories": [
+            "Networking"
+          ],
+          "userImpact": "High",
+          "implementationEffort": "High",
+          "threats": [
+            "DataExfiltration"
+          ],
+          "description": "Assessment of function apps should only be accessible over https",
+          "remediationDescription": "Take action to remediate: Function apps should only be accessible over HTTPS"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-network-rg/providers/microsoft.keyvault/vaults/kv-exec-pro-026/providers/Microsoft.Security/assessments/388669155156",
+      "name": "005470abccc0-0015",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Diagnostic logs in Key Vault should be enabled",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-network-rg/providers/microsoft.keyvault/vaults/kv-exec-pro-026",
+          "ResourceName": "kv-exec-pro-026",
+          "ResourceType": "microsoft.keyvault/vaults"
+        },
+        "metadata": {
+          "severity": "Low",
+          "categories": [
+            "IdentityAndAccess"
+          ],
+          "userImpact": "Low",
+          "implementationEffort": "High",
+          "threats": [
+            "MissingCoverage"
+          ],
+          "description": "Assessment of diagnostic logs in key vault should be enabled",
+          "remediationDescription": "Take action to remediate: Diagnostic logs in Key Vault should be enabled"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/providers/Microsoft.Security/assessments/595675808653",
+      "name": "0061c0c31729-0008",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "MFA should be enabled on accounts with owner permissions on your subscription",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+          "ResourceName": "subscription",
+          "ResourceType": "Microsoft.Resources/subscriptions"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "IdentityAndAccess"
+          ],
+          "userImpact": "Low",
+          "implementationEffort": "Low",
+          "threats": [
+            "AccountBreach",
+            "ElevationOfPrivilege"
+          ],
+          "description": "Assessment of mfa should be enabled on accounts with owner permissions on your subscription",
+          "remediationDescription": "Take action to remediate: MFA should be enabled on accounts with owner permissions on your subscription"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.web/sites/app-engineering-pro-036/providers/Microsoft.Security/assessments/601908189135",
+      "name": "00e08c30c213-0028",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Function apps should only be accessible over HTTPS",
+        "status": {
+          "code": "Unhealthy",
+          "cause": "HttpsOnlyDisabled",
+          "description": "Recommendation flagged unhealthy"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.web/sites/app-engineering-pro-036",
+          "ResourceName": "app-engineering-pro-036",
+          "ResourceType": "microsoft.web/sites"
+        },
+        "metadata": {
+          "severity": "Medium",
+          "categories": [
+            "Networking"
+          ],
+          "userImpact": "High",
+          "implementationEffort": "High",
+          "threats": [
+            "DataExfiltration"
+          ],
+          "description": "Assessment of function apps should only be accessible over https",
+          "remediationDescription": "Take action to remediate: Function apps should only be accessible over HTTPS"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/shared-services-rg/providers/microsoft.storage/storageaccounts/stor-data-tes-025/providers/Microsoft.Security/assessments/697493414595",
+      "name": "00296ce080e8-0026",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Secure transfer to storage accounts should be enabled",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/shared-services-rg/providers/microsoft.storage/storageaccounts/stor-data-tes-025",
+          "ResourceName": "stor-data-tes-025",
+          "ResourceType": "microsoft.storage/storageaccounts"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "Low",
+          "implementationEffort": "Low",
+          "threats": [
+            "DataExfiltration"
+          ],
+          "description": "Assessment of secure transfer to storage accounts should be enabled",
+          "remediationDescription": "Take action to remediate: Secure transfer to storage accounts should be enabled"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-prod-rg/providers/microsoft.network/networksecuritygroups/nsg-legal-dev-076/providers/Microsoft.Security/assessments/235030135894",
+      "name": "00ca964fd385-0029",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Web ports should be limited on virtual machines",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-prod-rg/providers/microsoft.network/networksecuritygroups/nsg-legal-dev-076",
+          "ResourceName": "nsg-legal-dev-076",
+          "ResourceType": "microsoft.network/networksecuritygroups"
+        },
+        "metadata": {
+          "severity": "Medium",
+          "categories": [
+            "Networking"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "Moderate",
+          "threats": [
+            "DataExfiltration",
+            "AccountBreach"
+          ],
+          "description": "Assessment of web ports should be limited on virtual machines",
+          "remediationDescription": "Take action to remediate: Web ports should be limited on virtual machines"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/hr-rg/providers/microsoft.containerregistry/registries/acr-security-tes-063/providers/Microsoft.Security/assessments/757475491416",
+      "name": "00d3b710563e-0014",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Diagnostic logs in App Services should be enabled",
+        "status": {
+          "code": "Unhealthy",
+          "cause": "DiagnosticLogsDisabled",
+          "description": "Recommendation flagged unhealthy"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/hr-rg/providers/microsoft.containerregistry/registries/acr-security-tes-063",
+          "ResourceName": "acr-security-tes-063",
+          "ResourceType": "microsoft.containerregistry/registries"
+        },
+        "metadata": {
+          "severity": "Low",
+          "categories": [
+            "Networking"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "High",
+          "threats": [
+            "MissingCoverage"
+          ],
+          "description": "Assessment of diagnostic logs in app services should be enabled",
+          "remediationDescription": "Take action to remediate: Diagnostic logs in App Services should be enabled"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.storage/storageaccounts/stor-data-tes-011/providers/Microsoft.Security/assessments/842865751617",
+      "name": "00addbb727ad-0019",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Advanced threat protection should be enabled on Storage accounts",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.storage/storageaccounts/stor-data-tes-011",
+          "ResourceName": "stor-data-tes-011",
+          "ResourceType": "microsoft.storage/storageaccounts"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "Low",
+          "implementationEffort": "High",
+          "threats": [
+            "DataExfiltration"
+          ],
+          "description": "Assessment of advanced threat protection should be enabled on storage accounts",
+          "remediationDescription": "Take action to remediate: Advanced threat protection should be enabled on Storage accounts"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-data-rg/providers/microsoft.storage/storageaccounts/stor-exec-pro-073/providers/Microsoft.Security/assessments/932206216332",
+      "name": "00bdcd51b86a-0001",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Storage account public access should be disallowed",
+        "status": {
+          "code": "Unhealthy",
+          "cause": "PublicAccessEnabled",
+          "description": "Recommendation flagged unhealthy"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-data-rg/providers/microsoft.storage/storageaccounts/stor-exec-pro-073",
+          "ResourceName": "stor-exec-pro-073",
+          "ResourceType": "microsoft.storage/storageaccounts"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "Moderate",
+          "threats": [
+            "DataExfiltration",
+            "DataSpillage"
+          ],
+          "description": "Assessment of storage account public access should be disallowed",
+          "remediationDescription": "Take action to remediate: Storage account public access should be disallowed"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/ml-rg/providers/microsoft.network/publicipaddresses/pip-hr-sta-074/providers/Microsoft.Security/assessments/996079577156",
+      "name": "008f5fd2918d-0013",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Container images should be deployed from trusted registries only",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/ml-rg/providers/microsoft.network/publicipaddresses/pip-hr-sta-074",
+          "ResourceName": "pip-hr-sta-074",
+          "ResourceType": "microsoft.network/publicipaddresses"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Compute"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "Moderate",
+          "threats": [
+            "MaliciousInsider"
+          ],
+          "description": "Assessment of container images should be deployed from trusted registries only",
+          "remediationDescription": "Take action to remediate: Container images should be deployed from trusted registries only"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/staging-rg/providers/microsoft.web/sites/app-finance-pro-013/providers/Microsoft.Security/assessments/552388062042",
+      "name": "00c0923f8c3f-0004",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Web Application should only be accessible over HTTPS",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/staging-rg/providers/microsoft.web/sites/app-finance-pro-013",
+          "ResourceName": "app-finance-pro-013",
+          "ResourceType": "microsoft.web/sites"
+        },
+        "metadata": {
+          "severity": "Medium",
+          "categories": [
+            "Networking"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "High",
+          "threats": [
+            "DataExfiltration",
+            "MissingCoverage"
+          ],
+          "description": "Assessment of web application should only be accessible over https",
+          "remediationDescription": "Take action to remediate: Web Application should only be accessible over HTTPS"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/providers/Microsoft.Security/assessments/376228747842",
+      "name": "00dd40d4eea1-0008",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "MFA should be enabled on accounts with owner permissions on your subscription",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+          "ResourceName": "subscription",
+          "ResourceType": "Microsoft.Resources/subscriptions"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "IdentityAndAccess"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "High",
+          "threats": [
+            "AccountBreach",
+            "ElevationOfPrivilege"
+          ],
+          "description": "Assessment of mfa should be enabled on accounts with owner permissions on your subscription",
+          "remediationDescription": "Take action to remediate: MFA should be enabled on accounts with owner permissions on your subscription"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/finance-rg/providers/microsoft.network/publicipaddresses/pip-sales-pro-000/providers/Microsoft.Security/assessments/696439391755",
+      "name": "0047565739a6-0021",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Endpoint protection solution should be installed on virtual machine scale sets",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/finance-rg/providers/microsoft.network/publicipaddresses/pip-sales-pro-000",
+          "ResourceName": "pip-sales-pro-000",
+          "ResourceType": "microsoft.network/publicipaddresses"
+        },
+        "metadata": {
+          "severity": "Medium",
+          "categories": [
+            "Compute"
+          ],
+          "userImpact": "High",
+          "implementationEffort": "Moderate",
+          "threats": [
+            "MaliciousInsider"
+          ],
+          "description": "Assessment of endpoint protection solution should be installed on virtual machine scale sets",
+          "remediationDescription": "Take action to remediate: Endpoint protection solution should be installed on virtual machine scale sets"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/hr-rg/providers/microsoft.containerregistry/registries/acr-security-tes-063/providers/Microsoft.Security/assessments/935122206857",
+      "name": "00a38cd4b438-0020",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "System updates should be installed on your machines",
+        "status": {
+          "code": "Unhealthy",
+          "cause": "MissingUpdates",
+          "description": "Recommendation flagged unhealthy"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/hr-rg/providers/microsoft.containerregistry/registries/acr-security-tes-063",
+          "ResourceName": "acr-security-tes-063",
+          "ResourceType": "microsoft.containerregistry/registries"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Compute"
+          ],
+          "userImpact": "Low",
+          "implementationEffort": "Moderate",
+          "threats": [
+            "MaliciousInsider",
+            "AccountBreach"
+          ],
+          "description": "Assessment of system updates should be installed on your machines",
+          "remediationDescription": "Take action to remediate: System updates should be installed on your machines"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/iot-rg/providers/microsoft.recoveryservices/vaults/rsv-legal-tes-062/providers/Microsoft.Security/assessments/768425855938",
+      "name": "003ffe2b3bca-0003",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Transparent Data Encryption on SQL databases should be enabled",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/iot-rg/providers/microsoft.recoveryservices/vaults/rsv-legal-tes-062",
+          "ResourceName": "rsv-legal-tes-062",
+          "ResourceType": "microsoft.recoveryservices/vaults"
+        },
+        "metadata": {
+          "severity": "Medium",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "High",
+          "threats": [
+            "DataExfiltration"
+          ],
+          "description": "Assessment of transparent data encryption on sql databases should be enabled",
+          "remediationDescription": "Take action to remediate: Transparent Data Encryption on SQL databases should be enabled"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/providers/Microsoft.Security/assessments/345213466367",
+      "name": "0035322cadcf-0024",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Service principals should be used to protect your subscriptions instead of management certificates",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+          "ResourceName": "subscription",
+          "ResourceType": "Microsoft.Resources/subscriptions"
+        },
+        "metadata": {
+          "severity": "Medium",
+          "categories": [
+            "IdentityAndAccess"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "Low",
+          "threats": [
+            "AccountBreach"
+          ],
+          "description": "Assessment of service principals should be used to protect your subscriptions instead of management certificates",
+          "remediationDescription": "Take action to remediate: Service principals should be used to protect your subscriptions instead of management certificates"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-identity-rg/providers/microsoft.storage/storageaccounts/stor-legal-sta-019/providers/Microsoft.Security/assessments/889984729564",
+      "name": "005cfd0cc34e-0026",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Secure transfer to storage accounts should be enabled",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-identity-rg/providers/microsoft.storage/storageaccounts/stor-legal-sta-019",
+          "ResourceName": "stor-legal-sta-019",
+          "ResourceType": "microsoft.storage/storageaccounts"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "Moderate",
+          "threats": [
+            "DataExfiltration"
+          ],
+          "description": "Assessment of secure transfer to storage accounts should be enabled",
+          "remediationDescription": "Take action to remediate: Secure transfer to storage accounts should be enabled"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-data-rg/providers/microsoft.storage/storageaccounts/stor-marketing-dev-031/providers/Microsoft.Security/assessments/261281455424",
+      "name": "00b134767515-0026",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Secure transfer to storage accounts should be enabled",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-data-rg/providers/microsoft.storage/storageaccounts/stor-marketing-dev-031",
+          "ResourceName": "stor-marketing-dev-031",
+          "ResourceType": "microsoft.storage/storageaccounts"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "High",
+          "implementationEffort": "High",
+          "threats": [
+            "DataExfiltration"
+          ],
+          "description": "Assessment of secure transfer to storage accounts should be enabled",
+          "remediationDescription": "Take action to remediate: Secure transfer to storage accounts should be enabled"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-identity-rg/providers/microsoft.storage/storageaccounts/stor-exec-dev-008/providers/Microsoft.Security/assessments/970902008220",
+      "name": "0099121ec11f-0025",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Storage accounts should restrict network access",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-identity-rg/providers/microsoft.storage/storageaccounts/stor-exec-dev-008",
+          "ResourceName": "stor-exec-dev-008",
+          "ResourceType": "microsoft.storage/storageaccounts"
+        },
+        "metadata": {
+          "severity": "Medium",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "Low",
+          "threats": [
+            "DataExfiltration"
+          ],
+          "description": "Assessment of storage accounts should restrict network access",
+          "remediationDescription": "Take action to remediate: Storage accounts should restrict network access"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/iot-rg/providers/microsoft.web/sites/app-legal-dev-038/providers/Microsoft.Security/assessments/639705335953",
+      "name": "00a0bac7d618-0028",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Function apps should only be accessible over HTTPS",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/iot-rg/providers/microsoft.web/sites/app-legal-dev-038",
+          "ResourceName": "app-legal-dev-038",
+          "ResourceType": "microsoft.web/sites"
+        },
+        "metadata": {
+          "severity": "Medium",
+          "categories": [
+            "Networking"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "Moderate",
+          "threats": [
+            "DataExfiltration"
+          ],
+          "description": "Assessment of function apps should only be accessible over https",
+          "remediationDescription": "Take action to remediate: Function apps should only be accessible over HTTPS"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.keyvault/vaults/kv-hr-tes-069/providers/Microsoft.Security/assessments/364988738014",
+      "name": "00810f00fd2f-0006",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Key Vaults should have purge protection enabled",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.keyvault/vaults/kv-hr-tes-069",
+          "ResourceName": "kv-hr-tes-069",
+          "ResourceType": "microsoft.keyvault/vaults"
+        },
+        "metadata": {
+          "severity": "Medium",
+          "categories": [
+            "IdentityAndAccess"
+          ],
+          "userImpact": "Low",
+          "implementationEffort": "Moderate",
+          "threats": [
+            "DataSpillage"
+          ],
+          "description": "Assessment of key vaults should have purge protection enabled",
+          "remediationDescription": "Take action to remediate: Key Vaults should have purge protection enabled"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/marketing-rg/providers/microsoft.storage/storageaccounts/stor-data-sta-048/providers/Microsoft.Security/assessments/830094678828",
+      "name": "00956f6747cf-0026",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Secure transfer to storage accounts should be enabled",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/marketing-rg/providers/microsoft.storage/storageaccounts/stor-data-sta-048",
+          "ResourceName": "stor-data-sta-048",
+          "ResourceType": "microsoft.storage/storageaccounts"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "Low",
+          "implementationEffort": "Low",
+          "threats": [
+            "DataExfiltration"
+          ],
+          "description": "Assessment of secure transfer to storage accounts should be enabled",
+          "remediationDescription": "Take action to remediate: Secure transfer to storage accounts should be enabled"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-network-rg/providers/microsoft.network/virtualnetworks/vnet-hr-dev-075/providers/Microsoft.Security/assessments/211109516823",
+      "name": "0030b92ed068-0010",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "MFA should be enabled on accounts with read permissions on your subscription",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-network-rg/providers/microsoft.network/virtualnetworks/vnet-hr-dev-075",
+          "ResourceName": "vnet-hr-dev-075",
+          "ResourceType": "microsoft.network/virtualnetworks"
+        },
+        "metadata": {
+          "severity": "Low",
+          "categories": [
+            "IdentityAndAccess"
+          ],
+          "userImpact": "High",
+          "implementationEffort": "Moderate",
+          "threats": [
+            "AccountBreach"
+          ],
+          "description": "Assessment of mfa should be enabled on accounts with read permissions on your subscription",
+          "remediationDescription": "Take action to remediate: MFA should be enabled on accounts with read permissions on your subscription"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/providers/Microsoft.Security/assessments/182267355023",
+      "name": "005b4094a2a1-0009",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "MFA should be enabled on accounts with write permissions on your subscription",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+          "ResourceName": "subscription",
+          "ResourceType": "Microsoft.Resources/subscriptions"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "IdentityAndAccess"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "High",
+          "threats": [
+            "AccountBreach"
+          ],
+          "description": "Assessment of mfa should be enabled on accounts with write permissions on your subscription",
+          "remediationDescription": "Take action to remediate: MFA should be enabled on accounts with write permissions on your subscription"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-prod-rg/providers/microsoft.storage/storageaccounts/stor-platform-pro-010/providers/Microsoft.Security/assessments/842395153057",
+      "name": "00b799879c92-0025",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Storage accounts should restrict network access",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-prod-rg/providers/microsoft.storage/storageaccounts/stor-platform-pro-010",
+          "ResourceName": "stor-platform-pro-010",
+          "ResourceType": "microsoft.storage/storageaccounts"
+        },
+        "metadata": {
+          "severity": "Medium",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "High",
+          "implementationEffort": "Moderate",
+          "threats": [
+            "DataExfiltration"
+          ],
+          "description": "Assessment of storage accounts should restrict network access",
+          "remediationDescription": "Take action to remediate: Storage accounts should restrict network access"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/hr-rg/providers/microsoft.keyvault/vaults/kv-platform-dev-004/providers/Microsoft.Security/assessments/357991902637",
+      "name": "00613438ea6f-0015",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Diagnostic logs in Key Vault should be enabled",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/hr-rg/providers/microsoft.keyvault/vaults/kv-platform-dev-004",
+          "ResourceName": "kv-platform-dev-004",
+          "ResourceType": "microsoft.keyvault/vaults"
+        },
+        "metadata": {
+          "severity": "Low",
+          "categories": [
+            "IdentityAndAccess"
+          ],
+          "userImpact": "Low",
+          "implementationEffort": "High",
+          "threats": [
+            "MissingCoverage"
+          ],
+          "description": "Assessment of diagnostic logs in key vault should be enabled",
+          "remediationDescription": "Take action to remediate: Diagnostic logs in Key Vault should be enabled"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-prod-rg/providers/microsoft.sql/servers/sql-legal-tes-012/providers/Microsoft.Security/assessments/585762979758",
+      "name": "00224fdffe5f-0018",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Advanced data security should be enabled on your SQL servers",
+        "status": {
+          "code": "Unhealthy",
+          "cause": "AtpDisabled",
+          "description": "Recommendation flagged unhealthy"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-prod-rg/providers/microsoft.sql/servers/sql-legal-tes-012",
+          "ResourceName": "sql-legal-tes-012",
+          "ResourceType": "microsoft.sql/servers"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "Low",
+          "threats": [
+            "DataExfiltration",
+            "MaliciousInsider"
+          ],
+          "description": "Assessment of advanced data security should be enabled on your sql servers",
+          "remediationDescription": "Take action to remediate: Advanced data security should be enabled on your SQL servers"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/shared-services-rg/providers/microsoft.insights/components/ai-marketing-tes-047/providers/Microsoft.Security/assessments/366913189856",
+      "name": "00c5d957915b-0013",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Container images should be deployed from trusted registries only",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/shared-services-rg/providers/microsoft.insights/components/ai-marketing-tes-047",
+          "ResourceName": "ai-marketing-tes-047",
+          "ResourceType": "microsoft.insights/components"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Compute"
+          ],
+          "userImpact": "Low",
+          "implementationEffort": "Low",
+          "threats": [
+            "MaliciousInsider"
+          ],
+          "description": "Assessment of container images should be deployed from trusted registries only",
+          "remediationDescription": "Take action to remediate: Container images should be deployed from trusted registries only"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/iot-rg/providers/microsoft.network/networksecuritygroups/nsg-finance-dev-078/providers/Microsoft.Security/assessments/849985945258",
+      "name": "00ad3226119d-0029",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Web ports should be limited on virtual machines",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/iot-rg/providers/microsoft.network/networksecuritygroups/nsg-finance-dev-078",
+          "ResourceName": "nsg-finance-dev-078",
+          "ResourceType": "microsoft.network/networksecuritygroups"
+        },
+        "metadata": {
+          "severity": "Medium",
+          "categories": [
+            "Networking"
+          ],
+          "userImpact": "Low",
+          "implementationEffort": "Low",
+          "threats": [
+            "DataExfiltration",
+            "AccountBreach"
+          ],
+          "description": "Assessment of web ports should be limited on virtual machines",
+          "remediationDescription": "Take action to remediate: Web ports should be limited on virtual machines"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/iot-rg/providers/microsoft.compute/virtualmachines/vm-it-tes-032/providers/Microsoft.Security/assessments/831241060170",
+      "name": "008f167356e0-0023",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Adaptive application controls for defining safe applications should be enabled on your machines",
+        "status": {
+          "code": "Unhealthy",
+          "cause": "AacNotEnabled",
+          "description": "Recommendation flagged unhealthy"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/iot-rg/providers/microsoft.compute/virtualmachines/vm-it-tes-032",
+          "ResourceName": "vm-it-tes-032",
+          "ResourceType": "microsoft.compute/virtualmachines"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Compute"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "High",
+          "threats": [
+            "MaliciousInsider"
+          ],
+          "description": "Assessment of adaptive application controls for defining safe applications should be enabled on your machines",
+          "remediationDescription": "Take action to remediate: Adaptive application controls for defining safe applications should be enabled on your machines"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/finance-rg/providers/microsoft.storage/storageaccounts/stor-sales-tes-009/providers/Microsoft.Security/assessments/482016878181",
+      "name": "00ba950c476a-0026",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Secure transfer to storage accounts should be enabled",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/finance-rg/providers/microsoft.storage/storageaccounts/stor-sales-tes-009",
+          "ResourceName": "stor-sales-tes-009",
+          "ResourceType": "microsoft.storage/storageaccounts"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "High",
+          "threats": [
+            "DataExfiltration"
+          ],
+          "description": "Assessment of secure transfer to storage accounts should be enabled",
+          "remediationDescription": "Take action to remediate: Secure transfer to storage accounts should be enabled"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/iot-rg/providers/microsoft.web/sites/app-legal-dev-038/providers/Microsoft.Security/assessments/525199071794",
+      "name": "005363c488fe-0004",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Web Application should only be accessible over HTTPS",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/iot-rg/providers/microsoft.web/sites/app-legal-dev-038",
+          "ResourceName": "app-legal-dev-038",
+          "ResourceType": "microsoft.web/sites"
+        },
+        "metadata": {
+          "severity": "Medium",
+          "categories": [
+            "Networking"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "High",
+          "threats": [
+            "DataExfiltration",
+            "MissingCoverage"
+          ],
+          "description": "Assessment of web application should only be accessible over https",
+          "remediationDescription": "Take action to remediate: Web Application should only be accessible over HTTPS"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/platform-rg/providers/microsoft.network/networksecuritygroups/nsg-hr-dev-037/providers/Microsoft.Security/assessments/825119489915",
+      "name": "00a74a899d54-0029",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Web ports should be limited on virtual machines",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/platform-rg/providers/microsoft.network/networksecuritygroups/nsg-hr-dev-037",
+          "ResourceName": "nsg-hr-dev-037",
+          "ResourceType": "microsoft.network/networksecuritygroups"
+        },
+        "metadata": {
+          "severity": "Medium",
+          "categories": [
+            "Networking"
+          ],
+          "userImpact": "High",
+          "implementationEffort": "High",
+          "threats": [
+            "DataExfiltration",
+            "AccountBreach"
+          ],
+          "description": "Assessment of web ports should be limited on virtual machines",
+          "remediationDescription": "Take action to remediate: Web ports should be limited on virtual machines"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-network-rg/providers/microsoft.compute/virtualmachines/vm-exec-dev-077/providers/Microsoft.Security/assessments/417410688547",
+      "name": "00b2835ff1fe-0023",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Adaptive application controls for defining safe applications should be enabled on your machines",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-network-rg/providers/microsoft.compute/virtualmachines/vm-exec-dev-077",
+          "ResourceName": "vm-exec-dev-077",
+          "ResourceType": "microsoft.compute/virtualmachines"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Compute"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "Low",
+          "threats": [
+            "MaliciousInsider"
+          ],
+          "description": "Assessment of adaptive application controls for defining safe applications should be enabled on your machines",
+          "remediationDescription": "Take action to remediate: Adaptive application controls for defining safe applications should be enabled on your machines"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.compute/virtualmachines/vm-exec-dev-079/providers/Microsoft.Security/assessments/931839664317",
+      "name": "00c5f1370705-0020",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "System updates should be installed on your machines",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.compute/virtualmachines/vm-exec-dev-079",
+          "ResourceName": "vm-exec-dev-079",
+          "ResourceType": "microsoft.compute/virtualmachines"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Compute"
+          ],
+          "userImpact": "Low",
+          "implementationEffort": "High",
+          "threats": [
+            "MaliciousInsider",
+            "AccountBreach"
+          ],
+          "description": "Assessment of system updates should be installed on your machines",
+          "remediationDescription": "Take action to remediate: System updates should be installed on your machines"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/engineering-rg/providers/microsoft.recoveryservices/vaults/rsv-finance-tes-005/providers/Microsoft.Security/assessments/584423393396",
+      "name": "00d2a5de73b1-0009",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "MFA should be enabled on accounts with write permissions on your subscription",
+        "status": {
+          "code": "Unhealthy",
+          "cause": "MfaNotEnabled",
+          "description": "Recommendation flagged unhealthy"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/engineering-rg/providers/microsoft.recoveryservices/vaults/rsv-finance-tes-005",
+          "ResourceName": "rsv-finance-tes-005",
+          "ResourceType": "microsoft.recoveryservices/vaults"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "IdentityAndAccess"
+          ],
+          "userImpact": "Low",
+          "implementationEffort": "Low",
+          "threats": [
+            "AccountBreach"
+          ],
+          "description": "Assessment of mfa should be enabled on accounts with write permissions on your subscription",
+          "remediationDescription": "Take action to remediate: MFA should be enabled on accounts with write permissions on your subscription"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-data-rg/providers/microsoft.compute/virtualmachines/vm-sales-tes-041/providers/Microsoft.Security/assessments/319797700469",
+      "name": "0075412a728b-0022",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Vulnerability assessment solution should be enabled on your virtual machines",
+        "status": {
+          "code": "Unhealthy",
+          "cause": "VaNotEnabled",
+          "description": "Recommendation flagged unhealthy"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-data-rg/providers/microsoft.compute/virtualmachines/vm-sales-tes-041",
+          "ResourceName": "vm-sales-tes-041",
+          "ResourceType": "microsoft.compute/virtualmachines"
+        },
+        "metadata": {
+          "severity": "Medium",
+          "categories": [
+            "Compute"
+          ],
+          "userImpact": "High",
+          "implementationEffort": "High",
+          "threats": [
+            "MaliciousInsider",
+            "AccountBreach"
+          ],
+          "description": "Assessment of vulnerability assessment solution should be enabled on your virtual machines",
+          "remediationDescription": "Take action to remediate: Vulnerability assessment solution should be enabled on your virtual machines"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-prod-rg/providers/microsoft.recoveryservices/vaults/rsv-sales-sta-021/providers/Microsoft.Security/assessments/632336233214",
+      "name": "00d694054bd4-0008",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "MFA should be enabled on accounts with owner permissions on your subscription",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-prod-rg/providers/microsoft.recoveryservices/vaults/rsv-sales-sta-021",
+          "ResourceName": "rsv-sales-sta-021",
+          "ResourceType": "microsoft.recoveryservices/vaults"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "IdentityAndAccess"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "Low",
+          "threats": [
+            "AccountBreach",
+            "ElevationOfPrivilege"
+          ],
+          "description": "Assessment of mfa should be enabled on accounts with owner permissions on your subscription",
+          "remediationDescription": "Take action to remediate: MFA should be enabled on accounts with owner permissions on your subscription"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/finance-rg/providers/microsoft.storage/storageaccounts/stor-sales-tes-009/providers/Microsoft.Security/assessments/897473738038",
+      "name": "00e520f99dc1-0019",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Advanced threat protection should be enabled on Storage accounts",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/finance-rg/providers/microsoft.storage/storageaccounts/stor-sales-tes-009",
+          "ResourceName": "stor-sales-tes-009",
+          "ResourceType": "microsoft.storage/storageaccounts"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "High",
+          "implementationEffort": "Moderate",
+          "threats": [
+            "DataExfiltration"
+          ],
+          "description": "Assessment of advanced threat protection should be enabled on storage accounts",
+          "remediationDescription": "Take action to remediate: Advanced threat protection should be enabled on Storage accounts"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-network-rg/providers/microsoft.network/networksecuritygroups/nsg-engineering-dev-050/providers/Microsoft.Security/assessments/689546360500",
+      "name": "00c3a6d2893d-0007",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "All network ports should be restricted on network security groups associated to your virtual machine",
+        "status": {
+          "code": "Unhealthy",
+          "cause": "OverlyPermissiveNsg",
+          "description": "Recommendation flagged unhealthy"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-network-rg/providers/microsoft.network/networksecuritygroups/nsg-engineering-dev-050",
+          "ResourceName": "nsg-engineering-dev-050",
+          "ResourceType": "microsoft.network/networksecuritygroups"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Networking"
+          ],
+          "userImpact": "High",
+          "implementationEffort": "High",
+          "threats": [
+            "AccountBreach",
+            "DataExfiltration"
+          ],
+          "description": "Assessment of all network ports should be restricted on network security groups associated to your virtual machine",
+          "remediationDescription": "Take action to remediate: All network ports should be restricted on network security groups associated to your virtual machine"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/marketing-rg/providers/microsoft.storage/storageaccounts/stor-data-sta-048/providers/Microsoft.Security/assessments/839199717879",
+      "name": "00b54edeebee-0025",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Storage accounts should restrict network access",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/marketing-rg/providers/microsoft.storage/storageaccounts/stor-data-sta-048",
+          "ResourceName": "stor-data-sta-048",
+          "ResourceType": "microsoft.storage/storageaccounts"
+        },
+        "metadata": {
+          "severity": "Medium",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "High",
+          "implementationEffort": "Moderate",
+          "threats": [
+            "DataExfiltration"
+          ],
+          "description": "Assessment of storage accounts should restrict network access",
+          "remediationDescription": "Take action to remediate: Storage accounts should restrict network access"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-network-rg/providers/microsoft.insights/components/ai-security-pro-028/providers/Microsoft.Security/assessments/796056217061",
+      "name": "00cb314488cc-0020",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "System updates should be installed on your machines",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-network-rg/providers/microsoft.insights/components/ai-security-pro-028",
+          "ResourceName": "ai-security-pro-028",
+          "ResourceType": "microsoft.insights/components"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Compute"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "High",
+          "threats": [
+            "MaliciousInsider",
+            "AccountBreach"
+          ],
+          "description": "Assessment of system updates should be installed on your machines",
+          "remediationDescription": "Take action to remediate: System updates should be installed on your machines"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/platform-rg/providers/microsoft.logic/workflows/logic-hr-sta-017/providers/Microsoft.Security/assessments/142718868029",
+      "name": "0034c6938da1-0001",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Storage account public access should be disallowed",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/platform-rg/providers/microsoft.logic/workflows/logic-hr-sta-017",
+          "ResourceName": "logic-hr-sta-017",
+          "ResourceType": "microsoft.logic/workflows"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "Low",
+          "implementationEffort": "Low",
+          "threats": [
+            "DataExfiltration",
+            "DataSpillage"
+          ],
+          "description": "Assessment of storage account public access should be disallowed",
+          "remediationDescription": "Take action to remediate: Storage account public access should be disallowed"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/platform-rg/providers/microsoft.logic/workflows/logic-hr-sta-017/providers/Microsoft.Security/assessments/505675310918",
+      "name": "00ca06b55657-0012",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Authorized IP ranges should be defined on Kubernetes Services",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/platform-rg/providers/microsoft.logic/workflows/logic-hr-sta-017",
+          "ResourceName": "logic-hr-sta-017",
+          "ResourceType": "microsoft.logic/workflows"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Networking"
+          ],
+          "userImpact": "High",
+          "implementationEffort": "Moderate",
+          "threats": [
+            "AccountBreach"
+          ],
+          "description": "Assessment of authorized ip ranges should be defined on kubernetes services",
+          "remediationDescription": "Take action to remediate: Authorized IP ranges should be defined on Kubernetes Services"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-identity-rg/providers/microsoft.storage/storageaccounts/stor-legal-sta-019/providers/Microsoft.Security/assessments/210187050550",
+      "name": "007fe6124a31-0026",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Secure transfer to storage accounts should be enabled",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-identity-rg/providers/microsoft.storage/storageaccounts/stor-legal-sta-019",
+          "ResourceName": "stor-legal-sta-019",
+          "ResourceType": "microsoft.storage/storageaccounts"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "Low",
+          "threats": [
+            "DataExfiltration"
+          ],
+          "description": "Assessment of secure transfer to storage accounts should be enabled",
+          "remediationDescription": "Take action to remediate: Secure transfer to storage accounts should be enabled"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.storage/storageaccounts/stor-it-sta-027/providers/Microsoft.Security/assessments/208931907098",
+      "name": "00a2a68091ee-0026",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Secure transfer to storage accounts should be enabled",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.storage/storageaccounts/stor-it-sta-027",
+          "ResourceName": "stor-it-sta-027",
+          "ResourceType": "microsoft.storage/storageaccounts"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "High",
+          "implementationEffort": "Moderate",
+          "threats": [
+            "DataExfiltration"
+          ],
+          "description": "Assessment of secure transfer to storage accounts should be enabled",
+          "remediationDescription": "Take action to remediate: Secure transfer to storage accounts should be enabled"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/providers/Microsoft.Security/assessments/200737244056",
+      "name": "00baecbda672-0010",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "MFA should be enabled on accounts with read permissions on your subscription",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+          "ResourceName": "subscription",
+          "ResourceType": "Microsoft.Resources/subscriptions"
+        },
+        "metadata": {
+          "severity": "Low",
+          "categories": [
+            "IdentityAndAccess"
+          ],
+          "userImpact": "High",
+          "implementationEffort": "Low",
+          "threats": [
+            "AccountBreach"
+          ],
+          "description": "Assessment of mfa should be enabled on accounts with read permissions on your subscription",
+          "remediationDescription": "Take action to remediate: MFA should be enabled on accounts with read permissions on your subscription"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/providers/Microsoft.Security/assessments/963829265445",
+      "name": "00a50c584285-0010",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "MFA should be enabled on accounts with read permissions on your subscription",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+          "ResourceName": "subscription",
+          "ResourceType": "Microsoft.Resources/subscriptions"
+        },
+        "metadata": {
+          "severity": "Low",
+          "categories": [
+            "IdentityAndAccess"
+          ],
+          "userImpact": "Low",
+          "implementationEffort": "High",
+          "threats": [
+            "AccountBreach"
+          ],
+          "description": "Assessment of mfa should be enabled on accounts with read permissions on your subscription",
+          "remediationDescription": "Take action to remediate: MFA should be enabled on accounts with read permissions on your subscription"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-staging-rg/providers/microsoft.recoveryservices/vaults/rsv-hr-sta-029/providers/Microsoft.Security/assessments/262239677678",
+      "name": "0017e10928ac-0010",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "MFA should be enabled on accounts with read permissions on your subscription",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-staging-rg/providers/microsoft.recoveryservices/vaults/rsv-hr-sta-029",
+          "ResourceName": "rsv-hr-sta-029",
+          "ResourceType": "microsoft.recoveryservices/vaults"
+        },
+        "metadata": {
+          "severity": "Low",
+          "categories": [
+            "IdentityAndAccess"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "Low",
+          "threats": [
+            "AccountBreach"
+          ],
+          "description": "Assessment of mfa should be enabled on accounts with read permissions on your subscription",
+          "remediationDescription": "Take action to remediate: MFA should be enabled on accounts with read permissions on your subscription"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.keyvault/vaults/kv-hr-tes-069/providers/Microsoft.Security/assessments/292408151781",
+      "name": "001e26466f66-0006",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Key Vaults should have purge protection enabled",
+        "status": {
+          "code": "Unhealthy",
+          "cause": "PurgeProtectionDisabled",
+          "description": "Recommendation flagged unhealthy"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.keyvault/vaults/kv-hr-tes-069",
+          "ResourceName": "kv-hr-tes-069",
+          "ResourceType": "microsoft.keyvault/vaults"
+        },
+        "metadata": {
+          "severity": "Medium",
+          "categories": [
+            "IdentityAndAccess"
+          ],
+          "userImpact": "Low",
+          "implementationEffort": "Low",
+          "threats": [
+            "DataSpillage"
+          ],
+          "description": "Assessment of key vaults should have purge protection enabled",
+          "remediationDescription": "Take action to remediate: Key Vaults should have purge protection enabled"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/hr-rg/providers/microsoft.storage/storageaccounts/stor-data-pro-030/providers/Microsoft.Security/assessments/289046340270",
+      "name": "00d468ea276d-0025",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Storage accounts should restrict network access",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/hr-rg/providers/microsoft.storage/storageaccounts/stor-data-pro-030",
+          "ResourceName": "stor-data-pro-030",
+          "ResourceType": "microsoft.storage/storageaccounts"
+        },
+        "metadata": {
+          "severity": "Medium",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "High",
+          "threats": [
+            "DataExfiltration"
+          ],
+          "description": "Assessment of storage accounts should restrict network access",
+          "remediationDescription": "Take action to remediate: Storage accounts should restrict network access"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-identity-rg/providers/microsoft.storage/storageaccounts/stor-exec-dev-008/providers/Microsoft.Security/assessments/956623819286",
+      "name": "0032e0716704-0026",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Secure transfer to storage accounts should be enabled",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-identity-rg/providers/microsoft.storage/storageaccounts/stor-exec-dev-008",
+          "ResourceName": "stor-exec-dev-008",
+          "ResourceType": "microsoft.storage/storageaccounts"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "High",
+          "threats": [
+            "DataExfiltration"
+          ],
+          "description": "Assessment of secure transfer to storage accounts should be enabled",
+          "remediationDescription": "Take action to remediate: Secure transfer to storage accounts should be enabled"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/iot-rg/providers/microsoft.network/networksecuritygroups/nsg-finance-dev-078/providers/Microsoft.Security/assessments/962116944078",
+      "name": "009cf124c736-0007",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "All network ports should be restricted on network security groups associated to your virtual machine",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/iot-rg/providers/microsoft.network/networksecuritygroups/nsg-finance-dev-078",
+          "ResourceName": "nsg-finance-dev-078",
+          "ResourceType": "microsoft.network/networksecuritygroups"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Networking"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "Moderate",
+          "threats": [
+            "AccountBreach",
+            "DataExfiltration"
+          ],
+          "description": "Assessment of all network ports should be restricted on network security groups associated to your virtual machine",
+          "remediationDescription": "Take action to remediate: All network ports should be restricted on network security groups associated to your virtual machine"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/staging-rg/providers/microsoft.network/virtualnetworks/vnet-sales-dev-003/providers/Microsoft.Security/assessments/628274907582",
+      "name": "00c6b5972c96-0001",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Storage account public access should be disallowed",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/staging-rg/providers/microsoft.network/virtualnetworks/vnet-sales-dev-003",
+          "ResourceName": "vnet-sales-dev-003",
+          "ResourceType": "microsoft.network/virtualnetworks"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "Low",
+          "implementationEffort": "Moderate",
+          "threats": [
+            "DataExfiltration",
+            "DataSpillage"
+          ],
+          "description": "Assessment of storage account public access should be disallowed",
+          "remediationDescription": "Take action to remediate: Storage account public access should be disallowed"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/shared-services-rg/providers/microsoft.web/sites/app-exec-tes-056/providers/Microsoft.Security/assessments/189761667273",
+      "name": "00276e701cbf-0004",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Web Application should only be accessible over HTTPS",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/shared-services-rg/providers/microsoft.web/sites/app-exec-tes-056",
+          "ResourceName": "app-exec-tes-056",
+          "ResourceType": "microsoft.web/sites"
+        },
+        "metadata": {
+          "severity": "Medium",
+          "categories": [
+            "Networking"
+          ],
+          "userImpact": "Low",
+          "implementationEffort": "Moderate",
+          "threats": [
+            "DataExfiltration",
+            "MissingCoverage"
+          ],
+          "description": "Assessment of web application should only be accessible over https",
+          "remediationDescription": "Take action to remediate: Web Application should only be accessible over HTTPS"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/ml-rg/providers/microsoft.network/publicipaddresses/pip-hr-sta-074/providers/Microsoft.Security/assessments/459540958538",
+      "name": "009ee165942b-0017",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Auditing on SQL server should be enabled",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/ml-rg/providers/microsoft.network/publicipaddresses/pip-hr-sta-074",
+          "ResourceName": "pip-hr-sta-074",
+          "ResourceType": "microsoft.network/publicipaddresses"
+        },
+        "metadata": {
+          "severity": "Low",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "Moderate",
+          "threats": [
+            "MissingCoverage"
+          ],
+          "description": "Assessment of auditing on sql server should be enabled",
+          "remediationDescription": "Take action to remediate: Auditing on SQL server should be enabled"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/engineering-rg/providers/microsoft.keyvault/vaults/kv-sales-pro-055/providers/Microsoft.Security/assessments/872205467773",
+      "name": "00bdf0122cb6-0005",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Key Vaults should have soft delete enabled",
+        "status": {
+          "code": "Unhealthy",
+          "cause": "SoftDeleteDisabled",
+          "description": "Recommendation flagged unhealthy"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/engineering-rg/providers/microsoft.keyvault/vaults/kv-sales-pro-055",
+          "ResourceName": "kv-sales-pro-055",
+          "ResourceType": "microsoft.keyvault/vaults"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "IdentityAndAccess"
+          ],
+          "userImpact": "High",
+          "implementationEffort": "High",
+          "threats": [
+            "DataSpillage"
+          ],
+          "description": "Assessment of key vaults should have soft delete enabled",
+          "remediationDescription": "Take action to remediate: Key Vaults should have soft delete enabled"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/engineering-rg/providers/microsoft.keyvault/vaults/kv-sales-pro-055/providers/Microsoft.Security/assessments/352922425057",
+      "name": "008c1c48a70f-0006",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Key Vaults should have purge protection enabled",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/engineering-rg/providers/microsoft.keyvault/vaults/kv-sales-pro-055",
+          "ResourceName": "kv-sales-pro-055",
+          "ResourceType": "microsoft.keyvault/vaults"
+        },
+        "metadata": {
+          "severity": "Medium",
+          "categories": [
+            "IdentityAndAccess"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "Moderate",
+          "threats": [
+            "DataSpillage"
+          ],
+          "description": "Assessment of key vaults should have purge protection enabled",
+          "remediationDescription": "Take action to remediate: Key Vaults should have purge protection enabled"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/hr-rg/providers/microsoft.network/publicipaddresses/pip-marketing-dev-040/providers/Microsoft.Security/assessments/831486718843",
+      "name": "003f3c958bac-0013",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Container images should be deployed from trusted registries only",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/hr-rg/providers/microsoft.network/publicipaddresses/pip-marketing-dev-040",
+          "ResourceName": "pip-marketing-dev-040",
+          "ResourceType": "microsoft.network/publicipaddresses"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Compute"
+          ],
+          "userImpact": "High",
+          "implementationEffort": "Moderate",
+          "threats": [
+            "MaliciousInsider"
+          ],
+          "description": "Assessment of container images should be deployed from trusted registries only",
+          "remediationDescription": "Take action to remediate: Container images should be deployed from trusted registries only"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/providers/Microsoft.Security/assessments/572846822785",
+      "name": "00770598a411-0008",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "MFA should be enabled on accounts with owner permissions on your subscription",
+        "status": {
+          "code": "Unhealthy",
+          "cause": "MfaNotEnabled",
+          "description": "Recommendation flagged unhealthy"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+          "ResourceName": "subscription",
+          "ResourceType": "Microsoft.Resources/subscriptions"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "IdentityAndAccess"
+          ],
+          "userImpact": "Low",
+          "implementationEffort": "High",
+          "threats": [
+            "AccountBreach",
+            "ElevationOfPrivilege"
+          ],
+          "description": "Assessment of mfa should be enabled on accounts with owner permissions on your subscription",
+          "remediationDescription": "Take action to remediate: MFA should be enabled on accounts with owner permissions on your subscription"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/providers/Microsoft.Security/assessments/236021671257",
+      "name": "00c2281ba39f-0010",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "MFA should be enabled on accounts with read permissions on your subscription",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+          "ResourceName": "subscription",
+          "ResourceType": "Microsoft.Resources/subscriptions"
+        },
+        "metadata": {
+          "severity": "Low",
+          "categories": [
+            "IdentityAndAccess"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "High",
+          "threats": [
+            "AccountBreach"
+          ],
+          "description": "Assessment of mfa should be enabled on accounts with read permissions on your subscription",
+          "remediationDescription": "Take action to remediate: MFA should be enabled on accounts with read permissions on your subscription"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/providers/Microsoft.Security/assessments/441881158100",
+      "name": "0098dc695fcc-0010",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "MFA should be enabled on accounts with read permissions on your subscription",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+          "ResourceName": "subscription",
+          "ResourceType": "Microsoft.Resources/subscriptions"
+        },
+        "metadata": {
+          "severity": "Low",
+          "categories": [
+            "IdentityAndAccess"
+          ],
+          "userImpact": "Low",
+          "implementationEffort": "Low",
+          "threats": [
+            "AccountBreach"
+          ],
+          "description": "Assessment of mfa should be enabled on accounts with read permissions on your subscription",
+          "remediationDescription": "Take action to remediate: MFA should be enabled on accounts with read permissions on your subscription"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-network-rg/providers/microsoft.insights/components/ai-security-pro-028/providers/Microsoft.Security/assessments/482716883762",
+      "name": "0034a68f6324-0027",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Cosmos DB accounts should have firewall rules",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-network-rg/providers/microsoft.insights/components/ai-security-pro-028",
+          "ResourceName": "ai-security-pro-028",
+          "ResourceType": "microsoft.insights/components"
+        },
+        "metadata": {
+          "severity": "Medium",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "High",
+          "threats": [
+            "DataExfiltration"
+          ],
+          "description": "Assessment of cosmos db accounts should have firewall rules",
+          "remediationDescription": "Take action to remediate: Cosmos DB accounts should have firewall rules"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-prod-rg/providers/microsoft.network/networksecuritygroups/nsg-data-sta-054/providers/Microsoft.Security/assessments/395036212198",
+      "name": "00ca8e6bf452-0007",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "All network ports should be restricted on network security groups associated to your virtual machine",
+        "status": {
+          "code": "Unhealthy",
+          "cause": "OverlyPermissiveNsg",
+          "description": "Recommendation flagged unhealthy"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-prod-rg/providers/microsoft.network/networksecuritygroups/nsg-data-sta-054",
+          "ResourceName": "nsg-data-sta-054",
+          "ResourceType": "microsoft.network/networksecuritygroups"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Networking"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "Moderate",
+          "threats": [
+            "AccountBreach",
+            "DataExfiltration"
+          ],
+          "description": "Assessment of all network ports should be restricted on network security groups associated to your virtual machine",
+          "remediationDescription": "Take action to remediate: All network ports should be restricted on network security groups associated to your virtual machine"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-identity-rg/providers/microsoft.compute/virtualmachines/vm-marketing-pro-023/providers/Microsoft.Security/assessments/823986836311",
+      "name": "00d46cc8cda4-0007",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "All network ports should be restricted on network security groups associated to your virtual machine",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-identity-rg/providers/microsoft.compute/virtualmachines/vm-marketing-pro-023",
+          "ResourceName": "vm-marketing-pro-023",
+          "ResourceType": "microsoft.compute/virtualmachines"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Networking"
+          ],
+          "userImpact": "High",
+          "implementationEffort": "Low",
+          "threats": [
+            "AccountBreach",
+            "DataExfiltration"
+          ],
+          "description": "Assessment of all network ports should be restricted on network security groups associated to your virtual machine",
+          "remediationDescription": "Take action to remediate: All network ports should be restricted on network security groups associated to your virtual machine"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-prod-rg/providers/microsoft.insights/components/ai-legal-pro-067/providers/Microsoft.Security/assessments/561177243339",
+      "name": "007570c2e162-0006",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Key Vaults should have purge protection enabled",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-prod-rg/providers/microsoft.insights/components/ai-legal-pro-067",
+          "ResourceName": "ai-legal-pro-067",
+          "ResourceType": "microsoft.insights/components"
+        },
+        "metadata": {
+          "severity": "Medium",
+          "categories": [
+            "IdentityAndAccess"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "High",
+          "threats": [
+            "DataSpillage"
+          ],
+          "description": "Assessment of key vaults should have purge protection enabled",
+          "remediationDescription": "Take action to remediate: Key Vaults should have purge protection enabled"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-web-rg/providers/microsoft.storage/storageaccounts/stor-security-pro-072/providers/Microsoft.Security/assessments/159628500646",
+      "name": "00b609999db3-0001",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Storage account public access should be disallowed",
+        "status": {
+          "code": "Unhealthy",
+          "cause": "PublicAccessEnabled",
+          "description": "Recommendation flagged unhealthy"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-web-rg/providers/microsoft.storage/storageaccounts/stor-security-pro-072",
+          "ResourceName": "stor-security-pro-072",
+          "ResourceType": "microsoft.storage/storageaccounts"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "Low",
+          "implementationEffort": "High",
+          "threats": [
+            "DataExfiltration",
+            "DataSpillage"
+          ],
+          "description": "Assessment of storage account public access should be disallowed",
+          "remediationDescription": "Take action to remediate: Storage account public access should be disallowed"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/shared-services-rg/providers/microsoft.web/sites/app-exec-tes-056/providers/Microsoft.Security/assessments/634397074282",
+      "name": "005cb27eda13-0028",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Function apps should only be accessible over HTTPS",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/shared-services-rg/providers/microsoft.web/sites/app-exec-tes-056",
+          "ResourceName": "app-exec-tes-056",
+          "ResourceType": "microsoft.web/sites"
+        },
+        "metadata": {
+          "severity": "Medium",
+          "categories": [
+            "Networking"
+          ],
+          "userImpact": "Low",
+          "implementationEffort": "High",
+          "threats": [
+            "DataExfiltration"
+          ],
+          "description": "Assessment of function apps should only be accessible over https",
+          "remediationDescription": "Take action to remediate: Function apps should only be accessible over HTTPS"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/engineering-rg/providers/microsoft.keyvault/vaults/kv-sales-pro-055/providers/Microsoft.Security/assessments/844245876540",
+      "name": "009dc50adecc-0005",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Key Vaults should have soft delete enabled",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/engineering-rg/providers/microsoft.keyvault/vaults/kv-sales-pro-055",
+          "ResourceName": "kv-sales-pro-055",
+          "ResourceType": "microsoft.keyvault/vaults"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "IdentityAndAccess"
+          ],
+          "userImpact": "High",
+          "implementationEffort": "Moderate",
+          "threats": [
+            "DataSpillage"
+          ],
+          "description": "Assessment of key vaults should have soft delete enabled",
+          "remediationDescription": "Take action to remediate: Key Vaults should have soft delete enabled"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/providers/Microsoft.Security/assessments/761358158184",
+      "name": "00647ccbfaf7-0024",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Service principals should be used to protect your subscriptions instead of management certificates",
+        "status": {
+          "code": "Unhealthy",
+          "cause": "MgmtCertsUsed",
+          "description": "Recommendation flagged unhealthy"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+          "ResourceName": "subscription",
+          "ResourceType": "Microsoft.Resources/subscriptions"
+        },
+        "metadata": {
+          "severity": "Medium",
+          "categories": [
+            "IdentityAndAccess"
+          ],
+          "userImpact": "Low",
+          "implementationEffort": "Low",
+          "threats": [
+            "AccountBreach"
+          ],
+          "description": "Assessment of service principals should be used to protect your subscriptions instead of management certificates",
+          "remediationDescription": "Take action to remediate: Service principals should be used to protect your subscriptions instead of management certificates"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/platform-rg/providers/microsoft.network/networksecuritygroups/nsg-hr-dev-037/providers/Microsoft.Security/assessments/104810296150",
+      "name": "0043b6b6503a-0029",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Web ports should be limited on virtual machines",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/platform-rg/providers/microsoft.network/networksecuritygroups/nsg-hr-dev-037",
+          "ResourceName": "nsg-hr-dev-037",
+          "ResourceType": "microsoft.network/networksecuritygroups"
+        },
+        "metadata": {
+          "severity": "Medium",
+          "categories": [
+            "Networking"
+          ],
+          "userImpact": "Low",
+          "implementationEffort": "Moderate",
+          "threats": [
+            "DataExfiltration",
+            "AccountBreach"
+          ],
+          "description": "Assessment of web ports should be limited on virtual machines",
+          "remediationDescription": "Take action to remediate: Web ports should be limited on virtual machines"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-staging-rg/providers/microsoft.recoveryservices/vaults/rsv-hr-sta-029/providers/Microsoft.Security/assessments/987632508031",
+      "name": "0022066d53a5-0016",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Diagnostic logs in Service Bus should be enabled",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-staging-rg/providers/microsoft.recoveryservices/vaults/rsv-hr-sta-029",
+          "ResourceName": "rsv-hr-sta-029",
+          "ResourceType": "microsoft.recoveryservices/vaults"
+        },
+        "metadata": {
+          "severity": "Low",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "Low",
+          "threats": [
+            "MissingCoverage"
+          ],
+          "description": "Assessment of diagnostic logs in service bus should be enabled",
+          "remediationDescription": "Take action to remediate: Diagnostic logs in Service Bus should be enabled"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/finance-rg/providers/microsoft.storage/storageaccounts/stor-sales-tes-009/providers/Microsoft.Security/assessments/570624302032",
+      "name": "00bafe18a149-0025",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Storage accounts should restrict network access",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/finance-rg/providers/microsoft.storage/storageaccounts/stor-sales-tes-009",
+          "ResourceName": "stor-sales-tes-009",
+          "ResourceType": "microsoft.storage/storageaccounts"
+        },
+        "metadata": {
+          "severity": "Medium",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "Moderate",
+          "threats": [
+            "DataExfiltration"
+          ],
+          "description": "Assessment of storage accounts should restrict network access",
+          "remediationDescription": "Take action to remediate: Storage accounts should restrict network access"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.network/networksecuritygroups/nsg-marketing-tes-002/providers/Microsoft.Security/assessments/981206485371",
+      "name": "002da51948c9-0029",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Web ports should be limited on virtual machines",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.network/networksecuritygroups/nsg-marketing-tes-002",
+          "ResourceName": "nsg-marketing-tes-002",
+          "ResourceType": "microsoft.network/networksecuritygroups"
+        },
+        "metadata": {
+          "severity": "Medium",
+          "categories": [
+            "Networking"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "Low",
+          "threats": [
+            "DataExfiltration",
+            "AccountBreach"
+          ],
+          "description": "Assessment of web ports should be limited on virtual machines",
+          "remediationDescription": "Take action to remediate: Web ports should be limited on virtual machines"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-network-rg/providers/microsoft.network/virtualnetworks/vnet-hr-dev-075/providers/Microsoft.Security/assessments/188149747921",
+      "name": "00d597e50f4b-0012",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Authorized IP ranges should be defined on Kubernetes Services",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-network-rg/providers/microsoft.network/virtualnetworks/vnet-hr-dev-075",
+          "ResourceName": "vnet-hr-dev-075",
+          "ResourceType": "microsoft.network/virtualnetworks"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Networking"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "Low",
+          "threats": [
+            "AccountBreach"
+          ],
+          "description": "Assessment of authorized ip ranges should be defined on kubernetes services",
+          "remediationDescription": "Take action to remediate: Authorized IP ranges should be defined on Kubernetes Services"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-prod-rg/providers/microsoft.recoveryservices/vaults/rsv-sales-sta-021/providers/Microsoft.Security/assessments/797977210972",
+      "name": "0048cb031fe7-0002",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Disk encryption should be applied on virtual machines",
+        "status": {
+          "code": "Unhealthy",
+          "cause": "DiskEncryptionDisabled",
+          "description": "Recommendation flagged unhealthy"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-prod-rg/providers/microsoft.recoveryservices/vaults/rsv-sales-sta-021",
+          "ResourceName": "rsv-sales-sta-021",
+          "ResourceType": "microsoft.recoveryservices/vaults"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Compute"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "Moderate",
+          "threats": [
+            "DataExfiltration"
+          ],
+          "description": "Assessment of disk encryption should be applied on virtual machines",
+          "remediationDescription": "Take action to remediate: Disk encryption should be applied on virtual machines"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-web-rg/providers/microsoft.insights/components/ai-security-dev-018/providers/Microsoft.Security/assessments/259355332042",
+      "name": "00b174e1569a-0007",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "All network ports should be restricted on network security groups associated to your virtual machine",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-web-rg/providers/microsoft.insights/components/ai-security-dev-018",
+          "ResourceName": "ai-security-dev-018",
+          "ResourceType": "microsoft.insights/components"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Networking"
+          ],
+          "userImpact": "Low",
+          "implementationEffort": "High",
+          "threats": [
+            "AccountBreach",
+            "DataExfiltration"
+          ],
+          "description": "Assessment of all network ports should be restricted on network security groups associated to your virtual machine",
+          "remediationDescription": "Take action to remediate: All network ports should be restricted on network security groups associated to your virtual machine"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/providers/Microsoft.Security/assessments/930921351388",
+      "name": "0089dcceed4e-0024",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Service principals should be used to protect your subscriptions instead of management certificates",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+          "ResourceName": "subscription",
+          "ResourceType": "Microsoft.Resources/subscriptions"
+        },
+        "metadata": {
+          "severity": "Medium",
+          "categories": [
+            "IdentityAndAccess"
+          ],
+          "userImpact": "High",
+          "implementationEffort": "High",
+          "threats": [
+            "AccountBreach"
+          ],
+          "description": "Assessment of service principals should be used to protect your subscriptions instead of management certificates",
+          "remediationDescription": "Take action to remediate: Service principals should be used to protect your subscriptions instead of management certificates"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.compute/virtualmachines/vm-exec-dev-079/providers/Microsoft.Security/assessments/446291261920",
+      "name": "008f59f21d5b-0021",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Endpoint protection solution should be installed on virtual machine scale sets",
+        "status": {
+          "code": "Unhealthy",
+          "cause": "NoEndpointProtection",
+          "description": "Recommendation flagged unhealthy"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.compute/virtualmachines/vm-exec-dev-079",
+          "ResourceName": "vm-exec-dev-079",
+          "ResourceType": "microsoft.compute/virtualmachines"
+        },
+        "metadata": {
+          "severity": "Medium",
+          "categories": [
+            "Compute"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "High",
+          "threats": [
+            "MaliciousInsider"
+          ],
+          "description": "Assessment of endpoint protection solution should be installed on virtual machine scale sets",
+          "remediationDescription": "Take action to remediate: Endpoint protection solution should be installed on virtual machine scale sets"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/marketing-rg/providers/microsoft.operationalinsights/workspaces/law-exec-sta-035/providers/Microsoft.Security/assessments/486788314061",
+      "name": "008d97edcb88-0018",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Advanced data security should be enabled on your SQL servers",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/marketing-rg/providers/microsoft.operationalinsights/workspaces/law-exec-sta-035",
+          "ResourceName": "law-exec-sta-035",
+          "ResourceType": "microsoft.operationalinsights/workspaces"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "Low",
+          "threats": [
+            "DataExfiltration",
+            "MaliciousInsider"
+          ],
+          "description": "Assessment of advanced data security should be enabled on your sql servers",
+          "remediationDescription": "Take action to remediate: Advanced data security should be enabled on your SQL servers"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/providers/Microsoft.Security/assessments/808999160978",
+      "name": "002f236b69a7-0010",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "MFA should be enabled on accounts with read permissions on your subscription",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+          "ResourceName": "subscription",
+          "ResourceType": "Microsoft.Resources/subscriptions"
+        },
+        "metadata": {
+          "severity": "Low",
+          "categories": [
+            "IdentityAndAccess"
+          ],
+          "userImpact": "High",
+          "implementationEffort": "High",
+          "threats": [
+            "AccountBreach"
+          ],
+          "description": "Assessment of mfa should be enabled on accounts with read permissions on your subscription",
+          "remediationDescription": "Take action to remediate: MFA should be enabled on accounts with read permissions on your subscription"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/ml-rg/providers/microsoft.web/sites/app-data-sta-059/providers/Microsoft.Security/assessments/915149650491",
+      "name": "00aa17c70089-0028",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Function apps should only be accessible over HTTPS",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/ml-rg/providers/microsoft.web/sites/app-data-sta-059",
+          "ResourceName": "app-data-sta-059",
+          "ResourceType": "microsoft.web/sites"
+        },
+        "metadata": {
+          "severity": "Medium",
+          "categories": [
+            "Networking"
+          ],
+          "userImpact": "High",
+          "implementationEffort": "Low",
+          "threats": [
+            "DataExfiltration"
+          ],
+          "description": "Assessment of function apps should only be accessible over https",
+          "remediationDescription": "Take action to remediate: Function apps should only be accessible over HTTPS"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/finance-rg/providers/microsoft.insights/components/ai-data-pro-060/providers/Microsoft.Security/assessments/594186984574",
+      "name": "002cff544a57-0016",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Diagnostic logs in Service Bus should be enabled",
+        "status": {
+          "code": "Unhealthy",
+          "cause": "DiagnosticLogsDisabled",
+          "description": "Recommendation flagged unhealthy"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/finance-rg/providers/microsoft.insights/components/ai-data-pro-060",
+          "ResourceName": "ai-data-pro-060",
+          "ResourceType": "microsoft.insights/components"
+        },
+        "metadata": {
+          "severity": "Low",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "High",
+          "implementationEffort": "High",
+          "threats": [
+            "MissingCoverage"
+          ],
+          "description": "Assessment of diagnostic logs in service bus should be enabled",
+          "remediationDescription": "Take action to remediate: Diagnostic logs in Service Bus should be enabled"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-data-rg/providers/microsoft.storage/storageaccounts/stor-marketing-dev-031/providers/Microsoft.Security/assessments/585292589726",
+      "name": "003fe4931d17-0026",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Secure transfer to storage accounts should be enabled",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-data-rg/providers/microsoft.storage/storageaccounts/stor-marketing-dev-031",
+          "ResourceName": "stor-marketing-dev-031",
+          "ResourceType": "microsoft.storage/storageaccounts"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "Moderate",
+          "threats": [
+            "DataExfiltration"
+          ],
+          "description": "Assessment of secure transfer to storage accounts should be enabled",
+          "remediationDescription": "Take action to remediate: Secure transfer to storage accounts should be enabled"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/marketing-rg/providers/microsoft.sql/servers/databases/db-exec-tes-049/providers/Microsoft.Security/assessments/472693488384",
+      "name": "00e155debb8e-0017",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Auditing on SQL server should be enabled",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/marketing-rg/providers/microsoft.sql/servers/databases/db-exec-tes-049",
+          "ResourceName": "db-exec-tes-049",
+          "ResourceType": "microsoft.sql/servers/databases"
+        },
+        "metadata": {
+          "severity": "Low",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "High",
+          "implementationEffort": "High",
+          "threats": [
+            "MissingCoverage"
+          ],
+          "description": "Assessment of auditing on sql server should be enabled",
+          "remediationDescription": "Take action to remediate: Auditing on SQL server should be enabled"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-staging-rg/providers/microsoft.storage/storageaccounts/stor-it-tes-042/providers/Microsoft.Security/assessments/845425775966",
+      "name": "00d088f9b3b9-0001",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Storage account public access should be disallowed",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-staging-rg/providers/microsoft.storage/storageaccounts/stor-it-tes-042",
+          "ResourceName": "stor-it-tes-042",
+          "ResourceType": "microsoft.storage/storageaccounts"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "High",
+          "implementationEffort": "High",
+          "threats": [
+            "DataExfiltration",
+            "DataSpillage"
+          ],
+          "description": "Assessment of storage account public access should be disallowed",
+          "remediationDescription": "Take action to remediate: Storage account public access should be disallowed"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-staging-rg/providers/microsoft.storage/storageaccounts/stor-it-tes-042/providers/Microsoft.Security/assessments/828352320187",
+      "name": "0066a204c2ec-0001",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Storage account public access should be disallowed",
+        "status": {
+          "code": "Unhealthy",
+          "cause": "PublicAccessEnabled",
+          "description": "Recommendation flagged unhealthy"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-staging-rg/providers/microsoft.storage/storageaccounts/stor-it-tes-042",
+          "ResourceName": "stor-it-tes-042",
+          "ResourceType": "microsoft.storage/storageaccounts"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "High",
+          "implementationEffort": "High",
+          "threats": [
+            "DataExfiltration",
+            "DataSpillage"
+          ],
+          "description": "Assessment of storage account public access should be disallowed",
+          "remediationDescription": "Take action to remediate: Storage account public access should be disallowed"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/dev-rg/providers/microsoft.recoveryservices/vaults/rsv-it-dev-016/providers/Microsoft.Security/assessments/439666281776",
+      "name": "00e1ed32e162-0019",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Advanced threat protection should be enabled on Storage accounts",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/dev-rg/providers/microsoft.recoveryservices/vaults/rsv-it-dev-016",
+          "ResourceName": "rsv-it-dev-016",
+          "ResourceType": "microsoft.recoveryservices/vaults"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "Low",
+          "threats": [
+            "DataExfiltration"
+          ],
+          "description": "Assessment of advanced threat protection should be enabled on storage accounts",
+          "remediationDescription": "Take action to remediate: Advanced threat protection should be enabled on Storage accounts"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-prod-rg/providers/microsoft.insights/components/ai-legal-pro-067/providers/Microsoft.Security/assessments/837214063081",
+      "name": "001ba517ac28-0002",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Disk encryption should be applied on virtual machines",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-prod-rg/providers/microsoft.insights/components/ai-legal-pro-067",
+          "ResourceName": "ai-legal-pro-067",
+          "ResourceType": "microsoft.insights/components"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Compute"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "Moderate",
+          "threats": [
+            "DataExfiltration"
+          ],
+          "description": "Assessment of disk encryption should be applied on virtual machines",
+          "remediationDescription": "Take action to remediate: Disk encryption should be applied on virtual machines"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.storage/storageaccounts/stor-it-sta-027/providers/Microsoft.Security/assessments/945883794233",
+      "name": "003e6bae63bc-0025",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Storage accounts should restrict network access",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.storage/storageaccounts/stor-it-sta-027",
+          "ResourceName": "stor-it-sta-027",
+          "ResourceType": "microsoft.storage/storageaccounts"
+        },
+        "metadata": {
+          "severity": "Medium",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "Low",
+          "implementationEffort": "Moderate",
+          "threats": [
+            "DataExfiltration"
+          ],
+          "description": "Assessment of storage accounts should restrict network access",
+          "remediationDescription": "Take action to remediate: Storage accounts should restrict network access"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-prod-rg/providers/microsoft.sql/servers/sql-legal-tes-012/providers/Microsoft.Security/assessments/696016368562",
+      "name": "009e2aafe693-0018",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Advanced data security should be enabled on your SQL servers",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-prod-rg/providers/microsoft.sql/servers/sql-legal-tes-012",
+          "ResourceName": "sql-legal-tes-012",
+          "ResourceType": "microsoft.sql/servers"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "Low",
+          "implementationEffort": "High",
+          "threats": [
+            "DataExfiltration",
+            "MaliciousInsider"
+          ],
+          "description": "Assessment of advanced data security should be enabled on your sql servers",
+          "remediationDescription": "Take action to remediate: Advanced data security should be enabled on your SQL servers"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.compute/virtualmachines/vm-exec-dev-079/providers/Microsoft.Security/assessments/514882014361",
+      "name": "00dcf9d53cf6-0007",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "All network ports should be restricted on network security groups associated to your virtual machine",
+        "status": {
+          "code": "Unhealthy",
+          "cause": "OverlyPermissiveNsg",
+          "description": "Recommendation flagged unhealthy"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.compute/virtualmachines/vm-exec-dev-079",
+          "ResourceName": "vm-exec-dev-079",
+          "ResourceType": "microsoft.compute/virtualmachines"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Networking"
+          ],
+          "userImpact": "High",
+          "implementationEffort": "Low",
+          "threats": [
+            "AccountBreach",
+            "DataExfiltration"
+          ],
+          "description": "Assessment of all network ports should be restricted on network security groups associated to your virtual machine",
+          "remediationDescription": "Take action to remediate: All network ports should be restricted on network security groups associated to your virtual machine"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/engineering-rg/providers/microsoft.recoveryservices/vaults/rsv-finance-tes-005/providers/Microsoft.Security/assessments/844593996265",
+      "name": "008940addd71-0013",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Container images should be deployed from trusted registries only",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/engineering-rg/providers/microsoft.recoveryservices/vaults/rsv-finance-tes-005",
+          "ResourceName": "rsv-finance-tes-005",
+          "ResourceType": "microsoft.recoveryservices/vaults"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Compute"
+          ],
+          "userImpact": "High",
+          "implementationEffort": "Moderate",
+          "threats": [
+            "MaliciousInsider"
+          ],
+          "description": "Assessment of container images should be deployed from trusted registries only",
+          "remediationDescription": "Take action to remediate: Container images should be deployed from trusted registries only"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/marketing-rg/providers/microsoft.network/publicipaddresses/pip-it-dev-057/providers/Microsoft.Security/assessments/364286565492",
+      "name": "00e01778e144-0007",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "All network ports should be restricted on network security groups associated to your virtual machine",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/marketing-rg/providers/microsoft.network/publicipaddresses/pip-it-dev-057",
+          "ResourceName": "pip-it-dev-057",
+          "ResourceType": "microsoft.network/publicipaddresses"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Networking"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "Low",
+          "threats": [
+            "AccountBreach",
+            "DataExfiltration"
+          ],
+          "description": "Assessment of all network ports should be restricted on network security groups associated to your virtual machine",
+          "remediationDescription": "Take action to remediate: All network ports should be restricted on network security groups associated to your virtual machine"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-data-rg/providers/microsoft.storage/storageaccounts/stor-exec-pro-073/providers/Microsoft.Security/assessments/943796490407",
+      "name": "0097aa394c5a-0026",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Secure transfer to storage accounts should be enabled",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-data-rg/providers/microsoft.storage/storageaccounts/stor-exec-pro-073",
+          "ResourceName": "stor-exec-pro-073",
+          "ResourceType": "microsoft.storage/storageaccounts"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "High",
+          "implementationEffort": "Moderate",
+          "threats": [
+            "DataExfiltration"
+          ],
+          "description": "Assessment of secure transfer to storage accounts should be enabled",
+          "remediationDescription": "Take action to remediate: Secure transfer to storage accounts should be enabled"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/shared-services-rg/providers/microsoft.storage/storageaccounts/stor-data-tes-025/providers/Microsoft.Security/assessments/378627421655",
+      "name": "00a4a77ea9a5-0019",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Advanced threat protection should be enabled on Storage accounts",
+        "status": {
+          "code": "Unhealthy",
+          "cause": "AtpDisabled",
+          "description": "Recommendation flagged unhealthy"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/shared-services-rg/providers/microsoft.storage/storageaccounts/stor-data-tes-025",
+          "ResourceName": "stor-data-tes-025",
+          "ResourceType": "microsoft.storage/storageaccounts"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "Low",
+          "implementationEffort": "High",
+          "threats": [
+            "DataExfiltration"
+          ],
+          "description": "Assessment of advanced threat protection should be enabled on storage accounts",
+          "remediationDescription": "Take action to remediate: Advanced threat protection should be enabled on Storage accounts"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/marketing-rg/providers/microsoft.network/virtualnetworks/vnet-exec-dev-015/providers/Microsoft.Security/assessments/937878863625",
+      "name": "003ccbe1fdc7-0009",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "MFA should be enabled on accounts with write permissions on your subscription",
+        "status": {
+          "code": "Unhealthy",
+          "cause": "MfaNotEnabled",
+          "description": "Recommendation flagged unhealthy"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/marketing-rg/providers/microsoft.network/virtualnetworks/vnet-exec-dev-015",
+          "ResourceName": "vnet-exec-dev-015",
+          "ResourceType": "microsoft.network/virtualnetworks"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "IdentityAndAccess"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "Low",
+          "threats": [
+            "AccountBreach"
+          ],
+          "description": "Assessment of mfa should be enabled on accounts with write permissions on your subscription",
+          "remediationDescription": "Take action to remediate: MFA should be enabled on accounts with write permissions on your subscription"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-network-rg/providers/microsoft.insights/components/ai-security-pro-028/providers/Microsoft.Security/assessments/555381080979",
+      "name": "0076c8fa71c8-0026",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Secure transfer to storage accounts should be enabled",
+        "status": {
+          "code": "Unhealthy",
+          "cause": "SecureTransferDisabled",
+          "description": "Recommendation flagged unhealthy"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-network-rg/providers/microsoft.insights/components/ai-security-pro-028",
+          "ResourceName": "ai-security-pro-028",
+          "ResourceType": "microsoft.insights/components"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "Low",
+          "implementationEffort": "Moderate",
+          "threats": [
+            "DataExfiltration"
+          ],
+          "description": "Assessment of secure transfer to storage accounts should be enabled",
+          "remediationDescription": "Take action to remediate: Secure transfer to storage accounts should be enabled"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/shared-services-rg/providers/microsoft.insights/components/ai-marketing-tes-047/providers/Microsoft.Security/assessments/448013415558",
+      "name": "00ce1f4b29cc-0007",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "All network ports should be restricted on network security groups associated to your virtual machine",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/shared-services-rg/providers/microsoft.insights/components/ai-marketing-tes-047",
+          "ResourceName": "ai-marketing-tes-047",
+          "ResourceType": "microsoft.insights/components"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Networking"
+          ],
+          "userImpact": "High",
+          "implementationEffort": "Moderate",
+          "threats": [
+            "AccountBreach",
+            "DataExfiltration"
+          ],
+          "description": "Assessment of all network ports should be restricted on network security groups associated to your virtual machine",
+          "remediationDescription": "Take action to remediate: All network ports should be restricted on network security groups associated to your virtual machine"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/platform-rg/providers/microsoft.logic/workflows/logic-hr-sta-017/providers/Microsoft.Security/assessments/618959874397",
+      "name": "00d96bfed2f6-0001",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Storage account public access should be disallowed",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/platform-rg/providers/microsoft.logic/workflows/logic-hr-sta-017",
+          "ResourceName": "logic-hr-sta-017",
+          "ResourceType": "microsoft.logic/workflows"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "High",
+          "implementationEffort": "Moderate",
+          "threats": [
+            "DataExfiltration",
+            "DataSpillage"
+          ],
+          "description": "Assessment of storage account public access should be disallowed",
+          "remediationDescription": "Take action to remediate: Storage account public access should be disallowed"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/finance-rg/providers/microsoft.network/publicipaddresses/pip-sales-pro-000/providers/Microsoft.Security/assessments/117520141303",
+      "name": "003e1e370c4d-0028",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Function apps should only be accessible over HTTPS",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/finance-rg/providers/microsoft.network/publicipaddresses/pip-sales-pro-000",
+          "ResourceName": "pip-sales-pro-000",
+          "ResourceType": "microsoft.network/publicipaddresses"
+        },
+        "metadata": {
+          "severity": "Medium",
+          "categories": [
+            "Networking"
+          ],
+          "userImpact": "High",
+          "implementationEffort": "High",
+          "threats": [
+            "DataExfiltration"
+          ],
+          "description": "Assessment of function apps should only be accessible over https",
+          "remediationDescription": "Take action to remediate: Function apps should only be accessible over HTTPS"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-prod-rg/providers/microsoft.network/networksecuritygroups/nsg-data-sta-054/providers/Microsoft.Security/assessments/416866248678",
+      "name": "002367a85c05-0007",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "All network ports should be restricted on network security groups associated to your virtual machine",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-prod-rg/providers/microsoft.network/networksecuritygroups/nsg-data-sta-054",
+          "ResourceName": "nsg-data-sta-054",
+          "ResourceType": "microsoft.network/networksecuritygroups"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Networking"
+          ],
+          "userImpact": "Low",
+          "implementationEffort": "Moderate",
+          "threats": [
+            "AccountBreach",
+            "DataExfiltration"
+          ],
+          "description": "Assessment of all network ports should be restricted on network security groups associated to your virtual machine",
+          "remediationDescription": "Take action to remediate: All network ports should be restricted on network security groups associated to your virtual machine"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.compute/virtualmachines/vm-exec-dev-079/providers/Microsoft.Security/assessments/220528838961",
+      "name": "00afc86bb6c6-0023",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Adaptive application controls for defining safe applications should be enabled on your machines",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.compute/virtualmachines/vm-exec-dev-079",
+          "ResourceName": "vm-exec-dev-079",
+          "ResourceType": "microsoft.compute/virtualmachines"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Compute"
+          ],
+          "userImpact": "High",
+          "implementationEffort": "Low",
+          "threats": [
+            "MaliciousInsider"
+          ],
+          "description": "Assessment of adaptive application controls for defining safe applications should be enabled on your machines",
+          "remediationDescription": "Take action to remediate: Adaptive application controls for defining safe applications should be enabled on your machines"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-data-rg/providers/microsoft.storage/storageaccounts/stor-exec-pro-073/providers/Microsoft.Security/assessments/257704947058",
+      "name": "00b448dd6d3d-0019",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Advanced threat protection should be enabled on Storage accounts",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-data-rg/providers/microsoft.storage/storageaccounts/stor-exec-pro-073",
+          "ResourceName": "stor-exec-pro-073",
+          "ResourceType": "microsoft.storage/storageaccounts"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Data"
+          ],
+          "userImpact": "Moderate",
+          "implementationEffort": "Low",
+          "threats": [
+            "DataExfiltration"
+          ],
+          "description": "Assessment of advanced threat protection should be enabled on storage accounts",
+          "remediationDescription": "Take action to remediate: Advanced threat protection should be enabled on Storage accounts"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-identity-rg/providers/microsoft.compute/virtualmachines/vm-marketing-pro-023/providers/Microsoft.Security/assessments/174563225376",
+      "name": "0098d3bfdc96-0002",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Disk encryption should be applied on virtual machines",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-identity-rg/providers/microsoft.compute/virtualmachines/vm-marketing-pro-023",
+          "ResourceName": "vm-marketing-pro-023",
+          "ResourceType": "microsoft.compute/virtualmachines"
+        },
+        "metadata": {
+          "severity": "High",
+          "categories": [
+            "Compute"
+          ],
+          "userImpact": "High",
+          "implementationEffort": "High",
+          "threats": [
+            "DataExfiltration"
+          ],
+          "description": "Assessment of disk encryption should be applied on virtual machines",
+          "remediationDescription": "Take action to remediate: Disk encryption should be applied on virtual machines"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/providers/Microsoft.Security/assessments/795971680889",
+      "name": "0057a807a6d6-0024",
+      "type": "Microsoft.Security/assessments",
+      "properties": {
+        "displayName": "Service principals should be used to protect your subscriptions instead of management certificates",
+        "status": {
+          "code": "Healthy",
+          "cause": null,
+          "description": "Compliant"
+        },
+        "resourceDetails": {
+          "Source": "Azure",
+          "Id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+          "ResourceName": "subscription",
+          "ResourceType": "Microsoft.Resources/subscriptions"
+        },
+        "metadata": {
+          "severity": "Medium",
+          "categories": [
+            "IdentityAndAccess"
+          ],
+          "userImpact": "High",
+          "implementationEffort": "Low",
+          "threats": [
+            "AccountBreach"
+          ],
+          "description": "Assessment of service principals should be used to protect your subscriptions instead of management certificates",
+          "remediationDescription": "Take action to remediate: Service principals should be used to protect your subscriptions instead of management certificates"
+        }
+      }
+    }
+  ]
+}

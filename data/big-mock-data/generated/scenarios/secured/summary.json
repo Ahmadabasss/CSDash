@@ -1,0 +1,18 @@
+{
+  "secureScorePct": 78.0,
+  "openAlerts": {
+    "high": 1,
+    "medium": 29,
+    "low": 18,
+    "total": 48
+  },
+  "unhealthyRecommendations": {
+    "high": 16,
+    "medium": 5,
+    "low": 3,
+    "total": 24
+  },
+  "exploitableCves": 5,
+  "totalResources": 80,
+  "complianceFailingControls": 142
+}

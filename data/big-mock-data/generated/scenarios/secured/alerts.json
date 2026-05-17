@@ -1,0 +1,2673 @@
+{
+  "@odata.context": "synthetic",
+  "value": [
+    {
+      "id": "da2614912112693231857_-8235656521",
+      "incidentId": null,
+      "status": "new",
+      "severity": "low",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForEndpoint",
+      "detectionSource": "antivirus",
+      "title": "Antimalware action taken",
+      "description": "Microsoft Defender Antimalware took action against malicious code.",
+      "recommendedActions": "Confirm the detection, investigate origin (email attachment, download), check for related activity.",
+      "category": "Execution",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-08T01:52:35Z",
+      "lastUpdateDateTime": "2026-05-08T01:52:35Z",
+      "firstActivityDateTime": "2026-05-08T01:52:35Z",
+      "lastActivityDateTime": "2026-05-08T01:52:35Z",
+      "mitreTechniques": [
+        "T1204"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/staging-rg/providers/microsoft.web/sites/app-finance-pro-013"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.deviceEvidence",
+          "deviceDnsName": "app-vm-18.contoso.local",
+          "osPlatform": "Windows10",
+          "mdeDeviceId": "0015066ffef6c528"
+        }
+      ]
+    },
+    {
+      "id": "da8296694590465565526_-5474951950",
+      "incidentId": null,
+      "status": "inProgress",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "phishing",
+      "serviceSource": "microsoftDefenderForCloud",
+      "detectionSource": "automation",
+      "title": "Defender for Cloud has detected suspicious activity in your Kubernetes cluster",
+      "description": "A pod was deployed with privileged context or suspicious image.",
+      "recommendedActions": "Review the pod spec, validate the image source, restrict cluster admin access.",
+      "category": "Execution",
+      "assignedTo": "soc-analyst-4@contoso.com",
+      "createdDateTime": "2026-05-04T01:53:42Z",
+      "lastUpdateDateTime": "2026-05-04T01:53:42Z",
+      "firstActivityDateTime": "2026-05-04T01:53:42Z",
+      "lastActivityDateTime": "2026-05-04T01:53:42Z",
+      "mitreTechniques": [
+        "T1610"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "wei.lopez",
+            "userPrincipalName": "aisha.singh@contoso.com"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da3519978449246422057_-6875597607",
+      "incidentId": null,
+      "status": "new",
+      "severity": "low",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForIdentity",
+      "detectionSource": "automation",
+      "title": "Anomalous Azure AD sign-in properties",
+      "description": "Sign-in shows anomalous characteristics relative to the user's baseline.",
+      "recommendedActions": "Verify with the user. Enforce MFA and conditional access policies.",
+      "category": "InitialAccess",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-16T23:17:35Z",
+      "lastUpdateDateTime": "2026-05-16T23:17:35Z",
+      "firstActivityDateTime": "2026-05-16T23:17:35Z",
+      "lastActivityDateTime": "2026-05-16T23:17:35Z",
+      "mitreTechniques": [
+        "T1078.004"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/staging-rg/providers/microsoft.sql/servers/sql-marketing-tes-024"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "aisha.davis",
+            "userPrincipalName": "john.yamamoto@contoso.com"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da8389286866484711083_-9944748312",
+      "incidentId": null,
+      "status": "resolved",
+      "severity": "medium",
+      "classification": "truePositive",
+      "determination": "phishing",
+      "serviceSource": "microsoftDefenderForCloudApps",
+      "detectionSource": "automation",
+      "title": "Suspicious service principal sign-in",
+      "description": "Service principal authenticated from an unexpected location or with unusual behavior.",
+      "recommendedActions": "Rotate the service principal credentials, review the assigned permissions.",
+      "category": "Persistence",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-16T15:45:40Z",
+      "lastUpdateDateTime": "2026-05-16T15:45:40Z",
+      "firstActivityDateTime": "2026-05-16T15:45:40Z",
+      "lastActivityDateTime": "2026-05-16T15:45:40Z",
+      "mitreTechniques": [
+        "T1098.001"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-identity-rg/providers/microsoft.compute/virtualmachines/vm-marketing-pro-023"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "emma.hassan",
+            "userPrincipalName": "priya.nguyen@contoso.com"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da1390657380917384940_-9210290540",
+      "incidentId": null,
+      "status": "new",
+      "severity": "low",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForEndpoint",
+      "detectionSource": "antivirus",
+      "title": "Antimalware action taken",
+      "description": "Microsoft Defender Antimalware took action against malicious code.",
+      "recommendedActions": "Confirm the detection, investigate origin (email attachment, download), check for related activity.",
+      "category": "Execution",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-09T20:17:02Z",
+      "lastUpdateDateTime": "2026-05-09T20:17:02Z",
+      "firstActivityDateTime": "2026-05-09T20:17:02Z",
+      "lastActivityDateTime": "2026-05-09T20:17:02Z",
+      "mitreTechniques": [
+        "T1204"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/platform-rg/providers/microsoft.network/networksecuritygroups/nsg-hr-dev-037"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.deviceEvidence",
+          "deviceDnsName": "app-vm-58.contoso.local",
+          "osPlatform": "WindowsServer2022",
+          "mdeDeviceId": "0019a00bcf6fbb43"
+        }
+      ]
+    },
+    {
+      "id": "da7190578707576776155_-8033062794",
+      "incidentId": "3621",
+      "status": "new",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "azureSecurityCenter",
+      "detectionSource": "automation",
+      "title": "New Global Administrator role assigned",
+      "description": "A new user was granted Global Administrator role in Entra ID.",
+      "recommendedActions": "Verify the change with the assigning admin. Remove if unauthorized.",
+      "category": "Persistence",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-06T09:35:57Z",
+      "lastUpdateDateTime": "2026-05-06T09:35:57Z",
+      "firstActivityDateTime": "2026-05-06T09:35:57Z",
+      "lastActivityDateTime": "2026-05-06T09:35:57Z",
+      "mitreTechniques": [
+        "T1098"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "da6231908419925984988_-9729028480",
+      "incidentId": "8371",
+      "status": "inProgress",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "lateralMovement",
+      "serviceSource": "microsoftDefenderForCloud",
+      "detectionSource": "automation",
+      "title": "Defender for Cloud has detected suspicious activity in your Kubernetes cluster",
+      "description": "A pod was deployed with privileged context or suspicious image.",
+      "recommendedActions": "Review the pod spec, validate the image source, restrict cluster admin access.",
+      "category": "Execution",
+      "assignedTo": "soc-analyst-3@contoso.com",
+      "createdDateTime": "2026-05-04T14:19:29Z",
+      "lastUpdateDateTime": "2026-05-04T14:19:29Z",
+      "firstActivityDateTime": "2026-05-04T14:19:29Z",
+      "lastActivityDateTime": "2026-05-04T14:19:29Z",
+      "mitreTechniques": [
+        "T1610"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/dev-rg/providers/microsoft.recoveryservices/vaults/rsv-it-dev-016"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "raj.davis",
+            "userPrincipalName": "priya.kim@contoso.com"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da3302261136534812283_-5125402225",
+      "incidentId": "4048",
+      "status": "inProgress",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "compromisedAccount",
+      "serviceSource": "microsoftDefenderForCloudApps",
+      "detectionSource": "automation",
+      "title": "Suspicious service principal sign-in",
+      "description": "Service principal authenticated from an unexpected location or with unusual behavior.",
+      "recommendedActions": "Rotate the service principal credentials, review the assigned permissions.",
+      "category": "Persistence",
+      "assignedTo": "soc-analyst-5@contoso.com",
+      "createdDateTime": "2026-05-13T17:19:08Z",
+      "lastUpdateDateTime": "2026-05-13T17:19:08Z",
+      "firstActivityDateTime": "2026-05-13T17:19:08Z",
+      "lastActivityDateTime": "2026-05-13T17:19:08Z",
+      "mitreTechniques": [
+        "T1098.001"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-prod-rg/providers/microsoft.insights/components/ai-legal-pro-067"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "priya.kim",
+            "userPrincipalName": "carlos.yamamoto@contoso.com"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da2131130572278522692_-5613018394",
+      "incidentId": "8292",
+      "status": "new",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForCloudApps",
+      "detectionSource": "automation",
+      "title": "Mass download by a single user",
+      "description": "User downloaded an unusually large number of files within a short time window.",
+      "recommendedActions": "Contact the user to verify the activity. Apply session controls if exfiltration is confirmed.",
+      "category": "Exfiltration",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-11T05:43:37Z",
+      "lastUpdateDateTime": "2026-05-11T05:43:37Z",
+      "firstActivityDateTime": "2026-05-11T05:43:37Z",
+      "lastActivityDateTime": "2026-05-11T05:43:37Z",
+      "mitreTechniques": [
+        "T1567"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/marketing-rg/providers/microsoft.network/publicipaddresses/pip-it-dev-057"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "yuki.rossi",
+            "userPrincipalName": "aisha.hassan@contoso.com"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da3766612022294368311_-4656572173",
+      "incidentId": null,
+      "status": "resolved",
+      "severity": "medium",
+      "classification": "falsePositive",
+      "determination": "malware",
+      "serviceSource": "microsoftDefenderForIdentity",
+      "detectionSource": "automation",
+      "title": "Suspicious sign-in from anonymous IP address",
+      "description": "Sign-in detected from a known anonymous proxy/Tor exit node.",
+      "recommendedActions": "Verify the sign-in with the user. Reset credentials and revoke sessions if not legitimate.",
+      "category": "InitialAccess",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-14T20:39:35Z",
+      "lastUpdateDateTime": "2026-05-14T20:39:35Z",
+      "firstActivityDateTime": "2026-05-14T20:39:35Z",
+      "lastActivityDateTime": "2026-05-14T20:39:35Z",
+      "mitreTechniques": [
+        "T1078"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "carlos.davis",
+            "userPrincipalName": "ivan.patel@contoso.com"
+          }
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.ipEvidence",
+          "ipAddress": "103.224.182.250",
+          "countryLetterCode": "IN"
+        }
+      ]
+    },
+    {
+      "id": "da6278327432625281371_-6879428703",
+      "incidentId": null,
+      "status": "resolved",
+      "severity": "medium",
+      "classification": "falsePositive",
+      "determination": "malware",
+      "serviceSource": "microsoftDefenderForCloudApps",
+      "detectionSource": "automation",
+      "title": "Mass download by a single user",
+      "description": "User downloaded an unusually large number of files within a short time window.",
+      "recommendedActions": "Contact the user to verify the activity. Apply session controls if exfiltration is confirmed.",
+      "category": "Exfiltration",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-14T19:07:13Z",
+      "lastUpdateDateTime": "2026-05-14T19:07:13Z",
+      "firstActivityDateTime": "2026-05-14T19:07:13Z",
+      "lastActivityDateTime": "2026-05-14T19:07:13Z",
+      "mitreTechniques": [
+        "T1567"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "olivia.hassan",
+            "userPrincipalName": "jane.davis@contoso.com"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da9968620025075559026_-5613503623",
+      "incidentId": null,
+      "status": "new",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForIdentity",
+      "detectionSource": "automation",
+      "title": "Suspicious sign-in from anonymous IP address",
+      "description": "Sign-in detected from a known anonymous proxy/Tor exit node.",
+      "recommendedActions": "Verify the sign-in with the user. Reset credentials and revoke sessions if not legitimate.",
+      "category": "InitialAccess",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-13T19:32:49Z",
+      "lastUpdateDateTime": "2026-05-13T19:32:49Z",
+      "firstActivityDateTime": "2026-05-13T19:32:49Z",
+      "lastActivityDateTime": "2026-05-13T19:32:49Z",
+      "mitreTechniques": [
+        "T1078"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.compute/virtualmachines/vm-finance-sta-061"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "lucas.wilson",
+            "userPrincipalName": "sofia.anderson@contoso.com"
+          }
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.ipEvidence",
+          "ipAddress": "185.220.102.250",
+          "countryLetterCode": "DE"
+        }
+      ]
+    },
+    {
+      "id": "da2411318576289306476_-2306204982",
+      "incidentId": "4694",
+      "status": "inProgress",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "lateralMovement",
+      "serviceSource": "microsoftDefenderForCloudApps",
+      "detectionSource": "automation",
+      "title": "Suspicious service principal sign-in",
+      "description": "Service principal authenticated from an unexpected location or with unusual behavior.",
+      "recommendedActions": "Rotate the service principal credentials, review the assigned permissions.",
+      "category": "Persistence",
+      "assignedTo": "soc-analyst-5@contoso.com",
+      "createdDateTime": "2026-05-10T14:06:41Z",
+      "lastUpdateDateTime": "2026-05-10T14:06:41Z",
+      "firstActivityDateTime": "2026-05-10T14:06:41Z",
+      "lastActivityDateTime": "2026-05-10T14:06:41Z",
+      "mitreTechniques": [
+        "T1098.001"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/dev-rg/providers/microsoft.recoveryservices/vaults/rsv-it-dev-016"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "sofia.nguyen",
+            "userPrincipalName": "john.tanaka@contoso.com"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da2579047020549195397_-7894019119",
+      "incidentId": null,
+      "status": "resolved",
+      "severity": "low",
+      "classification": "falsePositive",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForEndpoint",
+      "detectionSource": "antivirus",
+      "title": "Antimalware action taken",
+      "description": "Microsoft Defender Antimalware took action against malicious code.",
+      "recommendedActions": "Confirm the detection, investigate origin (email attachment, download), check for related activity.",
+      "category": "Execution",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-13T22:25:27Z",
+      "lastUpdateDateTime": "2026-05-13T22:25:27Z",
+      "firstActivityDateTime": "2026-05-13T22:25:27Z",
+      "lastActivityDateTime": "2026-05-13T22:25:27Z",
+      "mitreTechniques": [
+        "T1204"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-staging-rg/providers/microsoft.network/networksecuritygroups/nsg-finance-pro-070"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.deviceEvidence",
+          "deviceDnsName": "app-vm-17.contoso.local",
+          "osPlatform": "WindowsServer2019",
+          "mdeDeviceId": "00149fbf4211abf9"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "raj.chen",
+            "userPrincipalName": "hans.anderson@contoso.com"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da1279338125851159892_-9403748506",
+      "incidentId": null,
+      "status": "resolved",
+      "severity": "high",
+      "classification": "falsePositive",
+      "determination": "compromisedAccount",
+      "serviceSource": "microsoftDefenderForEndpoint",
+      "detectionSource": "antivirus",
+      "title": "Suspicious PowerShell command line",
+      "description": "A suspicious PowerShell activity was observed on the machine. This behavior may indicate use of PowerShell to deliver malicious tools.",
+      "recommendedActions": "Isolate the device and investigate the PowerShell command line. Review parent process and user context.",
+      "category": "Execution",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-09T14:48:37Z",
+      "lastUpdateDateTime": "2026-05-09T14:48:37Z",
+      "firstActivityDateTime": "2026-05-09T14:48:37Z",
+      "lastActivityDateTime": "2026-05-09T14:48:37Z",
+      "mitreTechniques": [
+        "T1059.001"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.deviceEvidence",
+          "deviceDnsName": "app-vm-84.contoso.local",
+          "osPlatform": "Windows11",
+          "mdeDeviceId": "0015dc71691decc3"
+        }
+      ]
+    },
+    {
+      "id": "da3883064654245361829_-2712474804",
+      "incidentId": null,
+      "status": "new",
+      "severity": "low",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForEndpoint",
+      "detectionSource": "antivirus",
+      "title": "Antimalware action taken",
+      "description": "Microsoft Defender Antimalware took action against malicious code.",
+      "recommendedActions": "Confirm the detection, investigate origin (email attachment, download), check for related activity.",
+      "category": "Execution",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-14T07:07:20Z",
+      "lastUpdateDateTime": "2026-05-14T07:07:20Z",
+      "firstActivityDateTime": "2026-05-14T07:07:20Z",
+      "lastActivityDateTime": "2026-05-14T07:07:20Z",
+      "mitreTechniques": [
+        "T1204"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/ml-rg/providers/microsoft.cosmosdb/databaseaccounts/cosmos-exec-sta-020"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.deviceEvidence",
+          "deviceDnsName": "ws-vm-54.contoso.local",
+          "osPlatform": "WindowsServer2022",
+          "mdeDeviceId": "000a14da1bac2e78"
+        }
+      ]
+    },
+    {
+      "id": "da6675855098475566995_-2795875043",
+      "incidentId": null,
+      "status": "new",
+      "severity": "low",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForEndpoint",
+      "detectionSource": "antivirus",
+      "title": "Antimalware action taken",
+      "description": "Microsoft Defender Antimalware took action against malicious code.",
+      "recommendedActions": "Confirm the detection, investigate origin (email attachment, download), check for related activity.",
+      "category": "Execution",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-08T15:37:29Z",
+      "lastUpdateDateTime": "2026-05-08T15:37:29Z",
+      "firstActivityDateTime": "2026-05-08T15:37:29Z",
+      "lastActivityDateTime": "2026-05-08T15:37:29Z",
+      "mitreTechniques": [
+        "T1204"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/marketing-rg/providers/microsoft.network/publicipaddresses/pip-it-dev-057"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.deviceEvidence",
+          "deviceDnsName": "db-vm-19.contoso.local",
+          "osPlatform": "Windows10",
+          "mdeDeviceId": "000cd6e8b1baf7ef"
+        }
+      ]
+    },
+    {
+      "id": "da5305609535680479691_-6620138568",
+      "incidentId": "7442",
+      "status": "inProgress",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "phishing",
+      "serviceSource": "microsoftDefenderForCloud",
+      "detectionSource": "automation",
+      "title": "Defender for Cloud has detected suspicious activity in your Kubernetes cluster",
+      "description": "A pod was deployed with privileged context or suspicious image.",
+      "recommendedActions": "Review the pod spec, validate the image source, restrict cluster admin access.",
+      "category": "Execution",
+      "assignedTo": "soc-analyst-4@contoso.com",
+      "createdDateTime": "2026-05-05T07:06:58Z",
+      "lastUpdateDateTime": "2026-05-05T07:06:58Z",
+      "firstActivityDateTime": "2026-05-05T07:06:58Z",
+      "lastActivityDateTime": "2026-05-05T07:06:58Z",
+      "mitreTechniques": [
+        "T1610"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/ml-rg/providers/microsoft.cosmosdb/databaseaccounts/cosmos-exec-sta-020"
+        }
+      ]
+    },
+    {
+      "id": "da5950098471570296415_-5756663747",
+      "incidentId": "5333",
+      "status": "new",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForCloud",
+      "detectionSource": "automation",
+      "title": "Possible SQL injection attempt",
+      "description": "A potential SQL injection attempt was identified by Defender for SQL.",
+      "recommendedActions": "Review web application logs, patch the vulnerable endpoint, enable WAF rules.",
+      "category": "InitialAccess",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-16T18:12:03Z",
+      "lastUpdateDateTime": "2026-05-16T18:12:03Z",
+      "firstActivityDateTime": "2026-05-16T18:12:03Z",
+      "lastActivityDateTime": "2026-05-16T18:12:03Z",
+      "mitreTechniques": [
+        "T1190"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/finance-rg/providers/microsoft.network/networksecuritygroups/nsg-engineering-pro-006"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "mei.yamamoto",
+            "userPrincipalName": "anna.hassan@contoso.com"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da6071536543616728318_-1510289448",
+      "incidentId": null,
+      "status": "new",
+      "severity": "low",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForEndpoint",
+      "detectionSource": "antivirus",
+      "title": "Antimalware action taken",
+      "description": "Microsoft Defender Antimalware took action against malicious code.",
+      "recommendedActions": "Confirm the detection, investigate origin (email attachment, download), check for related activity.",
+      "category": "Execution",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-14T19:29:08Z",
+      "lastUpdateDateTime": "2026-05-14T19:29:08Z",
+      "firstActivityDateTime": "2026-05-14T19:29:08Z",
+      "lastActivityDateTime": "2026-05-14T19:29:08Z",
+      "mitreTechniques": [
+        "T1204"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/marketing-rg/providers/microsoft.keyvault/vaults/kv-security-sta-071"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.deviceEvidence",
+          "deviceDnsName": "db-vm-47.contoso.local",
+          "osPlatform": "WindowsServer2019",
+          "mdeDeviceId": "000fea76b7997a06"
+        }
+      ]
+    },
+    {
+      "id": "da2373735138285663185_-3214080278",
+      "incidentId": "6218",
+      "status": "new",
+      "severity": "low",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForEndpoint",
+      "detectionSource": "antivirus",
+      "title": "Antimalware action taken",
+      "description": "Microsoft Defender Antimalware took action against malicious code.",
+      "recommendedActions": "Confirm the detection, investigate origin (email attachment, download), check for related activity.",
+      "category": "Execution",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-13T11:22:23Z",
+      "lastUpdateDateTime": "2026-05-13T11:22:23Z",
+      "firstActivityDateTime": "2026-05-13T11:22:23Z",
+      "lastActivityDateTime": "2026-05-13T11:22:23Z",
+      "mitreTechniques": [
+        "T1204"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-web-rg/providers/microsoft.insights/components/ai-security-dev-018"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.deviceEvidence",
+          "deviceDnsName": "db-vm-78.contoso.local",
+          "osPlatform": "WindowsServer2022",
+          "mdeDeviceId": "0004d74324cb9b10"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "maria.khan",
+            "userPrincipalName": "emma.nguyen@contoso.com"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da5909968316753026956_-7712708591",
+      "incidentId": null,
+      "status": "inProgress",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForCloud",
+      "detectionSource": "automation",
+      "title": "Defender for Cloud has detected suspicious activity in your Kubernetes cluster",
+      "description": "A pod was deployed with privileged context or suspicious image.",
+      "recommendedActions": "Review the pod spec, validate the image source, restrict cluster admin access.",
+      "category": "Execution",
+      "assignedTo": "soc-analyst-3@contoso.com",
+      "createdDateTime": "2026-05-16T19:05:44Z",
+      "lastUpdateDateTime": "2026-05-16T19:05:44Z",
+      "firstActivityDateTime": "2026-05-16T19:05:44Z",
+      "lastActivityDateTime": "2026-05-16T19:05:44Z",
+      "mitreTechniques": [
+        "T1610"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/staging-rg/providers/microsoft.network/networksecuritygroups/nsg-legal-dev-043"
+        }
+      ]
+    },
+    {
+      "id": "da9289663347175464838_-9704383251",
+      "incidentId": null,
+      "status": "inProgress",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "phishing",
+      "serviceSource": "azureSecurityCenter",
+      "detectionSource": "automation",
+      "title": "Suspicious access to storage account from unusual location",
+      "description": "A storage account was accessed from an unusual location or by an unusual user.",
+      "recommendedActions": "Verify the access was legitimate. Rotate keys and enable storage firewall.",
+      "category": "Collection",
+      "assignedTo": "soc-analyst-5@contoso.com",
+      "createdDateTime": "2026-05-08T03:01:27Z",
+      "lastUpdateDateTime": "2026-05-08T03:01:27Z",
+      "firstActivityDateTime": "2026-05-08T03:01:27Z",
+      "lastActivityDateTime": "2026-05-08T03:01:27Z",
+      "mitreTechniques": [
+        "T1530"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "da6716053908692889657_-2632905061",
+      "incidentId": null,
+      "status": "inProgress",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "malware",
+      "serviceSource": "microsoftDefenderForCloud",
+      "detectionSource": "automation",
+      "title": "Possible SQL injection attempt",
+      "description": "A potential SQL injection attempt was identified by Defender for SQL.",
+      "recommendedActions": "Review web application logs, patch the vulnerable endpoint, enable WAF rules.",
+      "category": "InitialAccess",
+      "assignedTo": "soc-analyst-1@contoso.com",
+      "createdDateTime": "2026-05-12T19:00:53Z",
+      "lastUpdateDateTime": "2026-05-12T19:00:53Z",
+      "firstActivityDateTime": "2026-05-12T19:00:53Z",
+      "lastActivityDateTime": "2026-05-12T19:00:53Z",
+      "mitreTechniques": [
+        "T1190"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-prod-rg/providers/microsoft.recoveryservices/vaults/rsv-sales-sta-021"
+        }
+      ]
+    },
+    {
+      "id": "da5628467973538872930_-9248574674",
+      "incidentId": null,
+      "status": "new",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForCloudApps",
+      "detectionSource": "automation",
+      "title": "Mass download by a single user",
+      "description": "User downloaded an unusually large number of files within a short time window.",
+      "recommendedActions": "Contact the user to verify the activity. Apply session controls if exfiltration is confirmed.",
+      "category": "Exfiltration",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-12T15:02:33Z",
+      "lastUpdateDateTime": "2026-05-12T15:02:33Z",
+      "firstActivityDateTime": "2026-05-12T15:02:33Z",
+      "lastActivityDateTime": "2026-05-12T15:02:33Z",
+      "mitreTechniques": [
+        "T1567"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/iot-rg/providers/microsoft.network/publicipaddresses/pip-sales-pro-053"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "maria.wilson",
+            "userPrincipalName": "ivan.singh@contoso.com"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da9412860462524039756_-7584730597",
+      "incidentId": null,
+      "status": "new",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForCloudApps",
+      "detectionSource": "automation",
+      "title": "Suspicious service principal sign-in",
+      "description": "Service principal authenticated from an unexpected location or with unusual behavior.",
+      "recommendedActions": "Rotate the service principal credentials, review the assigned permissions.",
+      "category": "Persistence",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-13T05:52:08Z",
+      "lastUpdateDateTime": "2026-05-13T05:52:08Z",
+      "firstActivityDateTime": "2026-05-13T05:52:08Z",
+      "lastActivityDateTime": "2026-05-13T05:52:08Z",
+      "mitreTechniques": [
+        "T1098.001"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.compute/virtualmachines/vm-finance-sta-061"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "lucas.kim",
+            "userPrincipalName": "carlos.chen@contoso.com"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da8112827196232726468_-8322868827",
+      "incidentId": "6714",
+      "status": "inProgress",
+      "severity": "low",
+      "classification": "unknown",
+      "determination": "phishing",
+      "serviceSource": "microsoftDefenderForEndpoint",
+      "detectionSource": "antivirus",
+      "title": "Suspicious sequence of exploration activities",
+      "description": "Process performed reconnaissance commands in rapid succession.",
+      "recommendedActions": "Investigate the user account and machine for further suspicious activity.",
+      "category": "Discovery",
+      "assignedTo": "soc-analyst-3@contoso.com",
+      "createdDateTime": "2026-05-08T00:36:09Z",
+      "lastUpdateDateTime": "2026-05-08T00:36:09Z",
+      "firstActivityDateTime": "2026-05-08T00:36:09Z",
+      "lastActivityDateTime": "2026-05-08T00:36:09Z",
+      "mitreTechniques": [
+        "T1033",
+        "T1087"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-data-rg/providers/microsoft.storage/storageaccounts/stor-marketing-dev-031"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.deviceEvidence",
+          "deviceDnsName": "app-vm-72.contoso.local",
+          "osPlatform": "WindowsServer2019",
+          "mdeDeviceId": "0021ae24de5762c9"
+        }
+      ]
+    },
+    {
+      "id": "da3365278169632458968_-8504761698",
+      "incidentId": "9824",
+      "status": "new",
+      "severity": "low",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForEndpoint",
+      "detectionSource": "antivirus",
+      "title": "Antimalware action taken",
+      "description": "Microsoft Defender Antimalware took action against malicious code.",
+      "recommendedActions": "Confirm the detection, investigate origin (email attachment, download), check for related activity.",
+      "category": "Execution",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-08T06:31:24Z",
+      "lastUpdateDateTime": "2026-05-08T06:31:24Z",
+      "firstActivityDateTime": "2026-05-08T06:31:24Z",
+      "lastActivityDateTime": "2026-05-08T06:31:24Z",
+      "mitreTechniques": [
+        "T1204"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/marketing-rg/providers/microsoft.storage/storageaccounts/stor-data-sta-048"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.deviceEvidence",
+          "deviceDnsName": "ws-vm-45.contoso.local",
+          "osPlatform": "Windows11",
+          "mdeDeviceId": "0004e619ef219aff"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "ivan.patel",
+            "userPrincipalName": "priya.martinez@contoso.com"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da3081453561806476758_-3739951076",
+      "incidentId": "7771",
+      "status": "resolved",
+      "severity": "low",
+      "classification": "truePositive",
+      "determination": "compromisedAccount",
+      "serviceSource": "microsoftDefenderForEndpoint",
+      "detectionSource": "antivirus",
+      "title": "Suspicious sequence of exploration activities",
+      "description": "Process performed reconnaissance commands in rapid succession.",
+      "recommendedActions": "Investigate the user account and machine for further suspicious activity.",
+      "category": "Discovery",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-08T18:09:11Z",
+      "lastUpdateDateTime": "2026-05-08T18:09:11Z",
+      "firstActivityDateTime": "2026-05-08T18:09:11Z",
+      "lastActivityDateTime": "2026-05-08T18:09:11Z",
+      "mitreTechniques": [
+        "T1033",
+        "T1087"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/platform-rg/providers/microsoft.logic/workflows/logic-hr-sta-017"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.deviceEvidence",
+          "deviceDnsName": "web-vm-79.contoso.local",
+          "osPlatform": "Windows11",
+          "mdeDeviceId": "00052d5ce2d83afe"
+        }
+      ]
+    },
+    {
+      "id": "da7000160376459235553_-9434946584",
+      "incidentId": "1969",
+      "status": "inProgress",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForCloudApps",
+      "detectionSource": "automation",
+      "title": "Mass download by a single user",
+      "description": "User downloaded an unusually large number of files within a short time window.",
+      "recommendedActions": "Contact the user to verify the activity. Apply session controls if exfiltration is confirmed.",
+      "category": "Exfiltration",
+      "assignedTo": "soc-analyst-5@contoso.com",
+      "createdDateTime": "2026-05-11T01:48:17Z",
+      "lastUpdateDateTime": "2026-05-11T01:48:17Z",
+      "firstActivityDateTime": "2026-05-11T01:48:17Z",
+      "lastActivityDateTime": "2026-05-11T01:48:17Z",
+      "mitreTechniques": [
+        "T1567"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-staging-rg/providers/microsoft.network/networksecuritygroups/nsg-finance-pro-070"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "diego.wilson",
+            "userPrincipalName": "raj.hassan@contoso.com"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da9499068820404137042_-6046864799",
+      "incidentId": null,
+      "status": "new",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForCloud",
+      "detectionSource": "automation",
+      "title": "Possible SQL injection attempt",
+      "description": "A potential SQL injection attempt was identified by Defender for SQL.",
+      "recommendedActions": "Review web application logs, patch the vulnerable endpoint, enable WAF rules.",
+      "category": "InitialAccess",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-04T14:28:33Z",
+      "lastUpdateDateTime": "2026-05-04T14:28:33Z",
+      "firstActivityDateTime": "2026-05-04T14:28:33Z",
+      "lastActivityDateTime": "2026-05-04T14:28:33Z",
+      "mitreTechniques": [
+        "T1190"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "da6559691569174803181_-9516893896",
+      "incidentId": "9901",
+      "status": "resolved",
+      "severity": "medium",
+      "classification": "falsePositive",
+      "determination": "compromisedAccount",
+      "serviceSource": "microsoftDefenderForIdentity",
+      "detectionSource": "automation",
+      "title": "Suspicious sign-in from anonymous IP address",
+      "description": "Sign-in detected from a known anonymous proxy/Tor exit node.",
+      "recommendedActions": "Verify the sign-in with the user. Reset credentials and revoke sessions if not legitimate.",
+      "category": "InitialAccess",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-11T04:14:17Z",
+      "lastUpdateDateTime": "2026-05-11T04:14:17Z",
+      "firstActivityDateTime": "2026-05-11T04:14:17Z",
+      "lastActivityDateTime": "2026-05-11T04:14:17Z",
+      "mitreTechniques": [
+        "T1078"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/hr-rg/providers/microsoft.containerregistry/registries/acr-security-tes-063"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "diego.brown",
+            "userPrincipalName": "john.smith@contoso.com"
+          }
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.ipEvidence",
+          "ipAddress": "103.224.182.250",
+          "countryLetterCode": "IN"
+        }
+      ]
+    },
+    {
+      "id": "da2717383311077543135_-9650425740",
+      "incidentId": "5833",
+      "status": "resolved",
+      "severity": "medium",
+      "classification": "falsePositive",
+      "determination": "malware",
+      "serviceSource": "microsoftDefenderForCloudApps",
+      "detectionSource": "automation",
+      "title": "Impossible travel detected",
+      "description": "User authenticated from two geographically distant locations within an unfeasibly short time.",
+      "recommendedActions": "Confirm the activity with the user, reset credentials, revoke active sessions.",
+      "category": "InitialAccess",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-12T01:44:19Z",
+      "lastUpdateDateTime": "2026-05-12T01:44:19Z",
+      "firstActivityDateTime": "2026-05-12T01:44:19Z",
+      "lastActivityDateTime": "2026-05-12T01:44:19Z",
+      "mitreTechniques": [
+        "T1078"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/staging-rg/providers/microsoft.sql/servers/sql-marketing-tes-024"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "kavita.khan",
+            "userPrincipalName": "diego.martinez@contoso.com"
+          }
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.ipEvidence",
+          "ipAddress": "103.224.182.250",
+          "countryLetterCode": "IN"
+        }
+      ]
+    },
+    {
+      "id": "da1879772307694049813_-5898890707",
+      "incidentId": "5064",
+      "status": "resolved",
+      "severity": "low",
+      "classification": "unknown",
+      "determination": "lateralMovement",
+      "serviceSource": "microsoftDefenderForIdentity",
+      "detectionSource": "automation",
+      "title": "Anomalous Azure AD sign-in properties",
+      "description": "Sign-in shows anomalous characteristics relative to the user's baseline.",
+      "recommendedActions": "Verify with the user. Enforce MFA and conditional access policies.",
+      "category": "InitialAccess",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-16T08:51:00Z",
+      "lastUpdateDateTime": "2026-05-16T08:51:00Z",
+      "firstActivityDateTime": "2026-05-16T08:51:00Z",
+      "lastActivityDateTime": "2026-05-16T08:51:00Z",
+      "mitreTechniques": [
+        "T1078.004"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "lucas.khan",
+            "userPrincipalName": "ahmed.kim@contoso.com"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da7327912259675316740_-6562144159",
+      "incidentId": null,
+      "status": "resolved",
+      "severity": "low",
+      "classification": "unknown",
+      "determination": "malware",
+      "serviceSource": "microsoftDefenderForEndpoint",
+      "detectionSource": "antivirus",
+      "title": "Suspicious sequence of exploration activities",
+      "description": "Process performed reconnaissance commands in rapid succession.",
+      "recommendedActions": "Investigate the user account and machine for further suspicious activity.",
+      "category": "Discovery",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-17T01:46:28Z",
+      "lastUpdateDateTime": "2026-05-17T01:46:28Z",
+      "firstActivityDateTime": "2026-05-17T01:46:28Z",
+      "lastActivityDateTime": "2026-05-17T01:46:28Z",
+      "mitreTechniques": [
+        "T1033",
+        "T1087"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-data-rg/providers/microsoft.storage/storageaccounts/stor-exec-pro-073"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.deviceEvidence",
+          "deviceDnsName": "web-vm-34.contoso.local",
+          "osPlatform": "WindowsServer2019",
+          "mdeDeviceId": "000b1d49561fc847"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "kavita.martinez",
+            "userPrincipalName": "aisha.chen@contoso.com"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da7474260482897533879_-9941564880",
+      "incidentId": null,
+      "status": "new",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForCloud",
+      "detectionSource": "automation",
+      "title": "Defender for Cloud has detected suspicious activity in your Kubernetes cluster",
+      "description": "A pod was deployed with privileged context or suspicious image.",
+      "recommendedActions": "Review the pod spec, validate the image source, restrict cluster admin access.",
+      "category": "Execution",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-09T13:51:19Z",
+      "lastUpdateDateTime": "2026-05-09T13:51:19Z",
+      "firstActivityDateTime": "2026-05-09T13:51:19Z",
+      "lastActivityDateTime": "2026-05-09T13:51:19Z",
+      "mitreTechniques": [
+        "T1610"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "da2072124946804405875_-3921845810",
+      "incidentId": null,
+      "status": "new",
+      "severity": "high",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForEndpoint",
+      "detectionSource": "antivirus",
+      "title": "Possible data exfiltration via DNS",
+      "description": "Large volume of unusual DNS queries detected, consistent with DNS tunneling for exfiltration.",
+      "recommendedActions": "Block the destination domain, isolate the device, hunt for the C2 mechanism.",
+      "category": "Exfiltration",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-03T16:22:31Z",
+      "lastUpdateDateTime": "2026-05-03T16:22:31Z",
+      "firstActivityDateTime": "2026-05-03T16:22:31Z",
+      "lastActivityDateTime": "2026-05-03T16:22:31Z",
+      "mitreTechniques": [
+        "T1048.003"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-staging-rg/providers/microsoft.network/networksecuritygroups/nsg-finance-pro-070"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.deviceEvidence",
+          "deviceDnsName": "db-vm-74.contoso.local",
+          "osPlatform": "Windows11",
+          "mdeDeviceId": "000e0d6ecee59b61"
+        }
+      ]
+    },
+    {
+      "id": "da4831615398699349475_-9837912162",
+      "incidentId": null,
+      "status": "new",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForCloud",
+      "detectionSource": "automation",
+      "title": "Defender for Cloud has detected suspicious activity in your Kubernetes cluster",
+      "description": "A pod was deployed with privileged context or suspicious image.",
+      "recommendedActions": "Review the pod spec, validate the image source, restrict cluster admin access.",
+      "category": "Execution",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-15T11:44:52Z",
+      "lastUpdateDateTime": "2026-05-15T11:44:52Z",
+      "firstActivityDateTime": "2026-05-15T11:44:52Z",
+      "lastActivityDateTime": "2026-05-15T11:44:52Z",
+      "mitreTechniques": [
+        "T1610"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.insights/components/ai-sales-tes-007"
+        }
+      ]
+    },
+    {
+      "id": "da5991352297214874067_-5269728610",
+      "incidentId": null,
+      "status": "inProgress",
+      "severity": "low",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForEndpoint",
+      "detectionSource": "antivirus",
+      "title": "Antimalware action taken",
+      "description": "Microsoft Defender Antimalware took action against malicious code.",
+      "recommendedActions": "Confirm the detection, investigate origin (email attachment, download), check for related activity.",
+      "category": "Execution",
+      "assignedTo": "soc-analyst-4@contoso.com",
+      "createdDateTime": "2026-05-14T06:36:59Z",
+      "lastUpdateDateTime": "2026-05-14T06:36:59Z",
+      "firstActivityDateTime": "2026-05-14T06:36:59Z",
+      "lastActivityDateTime": "2026-05-14T06:36:59Z",
+      "mitreTechniques": [
+        "T1204"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/finance-rg/providers/microsoft.network/publicipaddresses/pip-sales-pro-000"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.deviceEvidence",
+          "deviceDnsName": "db-vm-75.contoso.local",
+          "osPlatform": "Windows10",
+          "mdeDeviceId": "00111c6bb05e9ccd"
+        }
+      ]
+    },
+    {
+      "id": "da9020831416953820248_-6916301780",
+      "incidentId": "9835",
+      "status": "inProgress",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "malware",
+      "serviceSource": "microsoftDefenderForCloudApps",
+      "detectionSource": "automation",
+      "title": "Impossible travel detected",
+      "description": "User authenticated from two geographically distant locations within an unfeasibly short time.",
+      "recommendedActions": "Confirm the activity with the user, reset credentials, revoke active sessions.",
+      "category": "InitialAccess",
+      "assignedTo": "soc-analyst-3@contoso.com",
+      "createdDateTime": "2026-05-15T11:14:14Z",
+      "lastUpdateDateTime": "2026-05-15T11:14:14Z",
+      "firstActivityDateTime": "2026-05-15T11:14:14Z",
+      "lastActivityDateTime": "2026-05-15T11:14:14Z",
+      "mitreTechniques": [
+        "T1078"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "zara.yamamoto",
+            "userPrincipalName": "sofia.davis@contoso.com"
+          }
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.ipEvidence",
+          "ipAddress": "141.98.10.79",
+          "countryLetterCode": "BG"
+        }
+      ]
+    },
+    {
+      "id": "da3751912883645210004_-1986399651",
+      "incidentId": null,
+      "status": "new",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForCloudApps",
+      "detectionSource": "automation",
+      "title": "Mass download by a single user",
+      "description": "User downloaded an unusually large number of files within a short time window.",
+      "recommendedActions": "Contact the user to verify the activity. Apply session controls if exfiltration is confirmed.",
+      "category": "Exfiltration",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-14T09:17:21Z",
+      "lastUpdateDateTime": "2026-05-14T09:17:21Z",
+      "firstActivityDateTime": "2026-05-14T09:17:21Z",
+      "lastActivityDateTime": "2026-05-14T09:17:21Z",
+      "mitreTechniques": [
+        "T1567"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-prod-rg/providers/microsoft.insights/components/ai-legal-pro-067"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "maria.johnson",
+            "userPrincipalName": "jane.smith@contoso.com"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da2900767486167240292_-1289012242",
+      "incidentId": null,
+      "status": "new",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForCloudApps",
+      "detectionSource": "automation",
+      "title": "Impossible travel detected",
+      "description": "User authenticated from two geographically distant locations within an unfeasibly short time.",
+      "recommendedActions": "Confirm the activity with the user, reset credentials, revoke active sessions.",
+      "category": "InitialAccess",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-14T14:55:15Z",
+      "lastUpdateDateTime": "2026-05-14T14:55:15Z",
+      "firstActivityDateTime": "2026-05-14T14:55:15Z",
+      "lastActivityDateTime": "2026-05-14T14:55:15Z",
+      "mitreTechniques": [
+        "T1078"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "zara.tanaka",
+            "userPrincipalName": "john.wilson@contoso.com"
+          }
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.ipEvidence",
+          "ipAddress": "185.220.101.34",
+          "countryLetterCode": "DE"
+        }
+      ]
+    },
+    {
+      "id": "da5048717349266316448_-1242425303",
+      "incidentId": null,
+      "status": "new",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForCloudApps",
+      "detectionSource": "automation",
+      "title": "Suspicious service principal sign-in",
+      "description": "Service principal authenticated from an unexpected location or with unusual behavior.",
+      "recommendedActions": "Rotate the service principal credentials, review the assigned permissions.",
+      "category": "Persistence",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-17T04:49:07Z",
+      "lastUpdateDateTime": "2026-05-17T04:49:07Z",
+      "firstActivityDateTime": "2026-05-17T04:49:07Z",
+      "lastActivityDateTime": "2026-05-17T04:49:07Z",
+      "mitreTechniques": [
+        "T1098.001"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "john.johnson",
+            "userPrincipalName": "zara.lopez@contoso.com"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da7089384789458455379_-3238756255",
+      "incidentId": null,
+      "status": "new",
+      "severity": "low",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForEndpoint",
+      "detectionSource": "antivirus",
+      "title": "Antimalware action taken",
+      "description": "Microsoft Defender Antimalware took action against malicious code.",
+      "recommendedActions": "Confirm the detection, investigate origin (email attachment, download), check for related activity.",
+      "category": "Execution",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-11T19:39:19Z",
+      "lastUpdateDateTime": "2026-05-11T19:39:19Z",
+      "firstActivityDateTime": "2026-05-11T19:39:19Z",
+      "lastActivityDateTime": "2026-05-11T19:39:19Z",
+      "mitreTechniques": [
+        "T1204"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.deviceEvidence",
+          "deviceDnsName": "app-vm-74.contoso.local",
+          "osPlatform": "WindowsServer2019",
+          "mdeDeviceId": "000d358be16c3e29"
+        }
+      ]
+    },
+    {
+      "id": "da5837317906744900988_-7083067988",
+      "incidentId": "7167",
+      "status": "new",
+      "severity": "low",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForEndpoint",
+      "detectionSource": "antivirus",
+      "title": "Suspicious sequence of exploration activities",
+      "description": "Process performed reconnaissance commands in rapid succession.",
+      "recommendedActions": "Investigate the user account and machine for further suspicious activity.",
+      "category": "Discovery",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-13T10:19:01Z",
+      "lastUpdateDateTime": "2026-05-13T10:19:01Z",
+      "firstActivityDateTime": "2026-05-13T10:19:01Z",
+      "lastActivityDateTime": "2026-05-13T10:19:01Z",
+      "mitreTechniques": [
+        "T1033",
+        "T1087"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.deviceEvidence",
+          "deviceDnsName": "db-vm-81.contoso.local",
+          "osPlatform": "WindowsServer2022",
+          "mdeDeviceId": "0013699f3312bab5"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "priya.yamamoto",
+            "userPrincipalName": "anna.kim@contoso.com"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da1531487011214490193_-7710396573",
+      "incidentId": null,
+      "status": "new",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "azureSecurityCenter",
+      "detectionSource": "automation",
+      "title": "New Global Administrator role assigned",
+      "description": "A new user was granted Global Administrator role in Entra ID.",
+      "recommendedActions": "Verify the change with the assigning admin. Remove if unauthorized.",
+      "category": "Persistence",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-15T23:20:30Z",
+      "lastUpdateDateTime": "2026-05-15T23:20:30Z",
+      "firstActivityDateTime": "2026-05-15T23:20:30Z",
+      "lastActivityDateTime": "2026-05-15T23:20:30Z",
+      "mitreTechniques": [
+        "T1098"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-web-rg/providers/microsoft.insights/components/ai-security-dev-018"
+        }
+      ]
+    },
+    {
+      "id": "da5148551181940490904_-8933377472",
+      "incidentId": "4120",
+      "status": "new",
+      "severity": "low",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForIdentity",
+      "detectionSource": "automation",
+      "title": "Anomalous Azure AD sign-in properties",
+      "description": "Sign-in shows anomalous characteristics relative to the user's baseline.",
+      "recommendedActions": "Verify with the user. Enforce MFA and conditional access policies.",
+      "category": "InitialAccess",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-14T15:24:19Z",
+      "lastUpdateDateTime": "2026-05-14T15:24:19Z",
+      "firstActivityDateTime": "2026-05-14T15:24:19Z",
+      "lastActivityDateTime": "2026-05-14T15:24:19Z",
+      "mitreTechniques": [
+        "T1078.004"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/iot-rg/providers/microsoft.compute/virtualmachines/vm-it-tes-032"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "yuki.khan",
+            "userPrincipalName": "raj.patel@contoso.com"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da5421631122351219984_-9190643621",
+      "incidentId": "1251",
+      "status": "inProgress",
+      "severity": "low",
+      "classification": "unknown",
+      "determination": "malware",
+      "serviceSource": "microsoftDefenderForIdentity",
+      "detectionSource": "automation",
+      "title": "Anomalous Azure AD sign-in properties",
+      "description": "Sign-in shows anomalous characteristics relative to the user's baseline.",
+      "recommendedActions": "Verify with the user. Enforce MFA and conditional access policies.",
+      "category": "InitialAccess",
+      "assignedTo": "soc-analyst-2@contoso.com",
+      "createdDateTime": "2026-05-13T23:09:07Z",
+      "lastUpdateDateTime": "2026-05-13T23:09:07Z",
+      "firstActivityDateTime": "2026-05-13T23:09:07Z",
+      "lastActivityDateTime": "2026-05-13T23:09:07Z",
+      "mitreTechniques": [
+        "T1078.004"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/finance-rg/providers/microsoft.storage/storageaccounts/stor-sales-tes-009"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "yuki.anderson",
+            "userPrincipalName": "zara.mueller@contoso.com"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da9440551782857944481_-6510697299",
+      "incidentId": null,
+      "status": "inProgress",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "lateralMovement",
+      "serviceSource": "microsoftDefenderForCloudApps",
+      "detectionSource": "automation",
+      "title": "Mass download by a single user",
+      "description": "User downloaded an unusually large number of files within a short time window.",
+      "recommendedActions": "Contact the user to verify the activity. Apply session controls if exfiltration is confirmed.",
+      "category": "Exfiltration",
+      "assignedTo": "soc-analyst-3@contoso.com",
+      "createdDateTime": "2026-05-10T18:46:17Z",
+      "lastUpdateDateTime": "2026-05-10T18:46:17Z",
+      "firstActivityDateTime": "2026-05-10T18:46:17Z",
+      "lastActivityDateTime": "2026-05-10T18:46:17Z",
+      "mitreTechniques": [
+        "T1567"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "olivia.rossi",
+            "userPrincipalName": "ivan.singh@contoso.com"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da4419149428571777475_-6638957137",
+      "incidentId": "4625",
+      "status": "new",
+      "severity": "low",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForEndpoint",
+      "detectionSource": "antivirus",
+      "title": "Suspicious sequence of exploration activities",
+      "description": "Process performed reconnaissance commands in rapid succession.",
+      "recommendedActions": "Investigate the user account and machine for further suspicious activity.",
+      "category": "Discovery",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-13T03:51:16Z",
+      "lastUpdateDateTime": "2026-05-13T03:51:16Z",
+      "firstActivityDateTime": "2026-05-13T03:51:16Z",
+      "lastActivityDateTime": "2026-05-13T03:51:16Z",
+      "mitreTechniques": [
+        "T1033",
+        "T1087"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.deviceEvidence",
+          "deviceDnsName": "ws-vm-13.contoso.local",
+          "osPlatform": "WindowsServer2022",
+          "mdeDeviceId": "001e6c9267c09da8"
+        }
+      ]
+    },
+    {
+      "id": "da3121547342643596589_-4579265601",
+      "incidentId": null,
+      "status": "new",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForCloudApps",
+      "detectionSource": "automation",
+      "title": "Impossible travel detected",
+      "description": "User authenticated from two geographically distant locations within an unfeasibly short time.",
+      "recommendedActions": "Confirm the activity with the user, reset credentials, revoke active sessions.",
+      "category": "InitialAccess",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-11T08:26:37Z",
+      "lastUpdateDateTime": "2026-05-11T08:26:37Z",
+      "firstActivityDateTime": "2026-05-11T08:26:37Z",
+      "lastActivityDateTime": "2026-05-11T08:26:37Z",
+      "mitreTechniques": [
+        "T1078"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/ml-rg/providers/microsoft.network/publicipaddresses/pip-hr-sta-074"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "hans.wilson",
+            "userPrincipalName": "aisha.garcia@contoso.com"
+          }
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.ipEvidence",
+          "ipAddress": "203.0.113.45",
+          "countryLetterCode": "NG"
+        }
+      ]
+    },
+    {
+      "id": "da7821551432047924835_-7402059279",
+      "incidentId": "6770",
+      "status": "new",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "azureSecurityCenter",
+      "detectionSource": "automation",
+      "title": "Suspicious access to storage account from unusual location",
+      "description": "A storage account was accessed from an unusual location or by an unusual user.",
+      "recommendedActions": "Verify the access was legitimate. Rotate keys and enable storage firewall.",
+      "category": "Collection",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-08T06:41:43Z",
+      "lastUpdateDateTime": "2026-05-08T06:41:43Z",
+      "firstActivityDateTime": "2026-05-08T06:41:43Z",
+      "lastActivityDateTime": "2026-05-08T06:41:43Z",
+      "mitreTechniques": [
+        "T1530"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "da8739040865739910271_-4636537575",
+      "incidentId": null,
+      "status": "new",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForCloudApps",
+      "detectionSource": "automation",
+      "title": "Suspicious service principal sign-in",
+      "description": "Service principal authenticated from an unexpected location or with unusual behavior.",
+      "recommendedActions": "Rotate the service principal credentials, review the assigned permissions.",
+      "category": "Persistence",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-13T22:34:55Z",
+      "lastUpdateDateTime": "2026-05-13T22:34:55Z",
+      "firstActivityDateTime": "2026-05-13T22:34:55Z",
+      "lastActivityDateTime": "2026-05-13T22:34:55Z",
+      "mitreTechniques": [
+        "T1098.001"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "fatima.yamamoto",
+            "userPrincipalName": "john.nguyen@contoso.com"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da3017332901881256017_-7467073633",
+      "incidentId": "8916",
+      "status": "new",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "azureSecurityCenter",
+      "detectionSource": "automation",
+      "title": "Suspicious access to storage account from unusual location",
+      "description": "A storage account was accessed from an unusual location or by an unusual user.",
+      "recommendedActions": "Verify the access was legitimate. Rotate keys and enable storage firewall.",
+      "category": "Collection",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-04T13:46:07Z",
+      "lastUpdateDateTime": "2026-05-04T13:46:07Z",
+      "firstActivityDateTime": "2026-05-04T13:46:07Z",
+      "lastActivityDateTime": "2026-05-04T13:46:07Z",
+      "mitreTechniques": [
+        "T1530"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-identity-rg/providers/microsoft.storage/storageaccounts/stor-exec-dev-008"
+        }
+      ]
+    },
+    {
+      "id": "da5632125252466603278_-8189916797",
+      "incidentId": null,
+      "status": "new",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForCloud",
+      "detectionSource": "automation",
+      "title": "Defender for Cloud has detected suspicious activity in your Kubernetes cluster",
+      "description": "A pod was deployed with privileged context or suspicious image.",
+      "recommendedActions": "Review the pod spec, validate the image source, restrict cluster admin access.",
+      "category": "Execution",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-10T21:39:30Z",
+      "lastUpdateDateTime": "2026-05-10T21:39:30Z",
+      "firstActivityDateTime": "2026-05-10T21:39:30Z",
+      "lastActivityDateTime": "2026-05-10T21:39:30Z",
+      "mitreTechniques": [
+        "T1610"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/k8s-staging-rg/providers/microsoft.operationalinsights/workspaces/law-platform-sta-052"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "lucas.lee",
+            "userPrincipalName": "fatima.brown@contoso.com"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da4660723371370410632_-5634352383",
+      "incidentId": null,
+      "status": "new",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForCloudApps",
+      "detectionSource": "automation",
+      "title": "Mass download by a single user",
+      "description": "User downloaded an unusually large number of files within a short time window.",
+      "recommendedActions": "Contact the user to verify the activity. Apply session controls if exfiltration is confirmed.",
+      "category": "Exfiltration",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-16T22:51:59Z",
+      "lastUpdateDateTime": "2026-05-16T22:51:59Z",
+      "firstActivityDateTime": "2026-05-16T22:51:59Z",
+      "lastActivityDateTime": "2026-05-16T22:51:59Z",
+      "mitreTechniques": [
+        "T1567"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.compute/virtualmachines/vm-exec-dev-079"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "lucas.lee",
+            "userPrincipalName": "priya.lee@contoso.com"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da6994218286545649697_-4262396395",
+      "incidentId": "7213",
+      "status": "new",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForCloudApps",
+      "detectionSource": "automation",
+      "title": "Suspicious service principal sign-in",
+      "description": "Service principal authenticated from an unexpected location or with unusual behavior.",
+      "recommendedActions": "Rotate the service principal credentials, review the assigned permissions.",
+      "category": "Persistence",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-17T10:03:24Z",
+      "lastUpdateDateTime": "2026-05-17T10:03:24Z",
+      "firstActivityDateTime": "2026-05-17T10:03:24Z",
+      "lastActivityDateTime": "2026-05-17T10:03:24Z",
+      "mitreTechniques": [
+        "T1098.001"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "olivia.brown",
+            "userPrincipalName": "anna.patel@contoso.com"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da9982086296883382639_-1182758417",
+      "incidentId": "8790",
+      "status": "inProgress",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "lateralMovement",
+      "serviceSource": "microsoftDefenderForIdentity",
+      "detectionSource": "automation",
+      "title": "Suspicious sign-in from anonymous IP address",
+      "description": "Sign-in detected from a known anonymous proxy/Tor exit node.",
+      "recommendedActions": "Verify the sign-in with the user. Reset credentials and revoke sessions if not legitimate.",
+      "category": "InitialAccess",
+      "assignedTo": "soc-analyst-1@contoso.com",
+      "createdDateTime": "2026-05-14T21:41:04Z",
+      "lastUpdateDateTime": "2026-05-14T21:41:04Z",
+      "firstActivityDateTime": "2026-05-14T21:41:04Z",
+      "lastActivityDateTime": "2026-05-14T21:41:04Z",
+      "mitreTechniques": [
+        "T1078"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "ahmed.hassan",
+            "userPrincipalName": "sofia.yamamoto@contoso.com"
+          }
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.ipEvidence",
+          "ipAddress": "45.155.205.86",
+          "countryLetterCode": "RU"
+        }
+      ]
+    },
+    {
+      "id": "da2910696388499527746_-3521300895",
+      "incidentId": null,
+      "status": "inProgress",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "compromisedAccount",
+      "serviceSource": "microsoftDefenderForIdentity",
+      "detectionSource": "automation",
+      "title": "Suspicious sign-in from anonymous IP address",
+      "description": "Sign-in detected from a known anonymous proxy/Tor exit node.",
+      "recommendedActions": "Verify the sign-in with the user. Reset credentials and revoke sessions if not legitimate.",
+      "category": "InitialAccess",
+      "assignedTo": "soc-analyst-1@contoso.com",
+      "createdDateTime": "2026-05-10T08:24:51Z",
+      "lastUpdateDateTime": "2026-05-10T08:24:51Z",
+      "firstActivityDateTime": "2026-05-10T08:24:51Z",
+      "lastActivityDateTime": "2026-05-10T08:24:51Z",
+      "mitreTechniques": [
+        "T1078"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.keyvault/vaults/kv-hr-tes-069"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "hans.lopez",
+            "userPrincipalName": "diego.khan@contoso.com"
+          }
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.ipEvidence",
+          "ipAddress": "185.220.101.34",
+          "countryLetterCode": "DE"
+        }
+      ]
+    },
+    {
+      "id": "da5618998737456584269_-2485455239",
+      "incidentId": "4803",
+      "status": "new",
+      "severity": "low",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForEndpoint",
+      "detectionSource": "antivirus",
+      "title": "Antimalware action taken",
+      "description": "Microsoft Defender Antimalware took action against malicious code.",
+      "recommendedActions": "Confirm the detection, investigate origin (email attachment, download), check for related activity.",
+      "category": "Execution",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-04T01:12:41Z",
+      "lastUpdateDateTime": "2026-05-04T01:12:41Z",
+      "firstActivityDateTime": "2026-05-04T01:12:41Z",
+      "lastActivityDateTime": "2026-05-04T01:12:41Z",
+      "mitreTechniques": [
+        "T1204"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/marketing-rg/providers/microsoft.sql/servers/databases/db-exec-tes-049"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.deviceEvidence",
+          "deviceDnsName": "app-vm-50.contoso.local",
+          "osPlatform": "Windows11",
+          "mdeDeviceId": "00232f1b6f24951b"
+        }
+      ]
+    },
+    {
+      "id": "da5525018214598918629_-6274814220",
+      "incidentId": null,
+      "status": "new",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForIdentity",
+      "detectionSource": "automation",
+      "title": "Suspicious sign-in from anonymous IP address",
+      "description": "Sign-in detected from a known anonymous proxy/Tor exit node.",
+      "recommendedActions": "Verify the sign-in with the user. Reset credentials and revoke sessions if not legitimate.",
+      "category": "InitialAccess",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-05T09:42:49Z",
+      "lastUpdateDateTime": "2026-05-05T09:42:49Z",
+      "firstActivityDateTime": "2026-05-05T09:42:49Z",
+      "lastActivityDateTime": "2026-05-05T09:42:49Z",
+      "mitreTechniques": [
+        "T1078"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "mei.kim",
+            "userPrincipalName": "carlos.smith@contoso.com"
+          }
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.ipEvidence",
+          "ipAddress": "103.224.182.250",
+          "countryLetterCode": "IN"
+        }
+      ]
+    },
+    {
+      "id": "da3471605739051839856_-5957341287",
+      "incidentId": null,
+      "status": "new",
+      "severity": "low",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForIdentity",
+      "detectionSource": "automation",
+      "title": "Anomalous Azure AD sign-in properties",
+      "description": "Sign-in shows anomalous characteristics relative to the user's baseline.",
+      "recommendedActions": "Verify with the user. Enforce MFA and conditional access policies.",
+      "category": "InitialAccess",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-12T16:34:48Z",
+      "lastUpdateDateTime": "2026-05-12T16:34:48Z",
+      "firstActivityDateTime": "2026-05-12T16:34:48Z",
+      "lastActivityDateTime": "2026-05-12T16:34:48Z",
+      "mitreTechniques": [
+        "T1078.004"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.compute/virtualmachines/vm-exec-dev-079"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "aisha.johnson",
+            "userPrincipalName": "ivan.patel@contoso.com"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da3488156295365368472_-1439080604",
+      "incidentId": "8061",
+      "status": "inProgress",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "compromisedAccount",
+      "serviceSource": "microsoftDefenderForCloudApps",
+      "detectionSource": "automation",
+      "title": "Impossible travel detected",
+      "description": "User authenticated from two geographically distant locations within an unfeasibly short time.",
+      "recommendedActions": "Confirm the activity with the user, reset credentials, revoke active sessions.",
+      "category": "InitialAccess",
+      "assignedTo": "soc-analyst-5@contoso.com",
+      "createdDateTime": "2026-05-05T13:25:42Z",
+      "lastUpdateDateTime": "2026-05-05T13:25:42Z",
+      "firstActivityDateTime": "2026-05-05T13:25:42Z",
+      "lastActivityDateTime": "2026-05-05T13:25:42Z",
+      "mitreTechniques": [
+        "T1078"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/staging-rg/providers/microsoft.web/sites/app-finance-pro-013"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "ahmed.smith",
+            "userPrincipalName": "aisha.martinez@contoso.com"
+          }
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.ipEvidence",
+          "ipAddress": "45.155.205.86",
+          "countryLetterCode": "RU"
+        }
+      ]
+    },
+    {
+      "id": "da8235170182763210218_-2654584280",
+      "incidentId": "7353",
+      "status": "new",
+      "severity": "low",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForIdentity",
+      "detectionSource": "automation",
+      "title": "Anomalous Azure AD sign-in properties",
+      "description": "Sign-in shows anomalous characteristics relative to the user's baseline.",
+      "recommendedActions": "Verify with the user. Enforce MFA and conditional access policies.",
+      "category": "InitialAccess",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-13T02:44:22Z",
+      "lastUpdateDateTime": "2026-05-13T02:44:22Z",
+      "firstActivityDateTime": "2026-05-13T02:44:22Z",
+      "lastActivityDateTime": "2026-05-13T02:44:22Z",
+      "mitreTechniques": [
+        "T1078.004"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.storage/storageaccounts/stor-data-tes-011"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "priya.mueller",
+            "userPrincipalName": "ahmed.rossi@contoso.com"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da3480339684141237687_-6588316233",
+      "incidentId": null,
+      "status": "inProgress",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForIdentity",
+      "detectionSource": "automation",
+      "title": "Suspicious sign-in from anonymous IP address",
+      "description": "Sign-in detected from a known anonymous proxy/Tor exit node.",
+      "recommendedActions": "Verify the sign-in with the user. Reset credentials and revoke sessions if not legitimate.",
+      "category": "InitialAccess",
+      "assignedTo": "soc-analyst-2@contoso.com",
+      "createdDateTime": "2026-05-17T07:08:11Z",
+      "lastUpdateDateTime": "2026-05-17T07:08:11Z",
+      "firstActivityDateTime": "2026-05-17T07:08:11Z",
+      "lastActivityDateTime": "2026-05-17T07:08:11Z",
+      "mitreTechniques": [
+        "T1078"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-data-rg/providers/microsoft.storage/storageaccounts/stor-marketing-dev-031"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "hans.nguyen",
+            "userPrincipalName": "diego.kim@contoso.com"
+          }
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.ipEvidence",
+          "ipAddress": "198.96.155.3",
+          "countryLetterCode": "CA"
+        }
+      ]
+    },
+    {
+      "id": "da3274391899768393061_-3648572296",
+      "incidentId": null,
+      "status": "new",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "azureSecurityCenter",
+      "detectionSource": "automation",
+      "title": "New Global Administrator role assigned",
+      "description": "A new user was granted Global Administrator role in Entra ID.",
+      "recommendedActions": "Verify the change with the assigning admin. Remove if unauthorized.",
+      "category": "Persistence",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-10T18:52:08Z",
+      "lastUpdateDateTime": "2026-05-10T18:52:08Z",
+      "firstActivityDateTime": "2026-05-10T18:52:08Z",
+      "lastActivityDateTime": "2026-05-10T18:52:08Z",
+      "mitreTechniques": [
+        "T1098"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/finance-rg/providers/microsoft.storage/storageaccounts/stor-sales-tes-009"
+        }
+      ]
+    },
+    {
+      "id": "da4971733586363631076_-5879617459",
+      "incidentId": "4290",
+      "status": "new",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForCloudApps",
+      "detectionSource": "automation",
+      "title": "Impossible travel detected",
+      "description": "User authenticated from two geographically distant locations within an unfeasibly short time.",
+      "recommendedActions": "Confirm the activity with the user, reset credentials, revoke active sessions.",
+      "category": "InitialAccess",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-07T05:53:37Z",
+      "lastUpdateDateTime": "2026-05-07T05:53:37Z",
+      "firstActivityDateTime": "2026-05-07T05:53:37Z",
+      "lastActivityDateTime": "2026-05-07T05:53:37Z",
+      "mitreTechniques": [
+        "T1078"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "carlos.rossi",
+            "userPrincipalName": "mohamed.khan@contoso.com"
+          }
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.ipEvidence",
+          "ipAddress": "89.248.165.30",
+          "countryLetterCode": "NL"
+        }
+      ]
+    },
+    {
+      "id": "da7778019664960968862_-6336171726",
+      "incidentId": "7437",
+      "status": "new",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForCloud",
+      "detectionSource": "automation",
+      "title": "Defender for Cloud has detected suspicious activity in your Kubernetes cluster",
+      "description": "A pod was deployed with privileged context or suspicious image.",
+      "recommendedActions": "Review the pod spec, validate the image source, restrict cluster admin access.",
+      "category": "Execution",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-16T14:17:57Z",
+      "lastUpdateDateTime": "2026-05-16T14:17:57Z",
+      "firstActivityDateTime": "2026-05-16T14:17:57Z",
+      "lastActivityDateTime": "2026-05-16T14:17:57Z",
+      "mitreTechniques": [
+        "T1610"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "da7533532842027568591_-6195400294",
+      "incidentId": null,
+      "status": "new",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForCloud",
+      "detectionSource": "automation",
+      "title": "Defender for Cloud has detected suspicious activity in your Kubernetes cluster",
+      "description": "A pod was deployed with privileged context or suspicious image.",
+      "recommendedActions": "Review the pod spec, validate the image source, restrict cluster admin access.",
+      "category": "Execution",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-12T09:58:02Z",
+      "lastUpdateDateTime": "2026-05-12T09:58:02Z",
+      "firstActivityDateTime": "2026-05-12T09:58:02Z",
+      "lastActivityDateTime": "2026-05-12T09:58:02Z",
+      "mitreTechniques": [
+        "T1610"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "fatima.smith",
+            "userPrincipalName": "zara.martinez@contoso.com"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da3330577207219788135_-3828935922",
+      "incidentId": null,
+      "status": "resolved",
+      "severity": "medium",
+      "classification": "truePositive",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForIdentity",
+      "detectionSource": "automation",
+      "title": "Suspicious sign-in from anonymous IP address",
+      "description": "Sign-in detected from a known anonymous proxy/Tor exit node.",
+      "recommendedActions": "Verify the sign-in with the user. Reset credentials and revoke sessions if not legitimate.",
+      "category": "InitialAccess",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-17T00:15:17Z",
+      "lastUpdateDateTime": "2026-05-17T00:15:17Z",
+      "firstActivityDateTime": "2026-05-17T00:15:17Z",
+      "lastActivityDateTime": "2026-05-17T00:15:17Z",
+      "mitreTechniques": [
+        "T1078"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "sofia.hassan",
+            "userPrincipalName": "maria.yamamoto@contoso.com"
+          }
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.ipEvidence",
+          "ipAddress": "103.224.182.250",
+          "countryLetterCode": "IN"
+        }
+      ]
+    },
+    {
+      "id": "da1339098734189892874_-1364994639",
+      "incidentId": null,
+      "status": "resolved",
+      "severity": "medium",
+      "classification": "falsePositive",
+      "determination": "lateralMovement",
+      "serviceSource": "microsoftDefenderForCloudApps",
+      "detectionSource": "automation",
+      "title": "Suspicious service principal sign-in",
+      "description": "Service principal authenticated from an unexpected location or with unusual behavior.",
+      "recommendedActions": "Rotate the service principal credentials, review the assigned permissions.",
+      "category": "Persistence",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-17T08:16:28Z",
+      "lastUpdateDateTime": "2026-05-17T08:16:28Z",
+      "firstActivityDateTime": "2026-05-17T08:16:28Z",
+      "lastActivityDateTime": "2026-05-17T08:16:28Z",
+      "mitreTechniques": [
+        "T1098.001"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/shared-services-rg/providers/microsoft.web/sites/app-data-pro-051"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "fatima.nguyen",
+            "userPrincipalName": "ivan.wilson@contoso.com"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da3047598579710471581_-3470617247",
+      "incidentId": null,
+      "status": "new",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForIdentity",
+      "detectionSource": "automation",
+      "title": "Suspicious sign-in from anonymous IP address",
+      "description": "Sign-in detected from a known anonymous proxy/Tor exit node.",
+      "recommendedActions": "Verify the sign-in with the user. Reset credentials and revoke sessions if not legitimate.",
+      "category": "InitialAccess",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-14T17:43:21Z",
+      "lastUpdateDateTime": "2026-05-14T17:43:21Z",
+      "firstActivityDateTime": "2026-05-14T17:43:21Z",
+      "lastActivityDateTime": "2026-05-14T17:43:21Z",
+      "mitreTechniques": [
+        "T1078"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/shared-services-rg/providers/microsoft.web/sites/app-data-pro-051"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "carlos.wilson",
+            "userPrincipalName": "kavita.smith@contoso.com"
+          }
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.ipEvidence",
+          "ipAddress": "185.220.102.250",
+          "countryLetterCode": "DE"
+        }
+      ]
+    },
+    {
+      "id": "da9490552417811520918_-5130589741",
+      "incidentId": "3321",
+      "status": "new",
+      "severity": "low",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForIdentity",
+      "detectionSource": "automation",
+      "title": "Anomalous Azure AD sign-in properties",
+      "description": "Sign-in shows anomalous characteristics relative to the user's baseline.",
+      "recommendedActions": "Verify with the user. Enforce MFA and conditional access policies.",
+      "category": "InitialAccess",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-06T10:58:23Z",
+      "lastUpdateDateTime": "2026-05-06T10:58:23Z",
+      "firstActivityDateTime": "2026-05-06T10:58:23Z",
+      "lastActivityDateTime": "2026-05-06T10:58:23Z",
+      "mitreTechniques": [
+        "T1078.004"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/finance-rg/providers/microsoft.insights/components/ai-exec-sta-044"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "jane.hassan",
+            "userPrincipalName": "kavita.brown@contoso.com"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da7659218718405141663_-8287542751",
+      "incidentId": "5919",
+      "status": "inProgress",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "azureSecurityCenter",
+      "detectionSource": "automation",
+      "title": "New Global Administrator role assigned",
+      "description": "A new user was granted Global Administrator role in Entra ID.",
+      "recommendedActions": "Verify the change with the assigning admin. Remove if unauthorized.",
+      "category": "Persistence",
+      "assignedTo": "soc-analyst-1@contoso.com",
+      "createdDateTime": "2026-05-13T07:26:08Z",
+      "lastUpdateDateTime": "2026-05-13T07:26:08Z",
+      "firstActivityDateTime": "2026-05-13T07:26:08Z",
+      "lastActivityDateTime": "2026-05-13T07:26:08Z",
+      "mitreTechniques": [
+        "T1098"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/finance-rg/providers/microsoft.insights/components/ai-exec-sta-044"
+        }
+      ]
+    },
+    {
+      "id": "da2476991220550598207_-2984507492",
+      "incidentId": null,
+      "status": "new",
+      "severity": "low",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForIdentity",
+      "detectionSource": "automation",
+      "title": "Anomalous Azure AD sign-in properties",
+      "description": "Sign-in shows anomalous characteristics relative to the user's baseline.",
+      "recommendedActions": "Verify with the user. Enforce MFA and conditional access policies.",
+      "category": "InitialAccess",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-09T05:18:13Z",
+      "lastUpdateDateTime": "2026-05-09T05:18:13Z",
+      "firstActivityDateTime": "2026-05-09T05:18:13Z",
+      "lastActivityDateTime": "2026-05-09T05:18:13Z",
+      "mitreTechniques": [
+        "T1078.004"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "zara.johnson",
+            "userPrincipalName": "lucas.chen@contoso.com"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da1041044375597923830_-4026816435",
+      "incidentId": "2025",
+      "status": "new",
+      "severity": "low",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForIdentity",
+      "detectionSource": "automation",
+      "title": "Anomalous Azure AD sign-in properties",
+      "description": "Sign-in shows anomalous characteristics relative to the user's baseline.",
+      "recommendedActions": "Verify with the user. Enforce MFA and conditional access policies.",
+      "category": "InitialAccess",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-05T00:05:29Z",
+      "lastUpdateDateTime": "2026-05-05T00:05:29Z",
+      "firstActivityDateTime": "2026-05-05T00:05:29Z",
+      "lastActivityDateTime": "2026-05-05T00:05:29Z",
+      "mitreTechniques": [
+        "T1078.004"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/iot-rg/providers/microsoft.network/networksecuritygroups/nsg-finance-dev-078"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "yuki.martinez",
+            "userPrincipalName": "hans.wilson@contoso.com"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da7186128752895432576_-8999963054",
+      "incidentId": null,
+      "status": "inProgress",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "lateralMovement",
+      "serviceSource": "microsoftDefenderForCloudApps",
+      "detectionSource": "automation",
+      "title": "Mass download by a single user",
+      "description": "User downloaded an unusually large number of files within a short time window.",
+      "recommendedActions": "Contact the user to verify the activity. Apply session controls if exfiltration is confirmed.",
+      "category": "Exfiltration",
+      "assignedTo": "soc-analyst-5@contoso.com",
+      "createdDateTime": "2026-05-08T04:23:44Z",
+      "lastUpdateDateTime": "2026-05-08T04:23:44Z",
+      "firstActivityDateTime": "2026-05-08T04:23:44Z",
+      "lastActivityDateTime": "2026-05-08T04:23:44Z",
+      "mitreTechniques": [
+        "T1567"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/finance-rg/providers/microsoft.storage/storageaccounts/stor-data-dev-046"
+        },
+        {
+          "@odata.type": "#microsoft.graph.security.userEvidence",
+          "userAccount": {
+            "accountName": "carlos.singh",
+            "userPrincipalName": "wei.tanaka@contoso.com"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da7212760666350102143_-9953941533",
+      "incidentId": "2931",
+      "status": "new",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForCloud",
+      "detectionSource": "automation",
+      "title": "Defender for Cloud has detected suspicious activity in your Kubernetes cluster",
+      "description": "A pod was deployed with privileged context or suspicious image.",
+      "recommendedActions": "Review the pod spec, validate the image source, restrict cluster admin access.",
+      "category": "Execution",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-08T03:19:38Z",
+      "lastUpdateDateTime": "2026-05-08T03:19:38Z",
+      "firstActivityDateTime": "2026-05-08T03:19:38Z",
+      "lastActivityDateTime": "2026-05-08T03:19:38Z",
+      "mitreTechniques": [
+        "T1610"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-web-rg/providers/microsoft.storage/storageaccounts/stor-hr-sta-058"
+        }
+      ]
+    },
+    {
+      "id": "da6501057220467603403_-6942989052",
+      "incidentId": "9804",
+      "status": "new",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftDefenderForCloud",
+      "detectionSource": "automation",
+      "title": "Possible SQL injection attempt",
+      "description": "A potential SQL injection attempt was identified by Defender for SQL.",
+      "recommendedActions": "Review web application logs, patch the vulnerable endpoint, enable WAF rules.",
+      "category": "InitialAccess",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-06T09:06:00Z",
+      "lastUpdateDateTime": "2026-05-06T09:06:00Z",
+      "firstActivityDateTime": "2026-05-06T09:06:00Z",
+      "lastActivityDateTime": "2026-05-06T09:06:00Z",
+      "mitreTechniques": [
+        "T1190"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-web-rg/providers/microsoft.insights/components/ai-security-dev-018"
+        }
+      ]
+    },
+    {
+      "id": "da4311551837702905212_-5088130061",
+      "incidentId": null,
+      "status": "new",
+      "severity": "medium",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "azureSecurityCenter",
+      "detectionSource": "automation",
+      "title": "New Global Administrator role assigned",
+      "description": "A new user was granted Global Administrator role in Entra ID.",
+      "recommendedActions": "Verify the change with the assigning admin. Remove if unauthorized.",
+      "category": "Persistence",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-14T11:39:54Z",
+      "lastUpdateDateTime": "2026-05-14T11:39:54Z",
+      "firstActivityDateTime": "2026-05-14T11:39:54Z",
+      "lastActivityDateTime": "2026-05-14T11:39:54Z",
+      "mitreTechniques": [
+        "T1098"
+      ],
+      "evidence": [
+        {
+          "@odata.type": "#microsoft.graph.security.azureResourceEvidence",
+          "resourceId": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/marketing-rg/providers/microsoft.network/publicipaddresses/pip-it-dev-057"
+        }
+      ]
+    }
+  ]
+}

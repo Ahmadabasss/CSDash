@@ -1,0 +1,4005 @@
+{
+  "@odata.context": "synthetic",
+  "value": [
+    {
+      "id": "00451e2833247b-blah-4ee5-be62-ff5a759b4228",
+      "createdDateTime": "2026-05-16T20:42:03Z",
+      "userDisplayName": "Ahmed Nguyen",
+      "userPrincipalName": "ahmed.nguyen@contoso.com",
+      "ipAddress": "89.248.165.30",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "OneDrive",
+      "status": {
+        "errorCode": 50053,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "Amsterdam",
+        "state": null,
+        "countryOrRegion": "NL"
+      },
+      "riskLevelAggregated": "medium",
+      "riskState": "atRisk"
+    },
+    {
+      "id": "004c83a20a4bdf-blah-4ee5-be62-ff5a759b2549",
+      "createdDateTime": "2026-05-14T09:54:48Z",
+      "userDisplayName": "Sofia Johnson",
+      "userPrincipalName": "sofia.johnson@contoso.com",
+      "ipAddress": "84.16.234.12",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Outlook on the web",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Munich",
+        "state": "Bavaria",
+        "countryOrRegion": "DE"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00551c1cd5065f-blah-4ee5-be62-ff5a759b4018",
+      "createdDateTime": "2026-05-14T03:52:49Z",
+      "userDisplayName": "Raj Johnson",
+      "userPrincipalName": "raj.johnson@contoso.com",
+      "ipAddress": "64.34.144.20",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Microsoft Graph PowerShell",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Toronto",
+        "state": "Ontario",
+        "countryOrRegion": "CA"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "002f91d0b5a329-blah-4ee5-be62-ff5a759b8173",
+      "createdDateTime": "2026-05-15T10:38:55Z",
+      "userDisplayName": "Jane Davis",
+      "userPrincipalName": "jane.davis@contoso.com",
+      "ipAddress": "82.46.128.99",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Microsoft Teams",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "London",
+        "state": "England",
+        "countryOrRegion": "GB"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0016b990677834-blah-4ee5-be62-ff5a759b2424",
+      "createdDateTime": "2026-05-15T16:41:56Z",
+      "userDisplayName": "John Chen",
+      "userPrincipalName": "john.chen@contoso.com",
+      "ipAddress": "82.46.128.99",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Azure Portal",
+      "status": {
+        "errorCode": 50126,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "London",
+        "state": "England",
+        "countryOrRegion": "GB"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0049d7d940da10-blah-4ee5-be62-ff5a759b5947",
+      "createdDateTime": "2026-05-11T22:21:19Z",
+      "userDisplayName": "Raj Kim",
+      "userPrincipalName": "raj.kim@contoso.com",
+      "ipAddress": "172.58.103.45",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Outlook on the web",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Austin",
+        "state": "Texas",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "001de38c86b965-blah-4ee5-be62-ff5a759b7883",
+      "createdDateTime": "2026-05-16T10:23:06Z",
+      "userDisplayName": "Aisha Hassan",
+      "userPrincipalName": "aisha.hassan@contoso.com",
+      "ipAddress": "84.16.234.12",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Office 365 Portal",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Munich",
+        "state": "Bavaria",
+        "countryOrRegion": "DE"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00406a1f1a73b9-blah-4ee5-be62-ff5a759b2523",
+      "createdDateTime": "2026-05-11T10:05:33Z",
+      "userDisplayName": "Hans Anderson",
+      "userPrincipalName": "hans.anderson@contoso.com",
+      "ipAddress": "52.165.142.10",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Microsoft Teams",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Seattle",
+        "state": "Washington",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00475e8ac84d3a-blah-4ee5-be62-ff5a759b8058",
+      "createdDateTime": "2026-05-13T03:55:23Z",
+      "userDisplayName": "Zara Mueller",
+      "userPrincipalName": "zara.mueller@contoso.com",
+      "ipAddress": "45.155.205.86",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "OneDrive",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Moscow",
+        "state": null,
+        "countryOrRegion": "RU"
+      },
+      "riskLevelAggregated": "medium",
+      "riskState": "atRisk"
+    },
+    {
+      "id": "00341d78a9256d-blah-4ee5-be62-ff5a759b2608",
+      "createdDateTime": "2026-05-13T19:10:54Z",
+      "userDisplayName": "Diego Garcia",
+      "userPrincipalName": "diego.garcia@contoso.com",
+      "ipAddress": "172.58.103.45",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "SharePoint",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Austin",
+        "state": "Texas",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "000a2f0b3ad9fb-blah-4ee5-be62-ff5a759b2458",
+      "createdDateTime": "2026-05-16T16:38:36Z",
+      "userDisplayName": "Wei Brown",
+      "userPrincipalName": "wei.brown@contoso.com",
+      "ipAddress": "13.107.42.14",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Microsoft Teams",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Redmond",
+        "state": "Washington",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0045684efb6a76-blah-4ee5-be62-ff5a759b2909",
+      "createdDateTime": "2026-05-13T22:48:03Z",
+      "userDisplayName": "Mohamed Smith",
+      "userPrincipalName": "mohamed.smith@contoso.com",
+      "ipAddress": "98.234.45.12",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Azure Portal",
+      "status": {
+        "errorCode": 50053,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "San Jose",
+        "state": "California",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0036d301a4cd31-blah-4ee5-be62-ff5a759b9371",
+      "createdDateTime": "2026-05-14T18:44:10Z",
+      "userDisplayName": "Olivia Patel",
+      "userPrincipalName": "olivia.patel@contoso.com",
+      "ipAddress": "84.16.234.12",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Office 365 Portal",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Munich",
+        "state": "Bavaria",
+        "countryOrRegion": "DE"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0053b44d8128ea-blah-4ee5-be62-ff5a759b1349",
+      "createdDateTime": "2026-05-14T19:33:50Z",
+      "userDisplayName": "Maria Smith",
+      "userPrincipalName": "maria.smith@contoso.com",
+      "ipAddress": "84.16.234.12",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "OneDrive",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Munich",
+        "state": "Bavaria",
+        "countryOrRegion": "DE"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "003b203418188e-blah-4ee5-be62-ff5a759b8034",
+      "createdDateTime": "2026-05-17T06:47:03Z",
+      "userDisplayName": "Jane Smith",
+      "userPrincipalName": "jane.smith@contoso.com",
+      "ipAddress": "172.58.103.45",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "SharePoint",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Austin",
+        "state": "Texas",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "002d80eb4ef46c-blah-4ee5-be62-ff5a759b2271",
+      "createdDateTime": "2026-05-13T07:21:58Z",
+      "userDisplayName": "Wei Brown",
+      "userPrincipalName": "wei.brown@contoso.com",
+      "ipAddress": "64.34.144.20",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Microsoft Teams",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Toronto",
+        "state": "Ontario",
+        "countryOrRegion": "CA"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "004b0001a21256-blah-4ee5-be62-ff5a759b1574",
+      "createdDateTime": "2026-05-17T01:29:26Z",
+      "userDisplayName": "Wei Nguyen",
+      "userPrincipalName": "wei.nguyen@contoso.com",
+      "ipAddress": "98.234.45.12",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "OneDrive",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "San Jose",
+        "state": "California",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "003703c24a3809-blah-4ee5-be62-ff5a759b8337",
+      "createdDateTime": "2026-05-16T17:34:54Z",
+      "userDisplayName": "Diego Brown",
+      "userPrincipalName": "diego.brown@contoso.com",
+      "ipAddress": "52.165.142.10",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "SharePoint",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Seattle",
+        "state": "Washington",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0027313ca7aed7-blah-4ee5-be62-ff5a759b5067",
+      "createdDateTime": "2026-05-14T05:41:29Z",
+      "userDisplayName": "Emma Rossi",
+      "userPrincipalName": "emma.rossi@contoso.com",
+      "ipAddress": "203.0.113.5",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "SharePoint",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Singapore",
+        "state": "Central",
+        "countryOrRegion": "SG"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00134357de3227-blah-4ee5-be62-ff5a759b0962",
+      "createdDateTime": "2026-05-13T02:27:39Z",
+      "userDisplayName": "Diego Patel",
+      "userPrincipalName": "diego.patel@contoso.com",
+      "ipAddress": "98.234.45.12",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Office 365 Portal",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "San Jose",
+        "state": "California",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00127f077a0ff3-blah-4ee5-be62-ff5a759b4628",
+      "createdDateTime": "2026-05-15T04:57:24Z",
+      "userDisplayName": "Kavita Kim",
+      "userPrincipalName": "kavita.kim@contoso.com",
+      "ipAddress": "210.140.42.18",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Outlook on the web",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Tokyo",
+        "state": "Tokyo",
+        "countryOrRegion": "JP"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "002fd1e4e437ec-blah-4ee5-be62-ff5a759b3436",
+      "createdDateTime": "2026-05-10T17:17:05Z",
+      "userDisplayName": "Olivia Nguyen",
+      "userPrincipalName": "olivia.nguyen@contoso.com",
+      "ipAddress": "210.140.42.18",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Outlook on the web",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Tokyo",
+        "state": "Tokyo",
+        "countryOrRegion": "JP"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "000f5a5f5ba0ff-blah-4ee5-be62-ff5a759b0514",
+      "createdDateTime": "2026-05-17T09:04:03Z",
+      "userDisplayName": "Jane Mueller",
+      "userPrincipalName": "jane.mueller@contoso.com",
+      "ipAddress": "203.0.113.5",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Microsoft Teams",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Singapore",
+        "state": "Central",
+        "countryOrRegion": "SG"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0042a4a148bc9a-blah-4ee5-be62-ff5a759b2177",
+      "createdDateTime": "2026-05-12T23:06:29Z",
+      "userDisplayName": "Maria Davis",
+      "userPrincipalName": "maria.davis@contoso.com",
+      "ipAddress": "210.140.42.18",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Outlook on the web",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Tokyo",
+        "state": "Tokyo",
+        "countryOrRegion": "JP"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00519e0ed5da98-blah-4ee5-be62-ff5a759b3014",
+      "createdDateTime": "2026-05-16T16:06:28Z",
+      "userDisplayName": "Zara Davis",
+      "userPrincipalName": "zara.davis@contoso.com",
+      "ipAddress": "84.16.234.12",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Microsoft Graph PowerShell",
+      "status": {
+        "errorCode": 50053,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "Munich",
+        "state": "Bavaria",
+        "countryOrRegion": "DE"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0033eb4b785d92-blah-4ee5-be62-ff5a759b2427",
+      "createdDateTime": "2026-05-15T00:18:20Z",
+      "userDisplayName": "Mei Patel",
+      "userPrincipalName": "mei.patel@contoso.com",
+      "ipAddress": "82.46.128.99",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Azure Portal",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "London",
+        "state": "England",
+        "countryOrRegion": "GB"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0022fc36b7e3c7-blah-4ee5-be62-ff5a759b2957",
+      "createdDateTime": "2026-05-17T07:14:43Z",
+      "userDisplayName": "Diego Mueller",
+      "userPrincipalName": "diego.mueller@contoso.com",
+      "ipAddress": "210.140.42.18",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Office 365 Portal",
+      "status": {
+        "errorCode": 50053,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "Tokyo",
+        "state": "Tokyo",
+        "countryOrRegion": "JP"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "000971a4c40ab6-blah-4ee5-be62-ff5a759b1713",
+      "createdDateTime": "2026-05-10T19:18:02Z",
+      "userDisplayName": "Hans Nguyen",
+      "userPrincipalName": "hans.nguyen@contoso.com",
+      "ipAddress": "45.155.205.86",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Microsoft Graph PowerShell",
+      "status": {
+        "errorCode": 50053,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "Moscow",
+        "state": null,
+        "countryOrRegion": "RU"
+      },
+      "riskLevelAggregated": "medium",
+      "riskState": "atRisk"
+    },
+    {
+      "id": "002c18cfb911a1-blah-4ee5-be62-ff5a759b8697",
+      "createdDateTime": "2026-05-15T06:39:58Z",
+      "userDisplayName": "Raj Patel",
+      "userPrincipalName": "raj.patel@contoso.com",
+      "ipAddress": "172.58.103.45",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "OneDrive",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Austin",
+        "state": "Texas",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "004353588a65ac-blah-4ee5-be62-ff5a759b9682",
+      "createdDateTime": "2026-05-13T22:39:14Z",
+      "userDisplayName": "Wei Lee",
+      "userPrincipalName": "wei.lee@contoso.com",
+      "ipAddress": "13.107.6.156",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "SharePoint",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Sydney",
+        "state": "NSW",
+        "countryOrRegion": "AU"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "000b63a39840d1-blah-4ee5-be62-ff5a759b6673",
+      "createdDateTime": "2026-05-11T12:52:33Z",
+      "userDisplayName": "Sofia Patel",
+      "userPrincipalName": "sofia.patel@contoso.com",
+      "ipAddress": "210.140.42.18",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Outlook on the web",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Tokyo",
+        "state": "Tokyo",
+        "countryOrRegion": "JP"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00570430d88dda-blah-4ee5-be62-ff5a759b9369",
+      "createdDateTime": "2026-05-16T15:58:58Z",
+      "userDisplayName": "Zara Davis",
+      "userPrincipalName": "zara.davis@contoso.com",
+      "ipAddress": "210.140.42.18",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "SharePoint",
+      "status": {
+        "errorCode": 50126,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "Tokyo",
+        "state": "Tokyo",
+        "countryOrRegion": "JP"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "000e0d289a17af-blah-4ee5-be62-ff5a759b3759",
+      "createdDateTime": "2026-05-14T14:04:56Z",
+      "userDisplayName": "Raj Johnson",
+      "userPrincipalName": "raj.johnson@contoso.com",
+      "ipAddress": "210.140.42.18",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "OneDrive",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Tokyo",
+        "state": "Tokyo",
+        "countryOrRegion": "JP"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00257b58d3b9f6-blah-4ee5-be62-ff5a759b7360",
+      "createdDateTime": "2026-05-15T10:51:23Z",
+      "userDisplayName": "Yuki Garcia",
+      "userPrincipalName": "yuki.garcia@contoso.com",
+      "ipAddress": "52.165.142.10",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Microsoft Teams",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Seattle",
+        "state": "Washington",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "004d9b947f8c89-blah-4ee5-be62-ff5a759b8954",
+      "createdDateTime": "2026-05-13T08:39:57Z",
+      "userDisplayName": "Jane Lopez",
+      "userPrincipalName": "jane.lopez@contoso.com",
+      "ipAddress": "13.107.42.14",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Office 365 Portal",
+      "status": {
+        "errorCode": 50126,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "Redmond",
+        "state": "Washington",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "000fa5f8419593-blah-4ee5-be62-ff5a759b8136",
+      "createdDateTime": "2026-05-14T07:16:52Z",
+      "userDisplayName": "Mohamed Garcia",
+      "userPrincipalName": "mohamed.garcia@contoso.com",
+      "ipAddress": "82.46.128.99",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Azure Portal",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "London",
+        "state": "England",
+        "countryOrRegion": "GB"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00272829633b92-blah-4ee5-be62-ff5a759b6373",
+      "createdDateTime": "2026-05-11T15:51:53Z",
+      "userDisplayName": "Sofia Smith",
+      "userPrincipalName": "sofia.smith@contoso.com",
+      "ipAddress": "82.46.128.99",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Outlook on the web",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "London",
+        "state": "England",
+        "countryOrRegion": "GB"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00134abc665e7a-blah-4ee5-be62-ff5a759b5386",
+      "createdDateTime": "2026-05-17T06:22:11Z",
+      "userDisplayName": "Liam Smith",
+      "userPrincipalName": "liam.smith@contoso.com",
+      "ipAddress": "172.58.103.45",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Azure Portal",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Austin",
+        "state": "Texas",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "001eba908b9371-blah-4ee5-be62-ff5a759b4789",
+      "createdDateTime": "2026-05-15T05:05:06Z",
+      "userDisplayName": "Zara Lopez",
+      "userPrincipalName": "zara.lopez@contoso.com",
+      "ipAddress": "13.107.42.14",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "SharePoint",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Redmond",
+        "state": "Washington",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00375b7868743d-blah-4ee5-be62-ff5a759b1599",
+      "createdDateTime": "2026-05-11T02:12:52Z",
+      "userDisplayName": "Carlos Patel",
+      "userPrincipalName": "carlos.patel@contoso.com",
+      "ipAddress": "203.0.113.5",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "SharePoint",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Singapore",
+        "state": "Central",
+        "countryOrRegion": "SG"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0009863e589873-blah-4ee5-be62-ff5a759b3924",
+      "createdDateTime": "2026-05-16T16:42:46Z",
+      "userDisplayName": "Sofia Garcia",
+      "userPrincipalName": "sofia.garcia@contoso.com",
+      "ipAddress": "13.107.42.14",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Microsoft Graph PowerShell",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Redmond",
+        "state": "Washington",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00344cc1fa7896-blah-4ee5-be62-ff5a759b1989",
+      "createdDateTime": "2026-05-14T15:33:18Z",
+      "userDisplayName": "Hans Nguyen",
+      "userPrincipalName": "hans.nguyen@contoso.com",
+      "ipAddress": "82.46.128.99",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Microsoft Graph PowerShell",
+      "status": {
+        "errorCode": 50053,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "London",
+        "state": "England",
+        "countryOrRegion": "GB"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "002cb7ebb9b72c-blah-4ee5-be62-ff5a759b1364",
+      "createdDateTime": "2026-05-16T20:30:23Z",
+      "userDisplayName": "Raj Johnson",
+      "userPrincipalName": "raj.johnson@contoso.com",
+      "ipAddress": "210.140.42.18",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Microsoft Graph PowerShell",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Tokyo",
+        "state": "Tokyo",
+        "countryOrRegion": "JP"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0058803866a7ee-blah-4ee5-be62-ff5a759b1415",
+      "createdDateTime": "2026-05-16T07:41:19Z",
+      "userDisplayName": "Ahmed Chen",
+      "userPrincipalName": "ahmed.chen@contoso.com",
+      "ipAddress": "203.0.113.5",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Azure Portal",
+      "status": {
+        "errorCode": 50126,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "Singapore",
+        "state": "Central",
+        "countryOrRegion": "SG"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0021f2d75be1fd-blah-4ee5-be62-ff5a759b7842",
+      "createdDateTime": "2026-05-11T01:13:50Z",
+      "userDisplayName": "Kavita Davis",
+      "userPrincipalName": "kavita.davis@contoso.com",
+      "ipAddress": "64.34.144.20",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "SharePoint",
+      "status": {
+        "errorCode": 50126,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "Toronto",
+        "state": "Ontario",
+        "countryOrRegion": "CA"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "001659bd247e50-blah-4ee5-be62-ff5a759b8395",
+      "createdDateTime": "2026-05-16T08:10:16Z",
+      "userDisplayName": "Jane Hassan",
+      "userPrincipalName": "jane.hassan@contoso.com",
+      "ipAddress": "203.0.113.5",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Azure Portal",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Singapore",
+        "state": "Central",
+        "countryOrRegion": "SG"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "005072cd01ff03-blah-4ee5-be62-ff5a759b7501",
+      "createdDateTime": "2026-05-17T07:12:30Z",
+      "userDisplayName": "Maria Lopez",
+      "userPrincipalName": "maria.lopez@contoso.com",
+      "ipAddress": "210.140.42.18",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "SharePoint",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Tokyo",
+        "state": "Tokyo",
+        "countryOrRegion": "JP"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0009917e98abb1-blah-4ee5-be62-ff5a759b9354",
+      "createdDateTime": "2026-05-13T08:12:56Z",
+      "userDisplayName": "Emma Wilson",
+      "userPrincipalName": "emma.wilson@contoso.com",
+      "ipAddress": "52.165.142.10",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Office 365 Portal",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Seattle",
+        "state": "Washington",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "000a0c24da4724-blah-4ee5-be62-ff5a759b5163",
+      "createdDateTime": "2026-05-10T18:08:24Z",
+      "userDisplayName": "Lucas Garcia",
+      "userPrincipalName": "lucas.garcia@contoso.com",
+      "ipAddress": "84.16.234.12",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Office 365 Portal",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Munich",
+        "state": "Bavaria",
+        "countryOrRegion": "DE"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0018021293672d-blah-4ee5-be62-ff5a759b9713",
+      "createdDateTime": "2026-05-14T18:01:55Z",
+      "userDisplayName": "Kavita Chen",
+      "userPrincipalName": "kavita.chen@contoso.com",
+      "ipAddress": "13.107.6.156",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Microsoft Teams",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Sydney",
+        "state": "NSW",
+        "countryOrRegion": "AU"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00186ca5aaf567-blah-4ee5-be62-ff5a759b0532",
+      "createdDateTime": "2026-05-11T03:18:49Z",
+      "userDisplayName": "Mohamed Lopez",
+      "userPrincipalName": "mohamed.lopez@contoso.com",
+      "ipAddress": "64.34.144.20",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "SharePoint",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Toronto",
+        "state": "Ontario",
+        "countryOrRegion": "CA"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0016bd2a439097-blah-4ee5-be62-ff5a759b0899",
+      "createdDateTime": "2026-05-10T18:28:01Z",
+      "userDisplayName": "Diego Yamamoto",
+      "userPrincipalName": "diego.yamamoto@contoso.com",
+      "ipAddress": "203.0.113.5",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Outlook on the web",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Singapore",
+        "state": "Central",
+        "countryOrRegion": "SG"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "001caf4e437ce0-blah-4ee5-be62-ff5a759b4598",
+      "createdDateTime": "2026-05-10T20:21:30Z",
+      "userDisplayName": "Zara Khan",
+      "userPrincipalName": "zara.khan@contoso.com",
+      "ipAddress": "82.46.128.99",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Microsoft Graph PowerShell",
+      "status": {
+        "errorCode": 50126,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "London",
+        "state": "England",
+        "countryOrRegion": "GB"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "003091ce025d67-blah-4ee5-be62-ff5a759b4912",
+      "createdDateTime": "2026-05-13T21:47:01Z",
+      "userDisplayName": "Carlos Smith",
+      "userPrincipalName": "carlos.smith@contoso.com",
+      "ipAddress": "64.34.144.20",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Office 365 Portal",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Toronto",
+        "state": "Ontario",
+        "countryOrRegion": "CA"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "005644d4d6086e-blah-4ee5-be62-ff5a759b9822",
+      "createdDateTime": "2026-05-15T16:33:28Z",
+      "userDisplayName": "Jane Wilson",
+      "userPrincipalName": "jane.wilson@contoso.com",
+      "ipAddress": "84.16.234.12",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "SharePoint",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Munich",
+        "state": "Bavaria",
+        "countryOrRegion": "DE"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0020786e1f3217-blah-4ee5-be62-ff5a759b9443",
+      "createdDateTime": "2026-05-14T15:49:59Z",
+      "userDisplayName": "Ahmed Nguyen",
+      "userPrincipalName": "ahmed.nguyen@contoso.com",
+      "ipAddress": "82.46.128.99",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "OneDrive",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "London",
+        "state": "England",
+        "countryOrRegion": "GB"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00134b2a6a9a26-blah-4ee5-be62-ff5a759b8993",
+      "createdDateTime": "2026-05-11T05:10:29Z",
+      "userDisplayName": "Mei Khan",
+      "userPrincipalName": "mei.khan@contoso.com",
+      "ipAddress": "185.220.101.34",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Microsoft Graph PowerShell",
+      "status": {
+        "errorCode": 50053,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "Frankfurt",
+        "state": null,
+        "countryOrRegion": "DE"
+      },
+      "riskLevelAggregated": "medium",
+      "riskState": "atRisk"
+    },
+    {
+      "id": "000e4f3cbab499-blah-4ee5-be62-ff5a759b5110",
+      "createdDateTime": "2026-05-12T02:43:52Z",
+      "userDisplayName": "Lucas Mueller",
+      "userPrincipalName": "lucas.mueller@contoso.com",
+      "ipAddress": "64.34.144.20",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Office 365 Portal",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Toronto",
+        "state": "Ontario",
+        "countryOrRegion": "CA"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "005466404a39af-blah-4ee5-be62-ff5a759b0065",
+      "createdDateTime": "2026-05-12T22:02:58Z",
+      "userDisplayName": "Lucas Smith",
+      "userPrincipalName": "lucas.smith@contoso.com",
+      "ipAddress": "52.165.142.10",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Microsoft Teams",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Seattle",
+        "state": "Washington",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "002aec69cfd449-blah-4ee5-be62-ff5a759b2601",
+      "createdDateTime": "2026-05-11T22:49:29Z",
+      "userDisplayName": "John Smith",
+      "userPrincipalName": "john.smith@contoso.com",
+      "ipAddress": "84.16.234.12",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "OneDrive",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Munich",
+        "state": "Bavaria",
+        "countryOrRegion": "DE"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0051ee397f5d6c-blah-4ee5-be62-ff5a759b1701",
+      "createdDateTime": "2026-05-13T16:02:33Z",
+      "userDisplayName": "Anna Mueller",
+      "userPrincipalName": "anna.mueller@contoso.com",
+      "ipAddress": "13.107.42.14",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Microsoft Graph PowerShell",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Redmond",
+        "state": "Washington",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0027a2d0ed4e2c-blah-4ee5-be62-ff5a759b6683",
+      "createdDateTime": "2026-05-13T09:23:04Z",
+      "userDisplayName": "Jane Lee",
+      "userPrincipalName": "jane.lee@contoso.com",
+      "ipAddress": "98.234.45.12",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Outlook on the web",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "San Jose",
+        "state": "California",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0048277e75e603-blah-4ee5-be62-ff5a759b8971",
+      "createdDateTime": "2026-05-14T07:56:22Z",
+      "userDisplayName": "Mohamed Hassan",
+      "userPrincipalName": "mohamed.hassan@contoso.com",
+      "ipAddress": "13.107.6.156",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Office 365 Portal",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Sydney",
+        "state": "NSW",
+        "countryOrRegion": "AU"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "002e8fd58f4a58-blah-4ee5-be62-ff5a759b5640",
+      "createdDateTime": "2026-05-12T05:37:21Z",
+      "userDisplayName": "Carlos Khan",
+      "userPrincipalName": "carlos.khan@contoso.com",
+      "ipAddress": "203.0.113.5",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Microsoft Teams",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Singapore",
+        "state": "Central",
+        "countryOrRegion": "SG"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0057fd8e33196e-blah-4ee5-be62-ff5a759b2042",
+      "createdDateTime": "2026-05-16T04:04:37Z",
+      "userDisplayName": "Zara Hassan",
+      "userPrincipalName": "zara.hassan@contoso.com",
+      "ipAddress": "13.107.6.156",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Microsoft Teams",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Sydney",
+        "state": "NSW",
+        "countryOrRegion": "AU"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "003d006bc9c0cd-blah-4ee5-be62-ff5a759b9678",
+      "createdDateTime": "2026-05-10T12:23:50Z",
+      "userDisplayName": "Yuki Garcia",
+      "userPrincipalName": "yuki.garcia@contoso.com",
+      "ipAddress": "210.140.42.18",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Outlook on the web",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Tokyo",
+        "state": "Tokyo",
+        "countryOrRegion": "JP"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00535cf27f70ee-blah-4ee5-be62-ff5a759b1965",
+      "createdDateTime": "2026-05-16T16:38:49Z",
+      "userDisplayName": "Yuki Tanaka",
+      "userPrincipalName": "yuki.tanaka@contoso.com",
+      "ipAddress": "13.107.6.156",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Azure Portal",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Sydney",
+        "state": "NSW",
+        "countryOrRegion": "AU"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "000f0e0d231722-blah-4ee5-be62-ff5a759b1182",
+      "createdDateTime": "2026-05-14T22:44:44Z",
+      "userDisplayName": "Kavita Garcia",
+      "userPrincipalName": "kavita.garcia@contoso.com",
+      "ipAddress": "172.58.103.45",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Microsoft Teams",
+      "status": {
+        "errorCode": 50053,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "Austin",
+        "state": "Texas",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "000974e189f45d-blah-4ee5-be62-ff5a759b3443",
+      "createdDateTime": "2026-05-12T15:01:33Z",
+      "userDisplayName": "Kavita Chen",
+      "userPrincipalName": "kavita.chen@contoso.com",
+      "ipAddress": "82.46.128.99",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Office 365 Portal",
+      "status": {
+        "errorCode": 50053,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "London",
+        "state": "England",
+        "countryOrRegion": "GB"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0042518344e4cd-blah-4ee5-be62-ff5a759b2365",
+      "createdDateTime": "2026-05-14T11:38:48Z",
+      "userDisplayName": "Raj Garcia",
+      "userPrincipalName": "raj.garcia@contoso.com",
+      "ipAddress": "203.0.113.5",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Outlook on the web",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Singapore",
+        "state": "Central",
+        "countryOrRegion": "SG"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "003992b7b23bc7-blah-4ee5-be62-ff5a759b8501",
+      "createdDateTime": "2026-05-13T22:02:41Z",
+      "userDisplayName": "Emma Nguyen",
+      "userPrincipalName": "emma.nguyen@contoso.com",
+      "ipAddress": "84.16.234.12",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "SharePoint",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Munich",
+        "state": "Bavaria",
+        "countryOrRegion": "DE"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "002128a8dc82c6-blah-4ee5-be62-ff5a759b3977",
+      "createdDateTime": "2026-05-14T16:51:48Z",
+      "userDisplayName": "Carlos Mueller",
+      "userPrincipalName": "carlos.mueller@contoso.com",
+      "ipAddress": "98.234.45.12",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Microsoft Teams",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "San Jose",
+        "state": "California",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00446ebd5ef0cb-blah-4ee5-be62-ff5a759b2598",
+      "createdDateTime": "2026-05-14T05:02:11Z",
+      "userDisplayName": "Zara Patel",
+      "userPrincipalName": "zara.patel@contoso.com",
+      "ipAddress": "52.165.142.10",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Microsoft Graph PowerShell",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Seattle",
+        "state": "Washington",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "003e0282a179b4-blah-4ee5-be62-ff5a759b1809",
+      "createdDateTime": "2026-05-11T03:07:09Z",
+      "userDisplayName": "Anna Martinez",
+      "userPrincipalName": "anna.martinez@contoso.com",
+      "ipAddress": "210.140.42.18",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Azure Portal",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Tokyo",
+        "state": "Tokyo",
+        "countryOrRegion": "JP"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "004ce211ae903e-blah-4ee5-be62-ff5a759b1069",
+      "createdDateTime": "2026-05-15T22:17:01Z",
+      "userDisplayName": "Yuki Rossi",
+      "userPrincipalName": "yuki.rossi@contoso.com",
+      "ipAddress": "203.0.113.5",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Microsoft Teams",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Singapore",
+        "state": "Central",
+        "countryOrRegion": "SG"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "002b9bb270a717-blah-4ee5-be62-ff5a759b2628",
+      "createdDateTime": "2026-05-14T08:02:08Z",
+      "userDisplayName": "Liam Khan",
+      "userPrincipalName": "liam.khan@contoso.com",
+      "ipAddress": "172.58.103.45",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Azure Portal",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Austin",
+        "state": "Texas",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00474af39fc946-blah-4ee5-be62-ff5a759b6300",
+      "createdDateTime": "2026-05-17T10:03:50Z",
+      "userDisplayName": "Carlos Martinez",
+      "userPrincipalName": "carlos.martinez@contoso.com",
+      "ipAddress": "52.165.142.10",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "OneDrive",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Seattle",
+        "state": "Washington",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0038900715fc0c-blah-4ee5-be62-ff5a759b8552",
+      "createdDateTime": "2026-05-16T00:44:22Z",
+      "userDisplayName": "Mohamed Lee",
+      "userPrincipalName": "mohamed.lee@contoso.com",
+      "ipAddress": "98.234.45.12",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Outlook on the web",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "San Jose",
+        "state": "California",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "003cc50d86e332-blah-4ee5-be62-ff5a759b0332",
+      "createdDateTime": "2026-05-15T06:05:32Z",
+      "userDisplayName": "Ahmed Lee",
+      "userPrincipalName": "ahmed.lee@contoso.com",
+      "ipAddress": "64.34.144.20",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "OneDrive",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Toronto",
+        "state": "Ontario",
+        "countryOrRegion": "CA"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0050423ce0fef6-blah-4ee5-be62-ff5a759b9411",
+      "createdDateTime": "2026-05-16T19:56:33Z",
+      "userDisplayName": "Zara Johnson",
+      "userPrincipalName": "zara.johnson@contoso.com",
+      "ipAddress": "172.58.103.45",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Azure Portal",
+      "status": {
+        "errorCode": 50126,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "Austin",
+        "state": "Texas",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "000b9a43dad84d-blah-4ee5-be62-ff5a759b5363",
+      "createdDateTime": "2026-05-13T22:12:48Z",
+      "userDisplayName": "Emma Singh",
+      "userPrincipalName": "emma.singh@contoso.com",
+      "ipAddress": "64.34.144.20",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Microsoft Graph PowerShell",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Toronto",
+        "state": "Ontario",
+        "countryOrRegion": "CA"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0021137ff68ab0-blah-4ee5-be62-ff5a759b1777",
+      "createdDateTime": "2026-05-13T12:50:58Z",
+      "userDisplayName": "Sofia Khan",
+      "userPrincipalName": "sofia.khan@contoso.com",
+      "ipAddress": "84.16.234.12",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "SharePoint",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Munich",
+        "state": "Bavaria",
+        "countryOrRegion": "DE"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00542094109649-blah-4ee5-be62-ff5a759b3268",
+      "createdDateTime": "2026-05-16T06:18:03Z",
+      "userDisplayName": "Fatima Kim",
+      "userPrincipalName": "fatima.kim@contoso.com",
+      "ipAddress": "82.46.128.99",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Microsoft Teams",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "London",
+        "state": "England",
+        "countryOrRegion": "GB"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "001564a9cf9adf-blah-4ee5-be62-ff5a759b6224",
+      "createdDateTime": "2026-05-10T15:58:09Z",
+      "userDisplayName": "Lucas Singh",
+      "userPrincipalName": "lucas.singh@contoso.com",
+      "ipAddress": "13.107.6.156",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "OneDrive",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Sydney",
+        "state": "NSW",
+        "countryOrRegion": "AU"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0036c6a4806b39-blah-4ee5-be62-ff5a759b7723",
+      "createdDateTime": "2026-05-11T12:25:36Z",
+      "userDisplayName": "Maria Nguyen",
+      "userPrincipalName": "maria.nguyen@contoso.com",
+      "ipAddress": "84.16.234.12",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "OneDrive",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Munich",
+        "state": "Bavaria",
+        "countryOrRegion": "DE"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00164d61f8f151-blah-4ee5-be62-ff5a759b9259",
+      "createdDateTime": "2026-05-14T22:15:13Z",
+      "userDisplayName": "Liam Patel",
+      "userPrincipalName": "liam.patel@contoso.com",
+      "ipAddress": "203.0.113.5",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Azure Portal",
+      "status": {
+        "errorCode": 50053,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "Singapore",
+        "state": "Central",
+        "countryOrRegion": "SG"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0012640b88859b-blah-4ee5-be62-ff5a759b1681",
+      "createdDateTime": "2026-05-14T18:39:01Z",
+      "userDisplayName": "Carlos Smith",
+      "userPrincipalName": "carlos.smith@contoso.com",
+      "ipAddress": "172.58.103.45",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "OneDrive",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Austin",
+        "state": "Texas",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00389086604e1a-blah-4ee5-be62-ff5a759b1586",
+      "createdDateTime": "2026-05-11T05:55:54Z",
+      "userDisplayName": "Carlos Hassan",
+      "userPrincipalName": "carlos.hassan@contoso.com",
+      "ipAddress": "172.58.103.45",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "SharePoint",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Austin",
+        "state": "Texas",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00150f83f92ed1-blah-4ee5-be62-ff5a759b5583",
+      "createdDateTime": "2026-05-15T18:03:13Z",
+      "userDisplayName": "Jane Chen",
+      "userPrincipalName": "jane.chen@contoso.com",
+      "ipAddress": "203.0.113.5",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "OneDrive",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Singapore",
+        "state": "Central",
+        "countryOrRegion": "SG"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0027f8113dabc7-blah-4ee5-be62-ff5a759b0723",
+      "createdDateTime": "2026-05-11T10:05:24Z",
+      "userDisplayName": "Ahmed Anderson",
+      "userPrincipalName": "ahmed.anderson@contoso.com",
+      "ipAddress": "82.46.128.99",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Outlook on the web",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "London",
+        "state": "England",
+        "countryOrRegion": "GB"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0024ca4c772d5a-blah-4ee5-be62-ff5a759b6747",
+      "createdDateTime": "2026-05-11T17:47:12Z",
+      "userDisplayName": "Yuki Hassan",
+      "userPrincipalName": "yuki.hassan@contoso.com",
+      "ipAddress": "52.165.142.10",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Office 365 Portal",
+      "status": {
+        "errorCode": 50126,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "Seattle",
+        "state": "Washington",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00091b958800e4-blah-4ee5-be62-ff5a759b6997",
+      "createdDateTime": "2026-05-16T07:31:20Z",
+      "userDisplayName": "Ahmed Tanaka",
+      "userPrincipalName": "ahmed.tanaka@contoso.com",
+      "ipAddress": "172.58.103.45",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "SharePoint",
+      "status": {
+        "errorCode": 50126,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "Austin",
+        "state": "Texas",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "000c897881d1e4-blah-4ee5-be62-ff5a759b1597",
+      "createdDateTime": "2026-05-12T03:37:07Z",
+      "userDisplayName": "Ivan Nguyen",
+      "userPrincipalName": "ivan.nguyen@contoso.com",
+      "ipAddress": "210.140.42.18",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "OneDrive",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Tokyo",
+        "state": "Tokyo",
+        "countryOrRegion": "JP"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00271276a0c5e3-blah-4ee5-be62-ff5a759b0740",
+      "createdDateTime": "2026-05-12T19:47:32Z",
+      "userDisplayName": "Jane Khan",
+      "userPrincipalName": "jane.khan@contoso.com",
+      "ipAddress": "172.58.103.45",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Azure Portal",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Austin",
+        "state": "Texas",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0010efc46d39f2-blah-4ee5-be62-ff5a759b7364",
+      "createdDateTime": "2026-05-14T21:29:19Z",
+      "userDisplayName": "Maria Nguyen",
+      "userPrincipalName": "maria.nguyen@contoso.com",
+      "ipAddress": "172.58.103.45",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "OneDrive",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Austin",
+        "state": "Texas",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "001ccbbcfe8bd6-blah-4ee5-be62-ff5a759b1036",
+      "createdDateTime": "2026-05-13T07:32:04Z",
+      "userDisplayName": "Kavita Chen",
+      "userPrincipalName": "kavita.chen@contoso.com",
+      "ipAddress": "203.0.113.45",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Microsoft Teams",
+      "status": {
+        "errorCode": 50053,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "Lagos",
+        "state": null,
+        "countryOrRegion": "NG"
+      },
+      "riskLevelAggregated": "medium",
+      "riskState": "atRisk"
+    },
+    {
+      "id": "003ee73307bebb-blah-4ee5-be62-ff5a759b1778",
+      "createdDateTime": "2026-05-15T04:55:12Z",
+      "userDisplayName": "Aisha Garcia",
+      "userPrincipalName": "aisha.garcia@contoso.com",
+      "ipAddress": "45.155.205.86",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Microsoft Graph PowerShell",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Moscow",
+        "state": null,
+        "countryOrRegion": "RU"
+      },
+      "riskLevelAggregated": "high",
+      "riskState": "atRisk"
+    },
+    {
+      "id": "002670bdb5c7cc-blah-4ee5-be62-ff5a759b2722",
+      "createdDateTime": "2026-05-13T04:16:23Z",
+      "userDisplayName": "Kavita Mueller",
+      "userPrincipalName": "kavita.mueller@contoso.com",
+      "ipAddress": "98.234.45.12",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Outlook on the web",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "San Jose",
+        "state": "California",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0054d53d0d9b6b-blah-4ee5-be62-ff5a759b9594",
+      "createdDateTime": "2026-05-12T04:16:31Z",
+      "userDisplayName": "Mohamed Martinez",
+      "userPrincipalName": "mohamed.martinez@contoso.com",
+      "ipAddress": "64.34.144.20",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Microsoft Teams",
+      "status": {
+        "errorCode": 50126,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "Toronto",
+        "state": "Ontario",
+        "countryOrRegion": "CA"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0024b0dfacc7af-blah-4ee5-be62-ff5a759b7357",
+      "createdDateTime": "2026-05-16T18:41:48Z",
+      "userDisplayName": "Kavita Mueller",
+      "userPrincipalName": "kavita.mueller@contoso.com",
+      "ipAddress": "13.107.6.156",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Azure Portal",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Sydney",
+        "state": "NSW",
+        "countryOrRegion": "AU"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0056b29110f882-blah-4ee5-be62-ff5a759b3508",
+      "createdDateTime": "2026-05-15T11:16:50Z",
+      "userDisplayName": "Wei Anderson",
+      "userPrincipalName": "wei.anderson@contoso.com",
+      "ipAddress": "210.140.42.18",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Microsoft Graph PowerShell",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Tokyo",
+        "state": "Tokyo",
+        "countryOrRegion": "JP"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "004498d785ba4a-blah-4ee5-be62-ff5a759b1491",
+      "createdDateTime": "2026-05-11T17:36:44Z",
+      "userDisplayName": "Hans Mueller",
+      "userPrincipalName": "hans.mueller@contoso.com",
+      "ipAddress": "172.58.103.45",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Office 365 Portal",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Austin",
+        "state": "Texas",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "004d6401b77de4-blah-4ee5-be62-ff5a759b1854",
+      "createdDateTime": "2026-05-12T08:07:45Z",
+      "userDisplayName": "Mei Lee",
+      "userPrincipalName": "mei.lee@contoso.com",
+      "ipAddress": "52.165.142.10",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Microsoft Teams",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Seattle",
+        "state": "Washington",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "001a671f862946-blah-4ee5-be62-ff5a759b0865",
+      "createdDateTime": "2026-05-11T13:06:01Z",
+      "userDisplayName": "Aisha Wilson",
+      "userPrincipalName": "aisha.wilson@contoso.com",
+      "ipAddress": "13.107.6.156",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Azure Portal",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Sydney",
+        "state": "NSW",
+        "countryOrRegion": "AU"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "004a2b5b711cdf-blah-4ee5-be62-ff5a759b9943",
+      "createdDateTime": "2026-05-12T14:36:25Z",
+      "userDisplayName": "Sofia Patel",
+      "userPrincipalName": "sofia.patel@contoso.com",
+      "ipAddress": "98.234.45.12",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Office 365 Portal",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "San Jose",
+        "state": "California",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "001511d81094da-blah-4ee5-be62-ff5a759b4254",
+      "createdDateTime": "2026-05-10T12:03:02Z",
+      "userDisplayName": "Diego Anderson",
+      "userPrincipalName": "diego.anderson@contoso.com",
+      "ipAddress": "13.107.42.14",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "SharePoint",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Redmond",
+        "state": "Washington",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00236024f35541-blah-4ee5-be62-ff5a759b2289",
+      "createdDateTime": "2026-05-14T11:04:24Z",
+      "userDisplayName": "Sofia Lee",
+      "userPrincipalName": "sofia.lee@contoso.com",
+      "ipAddress": "98.234.45.12",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Outlook on the web",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "San Jose",
+        "state": "California",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "003f2060bc344e-blah-4ee5-be62-ff5a759b8957",
+      "createdDateTime": "2026-05-14T05:16:43Z",
+      "userDisplayName": "Emma Khan",
+      "userPrincipalName": "emma.khan@contoso.com",
+      "ipAddress": "98.234.45.12",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Outlook on the web",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "San Jose",
+        "state": "California",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "000ceda4e4eb4c-blah-4ee5-be62-ff5a759b0542",
+      "createdDateTime": "2026-05-10T18:41:41Z",
+      "userDisplayName": "Hans Davis",
+      "userPrincipalName": "hans.davis@contoso.com",
+      "ipAddress": "98.234.45.12",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Microsoft Graph PowerShell",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "San Jose",
+        "state": "California",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "000cfb078f0d9d-blah-4ee5-be62-ff5a759b1370",
+      "createdDateTime": "2026-05-15T22:12:16Z",
+      "userDisplayName": "Jane Wilson",
+      "userPrincipalName": "jane.wilson@contoso.com",
+      "ipAddress": "52.165.142.10",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Azure Portal",
+      "status": {
+        "errorCode": 50126,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "Seattle",
+        "state": "Washington",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "002177fe908936-blah-4ee5-be62-ff5a759b7877",
+      "createdDateTime": "2026-05-13T03:14:32Z",
+      "userDisplayName": "Hans Brown",
+      "userPrincipalName": "hans.brown@contoso.com",
+      "ipAddress": "13.107.6.156",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Microsoft Teams",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Sydney",
+        "state": "NSW",
+        "countryOrRegion": "AU"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "005685466ba812-blah-4ee5-be62-ff5a759b0423",
+      "createdDateTime": "2026-05-15T09:18:43Z",
+      "userDisplayName": "Mei Patel",
+      "userPrincipalName": "mei.patel@contoso.com",
+      "ipAddress": "84.16.234.12",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Azure Portal",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Munich",
+        "state": "Bavaria",
+        "countryOrRegion": "DE"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "002a7a993c2d23-blah-4ee5-be62-ff5a759b2609",
+      "createdDateTime": "2026-05-13T21:32:54Z",
+      "userDisplayName": "Liam Kim",
+      "userPrincipalName": "liam.kim@contoso.com",
+      "ipAddress": "13.107.42.14",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "OneDrive",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Redmond",
+        "state": "Washington",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0047f597f780ab-blah-4ee5-be62-ff5a759b8556",
+      "createdDateTime": "2026-05-13T17:24:00Z",
+      "userDisplayName": "Mei Mueller",
+      "userPrincipalName": "mei.mueller@contoso.com",
+      "ipAddress": "13.107.6.156",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Azure Portal",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Sydney",
+        "state": "NSW",
+        "countryOrRegion": "AU"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "000e8818414cdb-blah-4ee5-be62-ff5a759b5146",
+      "createdDateTime": "2026-05-10T18:02:14Z",
+      "userDisplayName": "Maria Chen",
+      "userPrincipalName": "maria.chen@contoso.com",
+      "ipAddress": "82.46.128.99",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Microsoft Teams",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "London",
+        "state": "England",
+        "countryOrRegion": "GB"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "000f58e7d88f48-blah-4ee5-be62-ff5a759b0045",
+      "createdDateTime": "2026-05-13T15:28:55Z",
+      "userDisplayName": "Jane Yamamoto",
+      "userPrincipalName": "jane.yamamoto@contoso.com",
+      "ipAddress": "210.140.42.18",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "SharePoint",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Tokyo",
+        "state": "Tokyo",
+        "countryOrRegion": "JP"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00375c6526eb0c-blah-4ee5-be62-ff5a759b8452",
+      "createdDateTime": "2026-05-17T00:38:19Z",
+      "userDisplayName": "Anna Kim",
+      "userPrincipalName": "anna.kim@contoso.com",
+      "ipAddress": "84.16.234.12",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "OneDrive",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Munich",
+        "state": "Bavaria",
+        "countryOrRegion": "DE"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "001c33b82b2f33-blah-4ee5-be62-ff5a759b4414",
+      "createdDateTime": "2026-05-15T13:04:04Z",
+      "userDisplayName": "Kavita Wilson",
+      "userPrincipalName": "kavita.wilson@contoso.com",
+      "ipAddress": "13.107.6.156",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Azure Portal",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Sydney",
+        "state": "NSW",
+        "countryOrRegion": "AU"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "001ee320c59321-blah-4ee5-be62-ff5a759b9450",
+      "createdDateTime": "2026-05-16T10:03:32Z",
+      "userDisplayName": "Olivia Mueller",
+      "userPrincipalName": "olivia.mueller@contoso.com",
+      "ipAddress": "52.165.142.10",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Outlook on the web",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Seattle",
+        "state": "Washington",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "003d275c06708b-blah-4ee5-be62-ff5a759b3406",
+      "createdDateTime": "2026-05-10T13:55:34Z",
+      "userDisplayName": "John Smith",
+      "userPrincipalName": "john.smith@contoso.com",
+      "ipAddress": "52.165.142.10",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Microsoft Teams",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Seattle",
+        "state": "Washington",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "000b454e201df2-blah-4ee5-be62-ff5a759b8615",
+      "createdDateTime": "2026-05-13T01:28:07Z",
+      "userDisplayName": "Wei Martinez",
+      "userPrincipalName": "wei.martinez@contoso.com",
+      "ipAddress": "64.34.144.20",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Azure Portal",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Toronto",
+        "state": "Ontario",
+        "countryOrRegion": "CA"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0018ffd5c35e7b-blah-4ee5-be62-ff5a759b9106",
+      "createdDateTime": "2026-05-13T17:58:18Z",
+      "userDisplayName": "John Kim",
+      "userPrincipalName": "john.kim@contoso.com",
+      "ipAddress": "185.220.101.34",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Outlook on the web",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Frankfurt",
+        "state": null,
+        "countryOrRegion": "DE"
+      },
+      "riskLevelAggregated": "medium",
+      "riskState": "atRisk"
+    },
+    {
+      "id": "001fcef34138ef-blah-4ee5-be62-ff5a759b8969",
+      "createdDateTime": "2026-05-11T19:43:50Z",
+      "userDisplayName": "Jane Patel",
+      "userPrincipalName": "jane.patel@contoso.com",
+      "ipAddress": "82.46.128.99",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Microsoft Teams",
+      "status": {
+        "errorCode": 50053,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "London",
+        "state": "England",
+        "countryOrRegion": "GB"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "004cb87e7eaf07-blah-4ee5-be62-ff5a759b1051",
+      "createdDateTime": "2026-05-15T18:38:04Z",
+      "userDisplayName": "Anna Brown",
+      "userPrincipalName": "anna.brown@contoso.com",
+      "ipAddress": "64.34.144.20",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "SharePoint",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Toronto",
+        "state": "Ontario",
+        "countryOrRegion": "CA"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "005855b4de70ee-blah-4ee5-be62-ff5a759b4835",
+      "createdDateTime": "2026-05-12T23:04:44Z",
+      "userDisplayName": "Diego Rossi",
+      "userPrincipalName": "diego.rossi@contoso.com",
+      "ipAddress": "13.107.42.14",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Azure Portal",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Redmond",
+        "state": "Washington",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "000bbe770c2ac0-blah-4ee5-be62-ff5a759b3976",
+      "createdDateTime": "2026-05-11T03:30:12Z",
+      "userDisplayName": "Mohamed Hassan",
+      "userPrincipalName": "mohamed.hassan@contoso.com",
+      "ipAddress": "82.46.128.99",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Microsoft Graph PowerShell",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "London",
+        "state": "England",
+        "countryOrRegion": "GB"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0030b8691874e2-blah-4ee5-be62-ff5a759b4126",
+      "createdDateTime": "2026-05-11T03:43:23Z",
+      "userDisplayName": "Fatima Khan",
+      "userPrincipalName": "fatima.khan@contoso.com",
+      "ipAddress": "64.34.144.20",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Microsoft Teams",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Toronto",
+        "state": "Ontario",
+        "countryOrRegion": "CA"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00367e768e4827-blah-4ee5-be62-ff5a759b6122",
+      "createdDateTime": "2026-05-11T02:20:02Z",
+      "userDisplayName": "Anna Singh",
+      "userPrincipalName": "anna.singh@contoso.com",
+      "ipAddress": "141.98.10.79",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Microsoft Graph PowerShell",
+      "status": {
+        "errorCode": 50053,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "Sofia",
+        "state": null,
+        "countryOrRegion": "BG"
+      },
+      "riskLevelAggregated": "medium",
+      "riskState": "atRisk"
+    },
+    {
+      "id": "004ea8a5785300-blah-4ee5-be62-ff5a759b3063",
+      "createdDateTime": "2026-05-13T01:11:41Z",
+      "userDisplayName": "Anna Singh",
+      "userPrincipalName": "anna.singh@contoso.com",
+      "ipAddress": "141.98.10.79",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Azure Portal",
+      "status": {
+        "errorCode": 50074,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "Sofia",
+        "state": null,
+        "countryOrRegion": "BG"
+      },
+      "riskLevelAggregated": "medium",
+      "riskState": "atRisk"
+    },
+    {
+      "id": "003962c6b989c5-blah-4ee5-be62-ff5a759b5041",
+      "createdDateTime": "2026-05-14T22:14:33Z",
+      "userDisplayName": "Zara Lee",
+      "userPrincipalName": "zara.lee@contoso.com",
+      "ipAddress": "52.165.142.10",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Microsoft Graph PowerShell",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Seattle",
+        "state": "Washington",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "004cfb1f043dcd-blah-4ee5-be62-ff5a759b8277",
+      "createdDateTime": "2026-05-16T18:43:10Z",
+      "userDisplayName": "Yuki Mueller",
+      "userPrincipalName": "yuki.mueller@contoso.com",
+      "ipAddress": "64.34.144.20",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Microsoft Graph PowerShell",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Toronto",
+        "state": "Ontario",
+        "countryOrRegion": "CA"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00493800fbd5e7-blah-4ee5-be62-ff5a759b8499",
+      "createdDateTime": "2026-05-12T20:44:00Z",
+      "userDisplayName": "Diego Khan",
+      "userPrincipalName": "diego.khan@contoso.com",
+      "ipAddress": "84.16.234.12",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Microsoft Graph PowerShell",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Munich",
+        "state": "Bavaria",
+        "countryOrRegion": "DE"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00349afea44179-blah-4ee5-be62-ff5a759b0615",
+      "createdDateTime": "2026-05-16T13:36:31Z",
+      "userDisplayName": "Zara Rossi",
+      "userPrincipalName": "zara.rossi@contoso.com",
+      "ipAddress": "98.234.45.12",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Outlook on the web",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "San Jose",
+        "state": "California",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0024c339117202-blah-4ee5-be62-ff5a759b3423",
+      "createdDateTime": "2026-05-15T06:45:57Z",
+      "userDisplayName": "Emma Kim",
+      "userPrincipalName": "emma.kim@contoso.com",
+      "ipAddress": "103.224.182.250",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Azure Portal",
+      "status": {
+        "errorCode": 50074,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "Mumbai",
+        "state": null,
+        "countryOrRegion": "IN"
+      },
+      "riskLevelAggregated": "high",
+      "riskState": "atRisk"
+    },
+    {
+      "id": "0018bc03eba849-blah-4ee5-be62-ff5a759b6467",
+      "createdDateTime": "2026-05-15T05:04:44Z",
+      "userDisplayName": "Raj Garcia",
+      "userPrincipalName": "raj.garcia@contoso.com",
+      "ipAddress": "13.107.6.156",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Azure Portal",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Sydney",
+        "state": "NSW",
+        "countryOrRegion": "AU"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0055e1048abe8e-blah-4ee5-be62-ff5a759b7450",
+      "createdDateTime": "2026-05-16T00:39:08Z",
+      "userDisplayName": "Mei Martinez",
+      "userPrincipalName": "mei.martinez@contoso.com",
+      "ipAddress": "13.107.42.14",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Microsoft Teams",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Redmond",
+        "state": "Washington",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0027f4814b4ff9-blah-4ee5-be62-ff5a759b9720",
+      "createdDateTime": "2026-05-14T06:45:41Z",
+      "userDisplayName": "Fatima Kim",
+      "userPrincipalName": "fatima.kim@contoso.com",
+      "ipAddress": "13.107.42.14",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Outlook on the web",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Redmond",
+        "state": "Washington",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "003270f351a8c5-blah-4ee5-be62-ff5a759b3698",
+      "createdDateTime": "2026-05-10T15:42:27Z",
+      "userDisplayName": "Lucas Davis",
+      "userPrincipalName": "lucas.davis@contoso.com",
+      "ipAddress": "172.58.103.45",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Microsoft Teams",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Austin",
+        "state": "Texas",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00154bb21e748f-blah-4ee5-be62-ff5a759b7564",
+      "createdDateTime": "2026-05-14T06:49:59Z",
+      "userDisplayName": "Raj Mueller",
+      "userPrincipalName": "raj.mueller@contoso.com",
+      "ipAddress": "185.220.102.250",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Microsoft Graph PowerShell",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Berlin",
+        "state": null,
+        "countryOrRegion": "DE"
+      },
+      "riskLevelAggregated": "medium",
+      "riskState": "atRisk"
+    },
+    {
+      "id": "0023ce7dc390fb-blah-4ee5-be62-ff5a759b0435",
+      "createdDateTime": "2026-05-15T09:31:57Z",
+      "userDisplayName": "Aisha Rossi",
+      "userPrincipalName": "aisha.rossi@contoso.com",
+      "ipAddress": "64.34.144.20",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "OneDrive",
+      "status": {
+        "errorCode": 50126,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "Toronto",
+        "state": "Ontario",
+        "countryOrRegion": "CA"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "004c26e7548160-blah-4ee5-be62-ff5a759b0214",
+      "createdDateTime": "2026-05-11T20:10:24Z",
+      "userDisplayName": "Ahmed Kim",
+      "userPrincipalName": "ahmed.kim@contoso.com",
+      "ipAddress": "203.0.113.5",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Outlook on the web",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Singapore",
+        "state": "Central",
+        "countryOrRegion": "SG"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00556549127bb3-blah-4ee5-be62-ff5a759b1961",
+      "createdDateTime": "2026-05-14T11:24:42Z",
+      "userDisplayName": "Aisha Garcia",
+      "userPrincipalName": "aisha.garcia@contoso.com",
+      "ipAddress": "210.140.42.18",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Microsoft Teams",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Tokyo",
+        "state": "Tokyo",
+        "countryOrRegion": "JP"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "001a3ca6f87ca5-blah-4ee5-be62-ff5a759b0949",
+      "createdDateTime": "2026-05-15T12:22:20Z",
+      "userDisplayName": "Ivan Johnson",
+      "userPrincipalName": "ivan.johnson@contoso.com",
+      "ipAddress": "203.0.113.45",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "SharePoint",
+      "status": {
+        "errorCode": 50126,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "Lagos",
+        "state": null,
+        "countryOrRegion": "NG"
+      },
+      "riskLevelAggregated": "medium",
+      "riskState": "atRisk"
+    },
+    {
+      "id": "002e80d87d8ef0-blah-4ee5-be62-ff5a759b3700",
+      "createdDateTime": "2026-05-14T15:04:55Z",
+      "userDisplayName": "Wei Hassan",
+      "userPrincipalName": "wei.hassan@contoso.com",
+      "ipAddress": "185.220.102.250",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Microsoft Teams",
+      "status": {
+        "errorCode": 50053,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "Berlin",
+        "state": null,
+        "countryOrRegion": "DE"
+      },
+      "riskLevelAggregated": "high",
+      "riskState": "atRisk"
+    },
+    {
+      "id": "002204b6b61031-blah-4ee5-be62-ff5a759b2795",
+      "createdDateTime": "2026-05-17T10:42:49Z",
+      "userDisplayName": "Mohamed Rossi",
+      "userPrincipalName": "mohamed.rossi@contoso.com",
+      "ipAddress": "52.165.142.10",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Azure Portal",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Seattle",
+        "state": "Washington",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0027d461439f7d-blah-4ee5-be62-ff5a759b7393",
+      "createdDateTime": "2026-05-16T12:25:05Z",
+      "userDisplayName": "Ivan Yamamoto",
+      "userPrincipalName": "ivan.yamamoto@contoso.com",
+      "ipAddress": "13.107.6.156",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "SharePoint",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Sydney",
+        "state": "NSW",
+        "countryOrRegion": "AU"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "002eb9098390be-blah-4ee5-be62-ff5a759b2130",
+      "createdDateTime": "2026-05-12T09:27:06Z",
+      "userDisplayName": "Liam Garcia",
+      "userPrincipalName": "liam.garcia@contoso.com",
+      "ipAddress": "13.107.42.14",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "OneDrive",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Redmond",
+        "state": "Washington",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "000bd0efd9a0f7-blah-4ee5-be62-ff5a759b5529",
+      "createdDateTime": "2026-05-11T20:35:27Z",
+      "userDisplayName": "Aisha Rossi",
+      "userPrincipalName": "aisha.rossi@contoso.com",
+      "ipAddress": "52.165.142.10",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Microsoft Teams",
+      "status": {
+        "errorCode": 50126,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "Seattle",
+        "state": "Washington",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "000f080cd97e49-blah-4ee5-be62-ff5a759b8508",
+      "createdDateTime": "2026-05-14T07:30:00Z",
+      "userDisplayName": "Ivan Mueller",
+      "userPrincipalName": "ivan.mueller@contoso.com",
+      "ipAddress": "203.0.113.5",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Office 365 Portal",
+      "status": {
+        "errorCode": 50053,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "Singapore",
+        "state": "Central",
+        "countryOrRegion": "SG"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00102f4bf430c8-blah-4ee5-be62-ff5a759b8523",
+      "createdDateTime": "2026-05-13T23:19:26Z",
+      "userDisplayName": "Ahmed Mueller",
+      "userPrincipalName": "ahmed.mueller@contoso.com",
+      "ipAddress": "203.0.113.5",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "SharePoint",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Singapore",
+        "state": "Central",
+        "countryOrRegion": "SG"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "003a89556dc2ac-blah-4ee5-be62-ff5a759b2523",
+      "createdDateTime": "2026-05-12T02:33:43Z",
+      "userDisplayName": "Aisha Khan",
+      "userPrincipalName": "aisha.khan@contoso.com",
+      "ipAddress": "13.107.6.156",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Microsoft Teams",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Sydney",
+        "state": "NSW",
+        "countryOrRegion": "AU"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00299b86690fc4-blah-4ee5-be62-ff5a759b5579",
+      "createdDateTime": "2026-05-15T09:34:00Z",
+      "userDisplayName": "John Nguyen",
+      "userPrincipalName": "john.nguyen@contoso.com",
+      "ipAddress": "172.58.103.45",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Office 365 Portal",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Austin",
+        "state": "Texas",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "001704e0e3efea-blah-4ee5-be62-ff5a759b7952",
+      "createdDateTime": "2026-05-11T21:28:49Z",
+      "userDisplayName": "Mei Rossi",
+      "userPrincipalName": "mei.rossi@contoso.com",
+      "ipAddress": "64.34.144.20",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Microsoft Graph PowerShell",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Toronto",
+        "state": "Ontario",
+        "countryOrRegion": "CA"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00589a72f3c872-blah-4ee5-be62-ff5a759b3454",
+      "createdDateTime": "2026-05-14T11:06:55Z",
+      "userDisplayName": "Priya Mueller",
+      "userPrincipalName": "priya.mueller@contoso.com",
+      "ipAddress": "64.34.144.20",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Microsoft Graph PowerShell",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Toronto",
+        "state": "Ontario",
+        "countryOrRegion": "CA"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0009badc6859a0-blah-4ee5-be62-ff5a759b8647",
+      "createdDateTime": "2026-05-17T05:56:02Z",
+      "userDisplayName": "Yuki Brown",
+      "userPrincipalName": "yuki.brown@contoso.com",
+      "ipAddress": "52.165.142.10",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Microsoft Graph PowerShell",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Seattle",
+        "state": "Washington",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "004cc2333dc77f-blah-4ee5-be62-ff5a759b2236",
+      "createdDateTime": "2026-05-10T19:21:01Z",
+      "userDisplayName": "Maria Hassan",
+      "userPrincipalName": "maria.hassan@contoso.com",
+      "ipAddress": "172.58.103.45",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Office 365 Portal",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Austin",
+        "state": "Texas",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "000fed6e3a137c-blah-4ee5-be62-ff5a759b1678",
+      "createdDateTime": "2026-05-12T17:20:17Z",
+      "userDisplayName": "Diego Tanaka",
+      "userPrincipalName": "diego.tanaka@contoso.com",
+      "ipAddress": "84.16.234.12",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "SharePoint",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Munich",
+        "state": "Bavaria",
+        "countryOrRegion": "DE"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "004a0a5a9b0323-blah-4ee5-be62-ff5a759b6033",
+      "createdDateTime": "2026-05-15T03:40:12Z",
+      "userDisplayName": "Priya Smith",
+      "userPrincipalName": "priya.smith@contoso.com",
+      "ipAddress": "52.165.142.10",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "OneDrive",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Seattle",
+        "state": "Washington",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "000b1d3dcc44b5-blah-4ee5-be62-ff5a759b7423",
+      "createdDateTime": "2026-05-10T18:24:47Z",
+      "userDisplayName": "Fatima Chen",
+      "userPrincipalName": "fatima.chen@contoso.com",
+      "ipAddress": "103.224.182.250",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "OneDrive",
+      "status": {
+        "errorCode": 50053,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "Mumbai",
+        "state": null,
+        "countryOrRegion": "IN"
+      },
+      "riskLevelAggregated": "high",
+      "riskState": "atRisk"
+    },
+    {
+      "id": "003ef2eeb1b37f-blah-4ee5-be62-ff5a759b9383",
+      "createdDateTime": "2026-05-10T20:10:00Z",
+      "userDisplayName": "Mei Martinez",
+      "userPrincipalName": "mei.martinez@contoso.com",
+      "ipAddress": "13.107.6.156",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Microsoft Graph PowerShell",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Sydney",
+        "state": "NSW",
+        "countryOrRegion": "AU"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0055ef10e0ddbd-blah-4ee5-be62-ff5a759b7474",
+      "createdDateTime": "2026-05-12T10:28:33Z",
+      "userDisplayName": "Mei Smith",
+      "userPrincipalName": "mei.smith@contoso.com",
+      "ipAddress": "64.34.144.20",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "OneDrive",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Toronto",
+        "state": "Ontario",
+        "countryOrRegion": "CA"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0028dde00cf591-blah-4ee5-be62-ff5a759b2407",
+      "createdDateTime": "2026-05-14T00:35:18Z",
+      "userDisplayName": "Olivia Garcia",
+      "userPrincipalName": "olivia.garcia@contoso.com",
+      "ipAddress": "84.16.234.12",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "OneDrive",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Munich",
+        "state": "Bavaria",
+        "countryOrRegion": "DE"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00584ce03c2ab6-blah-4ee5-be62-ff5a759b3185",
+      "createdDateTime": "2026-05-14T13:41:31Z",
+      "userDisplayName": "Ahmed Khan",
+      "userPrincipalName": "ahmed.khan@contoso.com",
+      "ipAddress": "64.34.144.20",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Azure Portal",
+      "status": {
+        "errorCode": 50126,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "Toronto",
+        "state": "Ontario",
+        "countryOrRegion": "CA"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00401f468a3896-blah-4ee5-be62-ff5a759b6622",
+      "createdDateTime": "2026-05-10T16:16:20Z",
+      "userDisplayName": "Ahmed Wilson",
+      "userPrincipalName": "ahmed.wilson@contoso.com",
+      "ipAddress": "172.58.103.45",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "OneDrive",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Austin",
+        "state": "Texas",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0045a2dd45b834-blah-4ee5-be62-ff5a759b2539",
+      "createdDateTime": "2026-05-14T19:56:09Z",
+      "userDisplayName": "Zara Lee",
+      "userPrincipalName": "zara.lee@contoso.com",
+      "ipAddress": "203.0.113.5",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Outlook on the web",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Singapore",
+        "state": "Central",
+        "countryOrRegion": "SG"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "001f5abf98d6bb-blah-4ee5-be62-ff5a759b3537",
+      "createdDateTime": "2026-05-17T06:31:24Z",
+      "userDisplayName": "Ahmed Anderson",
+      "userPrincipalName": "ahmed.anderson@contoso.com",
+      "ipAddress": "203.0.113.5",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "OneDrive",
+      "status": {
+        "errorCode": 50053,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "Singapore",
+        "state": "Central",
+        "countryOrRegion": "SG"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0032cb86de95fc-blah-4ee5-be62-ff5a759b9869",
+      "createdDateTime": "2026-05-15T09:03:05Z",
+      "userDisplayName": "Ivan Yamamoto",
+      "userPrincipalName": "ivan.yamamoto@contoso.com",
+      "ipAddress": "172.58.103.45",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Outlook on the web",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Austin",
+        "state": "Texas",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0050ec3418ba06-blah-4ee5-be62-ff5a759b0286",
+      "createdDateTime": "2026-05-17T02:44:54Z",
+      "userDisplayName": "Diego Rossi",
+      "userPrincipalName": "diego.rossi@contoso.com",
+      "ipAddress": "64.34.144.20",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Microsoft Graph PowerShell",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Toronto",
+        "state": "Ontario",
+        "countryOrRegion": "CA"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00519400678511-blah-4ee5-be62-ff5a759b9994",
+      "createdDateTime": "2026-05-12T19:05:44Z",
+      "userDisplayName": "Jane Lopez",
+      "userPrincipalName": "jane.lopez@contoso.com",
+      "ipAddress": "203.0.113.5",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "SharePoint",
+      "status": {
+        "errorCode": 50126,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "Singapore",
+        "state": "Central",
+        "countryOrRegion": "SG"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00370311cd7de3-blah-4ee5-be62-ff5a759b8921",
+      "createdDateTime": "2026-05-16T00:12:50Z",
+      "userDisplayName": "Jane Hassan",
+      "userPrincipalName": "jane.hassan@contoso.com",
+      "ipAddress": "98.234.45.12",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Azure Portal",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "San Jose",
+        "state": "California",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00526db059cff5-blah-4ee5-be62-ff5a759b6198",
+      "createdDateTime": "2026-05-12T04:05:28Z",
+      "userDisplayName": "Carlos Kim",
+      "userPrincipalName": "carlos.kim@contoso.com",
+      "ipAddress": "13.107.42.14",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Microsoft Teams",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Redmond",
+        "state": "Washington",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "003f9e1d7c5990-blah-4ee5-be62-ff5a759b1609",
+      "createdDateTime": "2026-05-10T18:44:55Z",
+      "userDisplayName": "Emma Johnson",
+      "userPrincipalName": "emma.johnson@contoso.com",
+      "ipAddress": "203.0.113.45",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Microsoft Graph PowerShell",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Lagos",
+        "state": null,
+        "countryOrRegion": "NG"
+      },
+      "riskLevelAggregated": "medium",
+      "riskState": "atRisk"
+    },
+    {
+      "id": "00523f9ec0eb66-blah-4ee5-be62-ff5a759b5518",
+      "createdDateTime": "2026-05-10T16:10:45Z",
+      "userDisplayName": "Lucas Hassan",
+      "userPrincipalName": "lucas.hassan@contoso.com",
+      "ipAddress": "172.58.103.45",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "SharePoint",
+      "status": {
+        "errorCode": 50126,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "Austin",
+        "state": "Texas",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0027e474945899-blah-4ee5-be62-ff5a759b9627",
+      "createdDateTime": "2026-05-15T18:36:41Z",
+      "userDisplayName": "Raj Davis",
+      "userPrincipalName": "raj.davis@contoso.com",
+      "ipAddress": "82.46.128.99",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Microsoft Graph PowerShell",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "London",
+        "state": "England",
+        "countryOrRegion": "GB"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "004654787e9d9f-blah-4ee5-be62-ff5a759b3665",
+      "createdDateTime": "2026-05-12T19:12:15Z",
+      "userDisplayName": "Mohamed Lee",
+      "userPrincipalName": "mohamed.lee@contoso.com",
+      "ipAddress": "52.165.142.10",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Office 365 Portal",
+      "status": {
+        "errorCode": 50126,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "Seattle",
+        "state": "Washington",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00111bb21ae422-blah-4ee5-be62-ff5a759b0903",
+      "createdDateTime": "2026-05-14T07:18:39Z",
+      "userDisplayName": "Lucas Chen",
+      "userPrincipalName": "lucas.chen@contoso.com",
+      "ipAddress": "203.0.113.5",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Microsoft Graph PowerShell",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Singapore",
+        "state": "Central",
+        "countryOrRegion": "SG"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0033f4eb17706c-blah-4ee5-be62-ff5a759b0417",
+      "createdDateTime": "2026-05-14T13:00:49Z",
+      "userDisplayName": "Zara Anderson",
+      "userPrincipalName": "zara.anderson@contoso.com",
+      "ipAddress": "64.34.144.20",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Office 365 Portal",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Toronto",
+        "state": "Ontario",
+        "countryOrRegion": "CA"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "002e9a62f4596b-blah-4ee5-be62-ff5a759b9937",
+      "createdDateTime": "2026-05-14T09:41:10Z",
+      "userDisplayName": "Aisha Tanaka",
+      "userPrincipalName": "aisha.tanaka@contoso.com",
+      "ipAddress": "13.107.6.156",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Microsoft Graph PowerShell",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Sydney",
+        "state": "NSW",
+        "countryOrRegion": "AU"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "004be2ef9bfa39-blah-4ee5-be62-ff5a759b3209",
+      "createdDateTime": "2026-05-11T10:54:04Z",
+      "userDisplayName": "Fatima Yamamoto",
+      "userPrincipalName": "fatima.yamamoto@contoso.com",
+      "ipAddress": "210.140.42.18",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Microsoft Teams",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Tokyo",
+        "state": "Tokyo",
+        "countryOrRegion": "JP"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "002551acbf890b-blah-4ee5-be62-ff5a759b4584",
+      "createdDateTime": "2026-05-10T14:26:26Z",
+      "userDisplayName": "Emma Wilson",
+      "userPrincipalName": "emma.wilson@contoso.com",
+      "ipAddress": "98.234.45.12",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Office 365 Portal",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "San Jose",
+        "state": "California",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "001ddeb27a0750-blah-4ee5-be62-ff5a759b0953",
+      "createdDateTime": "2026-05-10T18:17:20Z",
+      "userDisplayName": "Anna Mueller",
+      "userPrincipalName": "anna.mueller@contoso.com",
+      "ipAddress": "210.140.42.18",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Microsoft Teams",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Tokyo",
+        "state": "Tokyo",
+        "countryOrRegion": "JP"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00556b6fbc30ed-blah-4ee5-be62-ff5a759b2247",
+      "createdDateTime": "2026-05-12T06:00:29Z",
+      "userDisplayName": "Anna Kim",
+      "userPrincipalName": "anna.kim@contoso.com",
+      "ipAddress": "203.0.113.5",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Office 365 Portal",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Singapore",
+        "state": "Central",
+        "countryOrRegion": "SG"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0045c921e7c185-blah-4ee5-be62-ff5a759b6299",
+      "createdDateTime": "2026-05-14T23:32:42Z",
+      "userDisplayName": "Sofia Davis",
+      "userPrincipalName": "sofia.davis@contoso.com",
+      "ipAddress": "210.140.42.18",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Azure Portal",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Tokyo",
+        "state": "Tokyo",
+        "countryOrRegion": "JP"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "002ad4158c95ea-blah-4ee5-be62-ff5a759b0372",
+      "createdDateTime": "2026-05-13T22:23:47Z",
+      "userDisplayName": "Sofia Nguyen",
+      "userPrincipalName": "sofia.nguyen@contoso.com",
+      "ipAddress": "13.107.6.156",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "OneDrive",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Sydney",
+        "state": "NSW",
+        "countryOrRegion": "AU"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "002308813f8a25-blah-4ee5-be62-ff5a759b7436",
+      "createdDateTime": "2026-05-16T03:53:56Z",
+      "userDisplayName": "Lucas Brown",
+      "userPrincipalName": "lucas.brown@contoso.com",
+      "ipAddress": "13.107.42.14",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Office 365 Portal",
+      "status": {
+        "errorCode": 50053,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "Redmond",
+        "state": "Washington",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "001f043caf2687-blah-4ee5-be62-ff5a759b3319",
+      "createdDateTime": "2026-05-11T01:38:07Z",
+      "userDisplayName": "Ivan Mueller",
+      "userPrincipalName": "ivan.mueller@contoso.com",
+      "ipAddress": "84.16.234.12",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Microsoft Teams",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Munich",
+        "state": "Bavaria",
+        "countryOrRegion": "DE"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "001e1f36cd9565-blah-4ee5-be62-ff5a759b1665",
+      "createdDateTime": "2026-05-14T03:21:09Z",
+      "userDisplayName": "Ahmed Wilson",
+      "userPrincipalName": "ahmed.wilson@contoso.com",
+      "ipAddress": "13.107.42.14",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "OneDrive",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Redmond",
+        "state": "Washington",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0031c4f9dfaf79-blah-4ee5-be62-ff5a759b2168",
+      "createdDateTime": "2026-05-15T00:59:40Z",
+      "userDisplayName": "Kavita Yamamoto",
+      "userPrincipalName": "kavita.yamamoto@contoso.com",
+      "ipAddress": "185.220.102.250",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Microsoft Teams",
+      "status": {
+        "errorCode": 50074,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "Berlin",
+        "state": null,
+        "countryOrRegion": "DE"
+      },
+      "riskLevelAggregated": "medium",
+      "riskState": "atRisk"
+    },
+    {
+      "id": "0025077f2fd73a-blah-4ee5-be62-ff5a759b7331",
+      "createdDateTime": "2026-05-11T19:47:00Z",
+      "userDisplayName": "Sofia Singh",
+      "userPrincipalName": "sofia.singh@contoso.com",
+      "ipAddress": "84.16.234.12",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Outlook on the web",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Munich",
+        "state": "Bavaria",
+        "countryOrRegion": "DE"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "003270e29f4a0c-blah-4ee5-be62-ff5a759b0782",
+      "createdDateTime": "2026-05-14T17:30:46Z",
+      "userDisplayName": "Sofia Singh",
+      "userPrincipalName": "sofia.singh@contoso.com",
+      "ipAddress": "82.46.128.99",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Microsoft Graph PowerShell",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "London",
+        "state": "England",
+        "countryOrRegion": "GB"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00404866a4d765-blah-4ee5-be62-ff5a759b4512",
+      "createdDateTime": "2026-05-14T06:27:24Z",
+      "userDisplayName": "Aisha Wilson",
+      "userPrincipalName": "aisha.wilson@contoso.com",
+      "ipAddress": "52.165.142.10",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Office 365 Portal",
+      "status": {
+        "errorCode": 50053,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "Seattle",
+        "state": "Washington",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00454eb46d84a1-blah-4ee5-be62-ff5a759b8752",
+      "createdDateTime": "2026-05-11T02:32:19Z",
+      "userDisplayName": "Diego Nguyen",
+      "userPrincipalName": "diego.nguyen@contoso.com",
+      "ipAddress": "82.46.128.99",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Azure Portal",
+      "status": {
+        "errorCode": 50126,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "London",
+        "state": "England",
+        "countryOrRegion": "GB"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0012b77e3acf4d-blah-4ee5-be62-ff5a759b0229",
+      "createdDateTime": "2026-05-12T20:10:32Z",
+      "userDisplayName": "Ivan Lopez",
+      "userPrincipalName": "ivan.lopez@contoso.com",
+      "ipAddress": "210.140.42.18",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Outlook on the web",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Tokyo",
+        "state": "Tokyo",
+        "countryOrRegion": "JP"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0016317d23de3c-blah-4ee5-be62-ff5a759b3168",
+      "createdDateTime": "2026-05-10T11:57:40Z",
+      "userDisplayName": "Ahmed Chen",
+      "userPrincipalName": "ahmed.chen@contoso.com",
+      "ipAddress": "13.107.6.156",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "OneDrive",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Sydney",
+        "state": "NSW",
+        "countryOrRegion": "AU"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0047fc22dcf37b-blah-4ee5-be62-ff5a759b9936",
+      "createdDateTime": "2026-05-17T04:03:13Z",
+      "userDisplayName": "Ivan Martinez",
+      "userPrincipalName": "ivan.martinez@contoso.com",
+      "ipAddress": "98.234.45.12",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Azure Portal",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "San Jose",
+        "state": "California",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "002833d8861d8d-blah-4ee5-be62-ff5a759b1883",
+      "createdDateTime": "2026-05-12T11:08:19Z",
+      "userDisplayName": "Hans Khan",
+      "userPrincipalName": "hans.khan@contoso.com",
+      "ipAddress": "172.58.103.45",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Azure Portal",
+      "status": {
+        "errorCode": 50126,
+        "failureReason": "Authentication failure"
+      },
+      "location": {
+        "city": "Austin",
+        "state": "Texas",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "002664a518adb5-blah-4ee5-be62-ff5a759b9378",
+      "createdDateTime": "2026-05-11T04:13:28Z",
+      "userDisplayName": "Sofia Chen",
+      "userPrincipalName": "sofia.chen@contoso.com",
+      "ipAddress": "84.16.234.12",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "Outlook on the web",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Munich",
+        "state": "Bavaria",
+        "countryOrRegion": "DE"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "003ff7f16e2131-blah-4ee5-be62-ff5a759b6599",
+      "createdDateTime": "2026-05-13T21:45:59Z",
+      "userDisplayName": "Jane Davis",
+      "userPrincipalName": "jane.davis@contoso.com",
+      "ipAddress": "13.107.6.156",
+      "clientAppUsed": "Other clients",
+      "appDisplayName": "Office 365 Portal",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Sydney",
+        "state": "NSW",
+        "countryOrRegion": "AU"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "0048a53ea021dd-blah-4ee5-be62-ff5a759b3865",
+      "createdDateTime": "2026-05-12T07:30:05Z",
+      "userDisplayName": "Priya Lopez",
+      "userPrincipalName": "priya.lopez@contoso.com",
+      "ipAddress": "52.165.142.10",
+      "clientAppUsed": "Mobile Apps and Desktop clients",
+      "appDisplayName": "OneDrive",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Seattle",
+        "state": "Washington",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    },
+    {
+      "id": "00393c4f062d5e-blah-4ee5-be62-ff5a759b8857",
+      "createdDateTime": "2026-05-14T22:16:50Z",
+      "userDisplayName": "Mei Smith",
+      "userPrincipalName": "mei.smith@contoso.com",
+      "ipAddress": "52.165.142.10",
+      "clientAppUsed": "Browser",
+      "appDisplayName": "Office 365 Portal",
+      "status": {
+        "errorCode": 0,
+        "failureReason": "Other."
+      },
+      "location": {
+        "city": "Seattle",
+        "state": "Washington",
+        "countryOrRegion": "US"
+      },
+      "riskLevelAggregated": "none",
+      "riskState": "none"
+    }
+  ]
+}
