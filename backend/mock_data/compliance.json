@@ -1,0 +1,100 @@
+{
+  "value": [
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/providers/Microsoft.Security/regulatoryComplianceStandards/Azure-CIS-1.4.0",
+      "name": "Azure-CIS-1.4.0",
+      "type": "Microsoft.Security/regulatoryComplianceStandards",
+      "properties": {
+        "state": "Failed",
+        "passedControls": 32,
+        "failedControls": 22,
+        "skippedControls": 2,
+        "unsupportedControls": 9
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/providers/Microsoft.Security/regulatoryComplianceStandards/NIST-SP-800-53-R5",
+      "name": "NIST-SP-800-53-R5",
+      "type": "Microsoft.Security/regulatoryComplianceStandards",
+      "properties": {
+        "state": "Failed",
+        "passedControls": 147,
+        "failedControls": 48,
+        "skippedControls": 9,
+        "unsupportedControls": 36
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/providers/Microsoft.Security/regulatoryComplianceStandards/ISO-27001-2013",
+      "name": "ISO-27001-2013",
+      "type": "Microsoft.Security/regulatoryComplianceStandards",
+      "properties": {
+        "state": "Failed",
+        "passedControls": 73,
+        "failedControls": 20,
+        "skippedControls": 4,
+        "unsupportedControls": 17
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/providers/Microsoft.Security/regulatoryComplianceStandards/PCI-DSS-4",
+      "name": "PCI-DSS-4",
+      "type": "Microsoft.Security/regulatoryComplianceStandards",
+      "properties": {
+        "state": "Failed",
+        "passedControls": 59,
+        "failedControls": 34,
+        "skippedControls": 4,
+        "unsupportedControls": 17
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/providers/Microsoft.Security/regulatoryComplianceStandards/SOC-TSP",
+      "name": "SOC-TSP",
+      "type": "Microsoft.Security/regulatoryComplianceStandards",
+      "properties": {
+        "state": "Failed",
+        "passedControls": 75,
+        "failedControls": 24,
+        "skippedControls": 4,
+        "unsupportedControls": 18
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/providers/Microsoft.Security/regulatoryComplianceStandards/HIPAA-HITRUST",
+      "name": "HIPAA-HITRUST",
+      "type": "Microsoft.Security/regulatoryComplianceStandards",
+      "properties": {
+        "state": "Failed",
+        "passedControls": 88,
+        "failedControls": 39,
+        "skippedControls": 6,
+        "unsupportedControls": 23
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/providers/Microsoft.Security/regulatoryComplianceStandards/CMMC-L3",
+      "name": "CMMC-L3",
+      "type": "Microsoft.Security/regulatoryComplianceStandards",
+      "properties": {
+        "state": "Failed",
+        "passedControls": 78,
+        "failedControls": 28,
+        "skippedControls": 5,
+        "unsupportedControls": 19
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/providers/Microsoft.Security/regulatoryComplianceStandards/Azure-Security-Benchmark",
+      "name": "Azure-Security-Benchmark",
+      "type": "Microsoft.Security/regulatoryComplianceStandards",
+      "properties": {
+        "state": "Failed",
+        "passedControls": 49,
+        "failedControls": 25,
+        "skippedControls": 3,
+        "unsupportedControls": 13
+      }
+    }
+  ]
+}

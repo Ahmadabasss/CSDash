@@ -1,0 +1,112 @@
+{
+  "value": [
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/providers/Microsoft.Security/secureScores/ascScore",
+      "name": "ascScore",
+      "type": "Microsoft.Security/secureScores",
+      "properties": {
+        "displayName": "ASC score",
+        "score": {
+          "max": 58,
+          "current": 45.24,
+          "percentage": 0.78
+        },
+        "weight": 11440
+      }
+    }
+  ],
+  "history": [
+    {
+      "date": "2026-03-01",
+      "percentage": 0.3505
+    },
+    {
+      "date": "2026-03-08",
+      "percentage": 0.3822
+    },
+    {
+      "date": "2026-03-15",
+      "percentage": 0.4137
+    },
+    {
+      "date": "2026-03-22",
+      "percentage": 0.4854
+    },
+    {
+      "date": "2026-03-29",
+      "percentage": 0.4764
+    },
+    {
+      "date": "2026-04-05",
+      "percentage": 0.5297
+    },
+    {
+      "date": "2026-04-12",
+      "percentage": 0.5621
+    },
+    {
+      "date": "2026-04-19",
+      "percentage": 0.6205
+    },
+    {
+      "date": "2026-04-26",
+      "percentage": 0.6494
+    },
+    {
+      "date": "2026-05-03",
+      "percentage": 0.6948
+    },
+    {
+      "date": "2026-05-10",
+      "percentage": 0.6957
+    },
+    {
+      "date": "2026-05-17",
+      "percentage": 0.7677
+    }
+  ],
+  "controlScores": [
+    {
+      "controlName": "Enable MFA",
+      "current": 7,
+      "max": 10,
+      "weight": 10
+    },
+    {
+      "controlName": "Secure management ports",
+      "current": 5,
+      "max": 8,
+      "weight": 8
+    },
+    {
+      "controlName": "Apply system updates",
+      "current": 4,
+      "max": 6,
+      "weight": 6
+    },
+    {
+      "controlName": "Enable encryption at rest",
+      "current": 4,
+      "max": 7,
+      "weight": 7
+    },
+    {
+      "controlName": "Restrict unauthorized network access",
+      "current": 5,
+      "max": 6,
+      "weight": 6
+    },
+    {
+      "controlName": "Manage access and permissions",
+      "current": 6,
+      "max": 9,
+      "weight": 9
+    },
+    {
+      "controlName": "Remediate vulnerabilities",
+      "current": 10,
+      "max": 12,
+      "weight": 12
+    }
+  ]
+}

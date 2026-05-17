@@ -1,0 +1,415 @@
+{
+  "@odata.context": "synthetic",
+  "value": [
+    {
+      "id": "CVE-2024-27198",
+      "name": "JetBrains TeamCity Authentication Bypass",
+      "description": "JetBrains TeamCity Authentication Bypass. See NVD entry for details.",
+      "severity": "Critical",
+      "cvssV3": 9.8,
+      "exposedMachines": 1,
+      "publishedOn": "2026-03-04T00:00:00Z",
+      "updatedOn": "2026-05-11T13:10:39Z",
+      "publicExploit": true,
+      "exploitInKit": false,
+      "exploitTypes": [
+        "Remote"
+      ],
+      "tags": [
+        "EXPLOIT_AVAILABLE",
+        "RANSOMWARE_ASSOCIATED"
+      ]
+    },
+    {
+      "id": "CVE-2023-3519",
+      "name": "Citrix NetScaler ADC RCE",
+      "description": "Citrix NetScaler ADC RCE. See NVD entry for details.",
+      "severity": "Critical",
+      "cvssV3": 9.8,
+      "exposedMachines": 0,
+      "publishedOn": "2025-07-19T00:00:00Z",
+      "updatedOn": "2026-03-21T08:32:07Z",
+      "publicExploit": true,
+      "exploitInKit": false,
+      "exploitTypes": [
+        "Remote"
+      ],
+      "tags": [
+        "EXPLOIT_AVAILABLE",
+        "APT_ASSOCIATED"
+      ]
+    },
+    {
+      "id": "CVE-2024-23897",
+      "name": "Jenkins Arbitrary File Read",
+      "description": "Jenkins Arbitrary File Read. See NVD entry for details.",
+      "severity": "Critical",
+      "cvssV3": 9.8,
+      "exposedMachines": 0,
+      "publishedOn": "2026-01-24T00:00:00Z",
+      "updatedOn": "2026-04-14T12:17:16Z",
+      "publicExploit": true,
+      "exploitInKit": false,
+      "exploitTypes": [
+        "Remote"
+      ],
+      "tags": [
+        "EXPLOIT_AVAILABLE"
+      ]
+    },
+    {
+      "id": "CVE-2024-37085",
+      "name": "VMware ESXi Authentication Bypass",
+      "description": "VMware ESXi Authentication Bypass. See NVD entry for details.",
+      "severity": "Medium",
+      "cvssV3": 6.8,
+      "exposedMachines": 0,
+      "publishedOn": "2026-06-25T00:00:00Z",
+      "updatedOn": "2026-04-25T21:35:39Z",
+      "publicExploit": true,
+      "exploitInKit": false,
+      "exploitTypes": [
+        "Local"
+      ],
+      "tags": [
+        "EXPLOIT_AVAILABLE",
+        "RANSOMWARE_ASSOCIATED"
+      ]
+    },
+    {
+      "id": "CVE-2024-38080",
+      "name": "Windows Hyper-V Elevation of Privilege Vulnerability",
+      "description": "Windows Hyper-V Elevation of Privilege Vulnerability. See NVD entry for details.",
+      "severity": "High",
+      "cvssV3": 7.8,
+      "exposedMachines": 3,
+      "publishedOn": "2026-07-09T00:00:00Z",
+      "updatedOn": "2026-04-26T15:56:40Z",
+      "publicExploit": true,
+      "exploitInKit": true,
+      "exploitTypes": [
+        "Local"
+      ],
+      "tags": [
+        "EXPLOIT_AVAILABLE",
+        "ACTIVE_THREAT"
+      ]
+    },
+    {
+      "id": "CVE-2023-46604",
+      "name": "Apache ActiveMQ OpenWire RCE",
+      "description": "Apache ActiveMQ OpenWire RCE. See NVD entry for details.",
+      "severity": "Critical",
+      "cvssV3": 10.0,
+      "exposedMachines": 2,
+      "publishedOn": "2025-10-27T00:00:00Z",
+      "updatedOn": "2026-04-19T06:28:40Z",
+      "publicExploit": true,
+      "exploitInKit": false,
+      "exploitTypes": [
+        "Remote"
+      ],
+      "tags": [
+        "EXPLOIT_AVAILABLE",
+        "RANSOMWARE_ASSOCIATED"
+      ]
+    },
+    {
+      "id": "CVE-2024-20767",
+      "name": "Adobe ColdFusion Improper Access Control",
+      "description": "Adobe ColdFusion Improper Access Control. See NVD entry for details.",
+      "severity": "High",
+      "cvssV3": 7.4,
+      "exposedMachines": 2,
+      "publishedOn": "2026-03-14T00:00:00Z",
+      "updatedOn": "2026-05-13T09:18:53Z",
+      "publicExploit": true,
+      "exploitInKit": false,
+      "exploitTypes": [
+        "Remote"
+      ],
+      "tags": [
+        "EXPLOIT_AVAILABLE"
+      ]
+    },
+    {
+      "id": "CVE-2024-1086",
+      "name": "Linux Kernel netfilter Use-After-Free Privilege Escalation",
+      "description": "Linux Kernel netfilter Use-After-Free Privilege Escalation. See NVD entry for details.",
+      "severity": "High",
+      "cvssV3": 7.8,
+      "exposedMachines": 0,
+      "publishedOn": "2026-01-31T00:00:00Z",
+      "updatedOn": "2026-04-18T03:33:58Z",
+      "publicExploit": true,
+      "exploitInKit": false,
+      "exploitTypes": [
+        "Local"
+      ],
+      "tags": [
+        "EXPLOIT_AVAILABLE"
+      ]
+    },
+    {
+      "id": "CVE-2024-21338",
+      "name": "Windows Kernel Elevation of Privilege Vulnerability",
+      "description": "Windows Kernel Elevation of Privilege Vulnerability. See NVD entry for details.",
+      "severity": "High",
+      "cvssV3": 7.8,
+      "exposedMachines": 3,
+      "publishedOn": "2026-02-13T00:00:00Z",
+      "updatedOn": "2026-04-07T21:45:38Z",
+      "publicExploit": true,
+      "exploitInKit": false,
+      "exploitTypes": [
+        "Local"
+      ],
+      "tags": [
+        "EXPLOIT_AVAILABLE",
+        "APT_ASSOCIATED"
+      ]
+    },
+    {
+      "id": "CVE-2024-3400",
+      "name": "Palo Alto PAN-OS GlobalProtect Command Injection",
+      "description": "Palo Alto PAN-OS GlobalProtect Command Injection. See NVD entry for details.",
+      "severity": "Critical",
+      "cvssV3": 10.0,
+      "exposedMachines": 1,
+      "publishedOn": "2026-04-12T00:00:00Z",
+      "updatedOn": "2026-04-10T13:57:26Z",
+      "publicExploit": true,
+      "exploitInKit": false,
+      "exploitTypes": [
+        "Remote"
+      ],
+      "tags": [
+        "EXPLOIT_AVAILABLE",
+        "APT_ASSOCIATED"
+      ]
+    },
+    {
+      "id": "CVE-2024-38112",
+      "name": "Windows MSHTML Platform Spoofing Vulnerability",
+      "description": "Windows MSHTML Platform Spoofing Vulnerability. See NVD entry for details.",
+      "severity": "High",
+      "cvssV3": 7.5,
+      "exposedMachines": 5,
+      "publishedOn": "2026-07-09T00:00:00Z",
+      "updatedOn": "2026-04-07T13:14:51Z",
+      "publicExploit": true,
+      "exploitInKit": false,
+      "exploitTypes": [
+        "Remote"
+      ],
+      "tags": [
+        "EXPLOIT_AVAILABLE",
+        "APT_ASSOCIATED"
+      ]
+    },
+    {
+      "id": "CVE-2024-7593",
+      "name": "Ivanti Virtual Traffic Manager Authentication Bypass",
+      "description": "Ivanti Virtual Traffic Manager Authentication Bypass. See NVD entry for details.",
+      "severity": "Critical",
+      "cvssV3": 9.8,
+      "exposedMachines": 2,
+      "publishedOn": "2026-08-13T00:00:00Z",
+      "updatedOn": "2026-04-28T20:55:45Z",
+      "publicExploit": true,
+      "exploitInKit": false,
+      "exploitTypes": [
+        "Remote"
+      ],
+      "tags": [
+        "EXPLOIT_AVAILABLE"
+      ]
+    },
+    {
+      "id": "CVE-2024-29748",
+      "name": "Pixel Privilege Escalation",
+      "description": "Pixel Privilege Escalation. See NVD entry for details.",
+      "severity": "High",
+      "cvssV3": 7.8,
+      "exposedMachines": 4,
+      "publishedOn": "2026-04-02T00:00:00Z",
+      "updatedOn": "2026-05-14T07:31:33Z",
+      "publicExploit": true,
+      "exploitInKit": false,
+      "exploitTypes": [
+        "Local"
+      ],
+      "tags": [
+        "EXPLOIT_AVAILABLE"
+      ]
+    },
+    {
+      "id": "CVE-2024-3094",
+      "name": "XZ Utils Backdoor",
+      "description": "XZ Utils Backdoor. See NVD entry for details.",
+      "severity": "Critical",
+      "cvssV3": 10.0,
+      "exposedMachines": 0,
+      "publishedOn": "2026-03-29T00:00:00Z",
+      "updatedOn": "2026-05-12T11:10:54Z",
+      "publicExploit": true,
+      "exploitInKit": false,
+      "exploitTypes": [
+        "Remote"
+      ],
+      "tags": [
+        "EXPLOIT_AVAILABLE",
+        "SUPPLY_CHAIN"
+      ]
+    },
+    {
+      "id": "CVE-2023-22527",
+      "name": "Atlassian Confluence Template Injection RCE",
+      "description": "Atlassian Confluence Template Injection RCE. See NVD entry for details.",
+      "severity": "Critical",
+      "cvssV3": 10.0,
+      "exposedMachines": 0,
+      "publishedOn": "2025-12-15T00:00:00Z",
+      "updatedOn": "2026-05-10T13:52:07Z",
+      "publicExploit": true,
+      "exploitInKit": true,
+      "exploitTypes": [
+        "Remote"
+      ],
+      "tags": [
+        "EXPLOIT_AVAILABLE",
+        "ACTIVE_THREAT"
+      ]
+    },
+    {
+      "id": "CVE-2024-4040",
+      "name": "CrushFTP VFS Sandbox Escape",
+      "description": "CrushFTP VFS Sandbox Escape. See NVD entry for details.",
+      "severity": "Critical",
+      "cvssV3": 9.8,
+      "exposedMachines": 0,
+      "publishedOn": "2026-04-19T00:00:00Z",
+      "updatedOn": "2026-05-06T14:18:53Z",
+      "publicExploit": true,
+      "exploitInKit": true,
+      "exploitTypes": [
+        "Remote"
+      ],
+      "tags": [
+        "EXPLOIT_AVAILABLE",
+        "ACTIVE_THREAT"
+      ]
+    },
+    {
+      "id": "CVE-2024-30040",
+      "name": "Windows MSHTML Platform Security Feature Bypass Vulnerability",
+      "description": "Windows MSHTML Platform Security Feature Bypass Vulnerability. See NVD entry for details.",
+      "severity": "Critical",
+      "cvssV3": 8.8,
+      "exposedMachines": 1,
+      "publishedOn": "2026-05-14T00:00:00Z",
+      "updatedOn": "2026-04-19T03:12:30Z",
+      "publicExploit": true,
+      "exploitInKit": false,
+      "exploitTypes": [
+        "Remote"
+      ],
+      "tags": [
+        "EXPLOIT_AVAILABLE"
+      ]
+    },
+    {
+      "id": "CVE-2024-26169",
+      "name": "Windows Error Reporting Service Elevation of Privilege Vulnerability",
+      "description": "Windows Error Reporting Service Elevation of Privilege Vulnerability. See NVD entry for details.",
+      "severity": "High",
+      "cvssV3": 7.8,
+      "exposedMachines": 1,
+      "publishedOn": "2026-03-12T00:00:00Z",
+      "updatedOn": "2026-03-25T21:04:55Z",
+      "publicExploit": true,
+      "exploitInKit": false,
+      "exploitTypes": [
+        "Local"
+      ],
+      "tags": [
+        "EXPLOIT_AVAILABLE",
+        "RANSOMWARE_ASSOCIATED"
+      ]
+    },
+    {
+      "id": "CVE-2023-50164",
+      "name": "Apache Struts Path Traversal RCE",
+      "description": "Apache Struts Path Traversal RCE. See NVD entry for details.",
+      "severity": "Critical",
+      "cvssV3": 9.8,
+      "exposedMachines": 1,
+      "publishedOn": "2025-12-07T00:00:00Z",
+      "updatedOn": "2026-05-16T02:15:07Z",
+      "publicExploit": true,
+      "exploitInKit": true,
+      "exploitTypes": [
+        "Remote"
+      ],
+      "tags": [
+        "EXPLOIT_AVAILABLE",
+        "ACTIVE_THREAT"
+      ]
+    },
+    {
+      "id": "CVE-2024-21412",
+      "name": "Internet Shortcut Files Security Feature Bypass Vulnerability",
+      "description": "Internet Shortcut Files Security Feature Bypass Vulnerability. See NVD entry for details.",
+      "severity": "Critical",
+      "cvssV3": 8.1,
+      "exposedMachines": 4,
+      "publishedOn": "2026-02-13T00:00:00Z",
+      "updatedOn": "2026-04-19T22:38:07Z",
+      "publicExploit": true,
+      "exploitInKit": true,
+      "exploitTypes": [
+        "Local"
+      ],
+      "tags": [
+        "EXPLOIT_AVAILABLE",
+        "ACTIVE_THREAT"
+      ]
+    },
+    {
+      "id": "CVE-2023-29360",
+      "name": "Microsoft Streaming Service Elevation of Privilege",
+      "description": "Microsoft Streaming Service Elevation of Privilege. See NVD entry for details.",
+      "severity": "High",
+      "cvssV3": 8.4,
+      "exposedMachines": 2,
+      "publishedOn": "2025-06-13T00:00:00Z",
+      "updatedOn": "2026-03-29T11:52:04Z",
+      "publicExploit": true,
+      "exploitInKit": false,
+      "exploitTypes": [
+        "Local"
+      ],
+      "tags": [
+        "EXPLOIT_AVAILABLE"
+      ]
+    },
+    {
+      "id": "CVE-2024-21351",
+      "name": "Windows SmartScreen Security Feature Bypass Vulnerability",
+      "description": "Windows SmartScreen Security Feature Bypass Vulnerability. See NVD entry for details.",
+      "severity": "High",
+      "cvssV3": 7.6,
+      "exposedMachines": 2,
+      "publishedOn": "2026-02-13T00:00:00Z",
+      "updatedOn": "2026-03-26T16:45:47Z",
+      "publicExploit": true,
+      "exploitInKit": false,
+      "exploitTypes": [
+        "Remote"
+      ],
+      "tags": [
+        "EXPLOIT_AVAILABLE"
+      ]
+    }
+  ]
+}

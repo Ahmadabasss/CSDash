@@ -1,0 +1,153 @@
+{
+  "@odata.context": "synthetic",
+  "value": [
+    {
+      "id": "CVE-2024-21351",
+      "name": "Windows SmartScreen Security Feature Bypass Vulnerability",
+      "description": "Windows SmartScreen Security Feature Bypass Vulnerability. See NVD entry for details.",
+      "severity": "High",
+      "cvssV3": 7.6,
+      "exposedMachines": 3,
+      "publishedOn": "2026-02-13T00:00:00Z",
+      "updatedOn": "2026-05-05T15:37:42Z",
+      "publicExploit": true,
+      "exploitInKit": false,
+      "exploitTypes": [
+        "Remote"
+      ],
+      "tags": [
+        "EXPLOIT_AVAILABLE"
+      ]
+    },
+    {
+      "id": "CVE-2024-21413",
+      "name": "Microsoft Outlook Remote Code Execution Vulnerability",
+      "description": "Microsoft Outlook Remote Code Execution Vulnerability. See NVD entry for details.",
+      "severity": "Critical",
+      "cvssV3": 9.8,
+      "exposedMachines": 1,
+      "publishedOn": "2026-02-13T00:00:00Z",
+      "updatedOn": "2026-04-23T07:25:31Z",
+      "publicExploit": true,
+      "exploitInKit": false,
+      "exploitTypes": [
+        "Remote"
+      ],
+      "tags": [
+        "EXPLOIT_AVAILABLE"
+      ]
+    },
+    {
+      "id": "CVE-2024-20767",
+      "name": "Adobe ColdFusion Improper Access Control",
+      "description": "Adobe ColdFusion Improper Access Control. See NVD entry for details.",
+      "severity": "High",
+      "cvssV3": 7.4,
+      "exposedMachines": 3,
+      "publishedOn": "2026-03-14T00:00:00Z",
+      "updatedOn": "2026-04-28T20:47:44Z",
+      "publicExploit": true,
+      "exploitInKit": false,
+      "exploitTypes": [
+        "Remote"
+      ],
+      "tags": [
+        "EXPLOIT_AVAILABLE"
+      ]
+    },
+    {
+      "id": "CVE-2023-3519",
+      "name": "Citrix NetScaler ADC RCE",
+      "description": "Citrix NetScaler ADC RCE. See NVD entry for details.",
+      "severity": "Critical",
+      "cvssV3": 9.8,
+      "exposedMachines": 0,
+      "publishedOn": "2025-07-19T00:00:00Z",
+      "updatedOn": "2026-05-02T03:29:38Z",
+      "publicExploit": true,
+      "exploitInKit": false,
+      "exploitTypes": [
+        "Remote"
+      ],
+      "tags": [
+        "EXPLOIT_AVAILABLE",
+        "APT_ASSOCIATED"
+      ]
+    },
+    {
+      "id": "CVE-2024-37085",
+      "name": "VMware ESXi Authentication Bypass",
+      "description": "VMware ESXi Authentication Bypass. See NVD entry for details.",
+      "severity": "Medium",
+      "cvssV3": 6.8,
+      "exposedMachines": 0,
+      "publishedOn": "2026-06-25T00:00:00Z",
+      "updatedOn": "2026-04-24T03:33:58Z",
+      "publicExploit": true,
+      "exploitInKit": false,
+      "exploitTypes": [
+        "Local"
+      ],
+      "tags": [
+        "EXPLOIT_AVAILABLE",
+        "RANSOMWARE_ASSOCIATED"
+      ]
+    },
+    {
+      "id": "CVE-2024-27198",
+      "name": "JetBrains TeamCity Authentication Bypass",
+      "description": "JetBrains TeamCity Authentication Bypass. See NVD entry for details.",
+      "severity": "Critical",
+      "cvssV3": 9.8,
+      "exposedMachines": 0,
+      "publishedOn": "2026-03-04T00:00:00Z",
+      "updatedOn": "2026-04-07T17:06:05Z",
+      "publicExploit": true,
+      "exploitInKit": false,
+      "exploitTypes": [
+        "Remote"
+      ],
+      "tags": [
+        "EXPLOIT_AVAILABLE",
+        "RANSOMWARE_ASSOCIATED"
+      ]
+    },
+    {
+      "id": "CVE-2024-29748",
+      "name": "Pixel Privilege Escalation",
+      "description": "Pixel Privilege Escalation. See NVD entry for details.",
+      "severity": "High",
+      "cvssV3": 7.8,
+      "exposedMachines": 1,
+      "publishedOn": "2026-04-02T00:00:00Z",
+      "updatedOn": "2026-04-13T01:10:23Z",
+      "publicExploit": true,
+      "exploitInKit": false,
+      "exploitTypes": [
+        "Local"
+      ],
+      "tags": [
+        "EXPLOIT_AVAILABLE"
+      ]
+    },
+    {
+      "id": "CVE-2024-3400",
+      "name": "Palo Alto PAN-OS GlobalProtect Command Injection",
+      "description": "Palo Alto PAN-OS GlobalProtect Command Injection. See NVD entry for details.",
+      "severity": "Critical",
+      "cvssV3": 10.0,
+      "exposedMachines": 1,
+      "publishedOn": "2026-04-12T00:00:00Z",
+      "updatedOn": "2026-03-18T13:13:08Z",
+      "publicExploit": true,
+      "exploitInKit": false,
+      "exploitTypes": [
+        "Remote"
+      ],
+      "tags": [
+        "EXPLOIT_AVAILABLE",
+        "APT_ASSOCIATED"
+      ]
+    }
+  ]
+}
