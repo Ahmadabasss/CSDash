@@ -1,0 +1,570 @@
+{
+  "resourceGroups": [
+    "prod-network-rg",
+    "prod-web-rg",
+    "prod-data-rg",
+    "dev-rg",
+    "analytics-rg",
+    "shared-services-rg"
+  ],
+  "vnets": [
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-network-rg/providers/microsoft.network/virtualnetworks/vnet-hub-prod",
+      "name": "vnet-hub-prod",
+      "resourceGroup": "prod-network-rg",
+      "location": "eastus",
+      "addressSpace": ["10.10.0.0/16"],
+      "role": "hub",
+      "dnsServers": ["10.10.3.10", "10.10.3.11"],
+      "subnets": [
+        {
+          "name": "AzureFirewallSubnet",
+          "addressPrefix": "10.10.1.0/24",
+          "nsg": null,
+          "routeTable": null,
+          "purpose": "firewall",
+          "resourceCount": 1,
+          "resources": [{ "name": "afw-prod-001", "type": "AzureFirewall" }]
+        },
+        {
+          "name": "GatewaySubnet",
+          "addressPrefix": "10.10.2.0/24",
+          "nsg": null,
+          "routeTable": null,
+          "purpose": "gateway",
+          "resourceCount": 1,
+          "resources": [{ "name": "vpngw-prod-001", "type": "VirtualNetworkGateway" }]
+        },
+        {
+          "name": "snet-management",
+          "addressPrefix": "10.10.3.0/24",
+          "nsg": "nsg-mgmt-prod",
+          "routeTable": "rt-hub-internal",
+          "purpose": "management",
+          "resourceCount": 3,
+          "resources": [
+            { "name": "vm-jumpbox-001", "type": "VirtualMachine" },
+            { "name": "vm-jumpbox-002", "type": "VirtualMachine" },
+            { "name": "pip-jumpbox-001", "type": "PublicIPAddress" }
+          ]
+        },
+        {
+          "name": "snet-dmz",
+          "addressPrefix": "10.10.4.0/24",
+          "nsg": "nsg-dmz-prod",
+          "routeTable": "rt-hub-dmz",
+          "purpose": "dmz",
+          "resourceCount": 2,
+          "resources": [
+            { "name": "agw-prod-001", "type": "ApplicationGateway" },
+            { "name": "pip-agw-001", "type": "PublicIPAddress" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-web-rg/providers/microsoft.network/virtualnetworks/vnet-prod-web",
+      "name": "vnet-prod-web",
+      "resourceGroup": "prod-web-rg",
+      "location": "eastus",
+      "addressSpace": ["10.0.0.0/16"],
+      "role": "spoke",
+      "dnsServers": ["10.10.3.10"],
+      "subnets": [
+        {
+          "name": "snet-web",
+          "addressPrefix": "10.0.1.0/24",
+          "nsg": "nsg-web-prod",
+          "routeTable": "rt-prod-inet",
+          "purpose": "web",
+          "resourceCount": 3,
+          "resources": [
+            { "name": "vm-web-001", "type": "VirtualMachine" },
+            { "name": "vm-web-002", "type": "VirtualMachine" },
+            { "name": "lbi-web-prod", "type": "LoadBalancer" }
+          ]
+        },
+        {
+          "name": "snet-app",
+          "addressPrefix": "10.0.2.0/24",
+          "nsg": "nsg-app-prod",
+          "routeTable": "rt-prod-internal",
+          "purpose": "app",
+          "resourceCount": 2,
+          "resources": [
+            { "name": "vm-app-001", "type": "VirtualMachine" },
+            { "name": "vm-app-002", "type": "VirtualMachine" }
+          ]
+        },
+        {
+          "name": "snet-db",
+          "addressPrefix": "10.0.3.0/24",
+          "nsg": "nsg-db-prod",
+          "routeTable": null,
+          "purpose": "database",
+          "resourceCount": 2,
+          "resources": [
+            { "name": "vm-db-primary-001", "type": "VirtualMachine" },
+            { "name": "vm-db-replica-001", "type": "VirtualMachine" }
+          ]
+        },
+        {
+          "name": "AzureBastionSubnet",
+          "addressPrefix": "10.0.4.0/24",
+          "nsg": "nsg-bastion-prod",
+          "routeTable": null,
+          "purpose": "bastion",
+          "resourceCount": 1,
+          "resources": [{ "name": "bas-prod-001", "type": "BastionHost" }]
+        }
+      ]
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-data-rg/providers/microsoft.network/virtualnetworks/vnet-prod-data",
+      "name": "vnet-prod-data",
+      "resourceGroup": "prod-data-rg",
+      "location": "eastus",
+      "addressSpace": ["10.1.0.0/16"],
+      "role": "spoke",
+      "dnsServers": ["10.10.3.10"],
+      "subnets": [
+        {
+          "name": "snet-sql-primary",
+          "addressPrefix": "10.1.1.0/24",
+          "nsg": "nsg-sql-primary",
+          "routeTable": null,
+          "purpose": "database",
+          "resourceCount": 2,
+          "resources": [
+            { "name": "sql-prod-primary", "type": "SQLServer" },
+            { "name": "vm-sql-001", "type": "VirtualMachine" }
+          ]
+        },
+        {
+          "name": "snet-sql-replica",
+          "addressPrefix": "10.1.2.0/24",
+          "nsg": "nsg-sql-replica",
+          "routeTable": null,
+          "purpose": "database",
+          "resourceCount": 1,
+          "resources": [{ "name": "sql-prod-replica", "type": "SQLServer" }]
+        },
+        {
+          "name": "snet-backup",
+          "addressPrefix": "10.1.3.0/24",
+          "nsg": "nsg-backup",
+          "routeTable": null,
+          "purpose": "backup",
+          "resourceCount": 1,
+          "resources": [{ "name": "sa-backup-prod-001", "type": "StorageAccount" }]
+        }
+      ]
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/dev-rg/providers/microsoft.network/virtualnetworks/vnet-dev",
+      "name": "vnet-dev",
+      "resourceGroup": "dev-rg",
+      "location": "eastus",
+      "addressSpace": ["10.2.0.0/16"],
+      "role": "spoke",
+      "dnsServers": [],
+      "subnets": [
+        {
+          "name": "snet-dev-general",
+          "addressPrefix": "10.2.1.0/24",
+          "nsg": "nsg-dev-general",
+          "routeTable": null,
+          "purpose": "development",
+          "resourceCount": 4,
+          "resources": [
+            { "name": "vm-dev-841", "type": "VirtualMachine" },
+            { "name": "vm-dev-842", "type": "VirtualMachine" },
+            { "name": "vm-dev-843", "type": "VirtualMachine" },
+            { "name": "vm-dev-844", "type": "VirtualMachine" }
+          ]
+        },
+        {
+          "name": "snet-cicd",
+          "addressPrefix": "10.2.2.0/24",
+          "nsg": "nsg-cicd",
+          "routeTable": null,
+          "purpose": "cicd",
+          "resourceCount": 2,
+          "resources": [
+            { "name": "vm-jenkins-001", "type": "VirtualMachine" },
+            { "name": "pip-jenkins-001", "type": "PublicIPAddress" }
+          ]
+        },
+        {
+          "name": "snet-test",
+          "addressPrefix": "10.2.3.0/24",
+          "nsg": null,
+          "routeTable": null,
+          "purpose": "testing",
+          "resourceCount": 0,
+          "resources": []
+        }
+      ]
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/analytics-rg/providers/microsoft.network/virtualnetworks/vnet-analytics",
+      "name": "vnet-analytics",
+      "resourceGroup": "analytics-rg",
+      "location": "eastus",
+      "addressSpace": ["10.3.0.0/16"],
+      "role": "spoke",
+      "dnsServers": ["10.10.3.10"],
+      "subnets": [
+        {
+          "name": "snet-processing",
+          "addressPrefix": "10.3.1.0/24",
+          "nsg": "nsg-analytics-proc",
+          "routeTable": "rt-analytics",
+          "purpose": "compute",
+          "resourceCount": 3,
+          "resources": [
+            { "name": "aks-analytics-001", "type": "AKSCluster" },
+            { "name": "vm-spark-001", "type": "VirtualMachine" },
+            { "name": "vm-spark-002", "type": "VirtualMachine" }
+          ]
+        },
+        {
+          "name": "snet-storage",
+          "addressPrefix": "10.3.2.0/24",
+          "nsg": "nsg-analytics-storage",
+          "routeTable": null,
+          "purpose": "storage",
+          "resourceCount": 2,
+          "resources": [
+            { "name": "sa-datalake-001", "type": "StorageAccount" },
+            { "name": "sa-datalake-002", "type": "StorageAccount" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/shared-services-rg/providers/microsoft.network/virtualnetworks/vnet-shared",
+      "name": "vnet-shared",
+      "resourceGroup": "shared-services-rg",
+      "location": "eastus",
+      "addressSpace": ["10.4.0.0/16"],
+      "role": "spoke",
+      "dnsServers": ["10.10.3.10"],
+      "subnets": [
+        {
+          "name": "snet-monitoring",
+          "addressPrefix": "10.4.1.0/24",
+          "nsg": "nsg-monitoring",
+          "routeTable": null,
+          "purpose": "monitoring",
+          "resourceCount": 2,
+          "resources": [
+            { "name": "vm-loganalytics-001", "type": "VirtualMachine" },
+            { "name": "vm-grafana-001", "type": "VirtualMachine" }
+          ]
+        },
+        {
+          "name": "snet-keyvault",
+          "addressPrefix": "10.4.2.0/24",
+          "nsg": "nsg-keyvault",
+          "routeTable": null,
+          "purpose": "secrets",
+          "resourceCount": 1,
+          "resources": [{ "name": "kv-prod-secrets-001", "type": "KeyVault" }]
+        }
+      ]
+    }
+  ],
+  "peerings": [
+    {
+      "id": "peer-hub-to-prod-web",
+      "fromVnet": "vnet-hub-prod",
+      "toVnet": "vnet-prod-web",
+      "state": "Connected",
+      "allowGatewayTransit": true,
+      "useRemoteGateways": true,
+      "allowForwardedTraffic": true
+    },
+    {
+      "id": "peer-hub-to-prod-data",
+      "fromVnet": "vnet-hub-prod",
+      "toVnet": "vnet-prod-data",
+      "state": "Connected",
+      "allowGatewayTransit": true,
+      "useRemoteGateways": true,
+      "allowForwardedTraffic": true
+    },
+    {
+      "id": "peer-hub-to-dev",
+      "fromVnet": "vnet-hub-prod",
+      "toVnet": "vnet-dev",
+      "state": "Connected",
+      "allowGatewayTransit": false,
+      "useRemoteGateways": false,
+      "allowForwardedTraffic": true
+    },
+    {
+      "id": "peer-hub-to-analytics",
+      "fromVnet": "vnet-hub-prod",
+      "toVnet": "vnet-analytics",
+      "state": "Connected",
+      "allowGatewayTransit": true,
+      "useRemoteGateways": true,
+      "allowForwardedTraffic": true
+    },
+    {
+      "id": "peer-hub-to-shared",
+      "fromVnet": "vnet-hub-prod",
+      "toVnet": "vnet-shared",
+      "state": "Connected",
+      "allowGatewayTransit": true,
+      "useRemoteGateways": true,
+      "allowForwardedTraffic": true
+    },
+    {
+      "id": "peer-prod-web-to-prod-data",
+      "fromVnet": "vnet-prod-web",
+      "toVnet": "vnet-prod-data",
+      "state": "Connected",
+      "allowGatewayTransit": false,
+      "useRemoteGateways": false,
+      "allowForwardedTraffic": false
+    }
+  ],
+  "nsgs": {
+    "nsg-mgmt-prod": {
+      "resourceGroup": "prod-network-rg",
+      "riskLevel": "medium",
+      "inbound": [
+        { "name": "Allow-SSH-CorpVPN",    "priority": 100, "protocol": "TCP", "source": "203.0.113.0/24", "sourcePort": "*", "dest": "*", "destPort": "22",   "access": "Allow" },
+        { "name": "Allow-RDP-CorpVPN",    "priority": 110, "protocol": "TCP", "source": "203.0.113.0/24", "sourcePort": "*", "dest": "*", "destPort": "3389", "access": "Allow" },
+        { "name": "Allow-HTTPS-Internal", "priority": 120, "protocol": "TCP", "source": "10.0.0.0/8",    "sourcePort": "*", "dest": "*", "destPort": "443",  "access": "Allow" },
+        { "name": "Deny-All-Inbound",     "priority": 4096,"protocol": "*",   "source": "*",             "sourcePort": "*", "dest": "*", "destPort": "*",    "access": "Deny" }
+      ],
+      "outbound": [
+        { "name": "Allow-All-Outbound", "priority": 100, "protocol": "*", "source": "*", "sourcePort": "*", "dest": "*", "destPort": "*", "access": "Allow" }
+      ]
+    },
+    "nsg-dmz-prod": {
+      "resourceGroup": "prod-network-rg",
+      "riskLevel": "low",
+      "inbound": [
+        { "name": "Allow-HTTPS-Internet", "priority": 100, "protocol": "TCP", "source": "Internet", "sourcePort": "*", "dest": "*", "destPort": "443", "access": "Allow" },
+        { "name": "Allow-HTTP-Internet",  "priority": 110, "protocol": "TCP", "source": "Internet", "sourcePort": "*", "dest": "*", "destPort": "80",  "access": "Allow" },
+        { "name": "Deny-All-Inbound",     "priority": 4096,"protocol": "*",   "source": "*",        "sourcePort": "*", "dest": "*", "destPort": "*",   "access": "Deny" }
+      ],
+      "outbound": [
+        { "name": "Allow-Backend-8080",  "priority": 100, "protocol": "TCP", "source": "*", "sourcePort": "*", "dest": "10.0.2.0/24", "destPort": "8080", "access": "Allow" },
+        { "name": "Deny-All-Outbound",   "priority": 4096,"protocol": "*",   "source": "*", "sourcePort": "*", "dest": "*",           "destPort": "*",    "access": "Deny" }
+      ]
+    },
+    "nsg-web-prod": {
+      "resourceGroup": "prod-web-rg",
+      "riskLevel": "low",
+      "inbound": [
+        { "name": "Allow-HTTPS-AGW",  "priority": 100, "protocol": "TCP", "source": "10.10.4.0/24", "sourcePort": "*", "dest": "*", "destPort": "443",  "access": "Allow" },
+        { "name": "Allow-HTTP-AGW",   "priority": 110, "protocol": "TCP", "source": "10.10.4.0/24", "sourcePort": "*", "dest": "*", "destPort": "80",   "access": "Allow" },
+        { "name": "Allow-LB-Probes",  "priority": 120, "protocol": "TCP", "source": "AzureLoadBalancer", "sourcePort": "*", "dest": "*", "destPort": "*", "access": "Allow" },
+        { "name": "Deny-All-Inbound", "priority": 4096,"protocol": "*",   "source": "*",            "sourcePort": "*", "dest": "*", "destPort": "*",   "access": "Deny" }
+      ],
+      "outbound": [
+        { "name": "Allow-App-8080",    "priority": 100, "protocol": "TCP", "source": "*", "sourcePort": "*", "dest": "10.0.2.0/24", "destPort": "8080", "access": "Allow" },
+        { "name": "Allow-HTTPS-Out",   "priority": 110, "protocol": "TCP", "source": "*", "sourcePort": "*", "dest": "Internet",    "destPort": "443",  "access": "Allow" },
+        { "name": "Deny-All-Outbound", "priority": 4096,"protocol": "*",   "source": "*", "sourcePort": "*", "dest": "*",           "destPort": "*",    "access": "Deny" }
+      ]
+    },
+    "nsg-app-prod": {
+      "resourceGroup": "prod-web-rg",
+      "riskLevel": "low",
+      "inbound": [
+        { "name": "Allow-8080-from-Web", "priority": 100, "protocol": "TCP", "source": "10.0.1.0/24", "sourcePort": "*", "dest": "*", "destPort": "8080", "access": "Allow" },
+        { "name": "Allow-443-from-Web",  "priority": 110, "protocol": "TCP", "source": "10.0.1.0/24", "sourcePort": "*", "dest": "*", "destPort": "443",  "access": "Allow" },
+        { "name": "Deny-All-Inbound",    "priority": 4096,"protocol": "*",   "source": "*",            "sourcePort": "*", "dest": "*", "destPort": "*",    "access": "Deny" }
+      ],
+      "outbound": [
+        { "name": "Allow-DB-1433",     "priority": 100, "protocol": "TCP", "source": "*", "sourcePort": "*", "dest": "10.0.3.0/24", "destPort": "1433", "access": "Allow" },
+        { "name": "Allow-DB-5432",     "priority": 110, "protocol": "TCP", "source": "*", "sourcePort": "*", "dest": "10.1.1.0/24", "destPort": "5432", "access": "Allow" },
+        { "name": "Deny-All-Outbound", "priority": 4096,"protocol": "*",   "source": "*", "sourcePort": "*", "dest": "*",           "destPort": "*",    "access": "Deny" }
+      ]
+    },
+    "nsg-db-prod": {
+      "resourceGroup": "prod-web-rg",
+      "riskLevel": "low",
+      "inbound": [
+        { "name": "Allow-MSSQL-from-App", "priority": 100, "protocol": "TCP", "source": "10.0.2.0/24", "sourcePort": "*", "dest": "*", "destPort": "1433", "access": "Allow" },
+        { "name": "Allow-MySQL-from-App", "priority": 110, "protocol": "TCP", "source": "10.0.2.0/24", "sourcePort": "*", "dest": "*", "destPort": "3306", "access": "Allow" },
+        { "name": "Deny-All-Inbound",     "priority": 4096,"protocol": "*",   "source": "*",            "sourcePort": "*", "dest": "*", "destPort": "*",    "access": "Deny" }
+      ],
+      "outbound": [
+        { "name": "Allow-Replication-1434", "priority": 100, "protocol": "TCP", "source": "*", "sourcePort": "*", "dest": "10.1.2.0/24", "destPort": "1434", "access": "Allow" },
+        { "name": "Deny-All-Outbound",      "priority": 4096,"protocol": "*",   "source": "*", "sourcePort": "*", "dest": "*",           "destPort": "*",    "access": "Deny" }
+      ]
+    },
+    "nsg-bastion-prod": {
+      "resourceGroup": "prod-web-rg",
+      "riskLevel": "low",
+      "inbound": [
+        { "name": "Allow-HTTPS-Internet",    "priority": 100, "protocol": "TCP", "source": "Internet",       "sourcePort": "*", "dest": "*", "destPort": "443",         "access": "Allow" },
+        { "name": "Allow-GatewayManager",    "priority": 110, "protocol": "TCP", "source": "GatewayManager", "sourcePort": "*", "dest": "*", "destPort": "443",         "access": "Allow" },
+        { "name": "Allow-AzureLoadBalancer", "priority": 120, "protocol": "TCP", "source": "AzureLoadBalancer","sourcePort":"*", "dest": "*", "destPort": "443",         "access": "Allow" },
+        { "name": "Allow-BastionComms",      "priority": 130, "protocol": "*",   "source": "VirtualNetwork", "sourcePort": "*", "dest": "*", "destPort": "8080-8081",   "access": "Allow" },
+        { "name": "Deny-All-Inbound",        "priority": 4096,"protocol": "*",   "source": "*",             "sourcePort": "*", "dest": "*", "destPort": "*",            "access": "Deny" }
+      ],
+      "outbound": [
+        { "name": "Allow-SSH-to-VNet",   "priority": 100, "protocol": "TCP", "source": "*", "sourcePort": "*", "dest": "VirtualNetwork", "destPort": "22",   "access": "Allow" },
+        { "name": "Allow-RDP-to-VNet",   "priority": 110, "protocol": "TCP", "source": "*", "sourcePort": "*", "dest": "VirtualNetwork", "destPort": "3389", "access": "Allow" },
+        { "name": "Allow-AzureCloud",    "priority": 120, "protocol": "TCP", "source": "*", "sourcePort": "*", "dest": "AzureCloud",     "destPort": "443",  "access": "Allow" },
+        { "name": "Deny-All-Outbound",   "priority": 4096,"protocol": "*",   "source": "*", "sourcePort": "*", "dest": "*",             "destPort": "*",    "access": "Deny" }
+      ]
+    },
+    "nsg-sql-primary": {
+      "resourceGroup": "prod-data-rg",
+      "riskLevel": "low",
+      "inbound": [
+        { "name": "Allow-MSSQL-from-App",     "priority": 100, "protocol": "TCP", "source": "10.0.2.0/24", "sourcePort": "*", "dest": "*", "destPort": "1433", "access": "Allow" },
+        { "name": "Allow-MSSQL-from-ProdWeb", "priority": 110, "protocol": "TCP", "source": "10.0.3.0/24", "sourcePort": "*", "dest": "*", "destPort": "1433", "access": "Allow" },
+        { "name": "Deny-All-Inbound",         "priority": 4096,"protocol": "*",   "source": "*",            "sourcePort": "*", "dest": "*", "destPort": "*",    "access": "Deny" }
+      ],
+      "outbound": [
+        { "name": "Allow-Replication", "priority": 100, "protocol": "TCP", "source": "*", "sourcePort": "*", "dest": "10.1.2.0/24", "destPort": "1434", "access": "Allow" },
+        { "name": "Deny-All-Outbound", "priority": 4096,"protocol": "*",   "source": "*", "sourcePort": "*", "dest": "*",           "destPort": "*",    "access": "Deny" }
+      ]
+    },
+    "nsg-sql-replica": {
+      "resourceGroup": "prod-data-rg",
+      "riskLevel": "low",
+      "inbound": [
+        { "name": "Allow-Replication-from-Primary", "priority": 100, "protocol": "TCP", "source": "10.1.1.0/24", "sourcePort": "*", "dest": "*", "destPort": "1434", "access": "Allow" },
+        { "name": "Deny-All-Inbound",               "priority": 4096,"protocol": "*",   "source": "*",            "sourcePort": "*", "dest": "*", "destPort": "*",    "access": "Deny" }
+      ],
+      "outbound": [
+        { "name": "Allow-All-Outbound", "priority": 100, "protocol": "*", "source": "*", "sourcePort": "*", "dest": "*", "destPort": "*", "access": "Allow" }
+      ]
+    },
+    "nsg-backup": {
+      "resourceGroup": "prod-data-rg",
+      "riskLevel": "low",
+      "inbound": [
+        { "name": "Allow-Storage-from-Internal", "priority": 100, "protocol": "TCP", "source": "10.0.0.0/8", "sourcePort": "*", "dest": "*", "destPort": "443", "access": "Allow" },
+        { "name": "Deny-All-Inbound",            "priority": 4096,"protocol": "*",   "source": "*",          "sourcePort": "*", "dest": "*", "destPort": "*",   "access": "Deny" }
+      ],
+      "outbound": [
+        { "name": "Allow-Storage-Endpoints", "priority": 100, "protocol": "TCP", "source": "*", "sourcePort": "*", "dest": "Storage", "destPort": "443", "access": "Allow" },
+        { "name": "Deny-All-Outbound",       "priority": 4096,"protocol": "*",   "source": "*", "sourcePort": "*", "dest": "*",       "destPort": "*",   "access": "Deny" }
+      ]
+    },
+    "nsg-dev-general": {
+      "resourceGroup": "dev-rg",
+      "riskLevel": "critical",
+      "inbound": [
+        { "name": "ALLOW-ALL-INBOUND",  "priority": 100, "protocol": "*", "source": "*", "sourcePort": "*", "dest": "*", "destPort": "*", "access": "Allow" }
+      ],
+      "outbound": [
+        { "name": "Allow-All-Outbound", "priority": 100, "protocol": "*", "source": "*", "sourcePort": "*", "dest": "*", "destPort": "*", "access": "Allow" }
+      ]
+    },
+    "nsg-cicd": {
+      "resourceGroup": "dev-rg",
+      "riskLevel": "high",
+      "inbound": [
+        { "name": "Allow-HTTPS-Internet",  "priority": 100, "protocol": "TCP", "source": "Internet",    "sourcePort": "*", "dest": "*", "destPort": "443",  "access": "Allow" },
+        { "name": "Allow-SSH-Internet",    "priority": 110, "protocol": "TCP", "source": "Internet",    "sourcePort": "*", "dest": "*", "destPort": "22",   "access": "Allow" },
+        { "name": "Allow-Jenkins-Internet","priority": 120, "protocol": "TCP", "source": "Internet",    "sourcePort": "*", "dest": "*", "destPort": "8080", "access": "Allow" },
+        { "name": "Allow-Internal",        "priority": 200, "protocol": "*",   "source": "10.0.0.0/8",  "sourcePort": "*", "dest": "*", "destPort": "*",    "access": "Allow" },
+        { "name": "Deny-All-Inbound",      "priority": 4096,"protocol": "*",   "source": "*",           "sourcePort": "*", "dest": "*", "destPort": "*",    "access": "Deny" }
+      ],
+      "outbound": [
+        { "name": "Allow-All-Outbound", "priority": 100, "protocol": "*", "source": "*", "sourcePort": "*", "dest": "*", "destPort": "*", "access": "Allow" }
+      ]
+    },
+    "nsg-analytics-proc": {
+      "resourceGroup": "analytics-rg",
+      "riskLevel": "medium",
+      "inbound": [
+        { "name": "Allow-HTTPS-Internal",  "priority": 100, "protocol": "TCP", "source": "10.0.0.0/8", "sourcePort": "*", "dest": "*", "destPort": "443",  "access": "Allow" },
+        { "name": "Allow-Spark-7077",      "priority": 110, "protocol": "TCP", "source": "10.3.0.0/16","sourcePort": "*", "dest": "*", "destPort": "7077", "access": "Allow" },
+        { "name": "Allow-Jupyter-8888",    "priority": 120, "protocol": "TCP", "source": "Internet",   "sourcePort": "*", "dest": "*", "destPort": "8888", "access": "Allow" },
+        { "name": "Deny-All-Inbound",      "priority": 4096,"protocol": "*",   "source": "*",          "sourcePort": "*", "dest": "*", "destPort": "*",    "access": "Deny" }
+      ],
+      "outbound": [
+        { "name": "Allow-All-Outbound", "priority": 100, "protocol": "*", "source": "*", "sourcePort": "*", "dest": "*", "destPort": "*", "access": "Allow" }
+      ]
+    },
+    "nsg-analytics-storage": {
+      "resourceGroup": "analytics-rg",
+      "riskLevel": "low",
+      "inbound": [
+        { "name": "Allow-Storage-from-Proc",    "priority": 100, "protocol": "TCP", "source": "10.3.1.0/24", "sourcePort": "*", "dest": "*", "destPort": "443", "access": "Allow" },
+        { "name": "Allow-Storage-from-Internal","priority": 110, "protocol": "TCP", "source": "10.0.0.0/8",  "sourcePort": "*", "dest": "*", "destPort": "443", "access": "Allow" },
+        { "name": "Deny-All-Inbound",           "priority": 4096,"protocol": "*",   "source": "*",           "sourcePort": "*", "dest": "*", "destPort": "*",   "access": "Deny" }
+      ],
+      "outbound": [
+        { "name": "Allow-Storage-Endpoints", "priority": 100, "protocol": "TCP", "source": "*", "sourcePort": "*", "dest": "Storage", "destPort": "443", "access": "Allow" },
+        { "name": "Deny-All-Outbound",       "priority": 4096,"protocol": "*",   "source": "*", "sourcePort": "*", "dest": "*",       "destPort": "*",   "access": "Deny" }
+      ]
+    },
+    "nsg-monitoring": {
+      "resourceGroup": "shared-services-rg",
+      "riskLevel": "medium",
+      "inbound": [
+        { "name": "Allow-Grafana-Internet", "priority": 100, "protocol": "TCP", "source": "Internet",   "sourcePort": "*", "dest": "*", "destPort": "3000", "access": "Allow" },
+        { "name": "Allow-Metrics-Internal", "priority": 110, "protocol": "TCP", "source": "10.0.0.0/8", "sourcePort": "*", "dest": "*", "destPort": "9090", "access": "Allow" },
+        { "name": "Deny-All-Inbound",       "priority": 4096,"protocol": "*",   "source": "*",          "sourcePort": "*", "dest": "*", "destPort": "*",    "access": "Deny" }
+      ],
+      "outbound": [
+        { "name": "Allow-All-Outbound", "priority": 100, "protocol": "*", "source": "*", "sourcePort": "*", "dest": "*", "destPort": "*", "access": "Allow" }
+      ]
+    },
+    "nsg-keyvault": {
+      "resourceGroup": "shared-services-rg",
+      "riskLevel": "low",
+      "inbound": [
+        { "name": "Allow-HTTPS-from-Internal", "priority": 100, "protocol": "TCP", "source": "10.0.0.0/8", "sourcePort": "*", "dest": "*", "destPort": "443", "access": "Allow" },
+        { "name": "Deny-All-Inbound",          "priority": 4096,"protocol": "*",   "source": "*",          "sourcePort": "*", "dest": "*", "destPort": "*",   "access": "Deny" }
+      ],
+      "outbound": [
+        { "name": "Allow-KeyVault-Endpoints", "priority": 100, "protocol": "TCP", "source": "*", "sourcePort": "*", "dest": "AzureKeyVault", "destPort": "443", "access": "Allow" },
+        { "name": "Deny-All-Outbound",        "priority": 4096,"protocol": "*",   "source": "*", "sourcePort": "*", "dest": "*",             "destPort": "*",   "access": "Deny" }
+      ]
+    }
+  },
+  "routeTables": {
+    "rt-hub-internal": {
+      "resourceGroup": "prod-network-rg",
+      "routes": [
+        { "name": "Route-to-Prod-Web",  "addressPrefix": "10.0.0.0/16", "nextHopType": "VirtualAppliance", "nextHopIp": "10.10.1.4" },
+        { "name": "Route-to-Prod-Data", "addressPrefix": "10.1.0.0/16", "nextHopType": "VirtualAppliance", "nextHopIp": "10.10.1.4" },
+        { "name": "Route-to-Dev",       "addressPrefix": "10.2.0.0/16", "nextHopType": "VirtualAppliance", "nextHopIp": "10.10.1.4" },
+        { "name": "Default-via-FW",     "addressPrefix": "0.0.0.0/0",   "nextHopType": "VirtualAppliance", "nextHopIp": "10.10.1.4" }
+      ]
+    },
+    "rt-hub-dmz": {
+      "resourceGroup": "prod-network-rg",
+      "routes": [
+        { "name": "Route-to-Backend",   "addressPrefix": "10.0.0.0/8",  "nextHopType": "VirtualAppliance", "nextHopIp": "10.10.1.4" },
+        { "name": "Default-via-FW",     "addressPrefix": "0.0.0.0/0",   "nextHopType": "VirtualAppliance", "nextHopIp": "10.10.1.4" }
+      ]
+    },
+    "rt-prod-inet": {
+      "resourceGroup": "prod-web-rg",
+      "routes": [
+        { "name": "Force-Tunnel-via-FW", "addressPrefix": "0.0.0.0/0",  "nextHopType": "VirtualAppliance", "nextHopIp": "10.10.1.4" },
+        { "name": "Route-to-Hub",        "addressPrefix": "10.10.0.0/16","nextHopType": "VirtualNetworkGateway", "nextHopIp": null }
+      ]
+    },
+    "rt-prod-internal": {
+      "resourceGroup": "prod-web-rg",
+      "routes": [
+        { "name": "Route-to-DB",         "addressPrefix": "10.1.0.0/16", "nextHopType": "VirtualAppliance", "nextHopIp": "10.10.1.4" },
+        { "name": "Force-Tunnel-via-FW", "addressPrefix": "0.0.0.0/0",   "nextHopType": "VirtualAppliance", "nextHopIp": "10.10.1.4" }
+      ]
+    },
+    "rt-analytics": {
+      "resourceGroup": "analytics-rg",
+      "routes": [
+        { "name": "Route-to-Data-Lake",  "addressPrefix": "10.3.2.0/24", "nextHopType": "VnetLocal", "nextHopIp": null },
+        { "name": "Force-Tunnel-via-FW", "addressPrefix": "0.0.0.0/0",   "nextHopType": "VirtualAppliance", "nextHopIp": "10.10.1.4" }
+      ]
+    }
+  }
+}

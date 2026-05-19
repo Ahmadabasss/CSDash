@@ -79,7 +79,8 @@ async def list_recommendations(
 
 @router.get("/{rec_id}", summary="Single recommendation detail")
 async def get_recommendation(rec_id: str, ds: DataSource = Depends(get_data_source)):
-    rec = await ds.get_recommendation(rec_id)
+    all_recs = await ds.get_recommendations()
+    rec = next((r for r in all_recs if r["id"] == rec_id or r["name"] == rec_id), None)
     if not rec:
         raise HTTPException(status_code=404, detail="Recommendation not found")
     return rec

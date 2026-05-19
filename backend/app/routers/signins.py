@@ -1,6 +1,6 @@
 from collections import defaultdict
 
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Depends, HTTPException
 
 from ..deps import get_data_source
 from ..services.base import DataSource
@@ -49,3 +49,11 @@ async def risk_summary(ds: DataSource = Depends(get_data_source)):
 @router.get("", summary="List sign-in logs")
 async def list_signins(ds: DataSource = Depends(get_data_source)):
     return await ds.get_signins()
+
+
+@router.get("/{signin_id}", summary="Single sign-in event detail")
+async def get_signin(signin_id: str, ds: DataSource = Depends(get_data_source)):
+    signin = await ds.get_signin(signin_id)
+    if not signin:
+        raise HTTPException(404, "Sign-in not found")
+    return signin

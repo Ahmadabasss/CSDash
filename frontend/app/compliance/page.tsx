@@ -1,4 +1,4 @@
-import { ShieldCheck } from 'lucide-react'
+import Link from 'next/link'
 import { api } from '@/lib/api'
 import ComplianceDonut from '@/components/ComplianceDonut'
 import StatusBadge from '@/components/StatusBadge'
@@ -11,53 +11,54 @@ export default async function CompliancePage() {
   const totalPassing = standards.reduce((s, c) => s + c.properties.passedControls, 0)
 
   return (
-    <main className="min-h-screen px-6 py-8 max-w-[1400px] mx-auto w-full">
-      <div className="mb-6 flex items-center gap-3">
-        <a href="/" className="text-slate-500 hover:text-slate-300 text-sm transition-colors">Dashboard</a>
-        <span className="text-slate-600">/</span>
-        <span className="text-slate-300 text-sm font-medium flex items-center gap-1.5">
-          <ShieldCheck className="h-4 w-4 text-sky-400" /> Compliance
-        </span>
+    <div className="px-6 py-6">
+      <div className="mb-6">
+        <h1 className="text-xl font-semibold text-white">Compliance</h1>
+        <p className="text-sm text-slate-400 mt-0.5">Defender for Cloud — regulatory compliance posture</p>
       </div>
 
-      <div className="mb-6 grid grid-cols-2 gap-4 lg:grid-cols-4">
+      <div className="mb-5 grid grid-cols-2 gap-4 lg:grid-cols-4">
         {[
           { label: 'Standards', value: standards.length },
-          { label: 'Failing Controls', value: totalFailing, red: true },
-          { label: 'Passing Controls', value: totalPassing, green: true },
-          { label: 'Failed Standards', value: standards.filter(s => s.properties.state === 'Failed').length, red: true },
+          { label: 'Failing Controls', value: totalFailing, color: 'text-red-400' },
+          { label: 'Passing Controls', value: totalPassing, color: 'text-emerald-400' },
+          { label: 'Failed Standards', value: standards.filter(s => s.properties.state === 'Failed').length, color: 'text-red-400' },
         ].map(s => (
-          <div key={s.label} className="rounded-2xl bg-slate-800/50 p-4 ring-1 ring-slate-700/60 text-center">
-            <p className={`text-3xl font-bold tabular-nums ${s.red ? 'text-red-400' : s.green ? 'text-emerald-400' : 'text-slate-100'}`}>{s.value}</p>
+          <div key={s.label} className="rounded-xl bg-[#1e293b] border border-white/6 p-4 text-center">
+            <p className={`text-3xl font-bold tabular-nums ${s.color ?? 'text-slate-100'}`}>{s.value}</p>
             <p className="text-xs text-slate-500 mt-1">{s.label}</p>
           </div>
         ))}
       </div>
 
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
-        <div className="rounded-2xl bg-slate-800/50 p-5 ring-1 ring-slate-700/60">
+        <div className="rounded-xl bg-[#1e293b] border border-white/6 p-5">
           <h2 className="mb-4 text-sm font-semibold uppercase tracking-widest text-slate-500">By Standard</h2>
           <ComplianceDonut standards={standards} />
         </div>
 
-        <div className="rounded-2xl bg-slate-800/50 p-5 ring-1 ring-slate-700/60 lg:col-span-2">
+        <div className="rounded-xl bg-[#1e293b] border border-white/6 p-5 lg:col-span-2">
           <h2 className="mb-4 text-sm font-semibold uppercase tracking-widest text-slate-500">All Standards</h2>
-          <div className="overflow-x-auto rounded-xl ring-1 ring-slate-700/60">
+          <div className="overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b border-slate-700/60 bg-slate-800/40">
+                <tr className="border-b border-white/6 text-left">
                   {['Standard', 'State', 'Passed', 'Failed', 'Skipped', 'Pass Rate'].map(h => (
-                    <th key={h} className="px-4 py-3 text-left text-xs font-semibold uppercase tracking-wide text-slate-400">{h}</th>
+                    <th key={h} className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-slate-500">{h}</th>
                   ))}
                 </tr>
               </thead>
-              <tbody className="divide-y divide-slate-700/40">
+              <tbody className="divide-y divide-white/4">
                 {standards.map(s => {
                   const total = s.properties.passedControls + s.properties.failedControls
                   const rate = total > 0 ? Math.round((s.properties.passedControls / total) * 100) : 0
                   return (
-                    <tr key={s.id} className="hover:bg-slate-800/40 transition-colors">
-                      <td className="px-4 py-3 font-medium text-slate-200">{s.name.replace('Azure-', '')}</td>
+                    <tr key={s.id} className="group hover:bg-white/2 transition-colors">
+                      <td className="px-4 py-3 font-medium">
+                        <Link href={`/compliance/${encodeURIComponent(s.name)}`} className="text-slate-200 group-hover:text-sky-400 transition-colors">
+                          {s.name.replace('Azure-', '')}
+                        </Link>
+                      </td>
                       <td className="px-4 py-3"><StatusBadge status={s.properties.state} /></td>
                       <td className="px-4 py-3 tabular-nums text-emerald-400">{s.properties.passedControls}</td>
                       <td className="px-4 py-3 tabular-nums text-red-400">{s.properties.failedControls}</td>
@@ -78,6 +79,6 @@ export default async function CompliancePage() {
           </div>
         </div>
       </div>
-    </main>
+    </div>
   )
 }

@@ -1,0 +1,153 @@
+'use client'
+
+import { useState, useMemo } from 'react'
+import { useRouter } from 'next/navigation'
+import { Endpoint } from '../../types/azure'
+import RelativeTime from '../../components/RelativeTime'
+import { Monitor } from 'lucide-react'
+
+const RISK_ORDER: Record<string, number> = { Critical: 4, High: 3, Medium: 2, Low: 1, None: 0 }
+
+function RiskBadge({ score }: { score: string }) {
+  const cls: Record<string, string> = {
+    Critical: 'bg-red-900/60 text-red-300 ring-1 ring-red-700',
+    High: 'bg-red-800/40 text-red-400 ring-1 ring-red-800',
+    Medium: 'bg-amber-900/40 text-amber-300 ring-1 ring-amber-800',
+    Low: 'bg-blue-900/40 text-blue-300 ring-1 ring-blue-800',
+    None: 'bg-slate-700 text-slate-400',
+  }
+  return (
+    <span className={`inline-flex text-[11px] font-semibold px-2 py-0.5 rounded ${cls[score] ?? 'bg-slate-700 text-slate-400'}`}>
+      {score}
+    </span>
+  )
+}
+
+export default function EndpointsClient({ items }: { items: Endpoint[] }) {
+  const router = useRouter()
+  const [riskFilter, setRiskFilter] = useState<string>('all')
+  const [healthFilter, setHealthFilter] = useState<string>('all')
+  const [search, setSearch] = useState('')
+
+  const risks = ['all', ...Array.from(new Set(items.map((d) => d.riskScore))).sort((a, b) => RISK_ORDER[b] - RISK_ORDER[a])]
+  const healths = ['all', ...Array.from(new Set(items.map((d) => d.healthStatus)))]
+
+  const filtered = useMemo(() => {
+    let list = items
+    if (riskFilter !== 'all') list = list.filter((d) => d.riskScore === riskFilter)
+    if (healthFilter !== 'all') list = list.filter((d) => d.healthStatus === healthFilter)
+    if (search) list = list.filter((d) => d.computerDnsName.toLowerCase().includes(search.toLowerCase()))
+    return list.sort((a, b) => RISK_ORDER[b.riskScore] - RISK_ORDER[a.riskScore])
+  }, [items, riskFilter, healthFilter, search])
+
+  return (
+    <div className="bg-[#1e293b] border border-white/6 rounded-lg overflow-hidden">
+      <div className="flex items-center gap-3 p-4 border-b border-white/6 flex-wrap">
+        <input
+          type="text"
+          placeholder="Search devices..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          className="bg-[#0d1117] border border-white/8 rounded px-3 py-1.5 text-sm text-slate-200 placeholder-slate-500 outline-none focus:border-[#0078d4] w-52"
+        />
+        <div className="flex gap-1.5 flex-wrap">
+          {risks.map((r) => (
+            <button
+              key={r}
+              onClick={() => setRiskFilter(r)}
+              className={`text-xs px-2.5 py-1 rounded font-medium transition-colors ${
+                riskFilter === r ? 'bg-[#0078d4] text-white' : 'bg-slate-700/60 text-slate-400 hover:bg-slate-700'
+              }`}
+            >
+              {r === 'all' ? 'All Risk' : r}
+            </button>
+          ))}
+        </div>
+        <div className="flex gap-1.5 flex-wrap">
+          {healths.map((h) => (
+            <button
+              key={h}
+              onClick={() => setHealthFilter(h)}
+              className={`text-xs px-2.5 py-1 rounded font-medium transition-colors ${
+                healthFilter === h ? 'bg-[#0078d4] text-white' : 'bg-slate-700/60 text-slate-400 hover:bg-slate-700'
+              }`}
+            >
+              {h === 'all' ? 'All Health' : h}
+            </button>
+          ))}
+        </div>
+        <span className="ml-auto text-xs text-slate-500">{filtered.length} devices</span>
+      </div>
+
+      <div className="overflow-x-auto">
+        <table className="w-full text-sm">
+          <thead>
+            <tr className="border-b border-white/6 text-left">
+              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-slate-500">Risk</th>
+              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-slate-500">Device</th>
+              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-slate-500">OS</th>
+              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-slate-500">Health</th>
+              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-slate-500">Exposure</th>
+              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-slate-500">Vulns</th>
+              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-slate-500">Missing Patches</th>
+              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-slate-500">AV</th>
+              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-slate-500">Last Seen</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-white/4">
+            {filtered.map((d) => (
+              <tr key={d.id} onClick={() => router.push(`/endpoints/${d.id}`)} className="hover:bg-white/2 transition-colors cursor-pointer">
+                <td className="px-4 py-3">
+                  <RiskBadge score={d.riskScore} />
+                </td>
+                <td className="px-4 py-3">
+                  <div className="flex items-center gap-2">
+                    <Monitor className="w-3.5 h-3.5 text-slate-500 shrink-0" />
+                    <div>
+                      <p className="text-slate-200 font-medium font-mono text-[12px]">{d.computerDnsName}</p>
+                      <p className="text-slate-500 text-[11px]">{d.rbacGroupName}</p>
+                    </div>
+                  </div>
+                </td>
+                <td className="px-4 py-3 text-slate-400 text-[12px]">
+                  <p>{d.osPlatform}</p>
+                  <p className="text-slate-600 text-[11px]">{d.osVersion}</p>
+                </td>
+                <td className="px-4 py-3">
+                  <span className={`text-xs ${d.healthStatus === 'Active' ? 'text-emerald-400' : 'text-red-400'}`}>
+                    {d.healthStatus}
+                  </span>
+                </td>
+                <td className="px-4 py-3 text-slate-400 text-[12px]">{d.exposureLevel}</td>
+                <td className="px-4 py-3 text-[12px]">
+                  <span className={d.vulnerabilitiesCount > 10 ? 'text-red-400 font-semibold' : 'text-slate-400'}>
+                    {d.vulnerabilitiesCount}
+                  </span>
+                </td>
+                <td className="px-4 py-3 text-[12px]">
+                  <span className={d.missingCriticalPatches > 0 ? 'text-amber-400 font-semibold' : 'text-slate-500'}>
+                    {d.missingCriticalPatches}
+                  </span>
+                </td>
+                <td className="px-4 py-3 text-[12px]">
+                  <span className={`${d.antivirusStatus === 'Updated' ? 'text-emerald-400' : 'text-amber-400'}`}>
+                    {d.antivirusStatus}
+                  </span>
+                </td>
+                <td className="px-4 py-3 text-slate-400 text-[12px]">
+                  <RelativeTime dateStr={d.lastSeen} />
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        {filtered.length === 0 && (
+          <div className="flex flex-col items-center py-12 text-slate-500">
+            <Monitor className="w-8 h-8 mb-2 opacity-40" />
+            <p>No devices match the current filters</p>
+          </div>
+        )}
+      </div>
+    </div>
+  )
+}
