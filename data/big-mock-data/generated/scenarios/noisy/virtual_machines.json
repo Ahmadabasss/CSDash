@@ -1,0 +1,664 @@
+{
+  "value": [
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-db-rg/providers/microsoft.compute/virtualmachines/vm-prod-db-706",
+      "name": "vm-prod-db-706",
+      "resourceGroup": "prod-db-rg",
+      "location": "southcentralus",
+      "properties": {
+        "osType": "Windows",
+        "osName": "Windows Server 2022 Datacenter",
+        "vmSize": "Standard_D2s_v3",
+        "powerState": "running",
+        "provisioningState": "Succeeded"
+      },
+      "securityProfile": {
+        "mdeEnrolled": true,
+        "mdeStatus": "Inactive",
+        "agentHealth": "Healthy",
+        "patchStatus": {
+          "state": "CriticalPatches",
+          "criticalAndSecurityPatchCount": 20,
+          "otherPatchCount": 3,
+          "lastAssessmentTime": "2026-05-15T08:59:00Z"
+        },
+        "vulnerabilityCount": 2,
+        "secureScore": 74,
+        "diskEncrypted": false,
+        "justInTimeAccess": false,
+        "adaptiveApplicationControls": false
+      },
+      "tags": {
+        "env": "production",
+        "owner": "finance"
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/dev-rg/providers/microsoft.compute/virtualmachines/vm-dev-238",
+      "name": "vm-dev-238",
+      "resourceGroup": "dev-rg",
+      "location": "southcentralus",
+      "properties": {
+        "osType": "Linux",
+        "osName": "Red Hat Enterprise Linux 8",
+        "vmSize": "Standard_D4s_v3",
+        "powerState": "running",
+        "provisioningState": "Succeeded"
+      },
+      "securityProfile": {
+        "mdeEnrolled": true,
+        "mdeStatus": "Active",
+        "agentHealth": "Healthy",
+        "patchStatus": {
+          "state": "CriticalPatches",
+          "criticalAndSecurityPatchCount": 17,
+          "otherPatchCount": 10,
+          "lastAssessmentTime": "2026-05-17T05:19:00Z"
+        },
+        "vulnerabilityCount": 1,
+        "secureScore": 57,
+        "diskEncrypted": true,
+        "justInTimeAccess": false,
+        "adaptiveApplicationControls": false
+      },
+      "tags": {
+        "env": "development",
+        "owner": "executive"
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/it-rg/providers/microsoft.compute/virtualmachines/vm-it-603",
+      "name": "vm-it-603",
+      "resourceGroup": "it-rg",
+      "location": "westus2",
+      "properties": {
+        "osType": "Windows",
+        "osName": "Windows Server 2019 Datacenter",
+        "vmSize": "Standard_D4s_v3",
+        "powerState": "running",
+        "provisioningState": "Succeeded"
+      },
+      "securityProfile": {
+        "mdeEnrolled": true,
+        "mdeStatus": "Active",
+        "agentHealth": "Healthy",
+        "patchStatus": {
+          "state": "SecurityPatches",
+          "criticalAndSecurityPatchCount": 11,
+          "otherPatchCount": 4,
+          "lastAssessmentTime": "2026-05-16T00:01:00Z"
+        },
+        "vulnerabilityCount": 2,
+        "secureScore": 31,
+        "diskEncrypted": true,
+        "justInTimeAccess": true,
+        "adaptiveApplicationControls": false
+      },
+      "tags": {
+        "env": "development",
+        "owner": "engineering"
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/dev-rg/providers/microsoft.compute/virtualmachines/vm-dev-841",
+      "name": "vm-dev-841",
+      "resourceGroup": "dev-rg",
+      "location": "southcentralus",
+      "properties": {
+        "osType": "Windows",
+        "osName": "Windows Server 2019 Datacenter",
+        "vmSize": "Standard_D4s_v3",
+        "powerState": "deallocated",
+        "provisioningState": "Succeeded"
+      },
+      "securityProfile": {
+        "mdeEnrolled": true,
+        "mdeStatus": "Inactive",
+        "agentHealth": "Healthy",
+        "patchStatus": {
+          "state": "CriticalPatches",
+          "criticalAndSecurityPatchCount": 1,
+          "otherPatchCount": 10,
+          "lastAssessmentTime": "2026-05-14T18:27:00Z"
+        },
+        "vulnerabilityCount": 8,
+        "secureScore": 25,
+        "diskEncrypted": true,
+        "justInTimeAccess": true,
+        "adaptiveApplicationControls": false
+      },
+      "tags": {
+        "env": "development",
+        "owner": "finance"
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/it-rg/providers/microsoft.compute/virtualmachines/vm-it-954",
+      "name": "vm-it-954",
+      "resourceGroup": "it-rg",
+      "location": "australiaeast",
+      "properties": {
+        "osType": "Windows",
+        "osName": "Windows Server 2019 Datacenter",
+        "vmSize": "Standard_D2s_v3",
+        "powerState": "stopped",
+        "provisioningState": "Succeeded"
+      },
+      "securityProfile": {
+        "mdeEnrolled": false,
+        "mdeStatus": "Inactive",
+        "agentHealth": "Degraded",
+        "patchStatus": {
+          "state": "CriticalPatches",
+          "criticalAndSecurityPatchCount": 22,
+          "otherPatchCount": 0,
+          "lastAssessmentTime": "2026-05-15T15:50:00Z"
+        },
+        "vulnerabilityCount": 11,
+        "secureScore": 36,
+        "diskEncrypted": false,
+        "justInTimeAccess": false,
+        "adaptiveApplicationControls": false
+      },
+      "tags": {
+        "env": "development",
+        "owner": "executive"
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/security-rg/providers/microsoft.compute/virtualmachines/vm-security-132",
+      "name": "vm-security-132",
+      "resourceGroup": "security-rg",
+      "location": "westeurope",
+      "properties": {
+        "osType": "Linux",
+        "osName": "Ubuntu 20.04 LTS",
+        "vmSize": "Standard_E2s_v3",
+        "powerState": "deallocated",
+        "provisioningState": "Succeeded"
+      },
+      "securityProfile": {
+        "mdeEnrolled": true,
+        "mdeStatus": "Inactive",
+        "agentHealth": "Healthy",
+        "patchStatus": {
+          "state": "UpToDate",
+          "criticalAndSecurityPatchCount": 1,
+          "otherPatchCount": 3,
+          "lastAssessmentTime": "2026-05-15T00:22:00Z"
+        },
+        "vulnerabilityCount": 5,
+        "secureScore": 64,
+        "diskEncrypted": true,
+        "justInTimeAccess": false,
+        "adaptiveApplicationControls": false
+      },
+      "tags": {
+        "env": "development",
+        "owner": "security"
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/security-rg/providers/microsoft.compute/virtualmachines/vm-security-100",
+      "name": "vm-security-100",
+      "resourceGroup": "security-rg",
+      "location": "australiaeast",
+      "properties": {
+        "osType": "Windows",
+        "osName": "Windows Server 2022 Datacenter",
+        "vmSize": "Standard_E2s_v3",
+        "powerState": "running",
+        "provisioningState": "Succeeded"
+      },
+      "securityProfile": {
+        "mdeEnrolled": true,
+        "mdeStatus": "Active",
+        "agentHealth": "Degraded",
+        "patchStatus": {
+          "state": "SecurityPatches",
+          "criticalAndSecurityPatchCount": 9,
+          "otherPatchCount": 3,
+          "lastAssessmentTime": "2026-05-16T09:24:00Z"
+        },
+        "vulnerabilityCount": 3,
+        "secureScore": 53,
+        "diskEncrypted": true,
+        "justInTimeAccess": true,
+        "adaptiveApplicationControls": true
+      },
+      "tags": {
+        "env": "development",
+        "owner": "finance"
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-db-rg/providers/microsoft.compute/virtualmachines/vm-prod-db-483",
+      "name": "vm-prod-db-483",
+      "resourceGroup": "prod-db-rg",
+      "location": "westus2",
+      "properties": {
+        "osType": "Windows",
+        "osName": "Windows Server 2019 Datacenter",
+        "vmSize": "Standard_D4s_v3",
+        "powerState": "running",
+        "provisioningState": "Succeeded"
+      },
+      "securityProfile": {
+        "mdeEnrolled": false,
+        "mdeStatus": "NotOnboarded",
+        "agentHealth": "Healthy",
+        "patchStatus": {
+          "state": "UpToDate",
+          "criticalAndSecurityPatchCount": 1,
+          "otherPatchCount": 4,
+          "lastAssessmentTime": "2026-05-14T15:17:00Z"
+        },
+        "vulnerabilityCount": 2,
+        "secureScore": 71,
+        "diskEncrypted": true,
+        "justInTimeAccess": true,
+        "adaptiveApplicationControls": false
+      },
+      "tags": {
+        "env": "production",
+        "owner": "it"
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/ml-rg/providers/microsoft.compute/virtualmachines/vm-ml-612",
+      "name": "vm-ml-612",
+      "resourceGroup": "ml-rg",
+      "location": "eastus",
+      "properties": {
+        "osType": "Windows",
+        "osName": "Windows Server 2022 Datacenter",
+        "vmSize": "Standard_F4s_v2",
+        "powerState": "running",
+        "provisioningState": "Succeeded"
+      },
+      "securityProfile": {
+        "mdeEnrolled": true,
+        "mdeStatus": "Inactive",
+        "agentHealth": "Unhealthy",
+        "patchStatus": {
+          "state": "SecurityPatches",
+          "criticalAndSecurityPatchCount": 14,
+          "otherPatchCount": 6,
+          "lastAssessmentTime": "2026-05-15T13:50:00Z"
+        },
+        "vulnerabilityCount": 8,
+        "secureScore": 39,
+        "diskEncrypted": true,
+        "justInTimeAccess": false,
+        "adaptiveApplicationControls": false
+      },
+      "tags": {
+        "env": "development",
+        "owner": "hr"
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/ml-rg/providers/microsoft.compute/virtualmachines/vm-ml-182",
+      "name": "vm-ml-182",
+      "resourceGroup": "ml-rg",
+      "location": "westus2",
+      "properties": {
+        "osType": "Windows",
+        "osName": "Windows Server 2019 Datacenter",
+        "vmSize": "Standard_E2s_v3",
+        "powerState": "running",
+        "provisioningState": "Succeeded"
+      },
+      "securityProfile": {
+        "mdeEnrolled": false,
+        "mdeStatus": "Active",
+        "agentHealth": "Healthy",
+        "patchStatus": {
+          "state": "UpToDate",
+          "criticalAndSecurityPatchCount": 1,
+          "otherPatchCount": 7,
+          "lastAssessmentTime": "2026-05-15T05:10:00Z"
+        },
+        "vulnerabilityCount": 2,
+        "secureScore": 72,
+        "diskEncrypted": false,
+        "justInTimeAccess": true,
+        "adaptiveApplicationControls": false
+      },
+      "tags": {
+        "env": "development",
+        "owner": "finance"
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-db-rg/providers/microsoft.compute/virtualmachines/vm-prod-db-682",
+      "name": "vm-prod-db-682",
+      "resourceGroup": "prod-db-rg",
+      "location": "westeurope",
+      "properties": {
+        "osType": "Linux",
+        "osName": "Red Hat Enterprise Linux 8",
+        "vmSize": "Standard_F4s_v2",
+        "powerState": "deallocated",
+        "provisioningState": "Succeeded"
+      },
+      "securityProfile": {
+        "mdeEnrolled": true,
+        "mdeStatus": "Inactive",
+        "agentHealth": "Healthy",
+        "patchStatus": {
+          "state": "CriticalPatches",
+          "criticalAndSecurityPatchCount": 6,
+          "otherPatchCount": 7,
+          "lastAssessmentTime": "2026-05-14T20:23:00Z"
+        },
+        "vulnerabilityCount": 3,
+        "secureScore": 55,
+        "diskEncrypted": true,
+        "justInTimeAccess": false,
+        "adaptiveApplicationControls": false
+      },
+      "tags": {
+        "env": "production",
+        "owner": "marketing"
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/it-rg/providers/microsoft.compute/virtualmachines/vm-it-224",
+      "name": "vm-it-224",
+      "resourceGroup": "it-rg",
+      "location": "westeurope",
+      "properties": {
+        "osType": "Linux",
+        "osName": "Red Hat Enterprise Linux 8",
+        "vmSize": "Standard_F4s_v2",
+        "powerState": "running",
+        "provisioningState": "Succeeded"
+      },
+      "securityProfile": {
+        "mdeEnrolled": true,
+        "mdeStatus": "Inactive",
+        "agentHealth": "Healthy",
+        "patchStatus": {
+          "state": "UpToDate",
+          "criticalAndSecurityPatchCount": 3,
+          "otherPatchCount": 5,
+          "lastAssessmentTime": "2026-05-17T00:50:00Z"
+        },
+        "vulnerabilityCount": 8,
+        "secureScore": 24,
+        "diskEncrypted": true,
+        "justInTimeAccess": false,
+        "adaptiveApplicationControls": true
+      },
+      "tags": {
+        "env": "development",
+        "owner": "executive"
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/it-rg/providers/microsoft.compute/virtualmachines/vm-it-120",
+      "name": "vm-it-120",
+      "resourceGroup": "it-rg",
+      "location": "westeurope",
+      "properties": {
+        "osType": "Windows",
+        "osName": "Windows Server 2022 Datacenter",
+        "vmSize": "Standard_B2s",
+        "powerState": "running",
+        "provisioningState": "Succeeded"
+      },
+      "securityProfile": {
+        "mdeEnrolled": true,
+        "mdeStatus": "Active",
+        "agentHealth": "Unhealthy",
+        "patchStatus": {
+          "state": "SecurityPatches",
+          "criticalAndSecurityPatchCount": 7,
+          "otherPatchCount": 3,
+          "lastAssessmentTime": "2026-05-17T03:41:00Z"
+        },
+        "vulnerabilityCount": 10,
+        "secureScore": 37,
+        "diskEncrypted": false,
+        "justInTimeAccess": true,
+        "adaptiveApplicationControls": true
+      },
+      "tags": {
+        "env": "development",
+        "owner": "hr"
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/it-rg/providers/microsoft.compute/virtualmachines/vm-it-399",
+      "name": "vm-it-399",
+      "resourceGroup": "it-rg",
+      "location": "eastus",
+      "properties": {
+        "osType": "Windows",
+        "osName": "Windows Server 2022 Datacenter",
+        "vmSize": "Standard_D2s_v3",
+        "powerState": "running",
+        "provisioningState": "Succeeded"
+      },
+      "securityProfile": {
+        "mdeEnrolled": true,
+        "mdeStatus": "Active",
+        "agentHealth": "Healthy",
+        "patchStatus": {
+          "state": "CriticalPatches",
+          "criticalAndSecurityPatchCount": 15,
+          "otherPatchCount": 0,
+          "lastAssessmentTime": "2026-05-16T03:52:00Z"
+        },
+        "vulnerabilityCount": 1,
+        "secureScore": 66,
+        "diskEncrypted": true,
+        "justInTimeAccess": false,
+        "adaptiveApplicationControls": true
+      },
+      "tags": {
+        "env": "development",
+        "owner": "legal"
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/dev-rg/providers/microsoft.compute/virtualmachines/vm-dev-580",
+      "name": "vm-dev-580",
+      "resourceGroup": "dev-rg",
+      "location": "eastus",
+      "properties": {
+        "osType": "Windows",
+        "osName": "Windows Server 2019 Datacenter",
+        "vmSize": "Standard_E2s_v3",
+        "powerState": "running",
+        "provisioningState": "Succeeded"
+      },
+      "securityProfile": {
+        "mdeEnrolled": true,
+        "mdeStatus": "NotOnboarded",
+        "agentHealth": "Healthy",
+        "patchStatus": {
+          "state": "UpToDate",
+          "criticalAndSecurityPatchCount": 3,
+          "otherPatchCount": 1,
+          "lastAssessmentTime": "2026-05-17T05:09:00Z"
+        },
+        "vulnerabilityCount": 0,
+        "secureScore": 81,
+        "diskEncrypted": true,
+        "justInTimeAccess": true,
+        "adaptiveApplicationControls": true
+      },
+      "tags": {
+        "env": "development",
+        "owner": "finance"
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-db-rg/providers/microsoft.compute/virtualmachines/vm-prod-db-371",
+      "name": "vm-prod-db-371",
+      "resourceGroup": "prod-db-rg",
+      "location": "uksouth",
+      "properties": {
+        "osType": "Linux",
+        "osName": "Ubuntu 20.04 LTS",
+        "vmSize": "Standard_D4s_v3",
+        "powerState": "running",
+        "provisioningState": "Succeeded"
+      },
+      "securityProfile": {
+        "mdeEnrolled": true,
+        "mdeStatus": "Active",
+        "agentHealth": "Healthy",
+        "patchStatus": {
+          "state": "UpToDate",
+          "criticalAndSecurityPatchCount": 2,
+          "otherPatchCount": 8,
+          "lastAssessmentTime": "2026-05-16T22:15:00Z"
+        },
+        "vulnerabilityCount": 5,
+        "secureScore": 54,
+        "diskEncrypted": false,
+        "justInTimeAccess": false,
+        "adaptiveApplicationControls": true
+      },
+      "tags": {
+        "env": "production",
+        "owner": "hr"
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-web-rg/providers/microsoft.compute/virtualmachines/vm-prod-web-666",
+      "name": "vm-prod-web-666",
+      "resourceGroup": "prod-web-rg",
+      "location": "westeurope",
+      "properties": {
+        "osType": "Linux",
+        "osName": "Ubuntu 20.04 LTS",
+        "vmSize": "Standard_E2s_v3",
+        "powerState": "deallocated",
+        "provisioningState": "Succeeded"
+      },
+      "securityProfile": {
+        "mdeEnrolled": true,
+        "mdeStatus": "Inactive",
+        "agentHealth": "Healthy",
+        "patchStatus": {
+          "state": "Unknown",
+          "criticalAndSecurityPatchCount": 0,
+          "otherPatchCount": 10,
+          "lastAssessmentTime": "2026-05-17T08:01:00Z"
+        },
+        "vulnerabilityCount": 1,
+        "secureScore": 51,
+        "diskEncrypted": true,
+        "justInTimeAccess": false,
+        "adaptiveApplicationControls": false
+      },
+      "tags": {
+        "env": "production",
+        "owner": "security"
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/ml-rg/providers/microsoft.compute/virtualmachines/vm-ml-412",
+      "name": "vm-ml-412",
+      "resourceGroup": "ml-rg",
+      "location": "westeurope",
+      "properties": {
+        "osType": "Windows",
+        "osName": "Windows Server 2019 Datacenter",
+        "vmSize": "Standard_D2s_v3",
+        "powerState": "deallocated",
+        "provisioningState": "Succeeded"
+      },
+      "securityProfile": {
+        "mdeEnrolled": true,
+        "mdeStatus": "Inactive",
+        "agentHealth": "Healthy",
+        "patchStatus": {
+          "state": "CriticalPatches",
+          "criticalAndSecurityPatchCount": 4,
+          "otherPatchCount": 4,
+          "lastAssessmentTime": "2026-05-15T08:41:00Z"
+        },
+        "vulnerabilityCount": 3,
+        "secureScore": 22,
+        "diskEncrypted": true,
+        "justInTimeAccess": false,
+        "adaptiveApplicationControls": true
+      },
+      "tags": {
+        "env": "development",
+        "owner": "finance"
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-db-rg/providers/microsoft.compute/virtualmachines/vm-prod-db-752",
+      "name": "vm-prod-db-752",
+      "resourceGroup": "prod-db-rg",
+      "location": "australiaeast",
+      "properties": {
+        "osType": "Linux",
+        "osName": "Ubuntu 20.04 LTS",
+        "vmSize": "Standard_E2s_v3",
+        "powerState": "stopped",
+        "provisioningState": "Succeeded"
+      },
+      "securityProfile": {
+        "mdeEnrolled": true,
+        "mdeStatus": "Inactive",
+        "agentHealth": "Healthy",
+        "patchStatus": {
+          "state": "SecurityPatches",
+          "criticalAndSecurityPatchCount": 5,
+          "otherPatchCount": 6,
+          "lastAssessmentTime": "2026-05-15T07:53:00Z"
+        },
+        "vulnerabilityCount": 2,
+        "secureScore": 30,
+        "diskEncrypted": false,
+        "justInTimeAccess": true,
+        "adaptiveApplicationControls": true
+      },
+      "tags": {
+        "env": "production",
+        "owner": "hr"
+      }
+    },
+    {
+      "id": "/subscriptions/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee/resourceGroups/prod-db-rg/providers/microsoft.compute/virtualmachines/vm-prod-db-631",
+      "name": "vm-prod-db-631",
+      "resourceGroup": "prod-db-rg",
+      "location": "eastus",
+      "properties": {
+        "osType": "Linux",
+        "osName": "Red Hat Enterprise Linux 8",
+        "vmSize": "Standard_F4s_v2",
+        "powerState": "running",
+        "provisioningState": "Succeeded"
+      },
+      "securityProfile": {
+        "mdeEnrolled": true,
+        "mdeStatus": "Inactive",
+        "agentHealth": "Unhealthy",
+        "patchStatus": {
+          "state": "CriticalPatches",
+          "criticalAndSecurityPatchCount": 14,
+          "otherPatchCount": 3,
+          "lastAssessmentTime": "2026-05-16T19:18:00Z"
+        },
+        "vulnerabilityCount": 11,
+        "secureScore": 45,
+        "diskEncrypted": true,
+        "justInTimeAccess": true,
+        "adaptiveApplicationControls": false
+      },
+      "tags": {
+        "env": "production",
+        "owner": "hr"
+      }
+    }
+  ]
+}

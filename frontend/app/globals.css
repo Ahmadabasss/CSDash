@@ -11,3 +11,21 @@ body {
   font-family: var(--font-geist-sans), Inter, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  nav, aside, header, [data-sidebar], .print\:hidden {
+    display: none !important;
+  }
+  main {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+  .break-inside-avoid {
+    break-inside: avoid;
+  }
+}

@@ -1,14 +1,16 @@
 'use client'
 
 import { useCallback, useEffect, useState } from 'react'
-import Link from 'next/link'
-import { ChevronLeft, ChevronRight, ChevronUp, ChevronDown } from 'lucide-react'
+import { useRouter } from 'next/navigation'
+import { ChevronLeft, ChevronRight, ChevronUp, ChevronDown, Download } from 'lucide-react'
 import { api } from '@/lib/api'
+import { exportCsv } from '@/lib/exportCsv'
 import type { Alert, PaginatedAlerts } from '@/types/azure'
 import SeverityBadge from './SeverityBadge'
 import StatusBadge from './StatusBadge'
 import MitreTag from './MitreTag'
 import RelativeTime from './RelativeTime'
+import AgeBadge from './AgeBadge'
 
 type SortField = 'createdDateTime' | 'severity' | 'status' | 'title' | 'category'
 
@@ -19,6 +21,7 @@ interface Props {
 }
 
 export default function AlertsTable({ limit = 50, showPagination = true, defaultSort = 'createdDateTime' }: Props) {
+  const router = useRouter()
   const [data, setData] = useState<PaginatedAlerts | null>(null)
   const [page, setPage] = useState(1)
   const [sort, setSort] = useState<SortField>(defaultSort)
@@ -38,6 +41,20 @@ export default function AlertsTable({ limit = 50, showPagination = true, default
   }, [page, limit, sort, order, severity, status])
 
   useEffect(() => { load() }, [load])
+
+  async function handleExport() {
+    const all = await api.alerts({ page: 1, limit: 500, sort, order, ...(severity && { severity }), ...(status && { status }) })
+    exportCsv('alerts.csv', all.items.map(a => ({
+      id: a.id,
+      title: a.title,
+      severity: a.severity,
+      status: a.status,
+      category: a.category,
+      serviceSource: a.serviceSource,
+      mitreTechniques: a.mitreTechniques.join('; '),
+      createdDateTime: a.createdDateTime,
+    })))
+  }
 
   function toggleSort(field: SortField) {
     if (sort === field) setOrder(o => o === 'asc' ? 'desc' : 'asc')
@@ -79,6 +96,13 @@ export default function AlertsTable({ limit = 50, showPagination = true, default
               {s || 'All statuses'}
             </button>
           ))}
+          <button
+            onClick={handleExport}
+            className="flex items-center gap-1.5 rounded px-3 py-1 text-xs font-medium bg-slate-800 text-slate-400 hover:text-slate-200 transition-colors"
+            title="Export to CSV"
+          >
+            <Download className="h-3.5 w-3.5" /> Export
+          </button>
         </div>
       </div>
 
@@ -102,6 +126,7 @@ export default function AlertsTable({ limit = 50, showPagination = true, default
                   <span className="flex items-center gap-1">{label}<SortIcon field={field} /></span>
                 </th>
               ))}
+              <th className="px-4 py-3 text-left text-xs font-semibold uppercase tracking-wide text-slate-400">Age</th>
               <th className="px-4 py-3 text-left text-xs font-semibold uppercase tracking-wide text-slate-400">MITRE</th>
             </tr>
           </thead>
@@ -109,7 +134,7 @@ export default function AlertsTable({ limit = 50, showPagination = true, default
             {loading
               ? Array.from({ length: 8 }).map((_, i) => (
                   <tr key={i} className="animate-pulse">
-                    {Array.from({ length: 6 }).map((_, j) => (
+                    {Array.from({ length: 7 }).map((_, j) => (
                       <td key={j} className="px-4 py-3"><div className="h-4 rounded bg-slate-800" /></td>
                     ))}
                   </tr>
@@ -117,18 +142,18 @@ export default function AlertsTable({ limit = 50, showPagination = true, default
               : data?.items.map((alert: Alert) => (
                   <tr
                     key={alert.id}
+                    onClick={() => router.push(`/alerts/${encodeURIComponent(alert.id)}`)}
                     className="group hover:bg-slate-800/40 transition-colors cursor-pointer"
                   >
                     <td className="px-4 py-3"><SeverityBadge severity={alert.severity} /></td>
                     <td className="px-4 py-3 max-w-xs">
-                      <Link href={`/alerts/${encodeURIComponent(alert.id)}`} className="text-slate-200 hover:text-sky-400 line-clamp-1 transition-colors">
-                        {alert.title}
-                      </Link>
+                      <p className="text-slate-200 group-hover:text-sky-400 line-clamp-1 transition-colors">{alert.title}</p>
                       <p className="text-xs text-slate-500 mt-0.5 line-clamp-1">{alert.description}</p>
                     </td>
                     <td className="px-4 py-3 text-slate-400">{alert.category}</td>
                     <td className="px-4 py-3"><StatusBadge status={alert.status} /></td>
                     <td className="px-4 py-3 whitespace-nowrap"><RelativeTime dateStr={alert.createdDateTime} /></td>
+                    <td className="px-4 py-3 whitespace-nowrap"><AgeBadge createdAt={alert.createdDateTime} severity={alert.severity} /></td>
                     <td className="px-4 py-3">
                       <div className="flex flex-wrap gap-1">
                         {alert.mitreTechniques.slice(0, 2).map(t => <MitreTag key={t} technique={t} />)}
