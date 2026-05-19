@@ -61,7 +61,8 @@ async def list_alerts(
 
 @router.get("/{alert_id}", summary="Single alert detail")
 async def get_alert(alert_id: str, ds: DataSource = Depends(get_data_source)):
-    alert = await ds.get_alert(alert_id)
+    all_alerts = await ds.get_alerts()
+    alert = next((a for a in all_alerts if a["id"] == alert_id), None)
     if not alert:
         raise HTTPException(status_code=404, detail="Alert not found")
     return alert

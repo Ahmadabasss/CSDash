@@ -1,5 +1,10 @@
+'use client'
+
+import { useRouter } from 'next/navigation'
+import { Download } from 'lucide-react'
 import type { Vulnerability } from '@/types/azure'
 import SeverityBadge from './SeverityBadge'
+import { exportCsv } from '@/lib/exportCsv'
 
 function riskScore(v: Vulnerability) {
   return v.cvssV3 * Math.max(v.exposedMachines, 1)
@@ -8,11 +13,31 @@ function riskScore(v: Vulnerability) {
 interface Props { vulnerabilities: Vulnerability[] }
 
 export default function VulnerabilitiesTable({ vulnerabilities }: Props) {
+  const router = useRouter()
   const sorted = [...vulnerabilities]
     .sort((a, b) => riskScore(b) - riskScore(a))
     .slice(0, 5)
 
+  function handleExport() {
+    exportCsv('vulnerabilities.csv', sorted.map(v => ({
+      id: v.id,
+      name: v.name,
+      severity: v.severity,
+      cvssV3: v.cvssV3,
+      exposedMachines: v.exposedMachines,
+      publicExploit: v.publicExploit,
+      tags: v.tags.join('; '),
+      publishedOn: v.publishedOn,
+    })))
+  }
+
   return (
+    <div className="flex flex-col gap-2">
+    <div className="flex justify-end">
+      <button onClick={handleExport} className="flex items-center gap-1.5 rounded px-3 py-1 text-xs font-medium bg-slate-800 text-slate-400 hover:text-slate-200 transition-colors" title="Export to CSV">
+        <Download className="h-3.5 w-3.5" /> Export
+      </button>
+    </div>
     <div className="overflow-x-auto rounded-xl ring-1 ring-slate-700/60">
       <table className="w-full text-sm">
         <thead>
@@ -24,10 +49,14 @@ export default function VulnerabilitiesTable({ vulnerabilities }: Props) {
         </thead>
         <tbody className="divide-y divide-slate-700/40">
           {sorted.map(v => (
-            <tr key={v.id} className="hover:bg-slate-800/40 transition-colors">
+            <tr
+              key={v.id}
+              onClick={() => router.push(`/vulnerabilities/${encodeURIComponent(v.id)}`)}
+              className="group hover:bg-slate-800/40 transition-colors cursor-pointer"
+            >
               <td className="px-4 py-3"><SeverityBadge severity={v.severity} /></td>
               <td className="px-4 py-3">
-                <p className="font-mono text-xs text-sky-400">{v.id}</p>
+                <p className="font-mono text-xs text-sky-400 group-hover:text-sky-300 transition-colors">{v.id}</p>
                 <p className="text-slate-300 text-xs mt-0.5 line-clamp-1">{v.name}</p>
               </td>
               <td className="px-4 py-3">
@@ -59,6 +88,7 @@ export default function VulnerabilitiesTable({ vulnerabilities }: Props) {
           ))}
         </tbody>
       </table>
+    </div>
     </div>
   )
 }

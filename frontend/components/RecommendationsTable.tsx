@@ -1,9 +1,10 @@
 'use client'
 
 import { useCallback, useEffect, useState } from 'react'
-import Link from 'next/link'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { useRouter } from 'next/navigation'
+import { ChevronLeft, ChevronRight, Download } from 'lucide-react'
 import { api } from '@/lib/api'
+import { exportCsv } from '@/lib/exportCsv'
 import type { CategoryCount, PaginatedRecommendations, Recommendation } from '@/types/azure'
 import SeverityBadge from './SeverityBadge'
 import StatusBadge from './StatusBadge'
@@ -11,6 +12,7 @@ import StatusBadge from './StatusBadge'
 interface Props { limit?: number; showPagination?: boolean }
 
 export default function RecommendationsTable({ limit = 50, showPagination = true }: Props) {
+  const router = useRouter()
   const [data, setData] = useState<PaginatedRecommendations | null>(null)
   const [categories, setCategories] = useState<CategoryCount[]>([])
   const [page, setPage] = useState(1)
@@ -36,6 +38,20 @@ export default function RecommendationsTable({ limit = 50, showPagination = true
 
   useEffect(() => { load() }, [load])
 
+  async function handleExport() {
+    const all = await api.recommendations({ page: 1, limit: 500, sort: 'severity', order: 'desc', ...(severity && { severity }), ...(category && { category }), ...(status && { status }) })
+    exportCsv('recommendations.csv', all.items.map(r => ({
+      name: r.name,
+      displayName: r.properties.displayName,
+      severity: r.properties.metadata.severity,
+      status: r.properties.status.code,
+      category: r.properties.metadata.categories.join('; '),
+      implementationEffort: r.properties.metadata.implementationEffort,
+      resourceName: r.properties.resourceDetails.ResourceName,
+      resourceType: r.properties.resourceDetails.ResourceType,
+    })))
+  }
+
   return (
     <div className="flex flex-col gap-3">
       {/* Filters */}
@@ -53,6 +69,9 @@ export default function RecommendationsTable({ limit = 50, showPagination = true
               {s || 'All statuses'}
             </button>
           ))}
+          <button onClick={handleExport} className="flex items-center gap-1.5 rounded px-3 py-1 text-xs font-medium bg-slate-800 text-slate-400 hover:text-slate-200 transition-colors" title="Export to CSV">
+            <Download className="h-3.5 w-3.5" /> Export
+          </button>
         </div>
       </div>
 
@@ -92,12 +111,16 @@ export default function RecommendationsTable({ limit = 50, showPagination = true
                   </tr>
                 ))
               : data?.items.map((rec: Recommendation) => (
-                  <tr key={rec.id} className="hover:bg-slate-800/40 transition-colors">
+                  <tr
+                    key={rec.id}
+                    onClick={() => router.push(`/recommendations/${rec.name}`)}
+                    className="group hover:bg-slate-800/40 transition-colors cursor-pointer"
+                  >
                     <td className="px-4 py-3"><SeverityBadge severity={rec.properties.metadata.severity} /></td>
                     <td className="px-4 py-3 max-w-xs">
-                      <Link href={`/recommendations/${encodeURIComponent(rec.id)}`} className="text-slate-200 hover:text-sky-400 line-clamp-2 transition-colors">
+                      <p className="text-slate-200 group-hover:text-sky-400 line-clamp-2 transition-colors">
                         {rec.properties.displayName}
-                      </Link>
+                      </p>
                     </td>
                     <td className="px-4 py-3 text-slate-400 font-mono text-xs max-w-[160px] truncate">
                       {rec.properties.resourceDetails.ResourceName}

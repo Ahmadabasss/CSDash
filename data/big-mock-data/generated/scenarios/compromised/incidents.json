@@ -1,0 +1,562 @@
+{
+  "value": [
+    {
+      "id": "04dcd9ca-1437-756e-11a0-dc9d13138eff",
+      "displayName": "Multi-stage attack: credential theft \u2192 lateral movement \u2192 ransomware deployment",
+      "incidentNumber": 5000,
+      "severity": "high",
+      "status": "inProgress",
+      "classification": "TruePositive",
+      "determination": "hackerTool",
+      "assignedTo": "carol@contoso.com",
+      "createdDateTime": "2026-05-14T14:09:00Z",
+      "firstActivityDateTime": "2026-05-14T06:31:00Z",
+      "lastActivityDateTime": "2026-05-16T08:26:00Z",
+      "lastModifiedDateTime": "2026-05-17T09:49:00Z",
+      "alertsCount": 3,
+      "bookmarks": 3,
+      "comments": 6,
+      "tactics": [
+        "Execution",
+        "Persistence"
+      ],
+      "tags": [],
+      "entities": [
+        {
+          "type": "host",
+          "name": "WKS-EXE-882"
+        }
+      ]
+    },
+    {
+      "id": "9948a906-4ea8-8c35-d218-0301a8cc4b60",
+      "displayName": "Suspicious PowerShell execution with encoded command on domain controller",
+      "incidentNumber": 5001,
+      "severity": "medium",
+      "status": "inProgress",
+      "classification": "TruePositive",
+      "determination": "malware",
+      "assignedTo": "bob@contoso.com",
+      "createdDateTime": "2026-05-10T07:40:00Z",
+      "firstActivityDateTime": "2026-05-10T00:57:00Z",
+      "lastActivityDateTime": "2026-05-15T03:15:00Z",
+      "lastModifiedDateTime": "2026-05-17T09:58:00Z",
+      "alertsCount": 6,
+      "bookmarks": 2,
+      "comments": 3,
+      "tactics": [
+        "DefenseEvasion",
+        "LateralMovement",
+        "Exfiltration"
+      ],
+      "tags": [
+        "Ransomware",
+        "Phishing",
+        "InsiderThreat"
+      ],
+      "entities": [
+        {
+          "type": "host",
+          "name": "MAC-LEG-335"
+        }
+      ]
+    },
+    {
+      "id": "13d187d9-d7da-1f00-6d16-b257a050d7d0",
+      "displayName": "Mass download by privileged user following anomalous sign-in",
+      "incidentNumber": 5002,
+      "severity": "low",
+      "status": "active",
+      "classification": "TruePositive",
+      "determination": "multiStagedAttack",
+      "assignedTo": "carol@contoso.com",
+      "createdDateTime": "2026-05-13T11:59:00Z",
+      "firstActivityDateTime": "2026-05-13T10:18:00Z",
+      "lastActivityDateTime": "2026-05-16T00:57:00Z",
+      "lastModifiedDateTime": "2026-05-17T09:47:00Z",
+      "alertsCount": 2,
+      "bookmarks": 0,
+      "comments": 7,
+      "tactics": [
+        "DefenseEvasion",
+        "LateralMovement",
+        "Exfiltration"
+      ],
+      "tags": [
+        "Priority",
+        "Phishing",
+        "FalsePositive"
+      ],
+      "entities": [
+        {
+          "type": "host",
+          "name": "WKS-EXE-882"
+        }
+      ]
+    },
+    {
+      "id": "a47538ab-e719-151d-de4b-15f3117f0aae",
+      "displayName": "Impossible travel sign-in to Exchange Online from two continents",
+      "incidentNumber": 5003,
+      "severity": "medium",
+      "status": "active",
+      "classification": "TruePositive",
+      "determination": "malware",
+      "assignedTo": "bob@contoso.com",
+      "createdDateTime": "2026-05-14T07:42:00Z",
+      "firstActivityDateTime": "2026-05-14T01:34:00Z",
+      "lastActivityDateTime": "2026-05-16T01:51:00Z",
+      "lastModifiedDateTime": "2026-05-17T09:04:00Z",
+      "alertsCount": 9,
+      "bookmarks": 1,
+      "comments": 8,
+      "tactics": [
+        "DefenseEvasion",
+        "LateralMovement",
+        "Exfiltration"
+      ],
+      "tags": [
+        "FalsePositive",
+        "Phishing",
+        "Ransomware"
+      ],
+      "entities": [
+        {
+          "type": "host",
+          "name": "MAC-HR-297"
+        },
+        {
+          "type": "host",
+          "name": "WKS-EXE-882"
+        },
+        {
+          "type": "account",
+          "name": "bob.wilson@contoso.com"
+        },
+        {
+          "type": "account",
+          "name": "ahmed.brown@contoso.com"
+        }
+      ]
+    },
+    {
+      "id": "5957d0c6-7b7a-8580-c7d5-f8fda151e4b9",
+      "displayName": "Malware detected and quarantined on finance workstation",
+      "incidentNumber": 5004,
+      "severity": "high",
+      "status": "active",
+      "classification": "FalsePositive",
+      "determination": "multiStagedAttack",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-13T21:06:00Z",
+      "firstActivityDateTime": "2026-05-13T18:40:00Z",
+      "lastActivityDateTime": "2026-05-15T11:08:00Z",
+      "lastModifiedDateTime": "2026-05-17T09:37:00Z",
+      "alertsCount": 2,
+      "bookmarks": 1,
+      "comments": 3,
+      "tactics": [
+        "InitialAccess"
+      ],
+      "tags": [
+        "Phishing",
+        "APT"
+      ],
+      "entities": [
+        {
+          "type": "host",
+          "name": "WKS-EXE-882"
+        },
+        {
+          "type": "host",
+          "name": "WKS-HR-310"
+        },
+        {
+          "type": "host",
+          "name": "MAC-IT-942"
+        },
+        {
+          "type": "account",
+          "name": "mei.mueller@contoso.com"
+        }
+      ]
+    },
+    {
+      "id": "4de10532-9f58-4365-ecda-b8fb370d5530",
+      "displayName": "Brute-force attack against Azure AD \u2014 1,200 failed sign-ins",
+      "incidentNumber": 5005,
+      "severity": "medium",
+      "status": "resolved",
+      "classification": "TruePositive",
+      "determination": "malware",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-13T11:01:00Z",
+      "firstActivityDateTime": "2026-05-13T06:06:00Z",
+      "lastActivityDateTime": "2026-05-15T19:43:00Z",
+      "lastModifiedDateTime": "2026-05-17T09:59:00Z",
+      "alertsCount": 12,
+      "bookmarks": 2,
+      "comments": 0,
+      "tactics": [
+        "DefenseEvasion",
+        "LateralMovement",
+        "Exfiltration"
+      ],
+      "tags": [
+        "APT",
+        "Priority",
+        "Phishing"
+      ],
+      "entities": [
+        {
+          "type": "host",
+          "name": "MAC-IT-123"
+        },
+        {
+          "type": "host",
+          "name": "MAC-HR-297"
+        },
+        {
+          "type": "host",
+          "name": "MAC-IT-942"
+        },
+        {
+          "type": "account",
+          "name": "raj.anderson@contoso.com"
+        },
+        {
+          "type": "account",
+          "name": "alice.johnson@contoso.com"
+        }
+      ]
+    },
+    {
+      "id": "8305f3b8-cb44-7c18-0636-6d05d3df81df",
+      "displayName": "Suspicious Azure Resource Manager operations after compromised credential",
+      "incidentNumber": 5006,
+      "severity": "medium",
+      "status": "active",
+      "classification": "TruePositive",
+      "determination": "malware",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-13T20:16:00Z",
+      "firstActivityDateTime": "2026-05-13T18:23:00Z",
+      "lastActivityDateTime": "2026-05-13T23:16:00Z",
+      "lastModifiedDateTime": "2026-05-17T09:04:00Z",
+      "alertsCount": 10,
+      "bookmarks": 3,
+      "comments": 4,
+      "tactics": [
+        "InitialAccess",
+        "CredentialAccess",
+        "Impact"
+      ],
+      "tags": [
+        "Priority",
+        "FalsePositive",
+        "InsiderThreat"
+      ],
+      "entities": [
+        {
+          "type": "host",
+          "name": "MAC-IT-123"
+        },
+        {
+          "type": "host",
+          "name": "WKS-HR-310"
+        },
+        {
+          "type": "host",
+          "name": "MAC-LEG-335"
+        }
+      ]
+    },
+    {
+      "id": "48d1178e-b4cd-9cf4-3e78-bc6bbf205393",
+      "displayName": "Data exfiltration to unknown external domain via HTTPS",
+      "incidentNumber": 5007,
+      "severity": "critical",
+      "status": "resolved",
+      "classification": "TruePositive",
+      "determination": "multiStagedAttack",
+      "assignedTo": "bob@contoso.com",
+      "createdDateTime": "2026-05-13T17:25:00Z",
+      "firstActivityDateTime": "2026-05-13T09:37:00Z",
+      "lastActivityDateTime": "2026-05-16T02:46:00Z",
+      "lastModifiedDateTime": "2026-05-17T09:24:00Z",
+      "alertsCount": 4,
+      "bookmarks": 3,
+      "comments": 0,
+      "tactics": [
+        "CredentialAccess"
+      ],
+      "tags": [
+        "APT",
+        "InsiderThreat"
+      ],
+      "entities": [
+        {
+          "type": "host",
+          "name": "MAC-LEG-335"
+        },
+        {
+          "type": "host",
+          "name": "MAC-IT-375"
+        },
+        {
+          "type": "account",
+          "name": "ahmed.brown@contoso.com"
+        },
+        {
+          "type": "account",
+          "name": "bob.wilson@contoso.com"
+        }
+      ]
+    },
+    {
+      "id": "6fdc0cfa-8869-ddd5-2f23-937561ad2cd9",
+      "displayName": "Privileged account used outside business hours from anonymous IP",
+      "incidentNumber": 5008,
+      "severity": "low",
+      "status": "inProgress",
+      "classification": "BenignPositive",
+      "determination": "multiStagedAttack",
+      "assignedTo": "bob@contoso.com",
+      "createdDateTime": "2026-05-15T11:51:00Z",
+      "firstActivityDateTime": "2026-05-15T09:04:00Z",
+      "lastActivityDateTime": "2026-05-15T19:10:00Z",
+      "lastModifiedDateTime": "2026-05-17T09:33:00Z",
+      "alertsCount": 3,
+      "bookmarks": 2,
+      "comments": 1,
+      "tactics": [
+        "InitialAccess"
+      ],
+      "tags": [],
+      "entities": [
+        {
+          "type": "host",
+          "name": "WKS-MAR-436"
+        }
+      ]
+    },
+    {
+      "id": "dd0e0700-32ff-7e4c-7923-d9f24ad7b29e",
+      "displayName": "Ransomware indicators detected across 3 endpoints in prod-web-rg",
+      "incidentNumber": 5009,
+      "severity": "critical",
+      "status": "active",
+      "classification": "BenignPositive",
+      "determination": "multiStagedAttack",
+      "assignedTo": "carol@contoso.com",
+      "createdDateTime": "2026-05-05T17:34:00Z",
+      "firstActivityDateTime": "2026-05-05T11:34:00Z",
+      "lastActivityDateTime": "2026-05-07T14:13:00Z",
+      "lastModifiedDateTime": "2026-05-17T09:03:00Z",
+      "alertsCount": 4,
+      "bookmarks": 2,
+      "comments": 2,
+      "tactics": [
+        "CredentialAccess",
+        "LateralMovement"
+      ],
+      "tags": [
+        "APT",
+        "FalsePositive",
+        "Priority"
+      ],
+      "entities": [
+        {
+          "type": "host",
+          "name": "MAC-IT-375"
+        },
+        {
+          "type": "host",
+          "name": "WKS-MAR-436"
+        },
+        {
+          "type": "host",
+          "name": "WKS-SEC-646"
+        }
+      ]
+    },
+    {
+      "id": "88bb332d-ad8f-bfe6-8513-e6097da2c253",
+      "displayName": "Suspicious scheduled task created for persistence on server",
+      "incidentNumber": 5010,
+      "severity": "medium",
+      "status": "inProgress",
+      "classification": "TruePositive",
+      "determination": "malware",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-12T12:45:00Z",
+      "firstActivityDateTime": "2026-05-12T05:58:00Z",
+      "lastActivityDateTime": "2026-05-14T23:44:00Z",
+      "lastModifiedDateTime": "2026-05-17T09:26:00Z",
+      "alertsCount": 12,
+      "bookmarks": 0,
+      "comments": 3,
+      "tactics": [
+        "CredentialAccess"
+      ],
+      "tags": [],
+      "entities": [
+        {
+          "type": "host",
+          "name": "MAC-LEG-335"
+        },
+        {
+          "type": "host",
+          "name": "MAC-IT-375"
+        },
+        {
+          "type": "account",
+          "name": "bob.wilson@contoso.com"
+        },
+        {
+          "type": "account",
+          "name": "ahmed.brown@contoso.com"
+        }
+      ]
+    },
+    {
+      "id": "23f61558-2be0-ff4d-636e-470ba5e99ebc",
+      "displayName": "Anonymous IP sign-in succeeded for Global Administrator account",
+      "incidentNumber": 5011,
+      "severity": "medium",
+      "status": "new",
+      "classification": "TruePositive",
+      "determination": "phishing",
+      "assignedTo": "carol@contoso.com",
+      "createdDateTime": "2026-05-05T06:32:00Z",
+      "firstActivityDateTime": "2026-05-05T02:16:00Z",
+      "lastActivityDateTime": "2026-05-09T06:58:00Z",
+      "lastModifiedDateTime": "2026-05-17T09:16:00Z",
+      "alertsCount": 4,
+      "bookmarks": 0,
+      "comments": 7,
+      "tactics": [
+        "InitialAccess"
+      ],
+      "tags": [],
+      "entities": [
+        {
+          "type": "host",
+          "name": "MAC-IT-375"
+        }
+      ]
+    },
+    {
+      "id": "78fa9d6e-3f1f-e689-1f42-4ca75d49df54",
+      "displayName": "MDE detected Mimikatz-like credential dumping tool",
+      "incidentNumber": 5012,
+      "severity": "low",
+      "status": "inProgress",
+      "classification": "TruePositive",
+      "determination": "hackerTool",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-11T06:17:00Z",
+      "firstActivityDateTime": "2026-05-11T02:08:00Z",
+      "lastActivityDateTime": "2026-05-12T23:19:00Z",
+      "lastModifiedDateTime": "2026-05-17T09:01:00Z",
+      "alertsCount": 1,
+      "bookmarks": 1,
+      "comments": 0,
+      "tactics": [
+        "CredentialAccess",
+        "LateralMovement"
+      ],
+      "tags": [],
+      "entities": [
+        {
+          "type": "host",
+          "name": "WKS-HR-310"
+        },
+        {
+          "type": "host",
+          "name": "MAC-LEG-335"
+        }
+      ]
+    },
+    {
+      "id": "dc693b07-281c-58ed-2fa6-539e78fd7fef",
+      "displayName": "Unusual outbound traffic to known C2 IP range",
+      "incidentNumber": 5013,
+      "severity": "low",
+      "status": "resolved",
+      "classification": "TruePositive",
+      "determination": "hackerTool",
+      "assignedTo": null,
+      "createdDateTime": "2026-05-16T08:46:00Z",
+      "firstActivityDateTime": "2026-05-16T04:58:00Z",
+      "lastActivityDateTime": "2026-05-17T08:46:00Z",
+      "lastModifiedDateTime": "2026-05-17T09:48:00Z",
+      "alertsCount": 12,
+      "bookmarks": 2,
+      "comments": 7,
+      "tactics": [
+        "InitialAccess",
+        "CredentialAccess",
+        "Impact"
+      ],
+      "tags": [
+        "Ransomware",
+        "APT",
+        "FalsePositive"
+      ],
+      "entities": [
+        {
+          "type": "host",
+          "name": "WKS-HR-310"
+        },
+        {
+          "type": "host",
+          "name": "MAC-IT-942"
+        },
+        {
+          "type": "account",
+          "name": "ahmed.brown@contoso.com"
+        }
+      ]
+    },
+    {
+      "id": "9faa3ab3-ffb2-bfbe-bc88-f4cbe6449ff5",
+      "displayName": "Azure Storage account accessed with SAS token from tor exit node",
+      "incidentNumber": 5014,
+      "severity": "medium",
+      "status": "active",
+      "classification": "TruePositive",
+      "determination": "phishing",
+      "assignedTo": "alice@contoso.com",
+      "createdDateTime": "2026-05-03T17:40:00Z",
+      "firstActivityDateTime": "2026-05-03T10:16:00Z",
+      "lastActivityDateTime": "2026-05-05T09:28:00Z",
+      "lastModifiedDateTime": "2026-05-17T09:51:00Z",
+      "alertsCount": 6,
+      "bookmarks": 3,
+      "comments": 3,
+      "tactics": [
+        "DefenseEvasion",
+        "LateralMovement",
+        "Exfiltration"
+      ],
+      "tags": [
+        "Phishing"
+      ],
+      "entities": [
+        {
+          "type": "host",
+          "name": "MAC-HR-297"
+        },
+        {
+          "type": "account",
+          "name": "ahmed.brown@contoso.com"
+        },
+        {
+          "type": "account",
+          "name": "alice.johnson@contoso.com"
+        }
+      ]
+    }
+  ]
+}

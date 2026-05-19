@@ -9,13 +9,21 @@ from .config import get_settings
 from .deps import get_data_source
 from .routers import (
     alerts,
+    blast_radius,
     compliance,
+    endpoints,
+    incidents,
+    network,
+    orphans,
     recommendations,
     resources,
+    risky_users,
     scenario,
     secure_score,
     signins,
     summary,
+    triage,
+    virtual_machines,
     vulnerabilities,
 )
 
@@ -63,8 +71,16 @@ for router in (
     compliance.router,
     resources.router,
     signins.router,
+    endpoints.router,
+    virtual_machines.router,
+    incidents.router,
+    risky_users.router,
     summary.router,
     scenario.router,
+    blast_radius.router,
+    triage.router,
+    orphans.router,
+    network.router,
 ):
     app.include_router(router)
 
