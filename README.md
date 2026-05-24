@@ -1,173 +1,208 @@
-# Azure Security Posture Dashboard
+# Vigil — Azure Security Posture Dashboard
 
-A single-pane-of-glass security dashboard that surfaces vulnerabilities, alerts, recommendations, and compliance posture from **Microsoft Defender for Cloud**, **Microsoft Graph Security API**, and **Azure Resource Graph** — built with FastAPI and Next.js 14.
+A single-pane-of-glass security dashboard for Microsoft Azure — surfaces alerts, recommendations, vulnerabilities, compliance posture, identity risk, network topology, and more.
 
-> **Phase 1 (current):** Full UI running against 900+ realistic mock alerts, 300+ recommendations, and 120+ resources generated from real Microsoft API schemas and CISA KEV catalog data. Switching to live Azure is a single env-var change.
+Built with **FastAPI** (Python) + **Next.js 14** (TypeScript), backed by **Azure SQL Database**.
+
+---
+
+## Features
+
+- **Security Overview** — secure score gauge, 12-week trend, compliance donut, MITRE ATT&CK heatmap
+- **Alerts** — paginated, sortable, filterable with MITRE technique tags
+- **Recommendations** — severity-ranked with category filters
+- **CVEs** — risk-ranked vulnerabilities with CVSS scores and exploit/ransomware tags
+- **Compliance** — CIS, NIST 800-53, ISO 27001, PCI-DSS, SOC 2, HIPAA, CMMC, Security Benchmark
+- **Identity Risk** — sign-in logs, risky users, top risky IPs, geography map
+- **Network Topology** — interactive VNet peering map, subnet topology, NSG rule inspector, traffic simulator
+- **Ghost Resources** — detects deallocated VMs, orphaned public IPs, stale NSGs, abandoned storage
+- **Blast Radius** — visualise attack propagation from a compromised resource
+- **Incidents** — Microsoft Sentinel incident management
 
 ---
 
 ## Tech Stack
 
 | Layer | Technology |
-|---|---|
-| Backend | Python 3.13 · FastAPI · pydantic-settings · uvicorn |
-| Mock data | Synthetic generator — real CISA KEV CVEs, MITRE ATT&CK techniques, Azure resource types |
-| Frontend | Next.js 14 (App Router) · TypeScript · Tailwind CSS · Recharts |
-| Auth (Phase 2) | Azure Entra ID · `ClientSecretCredential` |
-| Cloud APIs (Phase 2) | Defender for Cloud · Microsoft Graph Security · Azure Resource Graph |
+|-------|------------|
+| Backend | Python 3.11+ · FastAPI · pyodbc · uvicorn |
+| Database | Azure SQL Database |
+| Frontend | Next.js 14 (App Router) · TypeScript · Tailwind CSS · Recharts · React Flow |
 
 ---
 
-## Features
-
-### Backend API (17 endpoints)
-
-**Alerts**
-- Paginated, sorted, and filtered alert list (sort by severity / date / MITRE category)
-- Single alert detail
-- `GET /api/alerts/mitre-summary` — ATT&CK technique frequency across all alerts (heatmap data)
-
-**Recommendations**
-- Paginated, sorted, and filtered recommendations (sort by severity / effort / category)
-- Single recommendation detail
-- `GET /api/recommendations/categories` — category counts for filter dropdowns
-
-**Resources**
-- Full resource list with security metadata (score, issue count, tags, region)
-- `GET /api/resources/{id}` — resource detail with **joined** related alerts and recommendations
-
-**Sign-ins**
-- Raw sign-in log
-- `GET /api/signins/risk-summary` — risky/failed counts, top risky IPs, top countries
-
-**Dashboard**
-- `GET /api/summary` — single call for all dashboard card data (runs 5 Azure queries in parallel via `asyncio.gather`)
-- `GET /api/secure-score` — current score + 12-week history
-- `GET /api/compliance` — regulatory standards posture (CIS, NIST, ISO 27001, PCI-DSS, SOC 2, HIPAA, CMMC, ASB)
-- `GET /api/vulnerabilities` — CVEs with CVSS scores and exploit/ransomware tags from CISA KEV
-
-**Demo**
-- `GET /api/scenario` — current active data scenario
-- `POST /api/scenario` — hot-swap mock scenario **without restarting the server**
-
-### Mock Data Scenarios
-
-Three coherent scenarios — each scenario's alerts, recommendations, resources, and secure score all tell a consistent story:
-
-| Scenario | Secure Score | Alerts | Story |
-|---|---|---|---|
-| `noisy` (default) | ~55% | 900 | Real-world enterprise, typical posture |
-| `secured` | ~78% | 80 | Well-hardened tenant |
-| `compromised` | ~32% | 600 (high-severity) | Active attack in progress |
-
-Switch at runtime: `POST /api/scenario {"scenario": "compromised"}`
-
-### What's real in the mock data
-
-- **25 real CVEs** from CISA's Known Exploited Vulnerabilities catalog (XZ Utils, MOVEit, Citrix Bleed…) with correct CVSS scores
-- **18 real MITRE ATT&CK techniques** (T1059.001 PowerShell, T1486 Data Encrypted for Impact, T1078 Valid Accounts…)
-- **30 real Defender for Cloud recommendations** with genuine cause codes
-- **8 real compliance standards** with real control counts (CIS 1.4, NIST 800-53, ISO 27001, PCI-DSS 4.0…)
-- **27 real Azure regions** and **20 real resource types**
-
----
-
-## Getting Started
+## Quick Start
 
 ### Prerequisites
 
 - Python 3.11+
 - Node.js 18+
+- [ODBC Driver 18 for SQL Server](https://learn.microsoft.com/sql/connect/odbc/download-odbc-driver-for-sql-server) installed
+- An Azure SQL Database (any service tier)
 
-### Backend
+---
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/Ahmadabasss/CSDash.git
+cd CSDash
+```
+
+### 2. Create the database schema
+
+**Option A — Azure Data Studio:** open `backend/scripts/create_schema.sql` and click Run.
+
+**Option B — sqlcmd:**
+```bash
+sqlcmd -S YOUR_SERVER.database.windows.net -d YOUR_DATABASE \
+       -U YOUR_USERNAME -P YOUR_PASSWORD \
+       -i backend/scripts/create_schema.sql
+```
+
+### 3. Seed the database
+
+```bash
+pip install pyodbc
+
+python backend/scripts/seed_sql.py \
+  --conn "Driver={ODBC Driver 18 for SQL Server};Server=tcp:YOUR_SERVER.database.windows.net,1433;Database=YOUR_DATABASE;Uid=YOUR_USERNAME;Pwd=YOUR_PASSWORD;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;" \
+  --scenario noisy
+```
+
+`--scenario` options: `noisy` (default) · `compromised` · `secured`
+
+### 4. Configure the backend
+
+```bash
+cd backend
+cp .env.example .env
+```
+
+Open `.env` and paste your connection string:
+
+```env
+DATA_SOURCE=sql
+SQL_CONNECTION_STRING=Driver={ODBC Driver 18 for SQL Server};Server=tcp:YOUR_SERVER.database.windows.net,1433;Database=YOUR_DATABASE;Uid=YOUR_USERNAME;Pwd=YOUR_PASSWORD;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;
+```
+
+> **Where to find your connection string:**
+> Azure Portal → your SQL Database → **Settings → Connection strings → ODBC tab**
+> Copy the string and replace `{your_password}` with your actual password.
+
+### 5. Start the backend
 
 ```bash
 cd backend
 python3 -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-cp .env.example .env
 uvicorn app.main:app --reload --port 8000
 ```
 
-API docs available at **http://localhost:8000/docs**
+API docs: **http://localhost:8000/docs**
 
-### Frontend *(coming soon — Phase 1 in progress)*
+### 6. Start the frontend
 
 ```bash
 cd frontend
-npm install
 cp .env.example .env.local
-npm run dev   # http://localhost:3000
+npm install
+npm run dev
 ```
+
+Open **http://localhost:3000**
 
 ---
 
-## Architecture
+## Running without a database (mock mode)
 
-```
-CSDash/
-├── backend/
-│   ├── app/
-│   │   ├── main.py          # FastAPI app, CORS, lifespan cache-refresh task
-│   │   ├── config.py        # pydantic-settings — DATA_SOURCE, MOCK_SCENARIO, CACHE_REFRESH_SECONDS
-│   │   ├── deps.py          # Data source singleton — hot-swappable via switch_scenario()
-│   │   ├── services/
-│   │   │   ├── base.py      # DataSource Protocol (10 methods)
-│   │   │   ├── mock.py      # Loads JSON from scenario dir; reload() re-reads without restart
-│   │   │   └── azure.py     # Phase 2 stub — real Azure SDK calls
-│   │   └── routers/         # One file per resource
-│   └── data/
-│       └── big-mock-data/
-│           └── scenarios/   # noisy · compromised · secured
-└── frontend/                # Next.js 14 — in progress
+If you want to explore the UI without setting up Azure SQL:
+
+```bash
+# in backend/.env
+DATA_SOURCE=mock
 ```
 
-**Key design:** `DataSource` is a structural `Protocol` — mock and Azure implementations are interchangeable. All routes call `data_source.get_X()` with no awareness of the underlying source.
+No database or seed step needed. Switch scenarios at runtime:
 
-**Background refresh:** A lifespan task reloads JSON files from disk every 5 minutes (`CACHE_REFRESH_SECONDS=0` to disable). Useful for live-editing mock data during development.
+```bash
+curl -X POST http://localhost:8000/api/scenario \
+     -H "Content-Type: application/json" \
+     -d '{"scenario": "compromised"}'
+```
+
+| Scenario | Secure Score | Alerts | Story |
+|----------|-------------|--------|-------|
+| `noisy` | ~55% | 556 | Typical enterprise |
+| `secured` | ~78% | 80 | Well-hardened tenant |
+| `compromised` | ~32% | 600 high-sev | Active attack in progress |
 
 ---
 
 ## Configuration
 
-| Env Var | Default | Description |
-|---|---|---|
-| `DATA_SOURCE` | `mock` | `mock` or `azure` |
-| `MOCK_SCENARIO` | `noisy` | Active scenario (`noisy`, `compromised`, `secured`) |
-| `CACHE_REFRESH_SECONDS` | `300` | How often to reload mock data from disk (0 = off) |
-| `FRONTEND_ORIGIN` | `http://localhost:3000` | CORS allowed origin |
-| `AZURE_TENANT_ID` | — | Phase 2 |
-| `AZURE_CLIENT_ID` | — | Phase 2 |
-| `AZURE_CLIENT_SECRET` | — | Phase 2 |
-| `AZURE_SUBSCRIPTION_ID` | — | Phase 2 |
+### `backend/.env`
+
+| Variable | Required | Description |
+|----------|----------|-------------|
+| `DATA_SOURCE` | Yes | `sql` (default) or `mock` |
+| `SQL_CONNECTION_STRING` | When `DATA_SOURCE=sql` | Full ODBC connection string from Azure Portal |
+| `FRONTEND_ORIGIN` | No | CORS allowed origin (default: `http://localhost:3000`) |
+
+### `frontend/.env.local`
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `NEXT_PUBLIC_API_URL` | `http://localhost:8000` | Backend URL — change when deploying |
 
 ---
 
-## Roadmap
+## Project Structure
 
-- [x] FastAPI backend with 17 endpoints
-- [x] Paginated, sortable, filterable alerts and recommendations
-- [x] Resource detail with joined alerts and recommendations
-- [x] MITRE ATT&CK heatmap data endpoint
-- [x] Sign-in risk summary (risky IPs, failure rates, geography)
-- [x] Hot-swappable mock scenarios (noisy / compromised / secured)
-- [x] Background cache refresh with lifespan task
-- [ ] Next.js 14 frontend dashboard
-- [ ] Secure Score gauge + 12-week trend chart
-- [ ] Compliance donut chart (per standard)
-- [ ] Drill-down pages (alerts, recommendations, resources, compliance)
-- [ ] MITRE ATT&CK heatmap panel
-- [ ] Sign-in risk panel
-- [ ] Scenario switcher UI
-- [ ] Phase 2: live Azure SDK integration
+```
+CSDash/
+├── backend/
+│   ├── app/
+│   │   ├── main.py              # FastAPI entry point
+│   │   ├── config.py            # Settings (pydantic-settings)
+│   │   ├── deps.py              # DataSource singleton
+│   │   ├── services/
+│   │   │   ├── base.py          # DataSource Protocol
+│   │   │   ├── sql.py           # Azure SQL implementation
+│   │   │   └── mock.py          # Mock JSON implementation
+│   │   └── routers/             # One file per resource domain
+│   ├── scripts/
+│   │   ├── create_schema.sql    # T-SQL DDL (idempotent, safe to re-run)
+│   │   └── seed_sql.py          # Seed DB from mock JSON files
+│   └── mock_data/               # Network topology source data
+├── frontend/
+│   ├── app/                     # Next.js App Router pages
+│   ├── components/              # Reusable UI components
+│   └── types/                   # TypeScript interfaces
+└── data/
+    └── big-mock-data/scenarios/ # noisy · compromised · secured
+```
 
 ---
 
-## Phase 2 — Live Azure
+## API Endpoints
 
-1. Enable Defender for Cloud (free tier) on your Azure subscription
-2. Register an Entra ID app with **Security Reader** role and `SecurityAlert.Read.All` + `SecurityEvents.Read.All` Graph permissions
-3. Set `DATA_SOURCE=azure` and fill in the four Azure env vars
-4. Implement `app/services/azure.py` — the router layer is unchanged
-
-See [`CLAUDE.md`](CLAUDE.md) for the full Phase 2 setup guide.
+| Method | Path | Description |
+|--------|------|-------------|
+| GET | `/api/summary` | Dashboard summary cards |
+| GET | `/api/secure-score` | Score + 12-week history |
+| GET | `/api/alerts` | Paginated alerts |
+| GET | `/api/alerts/{id}` | Alert detail |
+| GET | `/api/alerts/mitre-summary` | MITRE ATT&CK heatmap data |
+| GET | `/api/recommendations` | Paginated recommendations |
+| GET | `/api/recommendations/{id}` | Recommendation detail |
+| GET | `/api/vulnerabilities` | CVE list ranked by risk |
+| GET | `/api/compliance` | Compliance standards posture |
+| GET | `/api/resources` | Azure resource inventory |
+| GET | `/api/resources/{id}` | Resource detail |
+| GET | `/api/signins` | Sign-in logs |
+| GET | `/api/signins/risk-summary` | Risky IPs, countries, risk levels |
+| GET | `/api/incidents` | Security incidents |
+| GET | `/api/network/topology` | VNet topology with NSG details |
+| GET | `/api/scenario` | Current active scenario |
+| POST | `/api/scenario` | Hot-swap scenario without restart |
