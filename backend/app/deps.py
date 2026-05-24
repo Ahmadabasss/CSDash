@@ -16,10 +16,16 @@ def get_data_source() -> DataSource:
         if settings.data_source == "mock":
             _current_scenario = settings.mock_scenario
             _instance = MockDataSource(data_dir=_scenario_path(_current_scenario))
+        elif settings.data_source == "sql":
+            from .services.sql import SqlDataSource
+            _instance = SqlDataSource(
+                server   = settings.sql_server,
+                database = settings.sql_database,
+            )
         else:
             raise NotImplementedError(
-                "AzureDataSource not yet implemented — set DATA_SOURCE=mock "
-                "or implement app/services/azure.py"
+                f"Unknown DATA_SOURCE='{settings.data_source}'. "
+                "Valid values: mock, sql"
             )
     return _instance
 

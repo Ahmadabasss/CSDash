@@ -14,6 +14,8 @@ class Settings(BaseSettings):
     azure_client_id: str = ""
     azure_client_secret: str = ""
     azure_subscription_id: str = ""
+    sql_server: str = ""    # e.g. vigil-sql.database.windows.net
+    sql_database: str = ""  # e.g. vigil-security
     frontend_origin: str = "http://localhost:3000"
 
     class Config:

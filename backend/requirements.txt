@@ -3,8 +3,6 @@ uvicorn[standard]==0.32.1
 pydantic-settings==2.6.1
 anthropic>=0.103.1
 
-# Phase 2 — uncomment when switching DATA_SOURCE=azure
-# azure-identity==1.19.0
-# azure-mgmt-security==7.0.0
-# azure-mgmt-resourcegraph==8.0.0
-# msgraph-sdk==1.9.0
+# SQL backend (DATA_SOURCE=sql)
+pyodbc==5.2.0
+azure-identity==1.19.0

@@ -7,9 +7,9 @@ import type { ComplianceControl } from '../../../types/azure'
 export const dynamic = 'force-dynamic'
 
 const STATE_STYLE: Record<string, string> = {
-  Passed: 'bg-emerald-900/40 text-emerald-300 ring-1 ring-emerald-800',
-  Failed: 'bg-red-900/40 text-red-300 ring-1 ring-red-800',
-  Skipped: 'bg-slate-700 text-slate-400',
+  Passed: 'bg-emerald-100 text-emerald-700 ring-1 ring-emerald-200',
+  Failed: 'bg-red-100 text-red-700 ring-1 ring-red-200',
+  Skipped: 'bg-[#edebe9] text-[#605e5c]',
 }
 
 const STANDARD_LABELS: Record<string, { full: string; url: string }> = {
@@ -38,18 +38,18 @@ export default async function ComplianceDetailPage({ params }: { params: Promise
 
   return (
     <div className="px-6 py-6 max-w-4xl">
-      <Link href="/compliance" className="inline-flex items-center gap-1.5 text-sm text-slate-400 hover:text-slate-200 mb-6 transition-colors">
+      <Link href="/compliance" className="inline-flex items-center gap-1.5 text-sm text-[#605e5c] hover:text-[#323130] mb-6 transition-colors">
         <ArrowLeft className="w-4 h-4" /> Back to Compliance
       </Link>
 
       {/* Header */}
       <div className="flex items-start gap-4 mb-6">
         <div className="flex-1 min-w-0">
-          <h1 className="text-xl font-bold text-white">{meta.full}</h1>
-          <p className="text-sm text-slate-500 font-mono mt-0.5">{standard.name}</p>
+          <h1 className="text-xl font-bold text-[#323130]">{meta.full}</h1>
+          <p className="text-sm text-[#797775] font-mono mt-0.5">{standard.name}</p>
         </div>
         <div className="flex items-center gap-2">
-          <span className={`text-xs font-semibold px-2.5 py-1 rounded ${STATE_STYLE[props.state] ?? 'bg-slate-700 text-slate-400'}`}>
+          <span className={`text-xs font-semibold px-2.5 py-1 rounded ${STATE_STYLE[props.state] ?? 'bg-[#edebe9] text-[#605e5c]'}`}>
             {props.state}
           </span>
           {meta.url && (
@@ -57,7 +57,7 @@ export default async function ComplianceDetailPage({ params }: { params: Promise
               href={meta.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1 text-xs text-[#60a5fa] hover:text-white transition-colors bg-[#1e293b] border border-white/6 px-2.5 py-1 rounded"
+              className="flex items-center gap-1 text-xs text-[#60a5fa] hover:text-white transition-colors bg-white border border-[#edebe9] px-2.5 py-1 rounded"
             >
               Docs <ExternalLink className="w-3 h-3" />
             </a>
@@ -66,26 +66,26 @@ export default async function ComplianceDetailPage({ params }: { params: Promise
       </div>
 
       {/* Pass rate hero */}
-      <div className="bg-[#1e293b] border border-white/6 rounded-lg p-5 mb-4">
+      <div className="bg-white border border-[#edebe9] rounded-lg p-5 mb-4">
         <div className="flex items-center gap-8">
           <div className="text-center">
-            <p className={`text-5xl font-bold tabular-nums ${passRate >= 70 ? 'text-emerald-400' : passRate >= 40 ? 'text-amber-400' : 'text-red-400'}`}>
+            <p className={`text-5xl font-bold tabular-nums ${passRate >= 70 ? 'text-emerald-600' : passRate >= 40 ? 'text-amber-600' : 'text-red-600'}`}>
               {passRate}%
             </p>
-            <p className="text-xs text-slate-500 mt-1">Pass Rate</p>
+            <p className="text-xs text-[#797775] mt-1">Pass Rate</p>
           </div>
           <div className="flex-1">
-            <div className="h-3 rounded-full bg-slate-700/60 overflow-hidden">
+            <div className="h-3 rounded-full bg-[#edebe9] overflow-hidden">
               <div
                 className={`h-full rounded-full ${passRate >= 70 ? 'bg-emerald-500' : passRate >= 40 ? 'bg-amber-500' : 'bg-red-500'}`}
                 style={{ width: `${passRate}%` }}
               />
             </div>
             <div className="grid grid-cols-4 gap-3 mt-4">
-              <ControlStat icon={<CheckCircle className="w-4 h-4 text-emerald-400" />} label="Passed" value={props.passedControls} color="text-emerald-400" />
-              <ControlStat icon={<XCircle className="w-4 h-4 text-red-400" />} label="Failed" value={props.failedControls} color="text-red-400" />
-              <ControlStat icon={<MinusCircle className="w-4 h-4 text-slate-500" />} label="Skipped" value={props.skippedControls} color="text-slate-400" />
-              <ControlStat icon={<MinusCircle className="w-4 h-4 text-slate-600" />} label="Unsupported" value={props.unsupportedControls} color="text-slate-600" />
+              <ControlStat icon={<CheckCircle className="w-4 h-4 text-emerald-600" />} label="Passed" value={props.passedControls} color="text-emerald-600" />
+              <ControlStat icon={<XCircle className="w-4 h-4 text-red-600" />} label="Failed" value={props.failedControls} color="text-red-600" />
+              <ControlStat icon={<MinusCircle className="w-4 h-4 text-[#797775]" />} label="Skipped" value={props.skippedControls} color="text-[#605e5c]" />
+              <ControlStat icon={<MinusCircle className="w-4 h-4 text-[#a19f9d]" />} label="Unsupported" value={props.unsupportedControls} color="text-[#a19f9d]" />
             </div>
           </div>
         </div>
@@ -99,30 +99,30 @@ export default async function ComplianceDetailPage({ params }: { params: Promise
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead>
-                    <tr className="border-b border-white/6 text-left">
-                      <th className="pb-2 text-[11px] font-semibold uppercase tracking-wider text-slate-500 w-24">Control</th>
-                      <th className="pb-2 text-[11px] font-semibold uppercase tracking-wider text-slate-500">Description</th>
-                      <th className="pb-2 text-[11px] font-semibold uppercase tracking-wider text-slate-500 w-24 text-right">State</th>
+                    <tr className="border-b border-[#edebe9] text-left">
+                      <th className="pb-2 text-[11px] font-semibold uppercase tracking-wider text-[#797775] w-24">Control</th>
+                      <th className="pb-2 text-[11px] font-semibold uppercase tracking-wider text-[#797775]">Description</th>
+                      <th className="pb-2 text-[11px] font-semibold uppercase tracking-wider text-[#797775] w-24 text-right">State</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-white/4">
                     {controls.map(c => (
                       <tr key={c.id} className="group">
-                        <td className="py-2.5 pr-4 font-mono text-xs text-slate-400 whitespace-nowrap">{c.id}</td>
-                        <td className="py-2.5 pr-4 text-xs text-slate-300 leading-relaxed">{c.description}</td>
+                        <td className="py-2.5 pr-4 font-mono text-xs text-[#605e5c] whitespace-nowrap">{c.id}</td>
+                        <td className="py-2.5 pr-4 text-xs text-[#4b4b4b] leading-relaxed">{c.description}</td>
                         <td className="py-2.5 text-right">
                           {c.state === 'Passed' && (
-                            <span className="inline-flex items-center gap-1 text-xs font-medium text-emerald-400">
+                            <span className="inline-flex items-center gap-1 text-xs font-medium text-emerald-600">
                               <CheckCircle className="w-3.5 h-3.5" /> Passed
                             </span>
                           )}
                           {c.state === 'Failed' && (
-                            <span className="inline-flex items-center gap-1 text-xs font-medium text-red-400">
+                            <span className="inline-flex items-center gap-1 text-xs font-medium text-red-600">
                               <XCircle className="w-3.5 h-3.5" /> Failed
                             </span>
                           )}
                           {c.state === 'Skipped' && (
-                            <span className="inline-flex items-center gap-1 text-xs font-medium text-slate-400">
+                            <span className="inline-flex items-center gap-1 text-xs font-medium text-[#605e5c]">
                               <MinusCircle className="w-3.5 h-3.5" /> Skipped
                             </span>
                           )}
@@ -138,8 +138,8 @@ export default async function ComplianceDetailPage({ params }: { params: Promise
           {/* Remediation CTA */}
           {props.failedControls > 0 && (
             <Section title="Remediation">
-              <p className="text-sm text-slate-300 leading-relaxed mb-4">
-                This standard has <span className="text-red-400 font-semibold">{props.failedControls} failing controls</span> that need attention.
+              <p className="text-sm text-[#4b4b4b] leading-relaxed mb-4">
+                This standard has <span className="text-red-600 font-semibold">{props.failedControls} failing controls</span> that need attention.
                 Review the open security recommendations below to improve your compliance posture.
               </p>
               <Link
@@ -172,10 +172,10 @@ export default async function ComplianceDetailPage({ params }: { params: Promise
                   <Link
                     key={s.name}
                     href={`/compliance/${encodeURIComponent(s.name)}`}
-                    className={`flex items-center justify-between px-2 py-1.5 rounded text-xs transition-colors ${isCurrent ? 'bg-[#0078d4]/20 text-[#60a5fa]' : 'text-slate-400 hover:bg-white/5 hover:text-slate-200'}`}
+                    className={`flex items-center justify-between px-2 py-1.5 rounded text-xs transition-colors ${isCurrent ? 'bg-[#0078d4]/20 text-[#60a5fa]' : 'text-[#605e5c] hover:bg-[#f3f2f1] hover:text-[#323130]'}`}
                   >
                     <span className="truncate">{s.name.replace('Azure-', '')}</span>
-                    <span className={`tabular-nums font-medium ml-2 shrink-0 ${sRate >= 70 ? 'text-emerald-400' : sRate >= 40 ? 'text-amber-400' : 'text-red-400'}`}>
+                    <span className={`tabular-nums font-medium ml-2 shrink-0 ${sRate >= 70 ? 'text-emerald-600' : sRate >= 40 ? 'text-amber-600' : 'text-red-600'}`}>
                       {sRate}%
                     </span>
                   </Link>
@@ -191,8 +191,8 @@ export default async function ComplianceDetailPage({ params }: { params: Promise
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <div className="bg-[#1e293b] border border-white/6 rounded-lg p-5">
-      <h2 className="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-3">{title}</h2>
+    <div className="bg-white border border-[#edebe9] rounded-lg p-5">
+      <h2 className="text-xs font-semibold uppercase tracking-wider text-[#797775] mb-3">{title}</h2>
       {children}
     </div>
   )
@@ -203,16 +203,16 @@ function ControlStat({ icon, label, value, color }: { icon: React.ReactNode; lab
     <div className="text-center">
       <div className="flex justify-center mb-1">{icon}</div>
       <p className={`text-xl font-bold tabular-nums ${color}`}>{value}</p>
-      <p className="text-[10px] text-slate-500 mt-0.5">{label}</p>
+      <p className="text-[10px] text-[#797775] mt-0.5">{label}</p>
     </div>
   )
 }
 
 function MetaRow({ label, value, colored }: { label: string; value: string; colored?: string }) {
-  const colorClass = colored === 'emerald' ? 'text-emerald-400' : colored === 'red' ? 'text-red-400' : 'text-slate-300'
+  const colorClass = colored === 'emerald' ? 'text-emerald-600' : colored === 'red' ? 'text-red-600' : 'text-[#4b4b4b]'
   return (
     <div className="flex justify-between gap-2">
-      <dt className="text-xs text-slate-500">{label}</dt>
+      <dt className="text-xs text-[#797775]">{label}</dt>
       <dd className={`text-xs font-medium ${colorClass}`}>{value}</dd>
     </div>
   )

@@ -10,13 +10,13 @@ const LEVEL_ORDER: Record<string, number> = { high: 3, medium: 2, low: 1, none: 
 
 function RiskLevelBadge({ level }: { level: string }) {
   const cls: Record<string, string> = {
-    high: 'bg-red-900/60 text-red-300 ring-1 ring-red-800',
-    medium: 'bg-amber-900/50 text-amber-300 ring-1 ring-amber-800',
-    low: 'bg-blue-900/40 text-blue-300 ring-1 ring-blue-800',
-    none: 'bg-slate-700 text-slate-400',
+    high: 'bg-red-100 text-red-700 ring-1 ring-red-200',
+    medium: 'bg-amber-100 text-amber-700 ring-1 ring-amber-200',
+    low: 'bg-blue-100 text-blue-700 ring-1 ring-blue-200',
+    none: 'bg-[#edebe9] text-[#605e5c]',
   }
   return (
-    <span className={`inline-flex text-[11px] font-semibold px-2 py-0.5 rounded capitalize ${cls[level] ?? 'bg-slate-700 text-slate-400'}`}>
+    <span className={`inline-flex text-[11px] font-semibold px-2 py-0.5 rounded capitalize ${cls[level] ?? 'bg-[#edebe9] text-[#605e5c]'}`}>
       {level}
     </span>
   )
@@ -24,13 +24,13 @@ function RiskLevelBadge({ level }: { level: string }) {
 
 function RiskStateBadge({ state }: { state: string }) {
   const cls: Record<string, string> = {
-    atRisk: 'bg-red-900/40 text-red-400',
-    confirmedCompromised: 'bg-red-900 text-red-200 font-semibold',
-    remediated: 'bg-emerald-900/40 text-emerald-400',
-    dismissed: 'bg-slate-700 text-slate-500',
+    atRisk: 'bg-red-100 text-red-700',
+    confirmedCompromised: 'bg-red-100 text-red-700 font-semibold',
+    remediated: 'bg-emerald-100 text-emerald-700',
+    dismissed: 'bg-[#edebe9] text-[#797775]',
   }
   return (
-    <span className={`inline-flex text-[11px] px-2 py-0.5 rounded ${cls[state] ?? 'bg-slate-700 text-slate-400'}`}>
+    <span className={`inline-flex text-[11px] px-2 py-0.5 rounded ${cls[state] ?? 'bg-[#edebe9] text-[#605e5c]'}`}>
       {state}
     </span>
   )
@@ -57,14 +57,14 @@ export default function RiskyUsersClient({ users }: { users: RiskyUser[] }) {
   }, [users, levelFilter, stateFilter, search])
 
   return (
-    <div className="bg-[#1e293b] border border-white/6 rounded-lg overflow-hidden">
-      <div className="flex items-center gap-3 p-4 border-b border-white/6 flex-wrap">
+    <div className="bg-white border border-[#edebe9] rounded-lg overflow-hidden">
+      <div className="flex items-center gap-3 p-4 border-b border-[#edebe9] flex-wrap">
         <input
           type="text"
           placeholder="Search users..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="bg-[#0d1117] border border-white/8 rounded px-3 py-1.5 text-sm text-slate-200 placeholder-slate-500 outline-none focus:border-[#0078d4] w-52"
+          className="bg-white border border-[#edebe9] rounded px-3 py-1.5 text-sm text-[#323130] placeholder-[#797775] outline-none focus:border-[#0078d4] w-52"
         />
         <div className="flex gap-1.5 flex-wrap">
           {levels.map((l) => (
@@ -72,7 +72,7 @@ export default function RiskyUsersClient({ users }: { users: RiskyUser[] }) {
               key={l}
               onClick={() => setLevelFilter(l)}
               className={`text-xs px-2.5 py-1 rounded font-medium capitalize transition-colors ${
-                levelFilter === l ? 'bg-[#0078d4] text-white' : 'bg-slate-700/60 text-slate-400 hover:bg-slate-700'
+                levelFilter === l ? 'bg-[#0078d4] text-white' : 'bg-[#edebe9] text-[#605e5c] hover:bg-[#eaecee]'
               }`}
             >
               {l === 'all' ? 'All Levels' : l}
@@ -85,28 +85,28 @@ export default function RiskyUsersClient({ users }: { users: RiskyUser[] }) {
               key={s}
               onClick={() => setStateFilter(s)}
               className={`text-xs px-2.5 py-1 rounded font-medium transition-colors ${
-                stateFilter === s ? 'bg-[#0078d4] text-white' : 'bg-slate-700/60 text-slate-400 hover:bg-slate-700'
+                stateFilter === s ? 'bg-[#0078d4] text-white' : 'bg-[#edebe9] text-[#605e5c] hover:bg-[#eaecee]'
               }`}
             >
               {s === 'all' ? 'All States' : s}
             </button>
           ))}
         </div>
-        <span className="ml-auto text-xs text-slate-500">{filtered.length} users</span>
+        <span className="ml-auto text-xs text-[#797775]">{filtered.length} users</span>
       </div>
 
       <div className="overflow-x-auto">
         <table className="w-full text-sm">
           <thead>
-            <tr className="border-b border-white/6 text-left">
-              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-slate-500">Risk Level</th>
-              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-slate-500">User</th>
-              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-slate-500">Department</th>
-              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-slate-500">Risk State</th>
-              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-slate-500">Risk Detail</th>
-              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-slate-500">Sign-ins</th>
-              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-slate-500">Risky Sign-ins</th>
-              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-slate-500">Last Updated</th>
+            <tr className="border-b border-[#edebe9] text-left">
+              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-[#797775]">Risk Level</th>
+              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-[#797775]">User</th>
+              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-[#797775]">Department</th>
+              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-[#797775]">Risk State</th>
+              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-[#797775]">Risk Detail</th>
+              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-[#797775]">Sign-ins</th>
+              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-[#797775]">Risky Sign-ins</th>
+              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-[#797775]">Last Updated</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-white/4">
@@ -116,22 +116,22 @@ export default function RiskyUsersClient({ users }: { users: RiskyUser[] }) {
                   <RiskLevelBadge level={u.riskLevel} />
                 </td>
                 <td className="px-4 py-3">
-                  <p className="text-slate-200 text-[12px] font-medium">{u.userDisplayName}</p>
-                  <p className="text-slate-500 text-[11px] font-mono">{u.userPrincipalName}</p>
+                  <p className="text-[#323130] text-[12px] font-medium">{u.userDisplayName}</p>
+                  <p className="text-[#797775] text-[11px] font-mono">{u.userPrincipalName}</p>
                 </td>
-                <td className="px-4 py-3 text-slate-400 text-[12px]">
+                <td className="px-4 py-3 text-[#605e5c] text-[12px]">
                   <p>{u.department}</p>
-                  <p className="text-slate-600 text-[11px]">{u.jobTitle}</p>
+                  <p className="text-[#a19f9d] text-[11px]">{u.jobTitle}</p>
                 </td>
                 <td className="px-4 py-3"><RiskStateBadge state={u.riskState} /></td>
-                <td className="px-4 py-3 text-slate-400 text-[12px] max-w-45 truncate">{u.riskDetail}</td>
-                <td className="px-4 py-3 text-slate-400 text-[12px]">{u.signInCount}</td>
+                <td className="px-4 py-3 text-[#605e5c] text-[12px] max-w-45 truncate">{u.riskDetail}</td>
+                <td className="px-4 py-3 text-[#605e5c] text-[12px]">{u.signInCount}</td>
                 <td className="px-4 py-3 text-[12px]">
-                  <span className={u.riskySignInCount > 0 ? 'text-red-400 font-semibold' : 'text-slate-500'}>
+                  <span className={u.riskySignInCount > 0 ? 'text-red-600 font-semibold' : 'text-[#797775]'}>
                     {u.riskySignInCount}
                   </span>
                 </td>
-                <td className="px-4 py-3 text-slate-400 text-[12px]">
+                <td className="px-4 py-3 text-[#605e5c] text-[12px]">
                   <RelativeTime dateStr={u.riskLastUpdatedDateTime} />
                 </td>
               </tr>
@@ -139,7 +139,7 @@ export default function RiskyUsersClient({ users }: { users: RiskyUser[] }) {
           </tbody>
         </table>
         {filtered.length === 0 && (
-          <div className="flex flex-col items-center py-12 text-slate-500">
+          <div className="flex flex-col items-center py-12 text-[#797775]">
             <UserX className="w-8 h-8 mb-2 opacity-40" />
             <p>No risky users match the current filters</p>
           </div>

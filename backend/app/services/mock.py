@@ -2,6 +2,8 @@ import json
 from pathlib import Path
 from typing import Any
 
+_NETWORK_FILE = Path(__file__).parent.parent.parent / "mock_data" / "network.json"
+
 
 class MockDataSource:
     def __init__(self, data_dir: Path) -> None:
@@ -103,3 +105,17 @@ class MockDataSource:
             (u for u in self._cache["risky_users"]["value"] if u["id"] == user_id),
             None,
         )
+
+    async def get_network_topology(self) -> dict:
+        raw  = json.loads(_NETWORK_FILE.read_text())
+        nsgs = raw["nsgs"]
+        rts  = raw["routeTables"]
+        for vnet in raw["vnets"]:
+            for subnet in vnet["subnets"]:
+                subnet["nsgDetail"] = nsgs.get(subnet["nsg"]) if subnet["nsg"] else None
+                subnet["rtDetail"]  = rts.get(subnet["routeTable"]) if subnet.get("routeTable") else None
+        return {
+            "resourceGroups": raw["resourceGroups"],
+            "vnets":          raw["vnets"],
+            "peerings":       raw["peerings"],
+        }

@@ -29,7 +29,7 @@ export default function SecureScoreTrend({ history }: Props) {
           tickLine={false}
         />
         <Tooltip
-          contentStyle={{ background: '#1e293b', border: '1px solid #334155', borderRadius: 6 }}
+          contentStyle={{ background: '#ffffff', border: '1px solid #edebe9', borderRadius: 6 }}
           labelStyle={{ color: '#94a3b8', fontSize: 12 }}
           itemStyle={{ color: '#38bdf8' }}
           formatter={(v) => [`${v}%`, 'Score']}

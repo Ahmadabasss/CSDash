@@ -29,8 +29,8 @@ export default function ComplianceDonut({ standards }: Props) {
             onClick={() => setSelected(i)}
             className={`rounded px-2 py-0.5 text-xs transition-colors ${
               i === selected
-                ? 'bg-sky-600 text-white'
-                : 'bg-slate-800 text-slate-400 hover:text-slate-200'
+                ? 'bg-[#0078d4] text-white'
+                : 'bg-[#f3f2f1] text-[#605e5c] hover:text-[#323130]'
             }`}
           >
             {s.name.replace('Azure-', '').replace(/-\d.*/, '')}
@@ -54,7 +54,7 @@ export default function ComplianceDonut({ standards }: Props) {
                 {data.map((entry, i) => <Cell key={i} fill={entry.color} />)}
               </Pie>
               <Tooltip
-                contentStyle={{ background: '#1e293b', border: '1px solid #334155', borderRadius: 6, fontSize: 12 }}
+                contentStyle={{ background: '#ffffff', border: '1px solid #edebe9', borderRadius: 6, fontSize: 12 }}
                 itemStyle={{ color: '#f1f5f9' }}
               />
             </PieChart>
@@ -64,8 +64,8 @@ export default function ComplianceDonut({ standards }: Props) {
           {data.map(d => (
             <div key={d.name} className="flex items-center gap-2">
               <span className="h-2.5 w-2.5 rounded-full flex-shrink-0" style={{ background: d.color }} />
-              <span className="text-slate-300">{d.name}</span>
-              <span className="ml-auto tabular-nums font-medium text-slate-100">{d.value}</span>
+              <span className="text-[#4b4b4b]">{d.name}</span>
+              <span className="ml-auto tabular-nums font-medium text-[#323130]">{d.value}</span>
             </div>
           ))}
         </div>

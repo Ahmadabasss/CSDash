@@ -1,11 +1,11 @@
 import clsx from 'clsx'
 
 const CONFIG = {
-  critical: { label: 'Critical', classes: 'bg-red-950 text-red-300 ring-red-900' },
-  high:     { label: 'High',     classes: 'bg-red-900/40 text-red-400 ring-red-800' },
-  medium:   { label: 'Medium',   classes: 'bg-amber-900/40 text-amber-400 ring-amber-800' },
-  low:      { label: 'Low',      classes: 'bg-blue-900/40 text-blue-400 ring-blue-800' },
-  informational: { label: 'Info', classes: 'bg-slate-800 text-slate-400 ring-slate-700' },
+  critical: { label: 'Critical', classes: 'bg-red-100 text-red-700 ring-red-200' },
+  high:     { label: 'High',     classes: 'bg-orange-100 text-orange-700 ring-orange-200' },
+  medium:   { label: 'Medium',   classes: 'bg-amber-100 text-amber-700 ring-amber-200' },
+  low:      { label: 'Low',      classes: 'bg-blue-100 text-blue-700 ring-blue-200' },
+  informational: { label: 'Info', classes: 'bg-slate-100 text-slate-600 ring-slate-200' },
 } as const
 
 type SeverityKey = keyof typeof CONFIG

@@ -20,7 +20,7 @@ export default function RelativeTime({ dateStr }: { dateStr: string }) {
   })
 
   return (
-    <time dateTime={dateStr} title={date.toLocaleString()} className="text-slate-400 text-sm">
+    <time dateTime={dateStr} title={date.toLocaleString()} className="text-[#605e5c] text-sm">
       {rel}
     </time>
   )

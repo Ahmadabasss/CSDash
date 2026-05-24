@@ -27,7 +27,7 @@ const RC = {
   high:     { border: '#f97316', bg: '#1a0e05', text: '#fdba74' },
   medium:   { border: '#f59e0b', bg: '#1a1505', text: '#fcd34d' },
   low:      { border: '#22c55e', bg: '#071510', text: '#86efac' },
-  none:     { border: '#334155', bg: '#0f172a', text: '#64748b' },
+  none:     { border: '#334155', bg: '#ffffff', text: '#64748b' },
 }
 
 function vnetRisk(v: VNet): keyof typeof RC {
@@ -430,7 +430,7 @@ function buildPeeringNodes(
       animated: gw,
       label: gw ? 'GW Transit' : undefined,
       labelStyle: { fill: '#475569', fontSize: 10, fontWeight: 600 },
-      labelBgStyle: { fill: '#0a0f1e', fillOpacity: 0.9 },
+      labelBgStyle: { fill: '#f3f2f1', fillOpacity: 0.9 },
       style: { stroke: gw ? '#0078d4' : '#334155', strokeWidth: gw ? 2 : 1.5, strokeDasharray: gw ? undefined : '6 4' },
       markerEnd: { type: MarkerType.ArrowClosed, color: gw ? '#0078d4' : '#334155', width: 13, height: 13 },
     }
@@ -481,7 +481,7 @@ function buildTopologyNodes(
       edges.push({
         id: `e-${vId}-${sId}`, source: vId, target: sId,
         type: 'smoothstep',
-        style: { stroke: '#1e293b', strokeWidth: 1 },
+        style: { stroke: '#e2e8f0', strokeWidth: 1 },
       })
 
       if (subnet.nsg) {
@@ -517,9 +517,9 @@ function buildTopologyNodes(
 
 function IssueItem({ issue, active, onClick }: { issue: SecurityIssue; active: boolean; onClick: () => void }) {
   const SEV_STYLE = {
-    critical: { dot: '#ef4444', bg: '#1f0808', border: '#ef444430', tag: '#fca5a5', tagBg: '#7f1d1d40' },
-    high:     { dot: '#f97316', bg: '#1a0e05', border: '#f9731630', tag: '#fdba74', tagBg: '#7c2d1240' },
-    medium:   { dot: '#f59e0b', bg: '#1a1505', border: '#f59e0b30', tag: '#fcd34d', tagBg: '#78350f40' },
+    critical: { dot: '#ef4444', bg: '#fef2f2', border: '#fee2e2', tag: '#dc2626', tagBg: '#fee2e2' },
+    high:     { dot: '#f97316', bg: '#fff7ed', border: '#fed7aa', tag: '#c2410c', tagBg: '#ffedd5' },
+    medium:   { dot: '#f59e0b', bg: '#fffbeb', border: '#fde68a', tag: '#b45309', tagBg: '#fef9c3' },
   }
   const s = SEV_STYLE[issue.severity]
 
@@ -542,7 +542,7 @@ function IssueItem({ issue, active, onClick }: { issue: SecurityIssue; active: b
             <span style={{ background: s.tagBg, color: s.tag, fontSize: 9, fontWeight: 800, padding: '1px 5px', borderRadius: 4, textTransform: 'uppercase', flexShrink: 0 }}>
               {issue.severity}
             </span>
-            <span style={{ fontSize: 11, fontWeight: 600, color: '#e2e8f0', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+            <span style={{ fontSize: 11, fontWeight: 600, color: '#323130', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
               {issue.title}
             </span>
           </div>
@@ -583,7 +583,7 @@ function TrafficSimulator({ vnets }: { vnets: VNet[] }) {
     <div style={{ padding: '12px' }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 10 }}>
         <Zap style={{ color: '#60a5fa', width: 13, height: 13 }} />
-        <span style={{ fontSize: 11, fontWeight: 700, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.06em' }}>Traffic Simulator</span>
+        <span style={{ fontSize: 11, fontWeight: 700, color: '#4b4b4b', textTransform: 'uppercase', letterSpacing: '0.06em' }}>Traffic Simulator</span>
       </div>
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
@@ -592,14 +592,14 @@ function TrafficSimulator({ vnets }: { vnets: VNet[] }) {
           <input
             value={srcIp} onChange={e => setSrcIp(e.target.value)}
             placeholder="e.g. 203.0.113.1 or 10.0.1.5"
-            style={{ width: '100%', background: '#0a0f1e', border: '1px solid #1e293b', borderRadius: 6, padding: '5px 8px', fontSize: 11, color: '#94a3b8', fontFamily: 'monospace', outline: 'none', boxSizing: 'border-box' }}
+            style={{ width: '100%', background: '#f3f2f1', border: '1px solid #edebe9', borderRadius: 6, padding: '5px 8px', fontSize: 11, color: '#4b4b4b', fontFamily: 'monospace', outline: 'none', boxSizing: 'border-box' }}
           />
         </div>
         <div>
           <label style={{ fontSize: 10, color: '#475569', display: 'block', marginBottom: 4 }}>DESTINATION SUBNET</label>
           <select
             value={destSub} onChange={e => setDestSub(e.target.value)}
-            style={{ width: '100%', background: '#0a0f1e', border: '1px solid #1e293b', borderRadius: 6, padding: '5px 8px', fontSize: 11, color: '#94a3b8', outline: 'none', boxSizing: 'border-box' }}
+            style={{ width: '100%', background: '#f3f2f1', border: '1px solid #edebe9', borderRadius: 6, padding: '5px 8px', fontSize: 11, color: '#4b4b4b', outline: 'none', boxSizing: 'border-box' }}
           >
             <option value="">Select subnet…</option>
             {allSubnets.map(s => (
@@ -615,14 +615,14 @@ function TrafficSimulator({ vnets }: { vnets: VNet[] }) {
             <input
               value={port} onChange={e => setPort(e.target.value)}
               placeholder="443"
-              style={{ width: '100%', background: '#0a0f1e', border: '1px solid #1e293b', borderRadius: 6, padding: '5px 8px', fontSize: 11, color: '#94a3b8', fontFamily: 'monospace', outline: 'none', boxSizing: 'border-box' }}
+              style={{ width: '100%', background: '#f3f2f1', border: '1px solid #edebe9', borderRadius: 6, padding: '5px 8px', fontSize: 11, color: '#4b4b4b', fontFamily: 'monospace', outline: 'none', boxSizing: 'border-box' }}
             />
           </div>
           <div>
             <label style={{ fontSize: 10, color: '#475569', display: 'block', marginBottom: 4 }}>PROTOCOL</label>
             <select
               value={proto} onChange={e => setProto(e.target.value)}
-              style={{ width: '100%', background: '#0a0f1e', border: '1px solid #1e293b', borderRadius: 6, padding: '5px 8px', fontSize: 11, color: '#94a3b8', outline: 'none', boxSizing: 'border-box' }}
+              style={{ width: '100%', background: '#f3f2f1', border: '1px solid #edebe9', borderRadius: 6, padding: '5px 8px', fontSize: 11, color: '#4b4b4b', outline: 'none', boxSizing: 'border-box' }}
             >
               <option>TCP</option><option>UDP</option><option>Any</option>
             </select>
@@ -634,7 +634,7 @@ function TrafficSimulator({ vnets }: { vnets: VNet[] }) {
           disabled={!srcIp || !destSub || !port}
           style={{
             display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6,
-            background: (!srcIp || !destSub || !port) ? '#1e293b' : '#0078d4',
+            background: (!srcIp || !destSub || !port) ? '#e2e8f0' : '#0078d4',
             color: (!srcIp || !destSub || !port) ? '#334155' : '#fff',
             border: 'none', borderRadius: 7, padding: '7px 12px', fontSize: 12, fontWeight: 700,
             cursor: (!srcIp || !destSub || !port) ? 'not-allowed' : 'pointer',
@@ -657,9 +657,9 @@ function TrafficSimulator({ vnets }: { vnets: VNet[] }) {
           </div>
           <p style={{ fontSize: 11, color: verdictColor, marginBottom: 4 }}>{result.reason}</p>
           {result.matchedRule && (
-            <div style={{ background: '#0a0f1e', borderRadius: 6, padding: '7px 10px', marginTop: 6 }}>
+            <div style={{ background: '#f3f2f1', borderRadius: 6, padding: '7px 10px', marginTop: 6 }}>
               <p style={{ fontSize: 10, color: '#475569', marginBottom: 4, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Matched Rule</p>
-              <p style={{ fontSize: 11, color: '#94a3b8', fontFamily: 'monospace' }}>{result.matchedRule.name}</p>
+              <p style={{ fontSize: 11, color: '#4b4b4b', fontFamily: 'monospace' }}>{result.matchedRule.name}</p>
               <div style={{ display: 'flex', gap: 8, marginTop: 4, flexWrap: 'wrap' }}>
                 {[
                   { k: 'Priority', v: String(result.matchedRule.priority) },
@@ -669,7 +669,7 @@ function TrafficSimulator({ vnets }: { vnets: VNet[] }) {
                 ].map(({ k, v }) => (
                   <span key={k} style={{ fontSize: 10, color: '#475569' }}>
                     <span style={{ color: '#334155' }}>{k}:</span>{' '}
-                    <span style={{ color: result.matchedRule!.access === 'Allow' ? '#86efac' : '#fca5a5', fontFamily: 'monospace' }}>{v}</span>
+                    <span style={{ color: result.matchedRule!.access === 'Allow' ? '#15803d' : '#dc2626', fontFamily: 'monospace' }}>{v}</span>
                   </span>
                 ))}
               </div>
@@ -691,11 +691,11 @@ function NsgDetailPanel({ name, detail, subnet, onClose }: { name: string; detai
   const c    = RC[risk]
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', height: '100%', background: '#0d1117', borderLeft: '1px solid #1e293b' }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '12px 16px', borderBottom: '1px solid #1e293b', flexShrink: 0 }}>
+    <div style={{ display: 'flex', flexDirection: 'column', height: '100%', background: '#ffffff', borderLeft: '1px solid #edebe9' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '12px 16px', borderBottom: '1px solid #edebe9', flexShrink: 0 }}>
         <Shield style={{ color: c.border, width: 15, height: 15 }} />
-        <span style={{ fontSize: 13, fontWeight: 700, color: '#fff', flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{name}</span>
-        <span style={{ background: c.border + '20', color: c.text, fontSize: 9, fontWeight: 800, padding: '2px 7px', borderRadius: 999, textTransform: 'uppercase' }}>{risk}</span>
+        <span style={{ fontSize: 13, fontWeight: 700, color: '#323130', flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{name}</span>
+        <span style={{ background: c.border + '20', color: c.border, fontSize: 9, fontWeight: 800, padding: '2px 7px', borderRadius: 999, textTransform: 'uppercase' }}>{risk}</span>
         <button onClick={onClose} style={{ color: '#475569', background: 'none', border: 'none', cursor: 'pointer', marginLeft: 4 }}>
           <X style={{ width: 15, height: 15 }} />
         </button>
@@ -705,7 +705,7 @@ function NsgDetailPanel({ name, detail, subnet, onClose }: { name: string; detai
         <div style={{ margin: '10px 12px 0', background: c.border + '10', border: `1px solid ${c.border}25`, borderRadius: 8, padding: '8px 12px', flexShrink: 0 }}>
           <div style={{ display: 'flex', gap: 7, alignItems: 'flex-start' }}>
             <AlertTriangle style={{ color: c.border, width: 12, height: 12, flexShrink: 0, marginTop: 1 }} />
-            <p style={{ fontSize: 11, color: c.text, lineHeight: 1.5 }}>
+            <p style={{ fontSize: 11, color: c.border, lineHeight: 1.5 }}>
               {risk === 'critical' ? 'Allow-all inbound rule active. This subnet accepts connections from any source on any port.' : 'Internet-facing management ports open. Remote access services should not be exposed to 0.0.0.0/0.'}
             </p>
           </div>
@@ -720,7 +720,7 @@ function NsgDetailPanel({ name, detail, subnet, onClose }: { name: string; detai
               <p style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.06em', color: '#334155', marginBottom: 8 }}>
                 {dir} ({rules.length})
               </p>
-              <div style={{ border: '1px solid #1e293b', borderRadius: 8, overflow: 'hidden' }}>
+              <div style={{ border: '1px solid #edebe9', borderRadius: 8, overflow: 'hidden' }}>
                 {rules.map((r, i) => {
                   const isAllow   = r.access === 'Allow'
                   const isDanger  = isAllow && isPublicSource(r.source)
@@ -731,16 +731,16 @@ function NsgDetailPanel({ name, detail, subnet, onClose }: { name: string; detai
                       display: 'grid',
                       gridTemplateColumns: '38px 1fr 90px 60px 64px',
                       gap: 0,
-                      borderBottom: i < rules.length - 1 ? '1px solid #1e293b' : 'none',
-                      background: isDanger && (isAllPort || mgmtLabel) ? '#1f080810' : i % 2 === 0 ? '#0a0f1e' : 'transparent',
+                      borderBottom: i < rules.length - 1 ? '1px solid #edebe9' : 'none',
+                      background: isDanger && (isAllPort || mgmtLabel) ? '#fef2f2' : i % 2 === 0 ? '#f3f2f1' : 'transparent',
                       padding: '6px 10px',
                       alignItems: 'center',
                     }}>
                       <span style={{ fontSize: 10, color: '#334155', fontFamily: 'monospace' }}>{r.priority}</span>
-                      <span style={{ fontSize: 11, color: isDanger && (isAllPort || mgmtLabel) ? '#fca5a5' : '#64748b', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }} title={r.name}>
+                      <span style={{ fontSize: 11, color: isDanger && (isAllPort || mgmtLabel) ? '#dc2626' : '#64748b', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }} title={r.name}>
                         {r.name}
                       </span>
-                      <span style={{ fontSize: 10, fontFamily: 'monospace', color: isDanger ? '#fca5a5' : '#475569', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }} title={r.source}>
+                      <span style={{ fontSize: 10, fontFamily: 'monospace', color: isDanger ? '#dc2626' : '#475569', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }} title={r.source}>
                         {r.source}
                       </span>
                       <span style={{ fontSize: 10, fontFamily: 'monospace', color: '#475569' }}>
@@ -748,8 +748,8 @@ function NsgDetailPanel({ name, detail, subnet, onClose }: { name: string; detai
                       </span>
                       <span>
                         <span style={{
-                          background: isAllow ? '#16a34a25' : '#dc262620',
-                          color: isAllow ? '#86efac' : '#fca5a5',
+                          background: isAllow ? '#dcfce7' : '#fee2e2',
+                          color: isAllow ? '#15803d' : '#dc2626',
                           fontSize: 9, fontWeight: 800, padding: '2px 6px', borderRadius: 4,
                         }}>{r.access}</span>
                       </span>
@@ -775,11 +775,11 @@ function VNetDetailPanel({ vnet, peerings, onClose }: { vnet: VNet; peerings: VN
   const myP  = peerings.filter(p => p.fromVnet === vnet.name || p.toVnet === vnet.name)
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', height: '100%', background: '#0d1117', borderLeft: '1px solid #1e293b' }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '12px 16px', borderBottom: '1px solid #1e293b', flexShrink: 0 }}>
+    <div style={{ display: 'flex', flexDirection: 'column', height: '100%', background: '#ffffff', borderLeft: '1px solid #edebe9' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '12px 16px', borderBottom: '1px solid #edebe9', flexShrink: 0 }}>
         <Waypoints style={{ color: c.border, width: 15, height: 15 }} />
-        <span style={{ fontSize: 13, fontWeight: 700, color: '#fff', flex: 1 }}>{vnet.name}</span>
-        {vnet.role === 'hub' && <span style={{ background: '#0078d420', color: '#60a5fa', fontSize: 9, fontWeight: 800, padding: '2px 7px', borderRadius: 999 }}>HUB</span>}
+        <span style={{ fontSize: 13, fontWeight: 700, color: '#323130', flex: 1 }}>{vnet.name}</span>
+        {vnet.role === 'hub' && <span style={{ background: '#eff6ff', color: '#0078d4', fontSize: 9, fontWeight: 800, padding: '2px 7px', borderRadius: 999 }}>HUB</span>}
         <button onClick={onClose} style={{ color: '#475569', background: 'none', border: 'none', cursor: 'pointer', marginLeft: 4 }}>
           <X style={{ width: 15, height: 15 }} />
         </button>
@@ -796,7 +796,7 @@ function VNetDetailPanel({ vnet, peerings, onClose }: { vnet: VNet; peerings: VN
           ].map(({ k, v }) => (
             <div key={k} style={{ display: 'flex', justifyContent: 'space-between', gap: 8 }}>
               <span style={{ fontSize: 11, color: '#475569' }}>{k}</span>
-              <span style={{ fontSize: 11, fontFamily: 'monospace', color: '#94a3b8', textAlign: 'right', maxWidth: 160, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{v}</span>
+              <span style={{ fontSize: 11, fontFamily: 'monospace', color: '#4b4b4b', textAlign: 'right', maxWidth: 160, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{v}</span>
             </div>
           ))}
         </div>
@@ -808,9 +808,9 @@ function VNetDetailPanel({ vnet, peerings, onClose }: { vnet: VNet; peerings: VN
             const sr = subnetRisk(s)
             const sc = RC[sr]
             return (
-              <div key={s.name} style={{ display: 'flex', alignItems: 'center', gap: 8, background: '#0f172a', borderRadius: 6, padding: '7px 10px' }}>
+              <div key={s.name} style={{ display: 'flex', alignItems: 'center', gap: 8, background: '#ffffff', borderRadius: 6, padding: '7px 10px' }}>
                 <span style={{ width: 6, height: 6, borderRadius: '50%', background: sc.border, flexShrink: 0 }} />
-                <span style={{ fontSize: 11, color: '#94a3b8', flex: 1 }}>{s.name}</span>
+                <span style={{ fontSize: 11, color: '#4b4b4b', flex: 1 }}>{s.name}</span>
                 <span style={{ fontSize: 10, fontFamily: 'monospace', color: '#334155' }}>{s.addressPrefix}</span>
                 {!s.nsg && <ShieldOff style={{ color: '#f59e0b', width: 11, height: 11 }} />}
               </div>
@@ -826,11 +826,11 @@ function VNetDetailPanel({ vnet, peerings, onClose }: { vnet: VNet; peerings: VN
               {myP.map(p => {
                 const other = p.fromVnet === vnet.name ? p.toVnet : p.fromVnet
                 return (
-                  <div key={p.id} style={{ display: 'flex', alignItems: 'center', gap: 8, background: '#0f172a', borderRadius: 6, padding: '7px 10px' }}>
+                  <div key={p.id} style={{ display: 'flex', alignItems: 'center', gap: 8, background: '#ffffff', borderRadius: 6, padding: '7px 10px' }}>
                     <span style={{ width: 6, height: 6, borderRadius: '50%', background: p.state === 'Connected' ? '#22c55e' : '#ef4444', flexShrink: 0 }} />
-                    <span style={{ fontSize: 11, color: '#94a3b8', flex: 1 }}>{other}</span>
+                    <span style={{ fontSize: 11, color: '#4b4b4b', flex: 1 }}>{other}</span>
                     <span style={{ fontSize: 10, color: '#334155' }}>{p.allowGatewayTransit ? 'GW Transit' : 'Direct'}</span>
-                    <span style={{ fontSize: 9, fontWeight: 700, color: p.state === 'Connected' ? '#86efac' : '#fca5a5' }}>{p.state}</span>
+                    <span style={{ fontSize: 9, fontWeight: 700, color: p.state === 'Connected' ? '#15803d' : '#dc2626' }}>{p.state}</span>
                   </div>
                 )
               })}
@@ -864,13 +864,13 @@ function PeeringCanvas({ topology, onVnetClick, selectedVnet, highlightedNode }:
     <ReactFlow nodes={n0} edges={e0} onNodesChange={onNC} onEdgesChange={onEC}
       nodeTypes={NODE_TYPES} fitView fitViewOptions={{ padding: 0.18 }}
       minZoom={0.3} maxZoom={2.5} proOptions={{ hideAttribution: true }}>
-      <Background variant={BackgroundVariant.Dots} color="#1e293b" gap={24} size={1} />
-      <Controls style={{ background: '#0f172a', border: '1px solid #1e293b', borderRadius: 8 }} />
-      <MiniMap style={{ background: '#0a0f1e', border: '1px solid #1e293b', borderRadius: 8 }}
+      <Background variant={BackgroundVariant.Dots} color="#e2e8f0" gap={24} size={1} />
+      <Controls style={{ background: '#ffffff', border: '1px solid #edebe9', borderRadius: 8 }} />
+      <MiniMap style={{ background: '#f3f2f1', border: '1px solid #edebe9', borderRadius: 8 }}
         nodeColor={n => RC[(n.data as { risk?: string }).risk as keyof typeof RC]?.border ?? '#334155'}
-        maskColor="#0a0f1e99" />
+        maskColor="#f3f2f199" />
       <Panel position="top-right">
-        <div style={{ display: 'flex', gap: 16, background: '#0f172a', border: '1px solid #1e293b', borderRadius: 8, padding: '6px 12px' }}>
+        <div style={{ display: 'flex', gap: 16, background: '#ffffff', border: '1px solid #edebe9', borderRadius: 8, padding: '6px 12px' }}>
           {[{ color: '#0078d4', dash: false, label: 'GW Transit' }, { color: '#334155', dash: true, label: 'Direct' }].map(({ color, dash, label }) => (
             <span key={label} style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 11, color: '#475569' }}>
               <svg width={22} height={8}><line x1={0} y1={4} x2={22} y2={4} stroke={color} strokeWidth={1.5} strokeDasharray={dash ? '5 3' : undefined} /></svg>
@@ -899,13 +899,13 @@ function TopologyCanvas({ topology, rgFilter, onSubnetClick, onNsgClick, selecte
     <ReactFlow nodes={n0} edges={e0} nodeTypes={NODE_TYPES}
       fitView fitViewOptions={{ padding: 0.12 }} minZoom={0.2} maxZoom={2.5}
       proOptions={{ hideAttribution: true }}>
-      <Background variant={BackgroundVariant.Lines} color="#1e293b40" gap={32} />
-      <Controls style={{ background: '#0f172a', border: '1px solid #1e293b', borderRadius: 8 }} />
-      <MiniMap style={{ background: '#0a0f1e', border: '1px solid #1e293b', borderRadius: 8 }}
-        nodeColor={n => RC[(n.data as { risk?: string }).risk as keyof typeof RC]?.border ?? '#1e293b'}
-        maskColor="#0a0f1e99" />
+      <Background variant={BackgroundVariant.Lines} color="#e2e8f040" gap={32} />
+      <Controls style={{ background: '#ffffff', border: '1px solid #edebe9', borderRadius: 8 }} />
+      <MiniMap style={{ background: '#f3f2f1', border: '1px solid #edebe9', borderRadius: 8 }}
+        nodeColor={n => RC[(n.data as { risk?: string }).risk as keyof typeof RC]?.border ?? '#e2e8f0'}
+        maskColor="#f3f2f199" />
       <Panel position="top-right">
-        <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', background: '#0f172a', border: '1px solid #1e293b', borderRadius: 8, padding: '6px 12px' }}>
+        <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', background: '#ffffff', border: '1px solid #edebe9', borderRadius: 8, padding: '6px 12px' }}>
           {[['#ef4444','Critical'],['#f97316','High'],['#f59e0b','No NSG'],['#22c55e','Secure']].map(([color, label]) => (
             <span key={label} style={{ display: 'flex', alignItems: 'center', gap: 5, fontSize: 11, color: '#475569' }}>
               <span style={{ width: 7, height: 7, borderRadius: '50%', background: color, display: 'inline-block' }} />{label}
@@ -956,7 +956,7 @@ export default function NetworkPage() {
     return (
       <div style={{ padding: 24, display: 'flex', flexDirection: 'column', gap: 16 }}>
         {[260, 96, 'calc(100vh - 220px)'].map((h, i) => (
-          <div key={i} style={{ height: h, background: '#111827', borderRadius: 12, animation: 'pulse 2s infinite' }} />
+          <div key={i} style={{ height: h, background: '#e5e7eb', borderRadius: 12, animation: 'pulse 2s infinite' }} />
         ))}
       </div>
     )
@@ -967,23 +967,23 @@ export default function NetworkPage() {
   const highCount   = issues.filter(i => i.severity === 'high').length
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', height: 'calc(100vh - 56px)', background: '#0a0f1e' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', height: 'calc(100vh - 56px)', background: '#f3f2f1' }}>
 
       {/* ── top bar ── */}
-      <div style={{ display: 'flex', alignItems: 'center', gap: 16, padding: '10px 20px', borderBottom: '1px solid #1e293b', flexShrink: 0, flexWrap: 'wrap', rowGap: 8 }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 16, padding: '10px 20px', borderBottom: '1px solid #edebe9', flexShrink: 0, flexWrap: 'wrap', rowGap: 8 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-          <Network style={{ color: '#60a5fa', width: 18, height: 18 }} />
-          <span style={{ fontSize: 15, fontWeight: 700, color: '#fff' }}>Network Topology</span>
+          <Network style={{ color: '#0078d4', width: 18, height: 18 }} />
+          <span style={{ fontSize: 15, fontWeight: 700, color: '#323130' }}>Network Topology</span>
         </div>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: 12, fontSize: 12, color: '#475569' }}>
-          <span><span style={{ color: '#fff', fontWeight: 700 }}>{topology.vnets.length}</span> VNets</span>
-          <span style={{ color: '#1e293b' }}>·</span>
-          <span><span style={{ color: '#fff', fontWeight: 700 }}>{allSubnets.length}</span> Subnets</span>
-          <span style={{ color: '#1e293b' }}>·</span>
-          <span><span style={{ color: '#fff', fontWeight: 700 }}>{topology.peerings.length}</span> Peerings</span>
+          <span><span style={{ color: '#323130', fontWeight: 700 }}>{topology.vnets.length}</span> VNets</span>
+          <span style={{ color: '#a19f9d' }}>·</span>
+          <span><span style={{ color: '#323130', fontWeight: 700 }}>{allSubnets.length}</span> Subnets</span>
+          <span style={{ color: '#a19f9d' }}>·</span>
+          <span><span style={{ color: '#323130', fontWeight: 700 }}>{topology.peerings.length}</span> Peerings</span>
           {critCount > 0 && <>
-            <span style={{ color: '#1e293b' }}>·</span>
+            <span style={{ color: '#e2e8f0' }}>·</span>
             <span style={{ color: '#ef4444', fontWeight: 700, display: 'flex', alignItems: 'center', gap: 4 }}>
               <AlertTriangle style={{ width: 12, height: 12 }} />{critCount} critical
             </span>
@@ -994,19 +994,19 @@ export default function NetworkPage() {
           {mode === 'topology' && (
             <select
               value={rgFilter} onChange={e => setRgFilter(e.target.value)}
-              style={{ background: '#0f172a', border: '1px solid #1e293b', borderRadius: 7, padding: '5px 10px', fontSize: 12, color: '#94a3b8', outline: 'none' }}
+              style={{ background: '#ffffff', border: '1px solid #edebe9', borderRadius: 7, padding: '5px 10px', fontSize: 12, color: '#4b4b4b', outline: 'none' }}
             >
               <option value="all">All Resource Groups</option>
               {topology.resourceGroups.map(rg => <option key={rg} value={rg}>{rg}</option>)}
             </select>
           )}
-          <div style={{ display: 'flex', background: '#0f172a', border: '1px solid #1e293b', borderRadius: 8, padding: 2 }}>
+          <div style={{ display: 'flex', background: '#ffffff', border: '1px solid #edebe9', borderRadius: 8, padding: 2 }}>
             {([['peering','Peering Map',Network],['topology','Subnet Topology',Waypoints]] as const).map(([id, label, Icon]) => (
               <button key={id} onClick={() => { setMode(id); setPanel(null); setSelectedId(null); setHighlightedNode(null) }}
                 style={{
                   display: 'flex', alignItems: 'center', gap: 6, padding: '5px 12px', borderRadius: 6, border: 'none',
-                  background: mode === id ? '#1e293b' : 'transparent',
-                  color: mode === id ? '#fff' : '#475569',
+                  background: mode === id ? '#eff6ff' : 'transparent',
+                  color: mode === id ? '#0078d4' : '#475569',
                   fontSize: 12, fontWeight: 600, cursor: 'pointer',
                 }}>
                 <Icon style={{ width: 13, height: 13 }} />{label}
@@ -1020,16 +1020,16 @@ export default function NetworkPage() {
       <div style={{ display: 'flex', flex: 1, minHeight: 0 }}>
 
         {/* ── LEFT: issues + simulator ── */}
-        <div style={{ width: 280, flexShrink: 0, borderRight: '1px solid #1e293b', display: 'flex', flexDirection: 'column', background: '#0d1117' }}>
+        <div style={{ width: 280, flexShrink: 0, borderRight: '1px solid #edebe9', display: 'flex', flexDirection: 'column', background: '#ffffff' }}>
 
           {/* simulator toggle */}
-          <div style={{ borderBottom: '1px solid #1e293b' }}>
+          <div style={{ borderBottom: '1px solid #edebe9' }}>
             <button
               onClick={() => setSimOpen(o => !o)}
               style={{
                 width: '100%', display: 'flex', alignItems: 'center', gap: 8, padding: '10px 14px',
                 background: 'none', border: 'none', cursor: 'pointer', color: simOpen ? '#60a5fa' : '#475569',
-                borderBottom: simOpen ? '1px solid #1e293b' : 'none',
+                borderBottom: simOpen ? '1px solid #edebe9' : 'none',
               }}
             >
               <Zap style={{ width: 13, height: 13, flexShrink: 0 }} />
@@ -1042,12 +1042,12 @@ export default function NetworkPage() {
           </div>
 
           {/* issues header */}
-          <div style={{ padding: '10px 14px 6px', borderBottom: '1px solid #1e293b', flexShrink: 0 }}>
+          <div style={{ padding: '10px 14px 6px', borderBottom: '1px solid #edebe9', flexShrink: 0 }}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 8 }}>
-              <span style={{ fontSize: 11, fontWeight: 700, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+              <span style={{ fontSize: 11, fontWeight: 700, color: '#4b4b4b', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
                 Security Findings
               </span>
-              <span style={{ background: critCount > 0 ? '#7f1d1d40' : '#1e293b', color: critCount > 0 ? '#fca5a5' : '#475569', fontSize: 10, fontWeight: 800, padding: '1px 7px', borderRadius: 999 }}>
+              <span style={{ background: critCount > 0 ? '#fee2e2' : '#f3f2f1', color: critCount > 0 ? '#dc2626' : '#605e5c', fontSize: 10, fontWeight: 800, padding: '1px 7px', borderRadius: 999 }}>
                 {issues.length}
               </span>
             </div>
@@ -1056,8 +1056,8 @@ export default function NetworkPage() {
                 <button key={f} onClick={() => setIssueFilter(f)}
                   style={{
                     padding: '2px 8px', borderRadius: 5, border: 'none', cursor: 'pointer', fontSize: 10, fontWeight: 600,
-                    background: issueFilter === f ? '#1e293b' : 'transparent',
-                    color: issueFilter === f ? '#fff' : '#334155',
+                    background: issueFilter === f ? '#eff6ff' : 'transparent',
+                    color: issueFilter === f ? '#0078d4' : '#334155',
                     textTransform: 'capitalize',
                   }}>
                   {f}

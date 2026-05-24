@@ -120,19 +120,18 @@ export default function Sidebar() {
   return (
     <aside
       className={clsx(
-        'flex flex-col shrink-0 bg-[#111827] border-r border-white/6 transition-all duration-200',
+        'flex flex-col shrink-0 bg-[#1b3a5c] border-r border-[#154a7a] transition-all duration-200',
         collapsed ? 'w-14' : 'w-56'
       )}
     >
       {/* Logo */}
-      <div className="flex items-center gap-2.5 px-3 py-4 border-b border-white/6 min-h-14">
-        <div className="shrink-0 w-7 h-7 bg-[#0078d4] rounded flex items-center justify-center">
-          <Shield className="w-4 h-4 text-white" />
+      <div className="flex items-center gap-2.5 px-3 py-4 border-b border-white/10 min-h-14">
+        <div className="shrink-0 w-7 h-7 bg-white rounded flex items-center justify-center">
+          <Shield className="w-4 h-4 text-[#0078d4]" />
         </div>
         {!collapsed && (
-          <span className="text-[13px] font-semibold text-white leading-tight">
-            Security<br />
-            <span className="text-[#0078d4]">Defender</span>
+          <span className="text-[13px] font-semibold text-white leading-tight tracking-tight">
+            Vigil
           </span>
         )}
       </div>
@@ -142,12 +141,12 @@ export default function Sidebar() {
         {NAV.map((section) => (
           <div key={section.heading}>
             {section.heading && !collapsed && (
-              <p className="px-3 pt-2 pb-1 text-[10px] font-semibold uppercase tracking-widest text-slate-500">
+              <p className="px-3 pt-2 pb-1 text-[10px] font-semibold uppercase tracking-widest text-white/40">
                 {section.heading}
               </p>
             )}
             {section.heading && collapsed && (
-              <div className="mx-2 my-1 border-t border-white/6" />
+              <div className="mx-2 my-1 border-t border-white/10" />
             )}
             {section.items.map((item) => {
               const active = pathname === item.href || (item.href !== '/' && pathname.startsWith(item.href))
@@ -160,8 +159,8 @@ export default function Sidebar() {
                   className={clsx(
                     'flex items-center gap-2.5 mx-1.5 px-2 py-1.5 rounded text-[13px] transition-colors',
                     active
-                      ? 'bg-[#0078d4]/20 text-[#60a5fa]'
-                      : 'text-slate-400 hover:bg-white/5 hover:text-slate-200'
+                      ? 'bg-white/15 text-white font-medium'
+                      : 'text-white/60 hover:bg-white/8 hover:text-white'
                   )}
                 >
                   <Icon className="w-4 h-4 shrink-0" />
@@ -169,7 +168,7 @@ export default function Sidebar() {
                     <>
                       <span className="truncate flex-1">{item.label}</span>
                       {badgeMap[item.href] != null && badgeMap[item.href]! > 0 && (
-                        <span className="ml-auto rounded-full bg-red-600/80 px-1.5 py-0.5 text-[10px] font-bold leading-none text-white tabular-nums">
+                        <span className="ml-auto rounded-full bg-red-500 px-1.5 py-0.5 text-[10px] font-bold leading-none text-white tabular-nums">
                           {badgeMap[item.href]! > 999 ? '999+' : badgeMap[item.href]}
                         </span>
                       )}
@@ -185,7 +184,7 @@ export default function Sidebar() {
       {/* Collapse toggle */}
       <button
         onClick={() => setCollapsed((c) => !c)}
-        className="flex items-center justify-center py-3 border-t border-white/6 text-slate-500 hover:text-slate-300 transition-colors"
+        className="flex items-center justify-center py-3 border-t border-white/10 text-white/40 hover:text-white transition-colors"
       >
         {collapsed ? <ChevronRight className="w-4 h-4" /> : <ChevronLeft className="w-4 h-4" />}
       </button>

@@ -38,7 +38,7 @@ export default function SignInGeoMap({ riskSummary, highlighted }: Props) {
   function fillColor(numericId: number): string {
     if (numericId === highlightedNumeric) return '#f0abfc' // violet-300 — selected
     const count = countByNumeric[numericId]
-    if (!count) return '#1e293b'
+    if (!count) return '#e2e8f0'
     const intensity = count / maxCount
     if (intensity > 0.7) return '#dc2626'
     if (intensity > 0.4) return '#ea580c'
@@ -51,7 +51,7 @@ export default function SignInGeoMap({ riskSummary, highlighted }: Props) {
   }
 
   function strokeColor(numericId: number): string {
-    return numericId === highlightedNumeric ? '#c026d3' : '#0f172a'
+    return numericId === highlightedNumeric ? '#c026d3' : '#94a3b8'
   }
 
   function labelFor(numericId: number): { country: string; count: number } | null {
@@ -89,7 +89,7 @@ export default function SignInGeoMap({ riskSummary, highlighted }: Props) {
                     onMouseLeave={() => setTooltip(null)}
                     style={{
                       default: { outline: 'none', opacity: highlighted && !isHighlighted ? 0.5 : 1 },
-                      hover: { fill: fill === '#1e293b' ? '#334155' : fill, outline: 'none', opacity: 0.85 },
+                      hover: { fill: fill === '#e2e8f0' ? '#cbd5e1' : fill, outline: 'none', opacity: 0.85 },
                       pressed: { outline: 'none' },
                     }}
                   />
@@ -102,14 +102,14 @@ export default function SignInGeoMap({ riskSummary, highlighted }: Props) {
 
       {/* Tooltip */}
       {tooltip && (
-        <div className="absolute top-2 right-2 rounded-lg bg-slate-900/90 px-3 py-2 text-xs ring-1 ring-slate-700 pointer-events-none">
-          <span className="font-semibold text-slate-200">{tooltip.country}</span>
-          <span className="ml-2 text-slate-400">{tooltip.count} sign-ins</span>
+        <div className="absolute top-2 right-2 rounded-lg bg-white/90 px-3 py-2 text-xs ring-1 ring-[#edebe9] pointer-events-none">
+          <span className="font-semibold text-[#323130]">{tooltip.country}</span>
+          <span className="ml-2 text-[#605e5c]">{tooltip.count} sign-ins</span>
         </div>
       )}
 
       {/* Legend */}
-      <div className="mt-2 flex items-center gap-3 text-[10px] text-slate-500">
+      <div className="mt-2 flex items-center gap-3 text-[10px] text-[#797775]">
         <span>Volume:</span>
         {[
           { color: 'bg-sky-700', label: 'Low' },

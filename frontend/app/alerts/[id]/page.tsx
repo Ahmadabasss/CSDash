@@ -48,7 +48,7 @@ export default async function AlertDetailPage({ params }: { params: Promise<{ id
 
   return (
     <div className="px-6 py-6 max-w-5xl">
-      <Link href="/alerts" className="inline-flex items-center gap-1.5 text-sm text-slate-400 hover:text-slate-200 mb-6 transition-colors">
+      <Link href="/alerts" className="inline-flex items-center gap-1.5 text-sm text-[#605e5c] hover:text-[#323130] mb-6 transition-colors">
         <ArrowLeft className="w-4 h-4" /> Back to Alerts
       </Link>
 
@@ -56,8 +56,8 @@ export default async function AlertDetailPage({ params }: { params: Promise<{ id
       <div className="flex items-start gap-4 mb-6">
         <div className="mt-1"><SeverityBadge severity={alert.severity} /></div>
         <div className="flex-1 min-w-0">
-          <h1 className="text-xl font-semibold text-white leading-snug">{alert.title}</h1>
-          <p className="text-sm text-slate-400 mt-1 font-mono">{alert.id}</p>
+          <h1 className="text-xl font-semibold text-[#323130] leading-snug">{alert.title}</h1>
+          <p className="text-sm text-[#605e5c] mt-1 font-mono">{alert.id}</p>
         </div>
         <StatusBadge status={alert.status} />
       </div>
@@ -72,12 +72,12 @@ export default async function AlertDetailPage({ params }: { params: Promise<{ id
         <div className="lg:col-span-2 space-y-4">
           {/* Description */}
           <Section title="Description">
-            <p className="text-slate-300 text-sm leading-relaxed">{alert.description}</p>
+            <p className="text-[#4b4b4b] text-sm leading-relaxed">{alert.description}</p>
           </Section>
 
           {/* Recommended Actions */}
           <Section title="Recommended Actions">
-            <p className="text-slate-300 text-sm leading-relaxed">{alert.recommendedActions || 'No remediation steps provided.'}</p>
+            <p className="text-[#4b4b4b] text-sm leading-relaxed">{alert.recommendedActions || 'No remediation steps provided.'}</p>
           </Section>
 
           {/* Evidence */}
@@ -85,12 +85,12 @@ export default async function AlertDetailPage({ params }: { params: Promise<{ id
             <Section title="Evidence">
               {resources.length > 0 && (
                 <div className="mb-3">
-                  <p className="text-xs text-slate-500 uppercase tracking-wider mb-2">Affected Resources</p>
+                  <p className="text-xs text-[#797775] uppercase tracking-wider mb-2">Affected Resources</p>
                   <div className="space-y-1.5">
                     {resources.map((e, i) => (
-                      <div key={i} className="flex items-center gap-2 bg-slate-900/60 rounded px-3 py-2">
+                      <div key={i} className="flex items-center gap-2 bg-white/60 rounded px-3 py-2">
                         <Shield className="w-3.5 h-3.5 text-[#0078d4] shrink-0" />
-                        <code className="text-[11px] text-slate-300 font-mono break-all">{e.resourceId}</code>
+                        <code className="text-[11px] text-[#4b4b4b] font-mono break-all">{e.resourceId}</code>
                       </div>
                     ))}
                   </div>
@@ -98,14 +98,14 @@ export default async function AlertDetailPage({ params }: { params: Promise<{ id
               )}
               {users.length > 0 && (
                 <div>
-                  <p className="text-xs text-slate-500 uppercase tracking-wider mb-2">Involved Accounts</p>
+                  <p className="text-xs text-[#797775] uppercase tracking-wider mb-2">Involved Accounts</p>
                   <div className="space-y-1.5">
                     {users.map((e, i) => (
-                      <div key={i} className="flex items-center gap-2 bg-slate-900/60 rounded px-3 py-2">
+                      <div key={i} className="flex items-center gap-2 bg-white/60 rounded px-3 py-2">
                         <User className="w-3.5 h-3.5 text-violet-400 shrink-0" />
                         <div>
-                          <p className="text-[12px] text-slate-200 font-medium">{e.userAccount?.userPrincipalName}</p>
-                          <p className="text-[11px] text-slate-500">{e.userAccount?.accountName}</p>
+                          <p className="text-[12px] text-[#323130] font-medium">{e.userAccount?.userPrincipalName}</p>
+                          <p className="text-[11px] text-[#797775]">{e.userAccount?.accountName}</p>
                         </div>
                       </div>
                     ))}
@@ -122,7 +122,7 @@ export default async function AlertDetailPage({ params }: { params: Promise<{ id
                 {alert.mitreTechniques.map(t => (
                   <div key={t} className="flex items-center gap-3">
                     <MitreTag technique={t} />
-                    <span className="text-sm text-slate-400">{MITRE_NAMES[t] ?? 'Technique'}</span>
+                    <span className="text-sm text-[#605e5c]">{MITRE_NAMES[t] ?? 'Technique'}</span>
                   </div>
                 ))}
               </div>
@@ -159,8 +159,8 @@ export default async function AlertDetailPage({ params }: { params: Promise<{ id
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <div className="bg-[#1e293b] border border-white/6 rounded-lg p-5">
-      <h2 className="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-3">{title}</h2>
+    <div className="bg-white border border-[#edebe9] rounded-lg p-5">
+      <h2 className="text-xs font-semibold uppercase tracking-wider text-[#797775] mb-3">{title}</h2>
       {children}
     </div>
   )
@@ -169,8 +169,8 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 function MetaRow({ label, value, dim }: { label: string; value: string; dim?: boolean }) {
   return (
     <div className="flex justify-between gap-2">
-      <dt className="text-xs text-slate-500 shrink-0">{label}</dt>
-      <dd className={`text-xs text-right truncate ${dim ? 'text-slate-600' : 'text-slate-300'}`}>{value}</dd>
+      <dt className="text-xs text-[#797775] shrink-0">{label}</dt>
+      <dd className={`text-xs text-right truncate ${dim ? 'text-[#a19f9d]' : 'text-[#4b4b4b]'}`}>{value}</dd>
     </div>
   )
 }
@@ -179,8 +179,8 @@ function TimeRow({ label, value }: { label: string; value: string }) {
   const d = new Date(value)
   return (
     <div>
-      <dt className="text-xs text-slate-500">{label}</dt>
-      <dd className="text-xs text-slate-300 mt-0.5">{d.toLocaleString()}</dd>
+      <dt className="text-xs text-[#797775]">{label}</dt>
+      <dd className="text-xs text-[#4b4b4b] mt-0.5">{d.toLocaleString()}</dd>
     </div>
   )
 }

@@ -58,18 +58,18 @@ export default function RecommendationsTable({ limit = 50, showPagination = true
       <div className="flex flex-wrap gap-2">
         {(['', 'high', 'medium', 'low'] as const).map(s => (
           <button key={s || 'all'} onClick={() => { setSeverity(s); setPage(1) }}
-            className={`rounded px-3 py-1 text-xs font-medium transition-colors ${severity === s ? 'bg-sky-600 text-white' : 'bg-slate-800 text-slate-400 hover:text-slate-200'}`}>
+            className={`rounded px-3 py-1 text-xs font-medium transition-colors ${severity === s ? 'bg-[#0078d4] text-white' : 'bg-[#f3f2f1] text-[#605e5c] hover:text-[#323130]'}`}>
             {s || 'All severities'}
           </button>
         ))}
         <div className="ml-auto flex flex-wrap gap-2">
           {(['', 'Unhealthy', 'Healthy'] as const).map(s => (
             <button key={s || 'all'} onClick={() => { setStatus(s); setPage(1) }}
-              className={`rounded px-3 py-1 text-xs font-medium transition-colors ${status === s ? 'bg-sky-600 text-white' : 'bg-slate-800 text-slate-400 hover:text-slate-200'}`}>
+              className={`rounded px-3 py-1 text-xs font-medium transition-colors ${status === s ? 'bg-[#0078d4] text-white' : 'bg-[#f3f2f1] text-[#605e5c] hover:text-[#323130]'}`}>
               {s || 'All statuses'}
             </button>
           ))}
-          <button onClick={handleExport} className="flex items-center gap-1.5 rounded px-3 py-1 text-xs font-medium bg-slate-800 text-slate-400 hover:text-slate-200 transition-colors" title="Export to CSV">
+          <button onClick={handleExport} className="flex items-center gap-1.5 rounded px-3 py-1 text-xs font-medium bg-[#f3f2f1] text-[#605e5c] hover:text-[#323130] transition-colors" title="Export to CSV">
             <Download className="h-3.5 w-3.5" /> Export
           </button>
         </div>
@@ -79,12 +79,12 @@ export default function RecommendationsTable({ limit = 50, showPagination = true
       {categories.length > 0 && (
         <div className="flex flex-wrap gap-1">
           <button onClick={() => { setCategory(''); setPage(1) }}
-            className={`rounded-full px-3 py-0.5 text-xs transition-colors ${category === '' ? 'bg-sky-600 text-white' : 'bg-slate-800 text-slate-400 hover:text-slate-200'}`}>
+            className={`rounded-full px-3 py-0.5 text-xs transition-colors ${category === '' ? 'bg-[#0078d4] text-white' : 'bg-[#f3f2f1] text-[#605e5c] hover:text-[#323130]'}`}>
             All
           </button>
           {categories.slice(0, 6).map(c => (
             <button key={c.category} onClick={() => { setCategory(c.category); setPage(1) }}
-              className={`rounded-full px-3 py-0.5 text-xs transition-colors ${category === c.category ? 'bg-sky-600 text-white' : 'bg-slate-800 text-slate-400 hover:text-slate-200'}`}>
+              className={`rounded-full px-3 py-0.5 text-xs transition-colors ${category === c.category ? 'bg-[#0078d4] text-white' : 'bg-[#f3f2f1] text-[#605e5c] hover:text-[#323130]'}`}>
               {c.category} <span className="opacity-60">({c.count})</span>
             </button>
           ))}
@@ -92,12 +92,12 @@ export default function RecommendationsTable({ limit = 50, showPagination = true
       )}
 
       {/* Table */}
-      <div className="overflow-x-auto rounded-xl ring-1 ring-slate-700/60">
+      <div className="overflow-x-auto rounded-xl ring-1 ring-[#edebe9]">
         <table className="w-full text-sm">
           <thead>
-            <tr className="border-b border-slate-700/60 bg-slate-800/40">
+            <tr className="border-b border-[#edebe9] bg-white">
               {['Severity', 'Recommendation', 'Resource', 'Category', 'Effort', 'Status'].map(h => (
-                <th key={h} className="px-4 py-3 text-left text-xs font-semibold uppercase tracking-wide text-slate-400">{h}</th>
+                <th key={h} className="px-4 py-3 text-left text-xs font-semibold uppercase tracking-wide text-[#605e5c]">{h}</th>
               ))}
             </tr>
           </thead>
@@ -106,7 +106,7 @@ export default function RecommendationsTable({ limit = 50, showPagination = true
               ? Array.from({ length: 8 }).map((_, i) => (
                   <tr key={i} className="animate-pulse">
                     {Array.from({ length: 6 }).map((_, j) => (
-                      <td key={j} className="px-4 py-3"><div className="h-4 rounded bg-slate-800" /></td>
+                      <td key={j} className="px-4 py-3"><div className="h-4 rounded bg-[#f3f2f1]" /></td>
                     ))}
                   </tr>
                 ))
@@ -114,23 +114,23 @@ export default function RecommendationsTable({ limit = 50, showPagination = true
                   <tr
                     key={rec.id}
                     onClick={() => router.push(`/recommendations/${rec.name}`)}
-                    className="group hover:bg-slate-800/40 transition-colors cursor-pointer"
+                    className="group hover:bg-white transition-colors cursor-pointer"
                   >
                     <td className="px-4 py-3"><SeverityBadge severity={rec.properties.metadata.severity} /></td>
                     <td className="px-4 py-3 max-w-xs">
-                      <p className="text-slate-200 group-hover:text-sky-400 line-clamp-2 transition-colors">
+                      <p className="text-[#323130] group-hover:text-[#0078d4] line-clamp-2 transition-colors">
                         {rec.properties.displayName}
                       </p>
                     </td>
-                    <td className="px-4 py-3 text-slate-400 font-mono text-xs max-w-[160px] truncate">
+                    <td className="px-4 py-3 text-[#605e5c] font-mono text-xs max-w-[160px] truncate">
                       {rec.properties.resourceDetails.ResourceName}
                     </td>
                     <td className="px-4 py-3">
-                      <span className="rounded-full bg-slate-800 px-2 py-0.5 text-xs text-slate-300">
+                      <span className="rounded-full bg-[#f3f2f1] px-2 py-0.5 text-xs text-[#4b4b4b]">
                         {rec.properties.metadata.categories[0] ?? '—'}
                       </span>
                     </td>
-                    <td className="px-4 py-3 text-slate-400 text-xs">{rec.properties.metadata.implementationEffort}</td>
+                    <td className="px-4 py-3 text-[#605e5c] text-xs">{rec.properties.metadata.implementationEffort}</td>
                     <td className="px-4 py-3"><StatusBadge status={rec.properties.status.code} /></td>
                   </tr>
                 ))
@@ -140,16 +140,16 @@ export default function RecommendationsTable({ limit = 50, showPagination = true
       </div>
 
       {showPagination && data && data.pages > 1 && (
-        <div className="flex items-center justify-between text-sm text-slate-400">
+        <div className="flex items-center justify-between text-sm text-[#605e5c]">
           <span>{data.total.toLocaleString()} recommendations</span>
           <div className="flex items-center gap-1">
             <button onClick={() => setPage(p => Math.max(1, p - 1))} disabled={page === 1}
-              className="rounded p-1.5 hover:bg-slate-800 disabled:opacity-30 transition-colors">
+              className="rounded p-1.5 hover:bg-[#f3f2f1] disabled:opacity-30 transition-colors">
               <ChevronLeft className="h-4 w-4" />
             </button>
             <span className="px-3">Page {page} of {data.pages}</span>
             <button onClick={() => setPage(p => Math.min(data.pages, p + 1))} disabled={page === data.pages}
-              className="rounded p-1.5 hover:bg-slate-800 disabled:opacity-30 transition-colors">
+              className="rounded p-1.5 hover:bg-[#f3f2f1] disabled:opacity-30 transition-colors">
               <ChevronRight className="h-4 w-4" />
             </button>
           </div>
