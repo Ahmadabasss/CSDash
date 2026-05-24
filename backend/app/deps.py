@@ -4,7 +4,6 @@ from .config import SCENARIOS_DIR, get_settings
 from .services.base import DataSource
 from .services.mock import MockDataSource
 
-# Module-level singleton — replaced by the scenario switcher at runtime.
 _instance: DataSource | None = None
 _current_scenario: str = "noisy"
 
@@ -19,13 +18,11 @@ def get_data_source() -> DataSource:
         elif settings.data_source == "sql":
             from .services.sql import SqlDataSource
             _instance = SqlDataSource(
-                server   = settings.sql_server,
-                database = settings.sql_database,
+                connection_string=settings.sql_connection_string,
             )
         else:
             raise NotImplementedError(
-                f"Unknown DATA_SOURCE='{settings.data_source}'. "
-                "Valid values: mock, sql"
+                f"Unknown DATA_SOURCE='{settings.data_source}'. Valid values: mock, sql"
             )
     return _instance
 

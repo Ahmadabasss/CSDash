@@ -9,18 +9,15 @@ Reads from:
 Usage:
     # from the repo root
     python backend/scripts/seed_sql.py \
-        --server vigil-sql.database.windows.net \
-        --database vigil-security \
+        --conn "Driver={ODBC Driver 18 for SQL Server};Server=tcp:..." \
         [--scenario noisy|compromised|secured]
 
-Auth: DefaultAzureCredential  (run `az login` locally, or use Managed Identity in Azure).
-Requires: pip install pyodbc azure-identity
+Requires: pip install pyodbc
 """
 from __future__ import annotations
 
 import argparse
 import json
-import struct
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -29,24 +26,10 @@ ROOT = Path(__file__).parent.parent.parent   # repo root
 SCENARIOS_DIR = ROOT / "data" / "big-mock-data" / "generated" / "scenarios"
 NETWORK_FILE  = ROOT / "backend" / "mock_data" / "network.json"
 
-SQL_SCOPE  = "https://database.windows.net/.default"
-SQL_DRIVER = "ODBC Driver 18 for SQL Server"
 
-
-def get_connection(server: str, database: str):
+def get_connection(conn_str: str):
     import pyodbc
-    from azure.identity import DefaultAzureCredential
-
-    cred  = DefaultAzureCredential()
-    token = cred.get_token(SQL_SCOPE).token
-    token_bytes = bytes(struct.pack("=i", len(token) * 2)) + token.encode("utf-16-le")
-    conn_str = (
-        f"DRIVER={{{SQL_DRIVER}}};"
-        f"SERVER={server};"
-        f"DATABASE={database};"
-        "Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
-    )
-    return pyodbc.connect(conn_str, attrs_before={1256: token_bytes}, autocommit=False)
+    return pyodbc.connect(conn_str, autocommit=False)
 
 
 def upsert(cur, table: str, pk_col: str, pk_val: str, row: dict) -> None:
@@ -246,8 +229,7 @@ SEEDERS = {
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Seed Azure SQL DB from mock JSON files")
-    parser.add_argument("--server",   required=True, help="SQL server FQDN")
-    parser.add_argument("--database", required=True, help="Database name")
+    parser.add_argument("--conn",     required=True, help="Full ODBC connection string (from Azure Portal → Connection strings → ODBC)")
     parser.add_argument("--scenario", default="noisy", choices=["noisy", "compromised", "secured"])
     args = parser.parse_args()
 
@@ -255,8 +237,8 @@ def main() -> None:
     if not scenario_dir.exists():
         sys.exit(f"Scenario directory not found: {scenario_dir}")
 
-    print(f"Connecting to {args.server}/{args.database} …")
-    conn = get_connection(args.server, args.database)
+    print("Connecting …")
+    conn = get_connection(args.conn)
     cur  = conn.cursor()
 
     try:

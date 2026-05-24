@@ -3,47 +3,38 @@ SqlDataSource — reads all security data from Azure SQL Database.
 Implements the same DataSource protocol as MockDataSource so routers
 need zero changes.
 
-Authentication: DefaultAzureCredential (passwordless).
-  - In Azure: automatically uses the assigned Managed Identity.
-  - Locally: uses `az login` credential (run `az login` once in your terminal).
-
-Required env vars:
-    DATA_SOURCE=sql
-    SQL_SERVER=vigil-sql.database.windows.net
-    SQL_DATABASE=vigil-security
+Setup:
+  1. Set DATA_SOURCE=sql in .env
+  2. Set SQL_CONNECTION_STRING to the ODBC connection string from Azure Portal:
+       Azure Portal → your SQL Database → Connection strings → ODBC tab
+     Example:
+       Driver={ODBC Driver 18 for SQL Server};Server=tcp:myserver.database.windows.net,1433;
+       Database=mydb;Uid=myuser;Pwd=mypassword;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;
+  3. Run scripts/create_schema.sql to create tables
+  4. Run scripts/seed_sql.py to load data
 """
 from __future__ import annotations
 
 import asyncio
 import json
-import struct
 from typing import Any
 
 import pyodbc
-from azure.identity import DefaultAzureCredential
-
-SQL_SCOPE  = "https://database.windows.net/.default"
-SQL_DRIVER = "ODBC Driver 18 for SQL Server"
 
 
 class SqlDataSource:
-    def __init__(self, server: str, database: str) -> None:
-        self._server   = server
-        self._database = database
-        self._cred     = DefaultAzureCredential()
+    def __init__(self, connection_string: str) -> None:
+        if not connection_string:
+            raise ValueError(
+                "SQL_CONNECTION_STRING is not set in .env. "
+                "Copy it from Azure Portal → SQL Database → Connection strings → ODBC."
+            )
+        self._conn_str = connection_string
 
     # ── connection ───────────────────────────────────────────────────────────
 
     def _connect(self) -> pyodbc.Connection:
-        token = self._cred.get_token(SQL_SCOPE).token
-        token_bytes = bytes(struct.pack("=i", len(token) * 2)) + token.encode("utf-16-le")
-        conn_str = (
-            f"DRIVER={{{SQL_DRIVER}}};"
-            f"SERVER={self._server};"
-            f"DATABASE={self._database};"
-            "Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
-        )
-        return pyodbc.connect(conn_str, attrs_before={1256: token_bytes})
+        return pyodbc.connect(self._conn_str)
 
     def _q1(self, sql: str, params: tuple = ()) -> dict | None:
         with self._connect() as conn:
@@ -71,8 +62,7 @@ class SqlDataSource:
     async def get_alerts(self, status: str | None = None) -> list[dict]:
         if status:
             return await self._fetch_many(
-                "SELECT payload FROM dbo.alerts"
-                " WHERE status = ? ORDER BY created_datetime DESC;",
+                "SELECT payload FROM dbo.alerts WHERE status = ? ORDER BY created_datetime DESC;",
                 (status,),
             )
         return await self._fetch_many(
