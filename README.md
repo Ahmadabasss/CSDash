@@ -2,11 +2,10 @@
 
 <img src="docs/screenshots/overview.png" alt="Vigil Dashboard" width="900"/>
 
-# Vigil
+<h1>Vigil — Azure Security Posture Dashboard</h1>
 
-**Azure Security Posture Dashboard**
-
-A single-pane-of-glass security operations dashboard for Microsoft Azure — real-time alerts, compliance posture, identity risk, network topology, and threat investigation in one place.
+<p>A single-pane-of-glass security operations dashboard for Microsoft Azure.<br/>
+Surfaces alerts, compliance posture, identity risk, network topology, CVEs, and threat investigation — all in one place.</p>
 
 ![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=flat&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?style=flat&logo=fastapi&logoColor=white)
@@ -20,36 +19,40 @@ A single-pane-of-glass security operations dashboard for Microsoft Azure — rea
 
 ## What is Vigil?
 
-Vigil pulls security data from **Microsoft Defender for Cloud**, **Microsoft Graph Security**, and **Azure Resource Graph** and presents it in a clean, Azure Portal–styled dashboard — designed for security engineers and cloud operators who need situational awareness fast.
+Vigil replaces clicking through 10 different Azure Portal blades by pulling everything into one clean dashboard — built for security engineers and cloud operators who need situational awareness fast.
 
-- No clicking through 10 Azure Portal blades to understand your posture
-- All data surfaced in one place: alerts, CVEs, compliance controls, sign-in risk, network exposure, ghost resources
-- Runs against **Azure SQL Database** (production) or **built-in mock data** (zero-config local dev)
+It connects to **Azure SQL Database** and displays data across every security domain:
+
+- Who is attacking you (alerts, incidents, MITRE ATT&CK techniques)
+- What is exposed (CVEs, open recommendations, ghost resources)
+- How compliant you are (CIS, NIST, ISO 27001, PCI-DSS, SOC 2, HIPAA)
+- Who is logging in (sign-in risk, risky users, geography)
+- How your network looks (VNet topology, NSG rules, traffic simulation)
 
 ---
 
-## Pages
+## Pages & Features
 
 <table>
   <tr>
-    <td><b>Overview</b><br/>Secure score, MITRE heatmap, compliance donut, top alerts</td>
-    <td><b>Alerts</b><br/>556 alerts, sortable by severity/date, MITRE ATT&CK column</td>
+    <td align="center"><b>Overview</b></td>
+    <td align="center"><b>Alerts</b></td>
   </tr>
   <tr>
     <td><img src="docs/screenshots/overview.png"/></td>
     <td><img src="docs/screenshots/alerts.png"/></td>
   </tr>
   <tr>
-    <td><b>Network Topology</b><br/>VNet peering map, NSG inspector, traffic simulator</td>
-    <td><b>Compliance</b><br/>CIS, NIST, ISO 27001, PCI-DSS, SOC 2, HIPAA and more</td>
+    <td align="center"><b>Network Topology</b></td>
+    <td align="center"><b>Compliance</b></td>
   </tr>
   <tr>
     <td><img src="docs/screenshots/network.png"/></td>
     <td><img src="docs/screenshots/compliance.png"/></td>
   </tr>
   <tr>
-    <td><b>CVEs</b><br/>Risk-ranked vulnerabilities, CVSS scores, exploit/ransomware tags</td>
-    <td><b>Incidents</b><br/>Sentinel incidents, tactic chains, severity breakdown</td>
+    <td align="center"><b>CVEs</b></td>
+    <td align="center"><b>Incidents</b></td>
   </tr>
   <tr>
     <td><img src="docs/screenshots/vulnerabilities.png"/></td>
@@ -57,164 +60,308 @@ Vigil pulls security data from **Microsoft Defender for Cloud**, **Microsoft Gra
   </tr>
 </table>
 
----
-
-## Feature List
-
-| Area | Features |
-|------|----------|
-| **Dashboard** | Secure score gauge + delta, 12-week trend line, compliance donut, MITRE ATT&CK heatmap, sign-in risk summary, ghost resource callout |
-| **Alerts** | Paginated · sortable · filterable by severity/status/category · MITRE technique tags · full detail drill-down |
-| **Recommendations** | Severity-ranked · filterable by category · effort/impact metadata |
-| **CVEs** | CVSS v3 scores · exposed machine counts · CISA KEV exploit tags · ransomware/APT threat tags |
-| **Compliance** | 8 standards (CIS 1.4, NIST 800-53, ISO 27001, PCI-DSS 4.0, SOC 2, HIPAA-HITRUST, CMMC-L3, Security Benchmark) · pass/fail/skipped breakdown |
-| **Identity Risk** | Sign-in log · risk level · failed logins · top risky IPs · geography map · risky users |
-| **Network Topology** | Interactive VNet peering map · subnet topology · NSG rule inspector · per-rule Allow/Deny badges · traffic simulator |
-| **Ghost Resources** | Detects deallocated VMs, orphaned public IPs, stale NSGs, abandoned storage · risk scoring · remediation steps |
-| **Blast Radius** | Force-directed graph showing attack propagation from any compromised resource |
-| **Incidents** | Sentinel incident list · severity/status/tactic breakdown · related alerts |
-| **Scenario Switcher** | Hot-swap between noisy / compromised / secured mock scenarios without restarting |
+| Page | What it shows |
+|------|--------------|
+| **Overview** | Secure score gauge + trend, compliance donut, top alerts, MITRE ATT&CK heatmap, sign-in risk, ghost resource callout |
+| **Alerts** | All security alerts — paginated, sortable, filterable by severity/status/category — with MITRE technique tags and full detail drill-down |
+| **Recommendations** | Unhealthy Defender for Cloud recommendations ranked by severity with category filters |
+| **CVEs** | Vulnerabilities ranked by risk score — CVSS v3, exposed machine count, CISA KEV exploit tags, ransomware/APT threat tags |
+| **Compliance** | 8 regulatory standards (CIS 1.4, NIST 800-53, ISO 27001, PCI-DSS 4.0, SOC 2, HIPAA-HITRUST, CMMC-L3, Security Benchmark) with pass/fail/skipped counts |
+| **Sign-ins** | Authentication log with risk level, failed logins, top risky IPs, sign-in geography map |
+| **Risky Users** | Users flagged by Microsoft Entra ID with risk level history |
+| **Incidents** | Microsoft Sentinel incidents with severity breakdown, tactic chains, related alerts |
+| **Network Topology** | Interactive VNet peering map, subnet topology, NSG rule inspector with per-rule Allow/Deny badges, live traffic simulator |
+| **Ghost Resources** | Detects deallocated VMs, orphaned public IPs, stale NSGs, and abandoned storage — with risk scoring and step-by-step remediation |
+| **Blast Radius** | Force-directed graph showing how an attack propagates from any compromised resource |
+| **Resources** | Full Azure resource inventory with security scores and issue counts |
+| **Virtual Machines** | VM inventory with MDE status, patch state, vulnerability counts |
+| **Endpoints** | Endpoint security posture from Microsoft Defender for Endpoint |
 
 ---
 
 ## Tech Stack
 
-| Layer | Technologies |
-|-------|-------------|
-| **Backend** | Python 3.11 · FastAPI · pyodbc · pydantic-settings · uvicorn |
-| **Database** | Azure SQL Database (any service tier) |
-| **Frontend** | Next.js 14 App Router · TypeScript · Tailwind CSS v4 · Recharts · React Flow · Lucide React |
-| **Auth** | Azure `DefaultAzureCredential` (Managed Identity / `az login`) |
+| Layer | Technology |
+|-------|-----------|
+| **Backend API** | Python 3.11 · FastAPI · pyodbc · pydantic-settings · uvicorn |
+| **Database** | Azure SQL Database (any service tier — Basic at $5/mo works) |
+| **Frontend** | Next.js 14 App Router · TypeScript · Tailwind CSS · Recharts · React Flow · Lucide React |
 
 ---
 
-## Getting Started
+## Prerequisites — Install These First
 
-### Prerequisites
+Before you start, make sure you have all of these installed:
 
-| Tool | Version | Notes |
-|------|---------|-------|
-| Python | 3.11+ | `python3 --version` |
-| Node.js | 18+ | `node --version` |
-| ODBC Driver 18 | latest | [Download here](https://learn.microsoft.com/sql/connect/odbc/download-odbc-driver-for-sql-server) |
-| Azure SQL Database | any tier | Basic ($5/mo) works fine |
+### 1. Python 3.11+
+Download from https://python.org/downloads — check "Add to PATH" during installation.
+```bash
+python3 --version   # should print 3.11 or higher
+```
+
+### 2. Node.js 18+
+Download from https://nodejs.org (choose the LTS version).
+```bash
+node --version   # should print v18 or higher
+npm --version
+```
+
+### 3. Git
+Download from https://git-scm.com/downloads
+```bash
+git --version
+```
+
+### 4. ODBC Driver 18 for SQL Server
+This is required for the Python backend to talk to Azure SQL.
+
+- **Windows:** https://aka.ms/downloadmsodbcsql
+- **macOS:** `brew install msodbcsql18`
+- **Ubuntu/Debian:** Follow the official guide at https://learn.microsoft.com/sql/connect/odbc/linux-mac/installing-the-microsoft-odbc-driver-for-sql-server
+
+### 5. Azure Account
+You need an active Azure subscription. Sign up free at https://azure.microsoft.com/free — you get $200 credit.
 
 ---
 
-### Option A — With Azure SQL (recommended)
+## Part 1 — Set Up Azure SQL Database
 
-#### 1. Clone
+You need to create a database in the Azure Portal before running the app.
+
+### Step 1 — Create a SQL Server
+
+1. Go to **portal.azure.com**
+2. Click **Create a resource** → search for **SQL Database** → click **Create**
+3. On the **Basics** tab:
+   - **Subscription:** choose yours
+   - **Resource group:** create new, e.g. `vigil-rg`
+   - **Database name:** `vigil-security`
+   - **Server:** click **Create new**
+     - Server name: e.g. `vigil-sql` (must be globally unique → becomes `vigil-sql.database.windows.net`)
+     - Location: choose the region closest to you
+     - Authentication: choose **Use SQL authentication**
+     - Admin login: `sqladmin`
+     - Password: choose a strong password and **save it** — you'll need it
+4. **Compute + storage:** click **Configure database** → choose **Basic** ($5/mo) for development
+5. Click **Review + create** → **Create**
+
+Wait ~2 minutes for deployment to complete.
+
+### Step 2 — Allow your IP through the firewall
+
+1. Go to your new **SQL Server** resource (not the database — the server)
+2. Click **Security → Networking**
+3. Under **Firewall rules**, click **Add your client IPv4 address**
+4. Click **Save**
+
+> If you're on a VPN or your IP changes often, you can temporarily allow `0.0.0.0` to `255.255.255.255` for development. **Remove this rule before going to production.**
+
+### Step 3 — Get your connection string
+
+1. Go to your **SQL Database** resource (`vigil-security`)
+2. In the left menu click **Settings → Connection strings**
+3. Click the **ODBC** tab
+4. Copy the connection string — it looks like this:
+   ```
+   Driver={ODBC Driver 18 for SQL Server};Server=tcp:vigil-sql.database.windows.net,1433;Database=vigil-security;Uid=sqladmin;Pwd={your_password};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;
+   ```
+5. Replace `{your_password}` with the password you set in Step 1
+6. **Save this string** — you'll paste it into `.env` shortly
+
+---
+
+## Part 2 — Clone and Install
+
+### Step 1 — Clone the repository
 
 ```bash
 git clone https://github.com/Ahmadabasss/CSDash.git
 cd CSDash
 ```
 
-#### 2. Create the database tables
-
-Run `backend/scripts/create_schema.sql` against your database. It is **idempotent** — safe to run multiple times.
+### Step 2 — Set up the backend
 
 ```bash
-# using sqlcmd
-sqlcmd -S YOUR_SERVER.database.windows.net -d YOUR_DATABASE \
-       -U YOUR_USERNAME -P YOUR_PASSWORD \
+cd backend
+
+# Create a virtual environment
+python3 -m venv .venv
+
+# Activate it
+source .venv/bin/activate        # macOS / Linux
+# OR
+.venv\Scripts\activate           # Windows
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+### Step 3 — Set up the frontend
+
+```bash
+cd ../frontend
+npm install
+```
+
+---
+
+## Part 3 — Database Setup
+
+### Step 1 — Create the tables
+
+Run the schema script against your Azure SQL database. This creates all 12 tables. It is **safe to run multiple times**.
+
+**Option A — sqlcmd (command line):**
+```bash
+sqlcmd -S vigil-sql.database.windows.net \
+       -d vigil-security \
+       -U sqladmin \
+       -P YOUR_PASSWORD \
        -i backend/scripts/create_schema.sql
 ```
 
-Or open the file in **Azure Data Studio** and click **Run**.
+**Option B — Azure Data Studio (GUI):**
+1. Download Azure Data Studio from https://aka.ms/azuredatastudio
+2. Connect to your server using the credentials from Part 1
+3. Open `backend/scripts/create_schema.sql`
+4. Click **Run**
 
-#### 3. Seed the database
+### Step 2 — Seed the database with data
+
+This loads realistic security data into your database (alerts, recommendations, CVEs, compliance posture, sign-ins, resources, and more).
 
 ```bash
-pip install pyodbc
-
+# From the repo root — paste your full connection string after --conn
 python backend/scripts/seed_sql.py \
-  --conn "Driver={ODBC Driver 18 for SQL Server};Server=tcp:YOUR_SERVER.database.windows.net,1433;Database=YOUR_DATABASE;Uid=YOUR_USERNAME;Pwd=YOUR_PASSWORD;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;" \
+  --conn "Driver={ODBC Driver 18 for SQL Server};Server=tcp:vigil-sql.database.windows.net,1433;Database=vigil-security;Uid=sqladmin;Pwd=YOUR_PASSWORD;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;" \
   --scenario noisy
 ```
 
-> Available scenarios: `noisy` (default) · `compromised` · `secured`
+You should see output like:
+```
+Connecting …
+  seeded alerts                556 rows
+  seeded incidents              15 rows
+  seeded recommendations       107 rows
+  seeded vulnerabilities        15 rows
+  seeded compliance_standards    8 rows
+  seeded resources             120 rows
+  seeded virtual_machines       45 rows
+  seeded endpoints              30 rows
+  seeded signins               200 rows
+  seeded risky_users            12 rows
+  seeded secure_score            1 rows
+  seeded network_topology        1 row
 
-#### 4. Configure the backend
+Done — all data committed.
+```
+
+> **Scenarios:** `noisy` (typical enterprise, 556 alerts) · `compromised` (active attack, 600 high-severity alerts) · `secured` (hardened tenant, 80 alerts)
+
+---
+
+## Part 4 — Configure Environment
+
+### Backend
 
 ```bash
 cd backend
 cp .env.example .env
 ```
 
-Edit `.env` — paste your connection string on one line:
+Open `backend/.env` in any text editor and fill it in:
 
 ```env
 DATA_SOURCE=sql
-SQL_CONNECTION_STRING=Driver={ODBC Driver 18 for SQL Server};Server=tcp:YOUR_SERVER.database.windows.net,1433;Database=YOUR_DATABASE;Uid=YOUR_USERNAME;Pwd=YOUR_PASSWORD;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;
+
+# Paste your full ODBC connection string here (from Part 1 Step 3)
+SQL_CONNECTION_STRING=Driver={ODBC Driver 18 for SQL Server};Server=tcp:vigil-sql.database.windows.net,1433;Database=vigil-security;Uid=sqladmin;Pwd=YOUR_PASSWORD;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;
+
 FRONTEND_ORIGIN=http://localhost:3000
 ```
 
-> **Where to find your connection string:**
-> Azure Portal → your SQL Database → **Settings → Connection strings → ODBC tab**
-> Copy the string and replace `{your_password}` with your actual password.
-
-#### 5. Start the backend
-
-```bash
-cd backend
-python3 -m venv .venv && source .venv/bin/activate
-# Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-uvicorn app.main:app --reload --port 8000
-```
-
-✅ API docs: **http://localhost:8000/docs**
-
-#### 6. Start the frontend
+### Frontend
 
 ```bash
 cd frontend
 cp .env.example .env.local
-npm install
-npm run dev
 ```
 
-✅ Dashboard: **http://localhost:3000**
+`frontend/.env.local` — the default works for local development:
+
+```env
+NEXT_PUBLIC_API_URL=http://localhost:8000
+```
 
 ---
 
-### Option B — Mock mode (no database, zero config)
+## Part 5 — Run the App
 
-No Azure account needed. Runs entirely on local JSON files.
+Open **two terminals** side by side.
 
+**Terminal 1 — Backend:**
 ```bash
-# 1. backend/.env
-DATA_SOURCE=mock
-
-# 2. start backend
 cd backend
-python3 -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
+source .venv/bin/activate   # Windows: .venv\Scripts\activate
 uvicorn app.main:app --reload --port 8000
-
-# 3. start frontend
-cd frontend && npm install && npm run dev
 ```
 
-**Switch scenarios at runtime** — no restart needed:
+You should see:
+```
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process
+```
+
+**Terminal 2 — Frontend:**
+```bash
+cd frontend
+npm run dev
+```
+
+You should see:
+```
+▲ Next.js 14.x.x
+- Local: http://localhost:3000
+```
+
+Open **http://localhost:3000** in your browser. 🎉
+
+---
+
+## Running Without Azure (Mock Mode)
+
+No Azure account? No problem. Run entirely on local data — no database needed.
 
 ```bash
-# Active attack in progress
+# backend/.env
+DATA_SOURCE=mock
+```
+
+Skip Parts 1 and 3 entirely. Just configure the env files and run both servers.
+
+**Switch scenarios without restarting:**
+```bash
+# Simulate an active attack
 curl -X POST http://localhost:8000/api/scenario \
      -H "Content-Type: application/json" \
      -d '{"scenario": "compromised"}'
 
-# Hardened tenant
+# Switch to a hardened tenant
 curl -X POST http://localhost:8000/api/scenario \
+     -H "Content-Type: application/json" \
      -d '{"scenario": "secured"}'
+
+# Back to normal
+curl -X POST http://localhost:8000/api/scenario \
+     -H "Content-Type: application/json" \
+     -d '{"scenario": "noisy"}'
 ```
 
-| Scenario | Secure Score | Alerts | Story |
-|----------|-------------|--------|-------|
-| `noisy` | 55% | 556 | Typical enterprise — realistic day-to-day noise |
-| `compromised` | 32% | 600 high-sev | Active attack in progress — lateral movement, ransomware indicators |
-| `secured` | 78% | 80 | Well-hardened tenant — minimal exposure |
+| Scenario | Secure Score | Alerts | What it simulates |
+|----------|-------------|--------|--------------------|
+| `noisy` | 55% | 556 | Real-world enterprise with typical alert noise |
+| `compromised` | 32% | 600 high-sev | Active attack — lateral movement, ransomware indicators, credential theft |
+| `secured` | 78% | 80 | Well-hardened tenant with minimal exposure |
 
 ---
 
@@ -222,17 +369,45 @@ curl -X POST http://localhost:8000/api/scenario \
 
 ### `backend/.env`
 
-| Variable | Default | Description |
-|----------|---------|-------------|
-| `DATA_SOURCE` | `sql` | `sql` — Azure SQL Database · `mock` — local JSON files |
-| `SQL_CONNECTION_STRING` | — | Full ODBC string from Azure Portal (required when `DATA_SOURCE=sql`) |
-| `FRONTEND_ORIGIN` | `http://localhost:3000` | CORS allowed origin — change when deploying frontend |
+| Variable | Required | Default | Description |
+|----------|----------|---------|-------------|
+| `DATA_SOURCE` | Yes | `sql` | `sql` = Azure SQL · `mock` = local JSON files |
+| `SQL_CONNECTION_STRING` | When using sql | — | Full ODBC connection string from Azure Portal |
+| `FRONTEND_ORIGIN` | No | `http://localhost:3000` | CORS allowed origin — change when deploying |
 
 ### `frontend/.env.local`
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `NEXT_PUBLIC_API_URL` | `http://localhost:8000` | Backend URL — update when deploying |
+| `NEXT_PUBLIC_API_URL` | `http://localhost:8000` | Backend URL — update when deploying to production |
+
+---
+
+## API Reference
+
+Full interactive docs available at **http://localhost:8000/docs** when the backend is running.
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `GET` | `/health` | Health check |
+| `GET` | `/api/summary` | All dashboard card data in one request |
+| `GET` | `/api/secure-score` | Current score + 12-week history |
+| `GET` | `/api/alerts` | Paginated alerts — supports `?page`, `?limit`, `?sort`, `?order`, `?severity`, `?status` |
+| `GET` | `/api/alerts/{id}` | Single alert detail |
+| `GET` | `/api/alerts/mitre-summary` | Technique frequency data for MITRE heatmap |
+| `GET` | `/api/recommendations` | Paginated recommendations |
+| `GET` | `/api/recommendations/{id}` | Single recommendation detail |
+| `GET` | `/api/vulnerabilities` | CVE list ranked by risk score |
+| `GET` | `/api/compliance` | All regulatory standards posture |
+| `GET` | `/api/resources` | Azure resource inventory |
+| `GET` | `/api/resources/{id}` | Resource detail with related alerts and recommendations |
+| `GET` | `/api/signins` | Sign-in logs |
+| `GET` | `/api/signins/risk-summary` | Risky IPs, countries, risk level breakdown |
+| `GET` | `/api/incidents` | Security incidents |
+| `GET` | `/api/network/topology` | VNet topology with NSG details |
+| `GET` | `/api/orphans` | Ghost / abandoned resources |
+| `GET` | `/api/scenario` | Current active scenario |
+| `POST` | `/api/scenario` | Hot-swap scenario without restarting |
 
 ---
 
@@ -242,77 +417,55 @@ curl -X POST http://localhost:8000/api/scenario \
 CSDash/
 ├── backend/
 │   ├── app/
-│   │   ├── main.py              # FastAPI app, CORS, lifespan task
+│   │   ├── main.py              # FastAPI entry point, CORS config
 │   │   ├── config.py            # All settings via pydantic-settings
 │   │   ├── deps.py              # DataSource singleton + scenario switcher
 │   │   ├── services/
-│   │   │   ├── base.py          # DataSource Protocol (structural typing)
-│   │   │   ├── sql.py           # Azure SQL — async pyodbc via asyncio.to_thread
-│   │   │   └── mock.py          # Local JSON — hot-reloadable
-│   │   └── routers/             # alerts · recommendations · vulnerabilities
-│   │                            # compliance · resources · signins · incidents
-│   │                            # network · orphans · blast_radius · ...
+│   │   │   ├── base.py          # DataSource Protocol interface
+│   │   │   ├── sql.py           # Azure SQL — async-safe pyodbc
+│   │   │   └── mock.py          # Local JSON files
+│   │   └── routers/             # One file per domain (alerts, recommendations, etc.)
 │   ├── scripts/
-│   │   ├── create_schema.sql    # Idempotent T-SQL DDL for all 12 tables
-│   │   └── seed_sql.py          # Seeds any scenario into Azure SQL
+│   │   ├── create_schema.sql    # T-SQL DDL — creates all 12 tables (idempotent)
+│   │   └── seed_sql.py          # Loads mock data into Azure SQL
 │   └── mock_data/               # Network topology source JSON
 ├── frontend/
 │   ├── app/                     # Next.js 14 App Router pages
-│   ├── components/              # Reusable UI components (charts, tables, badges)
-│   ├── lib/api.ts               # Typed fetch helper
-│   └── types/azure.ts           # TypeScript interfaces matching API shapes
+│   ├── components/              # Reusable UI components
+│   ├── lib/api.ts               # Typed fetch wrapper
+│   └── types/azure.ts           # TypeScript types matching API shapes
 └── data/
-    └── big-mock-data/scenarios/ # noisy · compromised · secured scenario data
+    └── big-mock-data/scenarios/ # noisy · compromised · secured JSON datasets
 ```
-
----
-
-## API Reference
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| `GET` | `/health` | Health check |
-| `GET` | `/api/summary` | All dashboard card counts in one call |
-| `GET` | `/api/secure-score` | Current score + 12-week history |
-| `GET` | `/api/alerts` | Paginated alerts — `?page=1&limit=50&sort=severity&order=desc` |
-| `GET` | `/api/alerts/{id}` | Single alert detail |
-| `GET` | `/api/alerts/mitre-summary` | Technique frequency for MITRE heatmap |
-| `GET` | `/api/recommendations` | Paginated recommendations |
-| `GET` | `/api/recommendations/{id}` | Single recommendation detail |
-| `GET` | `/api/vulnerabilities` | CVE list ranked by risk score |
-| `GET` | `/api/compliance` | All regulatory standards posture |
-| `GET` | `/api/resources` | Azure resource inventory |
-| `GET` | `/api/resources/{id}` | Resource detail with related alerts & recommendations |
-| `GET` | `/api/signins` | Sign-in logs |
-| `GET` | `/api/signins/risk-summary` | Risky IPs, countries, risk level breakdown |
-| `GET` | `/api/incidents` | Security incidents |
-| `GET` | `/api/network/topology` | VNet topology with NSG details merged |
-| `GET` | `/api/orphans` | Abandoned/ghost resources |
-| `GET` | `/api/scenario` | Current active scenario |
-| `POST` | `/api/scenario` | Hot-swap scenario `{"scenario": "compromised"}` |
-
-Interactive docs available at **http://localhost:8000/docs** when the backend is running.
 
 ---
 
 ## Troubleshooting
 
-**`pyodbc.Error: [08001]` — Can't connect to SQL Server**
-- Make sure ODBC Driver 18 for SQL Server is installed: [Download](https://learn.microsoft.com/sql/connect/odbc/download-odbc-driver-for-sql-server)
-- Check your server name — it should end in `.database.windows.net`
-- Verify your IP is allowed in the Azure SQL firewall: Azure Portal → SQL Server → **Networking → Firewall rules**
+**`pyodbc.Error: [08001]` — Cannot connect to SQL Server**
+- ODBC Driver 18 is not installed → [download it here](https://learn.microsoft.com/sql/connect/odbc/download-odbc-driver-for-sql-server)
+- Your IP is blocked → Azure Portal → SQL Server → **Networking** → add your IP to the firewall
+- Wrong server name → must end with `.database.windows.net`
 
 **`ValueError: SQL_CONNECTION_STRING is not set`**
-- You copied `.env.example` but haven't filled in the connection string yet
-- Make sure `DATA_SOURCE=sql` and `SQL_CONNECTION_STRING=...` are both in `backend/.env`
+- `backend/.env` is missing or you haven't filled in `SQL_CONNECTION_STRING`
+- Make sure you copied `.env.example` to `.env` (not `.env.example`)
 
 **Frontend shows "Backend offline"**
-- Start the FastAPI backend first: `uvicorn app.main:app --reload --port 8000`
-- Check `NEXT_PUBLIC_API_URL` in `frontend/.env.local` matches the backend port
+- Backend is not running — start it with `uvicorn app.main:app --reload --port 8000`
+- Port mismatch — check `NEXT_PUBLIC_API_URL` in `frontend/.env.local`
 
-**Tables are empty after seeding**
-- Make sure `create_schema.sql` ran successfully before `seed_sql.py`
-- Check the seed output — it prints a row count per table
+**`npm run dev` fails**
+- Run `npm install` first inside the `frontend/` folder
+- Make sure Node.js 18+ is installed: `node --version`
+
+**Seed script runs but tables are empty**
+- Run `create_schema.sql` first to create the tables, then run `seed_sql.py`
+- Check the seed output — each table prints a row count; if it shows `0` the JSON file may be missing
+
+**`pip install -r requirements.txt` fails on pyodbc**
+- ODBC Driver 18 must be installed before pyodbc can build
+- On macOS also run: `brew install unixodbc`
 
 ---
 
