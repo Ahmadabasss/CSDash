@@ -8,10 +8,10 @@ function ageHours(dateStr: string): number {
 
 function tier(hours: number, severity: string): { label: string; cls: string } {
   const isHigh = severity === 'high' || severity === 'critical'
-  if (isHigh && hours > 24) return { label: `${Math.floor(hours)}h`, cls: 'bg-red-600/20 text-red-400 ring-red-600/40' }
-  if (isHigh && hours > 4)  return { label: `${Math.floor(hours)}h`, cls: 'bg-amber-600/20 text-amber-400 ring-amber-600/40' }
-  if (!isHigh && hours > 72) return { label: `${Math.floor(hours / 24)}d`, cls: 'bg-amber-600/20 text-amber-400 ring-amber-600/40' }
-  return { label: hours < 1 ? '<1h' : `${Math.floor(hours)}h`, cls: 'bg-slate-700/60 text-slate-400 ring-slate-600/40' }
+  if (isHigh && hours > 24) return { label: `${Math.floor(hours)}h`, cls: 'bg-red-600/20 text-red-600 ring-red-600/40' }
+  if (isHigh && hours > 4)  return { label: `${Math.floor(hours)}h`, cls: 'bg-amber-600/20 text-amber-600 ring-amber-600/40' }
+  if (!isHigh && hours > 72) return { label: `${Math.floor(hours / 24)}d`, cls: 'bg-amber-600/20 text-amber-600 ring-amber-600/40' }
+  return { label: hours < 1 ? '<1h' : `${Math.floor(hours)}h`, cls: 'bg-[#edebe9] text-[#605e5c] ring-[#edebe9]' }
 }
 
 interface Props {

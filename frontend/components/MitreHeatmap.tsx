@@ -45,11 +45,11 @@ const TACTIC_ORDER = [
 ]
 
 const SEV_COLOR = (severities: Record<string, number>, count: number) => {
-  if (count === 0) return 'bg-slate-800/40 text-slate-700'
+  if (count === 0) return 'bg-white text-[#4b4b4b]'
   const dominant = Object.entries(severities).sort((a, b) => b[1] - a[1])[0]?.[0] ?? 'medium'
-  if (dominant === 'critical' || dominant === 'high') return 'bg-red-900/70 text-red-200'
-  if (dominant === 'medium') return 'bg-amber-900/60 text-amber-200'
-  return 'bg-blue-900/50 text-blue-200'
+  if (dominant === 'critical' || dominant === 'high') return 'bg-red-100 text-red-700'
+  if (dominant === 'medium') return 'bg-amber-100 text-amber-700'
+  return 'bg-blue-100 text-blue-700'
 }
 
 const HEAT_INTENSITY = (count: number, max: number) => {
@@ -58,11 +58,27 @@ const HEAT_INTENSITY = (count: number, max: number) => {
 }
 
 const INTENSITY_BG: Record<number, string> = {
-  0: 'bg-slate-800/30',
-  1: 'bg-red-950/60',
-  2: 'bg-red-900/60',
-  3: 'bg-red-800/70',
-  4: 'bg-red-700/80',
+  0: 'bg-[#f3f2f1]',
+  1: 'bg-red-100',
+  2: 'bg-red-200',
+  3: 'bg-red-400',
+  4: 'bg-red-600',
+}
+
+const INTENSITY_TEXT: Record<number, string> = {
+  0: 'text-[#797775]',
+  1: 'text-red-700',
+  2: 'text-red-800',
+  3: 'text-white',
+  4: 'text-white',
+}
+
+const INTENSITY_SUB: Record<number, string> = {
+  0: 'text-[#a19f9d]',
+  1: 'text-red-500',
+  2: 'text-red-600',
+  3: 'text-red-100',
+  4: 'text-red-200',
 }
 
 interface Props { rows: MitreSummaryRow[] }
@@ -85,7 +101,7 @@ export default function MitreHeatmap({ rows }: Props) {
   return (
     <div className="space-y-3">
       {/* Legend */}
-      <div className="flex items-center gap-4 text-[11px] text-slate-500">
+      <div className="flex items-center gap-4 text-[11px] text-[#797775]">
         <span>Alert frequency:</span>
         {[1, 2, 3, 4].map(i => (
           <div key={i} className="flex items-center gap-1">
@@ -102,7 +118,7 @@ export default function MitreHeatmap({ rows }: Props) {
             const tacticRows = byTactic[tactic].sort((a, b) => b.count - a.count)
             return (
               <div key={tactic} className="flex items-start gap-2">
-                <div className="w-32 shrink-0 text-[11px] text-slate-500 pt-1.5 text-right pr-2 truncate">
+                <div className="w-32 shrink-0 text-[11px] text-[#797775] pt-1.5 text-right pr-2 truncate">
                   {tactic}
                 </div>
                 <div className="flex flex-wrap gap-1.5">
@@ -114,8 +130,8 @@ export default function MitreHeatmap({ rows }: Props) {
                         title={`${row.technique} — ${row.count} alerts`}
                         className={`flex flex-col items-center justify-center w-16 h-10 rounded text-[10px] font-mono font-semibold cursor-default transition-opacity hover:opacity-80 ${INTENSITY_BG[intensity]}`}
                       >
-                        <span className="text-slate-300">{row.technique}</span>
-                        <span className="text-slate-500 text-[9px]">{row.count}</span>
+                        <span className={INTENSITY_TEXT[intensity]}>{row.technique}</span>
+                        <span className={`text-[9px] ${INTENSITY_SUB[intensity]}`}>{row.count}</span>
                       </div>
                     )
                   })}
@@ -127,19 +143,19 @@ export default function MitreHeatmap({ rows }: Props) {
       </div>
 
       {/* Top techniques bar chart */}
-      <div className="mt-4 pt-4 border-t border-white/6">
-        <p className="text-xs text-slate-500 uppercase tracking-wider mb-3">Top Techniques by Alert Volume</p>
+      <div className="mt-4 pt-4 border-t border-[#edebe9]">
+        <p className="text-xs text-[#797775] uppercase tracking-wider mb-3">Top Techniques by Alert Volume</p>
         <div className="space-y-2">
           {rows.slice().sort((a, b) => b.count - a.count).slice(0, 8).map(row => {
             const pct = Math.round((row.count / max) * 100)
             const color = SEV_COLOR(row.severities, row.count)
             return (
               <div key={row.technique} className="flex items-center gap-3">
-                <span className="w-20 shrink-0 text-[11px] font-mono text-slate-400">{row.technique}</span>
-                <div className="flex-1 h-2 rounded-full bg-slate-700/40">
+                <span className="w-20 shrink-0 text-[11px] font-mono text-[#605e5c]">{row.technique}</span>
+                <div className="flex-1 h-2 rounded-full bg-[#edebe9]">
                   <div className={`h-full rounded-full ${color.split(' ')[0]}`} style={{ width: `${pct}%` }} />
                 </div>
-                <span className="w-8 text-right text-[11px] text-slate-400 tabular-nums">{row.count}</span>
+                <span className="w-8 text-right text-[11px] text-[#605e5c] tabular-nums">{row.count}</span>
               </div>
             )
           })}

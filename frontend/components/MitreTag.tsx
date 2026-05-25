@@ -21,7 +21,7 @@ export default function MitreTag({ technique }: { technique: string }) {
   return (
     <span
       title={name ? `${technique} — ${name}` : technique}
-      className="inline-block rounded bg-slate-800 px-1.5 py-0.5 font-mono text-xs text-slate-300 ring-1 ring-slate-700 cursor-default"
+      className="inline-block rounded bg-[#f3f2f1] px-1.5 py-0.5 font-mono text-xs text-[#4b4b4b] ring-1 ring-[#edebe9] cursor-default"
     >
       {technique}
     </span>

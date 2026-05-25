@@ -10,14 +10,14 @@ const RISK_ORDER: Record<string, number> = { Critical: 4, High: 3, Medium: 2, Lo
 
 function RiskBadge({ score }: { score: string }) {
   const cls: Record<string, string> = {
-    Critical: 'bg-red-900/60 text-red-300 ring-1 ring-red-700',
-    High: 'bg-red-800/40 text-red-400 ring-1 ring-red-800',
-    Medium: 'bg-amber-900/40 text-amber-300 ring-1 ring-amber-800',
-    Low: 'bg-blue-900/40 text-blue-300 ring-1 ring-blue-800',
-    None: 'bg-slate-700 text-slate-400',
+    Critical: 'bg-red-100 text-red-700 ring-1 ring-red-700',
+    High: 'bg-orange-100 text-orange-700 ring-1 ring-red-200',
+    Medium: 'bg-amber-100 text-amber-700 ring-1 ring-amber-200',
+    Low: 'bg-blue-100 text-blue-700 ring-1 ring-blue-200',
+    None: 'bg-[#edebe9] text-[#605e5c]',
   }
   return (
-    <span className={`inline-flex text-[11px] font-semibold px-2 py-0.5 rounded ${cls[score] ?? 'bg-slate-700 text-slate-400'}`}>
+    <span className={`inline-flex text-[11px] font-semibold px-2 py-0.5 rounded ${cls[score] ?? 'bg-[#edebe9] text-[#605e5c]'}`}>
       {score}
     </span>
   )
@@ -41,14 +41,14 @@ export default function EndpointsClient({ items }: { items: Endpoint[] }) {
   }, [items, riskFilter, healthFilter, search])
 
   return (
-    <div className="bg-[#1e293b] border border-white/6 rounded-lg overflow-hidden">
-      <div className="flex items-center gap-3 p-4 border-b border-white/6 flex-wrap">
+    <div className="bg-white border border-[#edebe9] rounded-lg overflow-hidden">
+      <div className="flex items-center gap-3 p-4 border-b border-[#edebe9] flex-wrap">
         <input
           type="text"
           placeholder="Search devices..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="bg-[#0d1117] border border-white/8 rounded px-3 py-1.5 text-sm text-slate-200 placeholder-slate-500 outline-none focus:border-[#0078d4] w-52"
+          className="bg-white border border-[#edebe9] rounded px-3 py-1.5 text-sm text-[#323130] placeholder-[#797775] outline-none focus:border-[#0078d4] w-52"
         />
         <div className="flex gap-1.5 flex-wrap">
           {risks.map((r) => (
@@ -56,7 +56,7 @@ export default function EndpointsClient({ items }: { items: Endpoint[] }) {
               key={r}
               onClick={() => setRiskFilter(r)}
               className={`text-xs px-2.5 py-1 rounded font-medium transition-colors ${
-                riskFilter === r ? 'bg-[#0078d4] text-white' : 'bg-slate-700/60 text-slate-400 hover:bg-slate-700'
+                riskFilter === r ? 'bg-[#0078d4] text-white' : 'bg-[#edebe9] text-[#605e5c] hover:bg-[#eaecee]'
               }`}
             >
               {r === 'all' ? 'All Risk' : r}
@@ -69,29 +69,29 @@ export default function EndpointsClient({ items }: { items: Endpoint[] }) {
               key={h}
               onClick={() => setHealthFilter(h)}
               className={`text-xs px-2.5 py-1 rounded font-medium transition-colors ${
-                healthFilter === h ? 'bg-[#0078d4] text-white' : 'bg-slate-700/60 text-slate-400 hover:bg-slate-700'
+                healthFilter === h ? 'bg-[#0078d4] text-white' : 'bg-[#edebe9] text-[#605e5c] hover:bg-[#eaecee]'
               }`}
             >
               {h === 'all' ? 'All Health' : h}
             </button>
           ))}
         </div>
-        <span className="ml-auto text-xs text-slate-500">{filtered.length} devices</span>
+        <span className="ml-auto text-xs text-[#797775]">{filtered.length} devices</span>
       </div>
 
       <div className="overflow-x-auto">
         <table className="w-full text-sm">
           <thead>
-            <tr className="border-b border-white/6 text-left">
-              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-slate-500">Risk</th>
-              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-slate-500">Device</th>
-              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-slate-500">OS</th>
-              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-slate-500">Health</th>
-              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-slate-500">Exposure</th>
-              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-slate-500">Vulns</th>
-              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-slate-500">Missing Patches</th>
-              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-slate-500">AV</th>
-              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-slate-500">Last Seen</th>
+            <tr className="border-b border-[#edebe9] text-left">
+              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-[#797775]">Risk</th>
+              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-[#797775]">Device</th>
+              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-[#797775]">OS</th>
+              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-[#797775]">Health</th>
+              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-[#797775]">Exposure</th>
+              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-[#797775]">Vulns</th>
+              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-[#797775]">Missing Patches</th>
+              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-[#797775]">AV</th>
+              <th className="px-4 py-3 text-[11px] font-semibold uppercase tracking-wider text-[#797775]">Last Seen</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-white/4">
@@ -102,39 +102,39 @@ export default function EndpointsClient({ items }: { items: Endpoint[] }) {
                 </td>
                 <td className="px-4 py-3">
                   <div className="flex items-center gap-2">
-                    <Monitor className="w-3.5 h-3.5 text-slate-500 shrink-0" />
+                    <Monitor className="w-3.5 h-3.5 text-[#797775] shrink-0" />
                     <div>
-                      <p className="text-slate-200 font-medium font-mono text-[12px]">{d.computerDnsName}</p>
-                      <p className="text-slate-500 text-[11px]">{d.rbacGroupName}</p>
+                      <p className="text-[#323130] font-medium font-mono text-[12px]">{d.computerDnsName}</p>
+                      <p className="text-[#797775] text-[11px]">{d.rbacGroupName}</p>
                     </div>
                   </div>
                 </td>
-                <td className="px-4 py-3 text-slate-400 text-[12px]">
+                <td className="px-4 py-3 text-[#605e5c] text-[12px]">
                   <p>{d.osPlatform}</p>
-                  <p className="text-slate-600 text-[11px]">{d.osVersion}</p>
+                  <p className="text-[#a19f9d] text-[11px]">{d.osVersion}</p>
                 </td>
                 <td className="px-4 py-3">
-                  <span className={`text-xs ${d.healthStatus === 'Active' ? 'text-emerald-400' : 'text-red-400'}`}>
+                  <span className={`text-xs ${d.healthStatus === 'Active' ? 'text-emerald-600' : 'text-red-600'}`}>
                     {d.healthStatus}
                   </span>
                 </td>
-                <td className="px-4 py-3 text-slate-400 text-[12px]">{d.exposureLevel}</td>
+                <td className="px-4 py-3 text-[#605e5c] text-[12px]">{d.exposureLevel}</td>
                 <td className="px-4 py-3 text-[12px]">
-                  <span className={d.vulnerabilitiesCount > 10 ? 'text-red-400 font-semibold' : 'text-slate-400'}>
+                  <span className={d.vulnerabilitiesCount > 10 ? 'text-red-600 font-semibold' : 'text-[#605e5c]'}>
                     {d.vulnerabilitiesCount}
                   </span>
                 </td>
                 <td className="px-4 py-3 text-[12px]">
-                  <span className={d.missingCriticalPatches > 0 ? 'text-amber-400 font-semibold' : 'text-slate-500'}>
+                  <span className={d.missingCriticalPatches > 0 ? 'text-amber-600 font-semibold' : 'text-[#797775]'}>
                     {d.missingCriticalPatches}
                   </span>
                 </td>
                 <td className="px-4 py-3 text-[12px]">
-                  <span className={`${d.antivirusStatus === 'Updated' ? 'text-emerald-400' : 'text-amber-400'}`}>
+                  <span className={`${d.antivirusStatus === 'Updated' ? 'text-emerald-600' : 'text-amber-600'}`}>
                     {d.antivirusStatus}
                   </span>
                 </td>
-                <td className="px-4 py-3 text-slate-400 text-[12px]">
+                <td className="px-4 py-3 text-[#605e5c] text-[12px]">
                   <RelativeTime dateStr={d.lastSeen} />
                 </td>
               </tr>
@@ -142,7 +142,7 @@ export default function EndpointsClient({ items }: { items: Endpoint[] }) {
           </tbody>
         </table>
         {filtered.length === 0 && (
-          <div className="flex flex-col items-center py-12 text-slate-500">
+          <div className="flex flex-col items-center py-12 text-[#797775]">
             <Monitor className="w-8 h-8 mb-2 opacity-40" />
             <p>No devices match the current filters</p>
           </div>

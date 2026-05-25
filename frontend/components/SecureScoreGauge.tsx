@@ -32,14 +32,14 @@ export default function SecureScoreGauge({ value, previousValue }: Props) {
             data={data}
             barSize={14}
           >
-            <RadialBar dataKey="value" cornerRadius={8} background={{ fill: '#1e293b' }} />
+            <RadialBar dataKey="value" cornerRadius={8} background={{ fill: '#f3f2f1' }} />
           </RadialBarChart>
         </ResponsiveContainer>
         <div className="absolute inset-0 flex flex-col items-center justify-center pt-8">
           <span className="text-5xl font-bold tabular-nums" style={{ color: fill }}>
             {pct}
           </span>
-          <span className="text-sm text-slate-400 -mt-1">/ 100</span>
+          <span className="text-sm text-[#605e5c] -mt-1">/ 100</span>
         </div>
       </div>
       {delta != null && (

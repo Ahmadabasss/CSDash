@@ -9,18 +9,18 @@ import TriageSummary from '../../../components/TriageSummary'
 export const dynamic = 'force-dynamic'
 
 const TACTIC_COLORS: Record<string, string> = {
-  InitialAccess: 'bg-red-900/40 text-red-300',
-  Execution: 'bg-orange-900/40 text-orange-300',
-  Persistence: 'bg-amber-900/40 text-amber-300',
-  PrivilegeEscalation: 'bg-yellow-900/40 text-yellow-300',
-  DefenseEvasion: 'bg-lime-900/40 text-lime-300',
-  CredentialAccess: 'bg-emerald-900/40 text-emerald-300',
-  Discovery: 'bg-teal-900/40 text-teal-300',
-  LateralMovement: 'bg-cyan-900/40 text-cyan-300',
-  Collection: 'bg-blue-900/40 text-blue-300',
-  CommandAndControl: 'bg-indigo-900/40 text-indigo-300',
-  Exfiltration: 'bg-violet-900/40 text-violet-300',
-  Impact: 'bg-purple-900/40 text-purple-300',
+  InitialAccess: 'bg-red-100 text-red-700',
+  Execution: 'bg-orange-100 text-orange-700',
+  Persistence: 'bg-amber-100 text-amber-700',
+  PrivilegeEscalation: 'bg-yellow-100 text-yellow-300',
+  DefenseEvasion: 'bg-lime-100 text-lime-300',
+  CredentialAccess: 'bg-emerald-100 text-emerald-700',
+  Discovery: 'bg-teal-100 text-teal-300',
+  LateralMovement: 'bg-cyan-100 text-cyan-300',
+  Collection: 'bg-blue-100 text-blue-700',
+  CommandAndControl: 'bg-indigo-100 text-indigo-300',
+  Exfiltration: 'bg-violet-100 text-violet-700',
+  Impact: 'bg-purple-100 text-purple-700',
 }
 
 const ENTITY_ICON: Record<string, React.ElementType> = {
@@ -41,16 +41,16 @@ export default async function IncidentDetailPage({ params }: { params: Promise<{
   }
 
   const statusColor: Record<string, string> = {
-    Active: 'bg-red-900/40 text-red-300',
-    New: 'bg-amber-900/40 text-amber-300',
-    InProgress: 'bg-blue-900/40 text-blue-300',
-    Resolved: 'bg-emerald-900/40 text-emerald-300',
-    Closed: 'bg-slate-700 text-slate-400',
+    Active: 'bg-red-100 text-red-700',
+    New: 'bg-amber-100 text-amber-700',
+    InProgress: 'bg-blue-100 text-blue-700',
+    Resolved: 'bg-emerald-100 text-emerald-700',
+    Closed: 'bg-[#edebe9] text-[#605e5c]',
   }
 
   return (
     <div className="px-6 py-6 max-w-5xl">
-      <Link href="/incidents" className="inline-flex items-center gap-1.5 text-sm text-slate-400 hover:text-slate-200 mb-6 transition-colors">
+      <Link href="/incidents" className="inline-flex items-center gap-1.5 text-sm text-[#605e5c] hover:text-[#323130] mb-6 transition-colors">
         <ArrowLeft className="w-4 h-4" /> Back to Incidents
       </Link>
 
@@ -58,10 +58,10 @@ export default async function IncidentDetailPage({ params }: { params: Promise<{
       <div className="flex items-start gap-4 mb-6">
         <div className="mt-1"><SeverityBadge severity={incident.severity} /></div>
         <div className="flex-1 min-w-0">
-          <h1 className="text-xl font-semibold text-white leading-snug">{incident.displayName}</h1>
-          <p className="text-sm text-slate-500 mt-1">Incident #{incident.incidentNumber}</p>
+          <h1 className="text-xl font-semibold text-[#323130] leading-snug">{incident.displayName}</h1>
+          <p className="text-sm text-[#797775] mt-1">Incident #{incident.incidentNumber}</p>
         </div>
-        <span className={`text-xs font-medium px-2.5 py-1 rounded ${statusColor[incident.status] ?? 'bg-slate-700 text-slate-400'}`}>
+        <span className={`text-xs font-medium px-2.5 py-1 rounded ${statusColor[incident.status] ?? 'bg-[#edebe9] text-[#605e5c]'}`}>
           {incident.status}
         </span>
       </div>
@@ -88,11 +88,11 @@ export default async function IncidentDetailPage({ params }: { params: Promise<{
                 {incident.entities.map((e, i) => {
                   const Icon = ENTITY_ICON[e.type] ?? FileText
                   return (
-                    <div key={i} className="flex items-center gap-2.5 bg-slate-900/60 rounded px-3 py-2.5">
+                    <div key={i} className="flex items-center gap-2.5 bg-white/60 rounded px-3 py-2.5">
                       <Icon className="w-4 h-4 text-[#0078d4] shrink-0" />
                       <div>
-                        <p className="text-[12px] text-slate-200 font-medium">{e.name}</p>
-                        <p className="text-[11px] text-slate-500 capitalize">{e.type}</p>
+                        <p className="text-[12px] text-[#323130] font-medium">{e.name}</p>
+                        <p className="text-[11px] text-[#797775] capitalize">{e.type}</p>
                       </div>
                     </div>
                   )
@@ -106,7 +106,7 @@ export default async function IncidentDetailPage({ params }: { params: Promise<{
             <Section title="Tags">
               <div className="flex flex-wrap gap-2">
                 {incident.tags.map(tag => (
-                  <span key={tag} className="text-xs bg-slate-700/60 text-slate-300 px-2.5 py-1 rounded-full">
+                  <span key={tag} className="text-xs bg-[#edebe9] text-[#4b4b4b] px-2.5 py-1 rounded-full">
                     {tag}
                   </span>
                 ))}
@@ -144,8 +144,8 @@ export default async function IncidentDetailPage({ params }: { params: Promise<{
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <div className="bg-[#1e293b] border border-white/6 rounded-lg p-5">
-      <h2 className="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-3">{title}</h2>
+    <div className="bg-white border border-[#edebe9] rounded-lg p-5">
+      <h2 className="text-xs font-semibold uppercase tracking-wider text-[#797775] mb-3">{title}</h2>
       {children}
     </div>
   )
@@ -154,8 +154,8 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 function MetaRow({ label, value, dim }: { label: string; value: string; dim?: boolean }) {
   return (
     <div className="flex justify-between gap-2">
-      <dt className="text-xs text-slate-500 shrink-0">{label}</dt>
-      <dd className={`text-xs text-right truncate ${dim ? 'text-slate-600' : 'text-slate-300'}`}>{value}</dd>
+      <dt className="text-xs text-[#797775] shrink-0">{label}</dt>
+      <dd className={`text-xs text-right truncate ${dim ? 'text-[#a19f9d]' : 'text-[#4b4b4b]'}`}>{value}</dd>
     </div>
   )
 }
@@ -163,8 +163,8 @@ function MetaRow({ label, value, dim }: { label: string; value: string; dim?: bo
 function TimeRow({ label, value }: { label: string; value: string }) {
   return (
     <div>
-      <dt className="text-xs text-slate-500">{label}</dt>
-      <dd className="text-xs text-slate-300 mt-0.5">{new Date(value).toLocaleString()}</dd>
+      <dt className="text-xs text-[#797775]">{label}</dt>
+      <dd className="text-xs text-[#4b4b4b] mt-0.5">{new Date(value).toLocaleString()}</dd>
     </div>
   )
 }
@@ -196,7 +196,7 @@ function AttackTimeline({ incident, tacticColors }: { incident: Incident; tactic
     { time: incident.firstActivityDateTime, label: 'First Activity', color: 'bg-amber-500' },
     { time: incident.createdDateTime, label: 'Incident Created', color: 'bg-blue-500' },
     { time: incident.lastActivityDateTime, label: 'Last Activity', color: 'bg-red-500' },
-    { time: incident.lastModifiedDateTime, label: 'Last Modified', color: 'bg-slate-500' },
+    { time: incident.lastModifiedDateTime, label: 'Last Modified', color: 'bg-[#94a3b8]' },
   ]
     .filter((e, i, arr) => arr.findIndex(x => x.time === e.time) === i)
     .sort((a, b) => new Date(a.time).getTime() - new Date(b.time).getTime())
@@ -204,25 +204,25 @@ function AttackTimeline({ incident, tacticColors }: { incident: Incident; tactic
   return (
     <div className="space-y-5">
       {/* Duration bar */}
-      <div className="flex items-center gap-3 text-xs text-slate-400">
+      <div className="flex items-center gap-3 text-xs text-[#605e5c]">
         <span className="whitespace-nowrap">{new Date(first).toLocaleString()}</span>
-        <div className="flex-1 h-1.5 rounded-full bg-slate-700 relative overflow-hidden">
+        <div className="flex-1 h-1.5 rounded-full bg-[#edebe9] relative overflow-hidden">
           <div className="absolute inset-0 bg-linear-to-r from-amber-500/60 via-red-500/60 to-red-700/60 rounded-full" />
         </div>
         <span className="whitespace-nowrap">{new Date(last).toLocaleString()}</span>
-        <span className="rounded bg-slate-700/60 px-2 py-0.5 font-mono text-slate-300 shrink-0">{durationLabel}</span>
+        <span className="rounded bg-[#edebe9] px-2 py-0.5 font-mono text-[#4b4b4b] shrink-0">{durationLabel}</span>
       </div>
 
       {/* Event markers */}
       <div className="relative">
-        <div className="absolute left-2 top-0 bottom-0 w-px bg-slate-700/60" />
+        <div className="absolute left-2 top-0 bottom-0 w-px bg-[#edebe9]" />
         <div className="space-y-3 pl-8">
           {events.map((e, i) => (
             <div key={i} className="relative flex items-start gap-3">
-              <div className={`absolute -left-6 top-1.5 w-2.5 h-2.5 rounded-full ring-2 ring-[#1e293b] ${e.color}`} />
+              <div className={`absolute -left-6 top-1.5 w-2.5 h-2.5 rounded-full ring-2 ring-white ${e.color}`} />
               <div>
-                <p className="text-xs font-medium text-slate-200">{e.label}</p>
-                <p className="text-[11px] text-slate-500">{new Date(e.time).toLocaleString()}</p>
+                <p className="text-xs font-medium text-[#323130]">{e.label}</p>
+                <p className="text-[11px] text-[#797775]">{new Date(e.time).toLocaleString()}</p>
               </div>
             </div>
           ))}
@@ -232,14 +232,14 @@ function AttackTimeline({ incident, tacticColors }: { incident: Incident; tactic
       {/* Tactic chain */}
       {sortedTactics.length > 0 && (
         <div>
-          <p className="text-[11px] font-semibold uppercase tracking-wider text-slate-500 mb-2">ATT&CK Kill Chain</p>
+          <p className="text-[11px] font-semibold uppercase tracking-wider text-[#797775] mb-2">ATT&CK Kill Chain</p>
           <div className="flex flex-wrap items-center gap-1">
             {sortedTactics.map((t, i) => (
               <span key={t} className="flex items-center gap-1">
-                <span className={`text-xs font-medium px-2 py-1 rounded ${tacticColors[t] ?? 'bg-slate-700 text-slate-300'}`}>
+                <span className={`text-xs font-medium px-2 py-1 rounded ${tacticColors[t] ?? 'bg-[#edebe9] text-[#4b4b4b]'}`}>
                   {t.replace(/([A-Z])/g, ' $1').trim()}
                 </span>
-                {i < sortedTactics.length - 1 && <ChevronRight className="w-3 h-3 text-slate-600 shrink-0" />}
+                {i < sortedTactics.length - 1 && <ChevronRight className="w-3 h-3 text-[#a19f9d] shrink-0" />}
               </span>
             ))}
           </div>

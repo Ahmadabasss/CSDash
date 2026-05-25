@@ -6,9 +6,9 @@ import type { Scenario } from '@/types/azure'
 import clsx from 'clsx'
 
 const SCENARIOS: { value: Scenario; label: string; score: string; color: string }[] = [
-  { value: 'secured',    label: 'Secured',    score: '~78%', color: 'text-emerald-400' },
-  { value: 'noisy',      label: 'Noisy',      score: '~55%', color: 'text-amber-400'   },
-  { value: 'compromised',label: 'Compromised',score: '~32%', color: 'text-red-400'     },
+  { value: 'secured',    label: 'Secured',    score: '~78%', color: 'text-emerald-600' },
+  { value: 'noisy',      label: 'Noisy',      score: '~55%', color: 'text-amber-600'   },
+  { value: 'compromised',label: 'Compromised',score: '~32%', color: 'text-red-600'     },
 ]
 
 export default function ScenarioSwitcher({ onSwitch }: { onSwitch?: () => void }) {
@@ -28,8 +28,8 @@ export default function ScenarioSwitcher({ onSwitch }: { onSwitch?: () => void }
   }
 
   return (
-    <div className="flex items-center gap-1 rounded-lg bg-slate-800/60 p-1 ring-1 ring-slate-700">
-      <span className="px-2 text-xs text-slate-500 font-medium">Scenario</span>
+    <div className="flex items-center gap-1 rounded-lg bg-white p-1 ring-1 ring-[#edebe9]">
+      <span className="px-2 text-xs text-[#797775] font-medium">Scenario</span>
       {SCENARIOS.map(s => (
         <button
           key={s.value}
@@ -38,12 +38,12 @@ export default function ScenarioSwitcher({ onSwitch }: { onSwitch?: () => void }
           className={clsx(
             'rounded px-3 py-1 text-xs font-medium transition-colors',
             current === s.value
-              ? 'bg-slate-700 text-white shadow'
-              : 'text-slate-400 hover:text-slate-200'
+              ? 'bg-[#edebe9] text-white shadow'
+              : 'text-[#605e5c] hover:text-[#323130]'
           )}
         >
           <span className={current === s.value ? s.color : ''}>{s.label}</span>
-          <span className="ml-1 text-slate-500">{s.score}</span>
+          <span className="ml-1 text-[#797775]">{s.score}</span>
         </button>
       ))}
     </div>

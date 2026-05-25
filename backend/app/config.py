@@ -7,13 +7,10 @@ VALID_SCENARIOS = {"noisy", "compromised", "secured"}
 
 
 class Settings(BaseSettings):
-    data_source: str = "mock"
+    data_source: str = "sql"
     mock_scenario: str = "noisy"
-    cache_refresh_seconds: int = 300  # 5 min; set 0 to disable
-    azure_tenant_id: str = ""
-    azure_client_id: str = ""
-    azure_client_secret: str = ""
-    azure_subscription_id: str = ""
+    # Full ODBC connection string — copy from Azure Portal → SQL Database → Connection strings → ODBC
+    sql_connection_string: str = ""
     frontend_origin: str = "http://localhost:3000"
 
     class Config:

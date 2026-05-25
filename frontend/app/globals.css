@@ -6,8 +6,8 @@
 }
 
 body {
-  background: #0a0f1e;
-  color: #f1f5f9;
+  background: #f3f2f1;
+  color: #323130;
   font-family: var(--font-geist-sans), Inter, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
 }

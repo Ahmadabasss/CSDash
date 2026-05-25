@@ -34,16 +34,16 @@ export default function VulnerabilitiesTable({ vulnerabilities }: Props) {
   return (
     <div className="flex flex-col gap-2">
     <div className="flex justify-end">
-      <button onClick={handleExport} className="flex items-center gap-1.5 rounded px-3 py-1 text-xs font-medium bg-slate-800 text-slate-400 hover:text-slate-200 transition-colors" title="Export to CSV">
+      <button onClick={handleExport} className="flex items-center gap-1.5 rounded px-3 py-1 text-xs font-medium bg-[#f3f2f1] text-[#605e5c] hover:text-[#323130] transition-colors" title="Export to CSV">
         <Download className="h-3.5 w-3.5" /> Export
       </button>
     </div>
-    <div className="overflow-x-auto rounded-xl ring-1 ring-slate-700/60">
+    <div className="overflow-x-auto rounded-xl ring-1 ring-[#edebe9]">
       <table className="w-full text-sm">
         <thead>
-          <tr className="border-b border-slate-700/60 bg-slate-800/40">
+          <tr className="border-b border-[#edebe9] bg-white">
             {['Severity', 'CVE', 'CVSS', 'Exposed', 'Tags'].map(h => (
-              <th key={h} className="px-4 py-3 text-left text-xs font-semibold uppercase tracking-wide text-slate-400">{h}</th>
+              <th key={h} className="px-4 py-3 text-left text-xs font-semibold uppercase tracking-wide text-[#605e5c]">{h}</th>
             ))}
           </tr>
         </thead>
@@ -52,18 +52,18 @@ export default function VulnerabilitiesTable({ vulnerabilities }: Props) {
             <tr
               key={v.id}
               onClick={() => router.push(`/vulnerabilities/${encodeURIComponent(v.id)}`)}
-              className="group hover:bg-slate-800/40 transition-colors cursor-pointer"
+              className="group hover:bg-white transition-colors cursor-pointer"
             >
               <td className="px-4 py-3"><SeverityBadge severity={v.severity} /></td>
               <td className="px-4 py-3">
-                <p className="font-mono text-xs text-sky-400 group-hover:text-sky-300 transition-colors">{v.id}</p>
-                <p className="text-slate-300 text-xs mt-0.5 line-clamp-1">{v.name}</p>
+                <p className="font-mono text-xs text-[#0078d4] group-hover:text-sky-300 transition-colors">{v.id}</p>
+                <p className="text-[#4b4b4b] text-xs mt-0.5 line-clamp-1">{v.name}</p>
               </td>
               <td className="px-4 py-3">
-                <span className="tabular-nums font-semibold text-slate-200">{v.cvssV3.toFixed(1)}</span>
+                <span className="tabular-nums font-semibold text-[#323130]">{v.cvssV3.toFixed(1)}</span>
               </td>
               <td className="px-4 py-3">
-                <span className={`tabular-nums font-medium ${v.exposedMachines > 0 ? 'text-red-400' : 'text-slate-500'}`}>
+                <span className={`tabular-nums font-medium ${v.exposedMachines > 0 ? 'text-red-600' : 'text-[#797775]'}`}>
                   {v.exposedMachines}
                 </span>
               </td>
@@ -73,10 +73,10 @@ export default function VulnerabilitiesTable({ vulnerabilities }: Props) {
                     <span
                       key={tag}
                       className={`rounded px-1.5 py-0.5 text-xs font-medium ${
-                        tag === 'EXPLOIT_AVAILABLE' ? 'bg-red-950 text-red-300' :
-                        tag === 'RANSOMWARE_ASSOCIATED' ? 'bg-orange-950 text-orange-300' :
-                        tag === 'ACTIVE_THREAT' ? 'bg-red-900 text-red-200' :
-                        'bg-slate-800 text-slate-400'
+                        tag === 'EXPLOIT_AVAILABLE' ? 'bg-red-100 text-red-700' :
+                        tag === 'RANSOMWARE_ASSOCIATED' ? 'bg-orange-100 text-orange-700' :
+                        tag === 'ACTIVE_THREAT' ? 'bg-red-100 text-red-700' :
+                        'bg-[#f3f2f1] text-[#605e5c]'
                       }`}
                     >
                       {tag.replace(/_/g, ' ')}

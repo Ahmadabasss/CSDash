@@ -29,3 +29,9 @@ Thumbs.db
 claude-code-skills.zip
 commands.md
 System.md
+
+# Dev / local only
+screenshot.mjs
+package.json
+package-lock.json
+linkedin screenshots/
